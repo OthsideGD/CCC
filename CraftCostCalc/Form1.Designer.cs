@@ -3541,9 +3541,9 @@
             this.label78.AutoSize = true;
             this.label78.Location = new System.Drawing.Point(59, 40);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(52, 13);
+            this.label78.Size = new System.Drawing.Size(61, 13);
             this.label78.TabIndex = 0;
-            this.label78.Text = "Тста для";
+            this.label78.Text = "Тста для 2";
             // 
             // MainForm
             // 
