@@ -127,14 +127,17 @@
   <data name="Silver_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Coarse_Bone_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Coarse_Bone_Powder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Animal_Bone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Animal_Bone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="etc_spirit_bullet_green_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spirit_bullet_green_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gem_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gem_c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Weapon_sword_of_revolution_i00_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Weapon_sword_of_revolution_i00_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,14 +145,14 @@
   <data name="etc_spell_shot_silver_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spell_shot_silver_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Leather" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="etc_spell_shot_silver_i01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spell_shot_silver_i01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Coal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suede" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Suede.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cry_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cry_b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +160,14 @@
   <data name="Mold_Glue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mold_Glue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="etc_spell_shot_gold_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\etc_spell_shot_gold_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Stem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mithril_Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mithril_Ore.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warsmiths_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warsmith's_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Steel_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Steel_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,6 +180,9 @@
   </data>
   <data name="Etc_ancient_adena_i00_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Etc_ancient_adena_i00_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Silver_Nugget" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Silver_Nugget.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Etc_crystal_white_i00_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Etc_crystal_white_i00_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,17 +202,14 @@
   <data name="Mithril_Alloy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mithril_Alloy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crafted_Leather" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crafted_Leather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leolins_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leolin's_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Compound_Braid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Compound_Braid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gem_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gem_d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Artisans_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Artisan's_Frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Oriharukon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oriharukon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,11 +220,14 @@
   <data name="Mold_Lubricant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mold_Lubricant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Metallic_Thread" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Metallic_Thread.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Enria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Silver_Nugget" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Silver_Nugget.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gem_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gem_c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Braided_Hemp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Braided_Hemp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +241,9 @@
   <data name="Charcoal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Charcoal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Warsmiths_Holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warsmith's_Holder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Asofe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asofe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,20 +253,23 @@
   <data name="cry_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cry_c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Stem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Metallic_Fiber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Metallic_Fiber.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="etc_spell_shot_blue_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\etc_spell_shot_blue_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Coarse_Bone_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coarse_Bone_Powder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="etc_spirit_bullet_silver_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spirit_bullet_silver_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Weapon_sword_of_revolution_i00_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Weapon_sword_of_revolution_i00_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Leolins_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leolin's_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gem_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gem_s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arcsmiths_Anvil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arcsmith's_Anvil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Steel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Steel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,17 +277,17 @@
   <data name="Mold_Hardener" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mold_Hardener.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Maestro_Holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maestro_Holder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Craftsman_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Craftsman_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Metal_Hardener" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Metal_Hardener.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Stone_of_Purity" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stone_of_Purity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gem_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gem_s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Crafted_Leather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crafted_Leather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gem_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gem_b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,32 +295,17 @@
   <data name="etc_spell_shot_red_i01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spell_shot_red_i01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Animal_Bone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Animal_Bone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thread" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thread.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Maestro_Anvil_Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maestro_Anvil_Lock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Iron_Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iron_Ore.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Craftsman_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Craftsman_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cord" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cord.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="etc_spirit_bullet_gold_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spirit_bullet_gold_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="etc_spirit_bullet_blue_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\etc_spirit_bullet_blue_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="etc_spell_shot_blue_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etc_spell_shot_blue_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Metallic_Fiber" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Metallic_Fiber.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Maestro_Anvil_Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maestro_Anvil_Lock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Varnish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Varnish.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,23 +313,26 @@
   <data name="Cokes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cokes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Maestro_Holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maestro_Holder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Adamantite_Nugget" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adamantite_Nugget3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Metallic_Thread" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Metallic_Thread.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cord.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Synthetic_Cokes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Synthetic_Cokes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Warsmiths_Holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warsmith's_Holder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Iron_Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iron_Ore.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Suede" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Suede.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="etc_spell_shot_green_i01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etc_spell_shot_green_i01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Metal_Hardener" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Metal_Hardener.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cry_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cry_s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -337,25 +340,25 @@
   <data name="gem_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gem_a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Warsmiths_Mold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warsmith's_Mold.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="etc_spell_shot_green_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spell_shot_green_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="etc_spell_shot_red_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etc_spell_shot_red_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Arcsmiths_Anvil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arcsmith's_Anvil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="etc_spell_shot_gold_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etc_spell_shot_gold_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="etc_spirit_bullet_blue_i00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etc_spirit_bullet_blue_i00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blacksmiths_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blacksmith's_Frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="etc_spell_shot_green_i01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\etc_spell_shot_green_i01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Artisans_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artisan's_Frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line_craft_res" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line_craft_res.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

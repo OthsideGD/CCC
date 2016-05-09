@@ -355,6 +355,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\line_craft_res.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
