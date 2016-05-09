@@ -190,7 +190,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.ButResCraftCalc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TBWarsmithsMold = new System.Windows.Forms.TextBox();
@@ -343,6 +342,21 @@
             this.label75 = new System.Windows.Forms.Label();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
+            this.pictureBox86 = new System.Windows.Forms.PictureBox();
+            this.pictureBox87 = new System.Windows.Forms.PictureBox();
+            this.LabArcsmithsAnvil = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.LabArtisansFrame = new System.Windows.Forms.Label();
+            this.pictureBox88 = new System.Windows.Forms.PictureBox();
+            this.LabBlacksmithsFrame = new System.Windows.Forms.Label();
+            this.pictureBox90 = new System.Windows.Forms.PictureBox();
+            this.LabBraidedHemp = new System.Windows.Forms.Label();
+            this.pictureBox92 = new System.Windows.Forms.PictureBox();
+            this.LabCoarsedBonePowder = new System.Windows.Forms.Label();
+            this.pictureBox94 = new System.Windows.Forms.PictureBox();
+            this.LabCokes = new System.Windows.Forms.Label();
+            this.pictureBox96 = new System.Windows.Forms.PictureBox();
             this.TabMain.SuspendLayout();
             this.TabWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -452,6 +466,13 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).BeginInit();
             this.SuspendLayout();
             // 
             // TabMain
@@ -603,7 +624,7 @@
             this.TabSword.Location = new System.Drawing.Point(4, 22);
             this.TabSword.Name = "TabSword";
             this.TabSword.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSword.Size = new System.Drawing.Size(353, 477);
+            this.TabSword.Size = new System.Drawing.Size(357, 477);
             this.TabSword.TabIndex = 1;
             this.TabSword.Text = "Мечи";
             this.TabSword.UseVisualStyleBackColor = true;
@@ -2142,7 +2163,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label90);
             this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.pictureBox87);
             this.groupBox2.Controls.Add(this.ButResCraftCalc);
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Controls.Add(this.label8);
@@ -2152,16 +2175,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Крафтовые ресурсы";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(191, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Цена:";
             // 
             // ButResCraftCalc
             // 
@@ -2177,6 +2190,18 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.LabCokes);
+            this.panel2.Controls.Add(this.pictureBox96);
+            this.panel2.Controls.Add(this.LabCoarsedBonePowder);
+            this.panel2.Controls.Add(this.pictureBox94);
+            this.panel2.Controls.Add(this.LabBraidedHemp);
+            this.panel2.Controls.Add(this.pictureBox92);
+            this.panel2.Controls.Add(this.LabBlacksmithsFrame);
+            this.panel2.Controls.Add(this.pictureBox90);
+            this.panel2.Controls.Add(this.LabArtisansFrame);
+            this.panel2.Controls.Add(this.pictureBox88);
+            this.panel2.Controls.Add(this.LabArcsmithsAnvil);
+            this.panel2.Controls.Add(this.pictureBox86);
             this.panel2.Controls.Add(this.TBWarsmithsMold);
             this.panel2.Controls.Add(this.label63);
             this.panel2.Controls.Add(this.pictureBox59);
@@ -2271,7 +2296,7 @@
             // 
             // TBWarsmithsMold
             // 
-            this.TBWarsmithsMold.Location = new System.Drawing.Point(172, 1080);
+            this.TBWarsmithsMold.Location = new System.Drawing.Point(172, 1467);
             this.TBWarsmithsMold.MaxLength = 9;
             this.TBWarsmithsMold.Name = "TBWarsmithsMold";
             this.TBWarsmithsMold.Size = new System.Drawing.Size(60, 20);
@@ -2282,7 +2307,7 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(42, 1087);
+            this.label63.Location = new System.Drawing.Point(42, 1474);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(84, 13);
             this.label63.TabIndex = 85;
@@ -2291,7 +2316,7 @@
             // pictureBox59
             // 
             this.pictureBox59.Image = global::CraftCostCalc.Properties.Resources.Warsmiths_Mold;
-            this.pictureBox59.Location = new System.Drawing.Point(4, 1069);
+            this.pictureBox59.Location = new System.Drawing.Point(4, 1456);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(32, 32);
             this.pictureBox59.TabIndex = 84;
@@ -2299,7 +2324,7 @@
             // 
             // TBWarsmithsHolder
             // 
-            this.TBWarsmithsHolder.Location = new System.Drawing.Point(172, 1042);
+            this.TBWarsmithsHolder.Location = new System.Drawing.Point(172, 1429);
             this.TBWarsmithsHolder.MaxLength = 9;
             this.TBWarsmithsHolder.Name = "TBWarsmithsHolder";
             this.TBWarsmithsHolder.Size = new System.Drawing.Size(60, 20);
@@ -2310,7 +2335,7 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(42, 1049);
+            this.label62.Location = new System.Drawing.Point(42, 1436);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(92, 13);
             this.label62.TabIndex = 82;
@@ -2319,7 +2344,7 @@
             // pictureBox58
             // 
             this.pictureBox58.Image = global::CraftCostCalc.Properties.Resources.Warsmiths_Holder;
-            this.pictureBox58.Location = new System.Drawing.Point(4, 1031);
+            this.pictureBox58.Location = new System.Drawing.Point(4, 1418);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(32, 32);
             this.pictureBox58.TabIndex = 81;
@@ -2327,7 +2352,7 @@
             // 
             // TBVarnishOfPurity
             // 
-            this.TBVarnishOfPurity.Location = new System.Drawing.Point(172, 1004);
+            this.TBVarnishOfPurity.Location = new System.Drawing.Point(172, 1391);
             this.TBVarnishOfPurity.MaxLength = 9;
             this.TBVarnishOfPurity.Name = "TBVarnishOfPurity";
             this.TBVarnishOfPurity.Size = new System.Drawing.Size(60, 20);
@@ -2338,7 +2363,7 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(42, 1011);
+            this.label61.Location = new System.Drawing.Point(42, 1398);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(85, 13);
             this.label61.TabIndex = 79;
@@ -2347,7 +2372,7 @@
             // pictureBox57
             // 
             this.pictureBox57.Image = global::CraftCostCalc.Properties.Resources.Varnish_of_Purity;
-            this.pictureBox57.Location = new System.Drawing.Point(4, 993);
+            this.pictureBox57.Location = new System.Drawing.Point(4, 1380);
             this.pictureBox57.Name = "pictureBox57";
             this.pictureBox57.Size = new System.Drawing.Size(32, 32);
             this.pictureBox57.TabIndex = 78;
@@ -2355,7 +2380,7 @@
             // 
             // TBSyntheticCokes
             // 
-            this.TBSyntheticCokes.Location = new System.Drawing.Point(172, 966);
+            this.TBSyntheticCokes.Location = new System.Drawing.Point(172, 1353);
             this.TBSyntheticCokes.MaxLength = 9;
             this.TBSyntheticCokes.Name = "TBSyntheticCokes";
             this.TBSyntheticCokes.Size = new System.Drawing.Size(60, 20);
@@ -2366,7 +2391,7 @@
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(42, 973);
+            this.label60.Location = new System.Drawing.Point(42, 1360);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(78, 13);
             this.label60.TabIndex = 76;
@@ -2375,7 +2400,7 @@
             // pictureBox56
             // 
             this.pictureBox56.Image = global::CraftCostCalc.Properties.Resources.Synthetic_Cokes;
-            this.pictureBox56.Location = new System.Drawing.Point(4, 955);
+            this.pictureBox56.Location = new System.Drawing.Point(4, 1342);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(32, 32);
             this.pictureBox56.TabIndex = 75;
@@ -2383,7 +2408,7 @@
             // 
             // TBSteelMold
             // 
-            this.TBSteelMold.Location = new System.Drawing.Point(172, 928);
+            this.TBSteelMold.Location = new System.Drawing.Point(172, 1315);
             this.TBSteelMold.MaxLength = 9;
             this.TBSteelMold.Name = "TBSteelMold";
             this.TBSteelMold.Size = new System.Drawing.Size(60, 20);
@@ -2394,7 +2419,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(42, 935);
+            this.label59.Location = new System.Drawing.Point(42, 1322);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(57, 13);
             this.label59.TabIndex = 73;
@@ -2403,7 +2428,7 @@
             // pictureBox55
             // 
             this.pictureBox55.Image = global::CraftCostCalc.Properties.Resources.Steel_Mold;
-            this.pictureBox55.Location = new System.Drawing.Point(4, 917);
+            this.pictureBox55.Location = new System.Drawing.Point(4, 1304);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(32, 32);
             this.pictureBox55.TabIndex = 72;
@@ -2411,7 +2436,7 @@
             // 
             // TBSteel
             // 
-            this.TBSteel.Location = new System.Drawing.Point(172, 890);
+            this.TBSteel.Location = new System.Drawing.Point(172, 1277);
             this.TBSteel.MaxLength = 9;
             this.TBSteel.Name = "TBSteel";
             this.TBSteel.Size = new System.Drawing.Size(60, 20);
@@ -2422,7 +2447,7 @@
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(42, 897);
+            this.label58.Location = new System.Drawing.Point(42, 1284);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(31, 13);
             this.label58.TabIndex = 70;
@@ -2431,7 +2456,7 @@
             // pictureBox54
             // 
             this.pictureBox54.Image = global::CraftCostCalc.Properties.Resources.Steel;
-            this.pictureBox54.Location = new System.Drawing.Point(4, 879);
+            this.pictureBox54.Location = new System.Drawing.Point(4, 1266);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(32, 32);
             this.pictureBox54.TabIndex = 69;
@@ -2439,7 +2464,7 @@
             // 
             // TBSilverMold
             // 
-            this.TBSilverMold.Location = new System.Drawing.Point(172, 852);
+            this.TBSilverMold.Location = new System.Drawing.Point(172, 1239);
             this.TBSilverMold.MaxLength = 9;
             this.TBSilverMold.Name = "TBSilverMold";
             this.TBSilverMold.Size = new System.Drawing.Size(60, 20);
@@ -2450,7 +2475,7 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(42, 859);
+            this.label57.Location = new System.Drawing.Point(42, 1246);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(59, 13);
             this.label57.TabIndex = 67;
@@ -2459,7 +2484,7 @@
             // pictureBox53
             // 
             this.pictureBox53.Image = global::CraftCostCalc.Properties.Resources.Silver_Mold;
-            this.pictureBox53.Location = new System.Drawing.Point(4, 841);
+            this.pictureBox53.Location = new System.Drawing.Point(4, 1228);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(32, 32);
             this.pictureBox53.TabIndex = 66;
@@ -2467,7 +2492,7 @@
             // 
             // TBOriharukon
             // 
-            this.TBOriharukon.Location = new System.Drawing.Point(172, 814);
+            this.TBOriharukon.Location = new System.Drawing.Point(172, 1201);
             this.TBOriharukon.MaxLength = 9;
             this.TBOriharukon.Name = "TBOriharukon";
             this.TBOriharukon.Size = new System.Drawing.Size(60, 20);
@@ -2478,7 +2503,7 @@
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(42, 821);
+            this.label56.Location = new System.Drawing.Point(42, 1208);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(59, 13);
             this.label56.TabIndex = 64;
@@ -2487,7 +2512,7 @@
             // pictureBox52
             // 
             this.pictureBox52.Image = global::CraftCostCalc.Properties.Resources.Oriharukon;
-            this.pictureBox52.Location = new System.Drawing.Point(4, 803);
+            this.pictureBox52.Location = new System.Drawing.Point(4, 1190);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(32, 32);
             this.pictureBox52.TabIndex = 63;
@@ -2495,7 +2520,7 @@
             // 
             // TBMithrilAlloy
             // 
-            this.TBMithrilAlloy.Location = new System.Drawing.Point(172, 776);
+            this.TBMithrilAlloy.Location = new System.Drawing.Point(172, 1163);
             this.TBMithrilAlloy.MaxLength = 9;
             this.TBMithrilAlloy.Name = "TBMithrilAlloy";
             this.TBMithrilAlloy.Size = new System.Drawing.Size(60, 20);
@@ -2506,7 +2531,7 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(42, 783);
+            this.label55.Location = new System.Drawing.Point(42, 1170);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(59, 13);
             this.label55.TabIndex = 61;
@@ -2515,7 +2540,7 @@
             // pictureBox51
             // 
             this.pictureBox51.Image = global::CraftCostCalc.Properties.Resources.Mithril_Alloy;
-            this.pictureBox51.Location = new System.Drawing.Point(4, 765);
+            this.pictureBox51.Location = new System.Drawing.Point(4, 1152);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(32, 32);
             this.pictureBox51.TabIndex = 60;
@@ -2523,7 +2548,7 @@
             // 
             // TBMetallicThread
             // 
-            this.TBMetallicThread.Location = new System.Drawing.Point(172, 738);
+            this.TBMetallicThread.Location = new System.Drawing.Point(172, 1125);
             this.TBMetallicThread.MaxLength = 9;
             this.TBMetallicThread.Name = "TBMetallicThread";
             this.TBMetallicThread.Size = new System.Drawing.Size(60, 20);
@@ -2534,7 +2559,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(42, 745);
+            this.label54.Location = new System.Drawing.Point(42, 1132);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(80, 13);
             this.label54.TabIndex = 58;
@@ -2543,7 +2568,7 @@
             // pictureBox50
             // 
             this.pictureBox50.Image = global::CraftCostCalc.Properties.Resources.Metallic_Thread;
-            this.pictureBox50.Location = new System.Drawing.Point(4, 727);
+            this.pictureBox50.Location = new System.Drawing.Point(4, 1114);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(32, 32);
             this.pictureBox50.TabIndex = 57;
@@ -2551,7 +2576,7 @@
             // 
             // TBMetallicFiber
             // 
-            this.TBMetallicFiber.Location = new System.Drawing.Point(172, 700);
+            this.TBMetallicFiber.Location = new System.Drawing.Point(172, 1087);
             this.TBMetallicFiber.MaxLength = 9;
             this.TBMetallicFiber.Name = "TBMetallicFiber";
             this.TBMetallicFiber.Size = new System.Drawing.Size(60, 20);
@@ -2561,7 +2586,7 @@
             // 
             // TBMetalHardener
             // 
-            this.TBMetalHardener.Location = new System.Drawing.Point(172, 662);
+            this.TBMetalHardener.Location = new System.Drawing.Point(172, 1049);
             this.TBMetalHardener.MaxLength = 9;
             this.TBMetalHardener.Name = "TBMetalHardener";
             this.TBMetalHardener.Size = new System.Drawing.Size(60, 20);
@@ -2571,7 +2596,7 @@
             // 
             // TBMaestroMold
             // 
-            this.TBMaestroMold.Location = new System.Drawing.Point(172, 624);
+            this.TBMaestroMold.Location = new System.Drawing.Point(172, 1011);
             this.TBMaestroMold.MaxLength = 9;
             this.TBMaestroMold.Name = "TBMaestroMold";
             this.TBMaestroMold.Size = new System.Drawing.Size(60, 20);
@@ -2582,7 +2607,7 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(42, 707);
+            this.label53.Location = new System.Drawing.Point(42, 1094);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(69, 13);
             this.label53.TabIndex = 55;
@@ -2591,7 +2616,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(42, 631);
+            this.label51.Location = new System.Drawing.Point(42, 1018);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(71, 13);
             this.label51.TabIndex = 49;
@@ -2600,7 +2625,7 @@
             // pictureBox47
             // 
             this.pictureBox47.Image = global::CraftCostCalc.Properties.Resources.Maestro_Mold;
-            this.pictureBox47.Location = new System.Drawing.Point(4, 613);
+            this.pictureBox47.Location = new System.Drawing.Point(4, 1000);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(32, 32);
             this.pictureBox47.TabIndex = 48;
@@ -2609,7 +2634,7 @@
             // pictureBox49
             // 
             this.pictureBox49.Image = global::CraftCostCalc.Properties.Resources.Metallic_Fiber;
-            this.pictureBox49.Location = new System.Drawing.Point(4, 689);
+            this.pictureBox49.Location = new System.Drawing.Point(4, 1076);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(32, 32);
             this.pictureBox49.TabIndex = 54;
@@ -2617,7 +2642,7 @@
             // 
             // TBMaestroHolder
             // 
-            this.TBMaestroHolder.Location = new System.Drawing.Point(172, 586);
+            this.TBMaestroHolder.Location = new System.Drawing.Point(172, 973);
             this.TBMaestroHolder.MaxLength = 9;
             this.TBMaestroHolder.Name = "TBMaestroHolder";
             this.TBMaestroHolder.Size = new System.Drawing.Size(60, 20);
@@ -2628,7 +2653,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(42, 669);
+            this.label52.Location = new System.Drawing.Point(42, 1056);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(80, 13);
             this.label52.TabIndex = 52;
@@ -2637,7 +2662,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(42, 593);
+            this.label50.Location = new System.Drawing.Point(42, 980);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(79, 13);
             this.label50.TabIndex = 46;
@@ -2646,7 +2671,7 @@
             // pictureBox48
             // 
             this.pictureBox48.Image = global::CraftCostCalc.Properties.Resources.Metal_Hardener;
-            this.pictureBox48.Location = new System.Drawing.Point(4, 651);
+            this.pictureBox48.Location = new System.Drawing.Point(4, 1038);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(32, 32);
             this.pictureBox48.TabIndex = 51;
@@ -2655,7 +2680,7 @@
             // pictureBox46
             // 
             this.pictureBox46.Image = global::CraftCostCalc.Properties.Resources.Maestro_Holder;
-            this.pictureBox46.Location = new System.Drawing.Point(4, 575);
+            this.pictureBox46.Location = new System.Drawing.Point(4, 962);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(32, 32);
             this.pictureBox46.TabIndex = 45;
@@ -2663,7 +2688,7 @@
             // 
             // TBMaestroAnvilLock
             // 
-            this.TBMaestroAnvilLock.Location = new System.Drawing.Point(172, 548);
+            this.TBMaestroAnvilLock.Location = new System.Drawing.Point(172, 935);
             this.TBMaestroAnvilLock.MaxLength = 9;
             this.TBMaestroAnvilLock.Name = "TBMaestroAnvilLock";
             this.TBMaestroAnvilLock.Size = new System.Drawing.Size(60, 20);
@@ -2674,7 +2699,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(42, 555);
+            this.label49.Location = new System.Drawing.Point(42, 942);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(98, 13);
             this.label49.TabIndex = 43;
@@ -2683,7 +2708,7 @@
             // pictureBox45
             // 
             this.pictureBox45.Image = global::CraftCostCalc.Properties.Resources.Maestro_Anvil_Lock;
-            this.pictureBox45.Location = new System.Drawing.Point(4, 537);
+            this.pictureBox45.Location = new System.Drawing.Point(4, 924);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(32, 32);
             this.pictureBox45.TabIndex = 42;
@@ -2691,7 +2716,7 @@
             // 
             // TBLeolinsMold
             // 
-            this.TBLeolinsMold.Location = new System.Drawing.Point(172, 510);
+            this.TBLeolinsMold.Location = new System.Drawing.Point(172, 897);
             this.TBLeolinsMold.MaxLength = 9;
             this.TBLeolinsMold.Name = "TBLeolinsMold";
             this.TBLeolinsMold.Size = new System.Drawing.Size(60, 20);
@@ -2702,7 +2727,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(42, 517);
+            this.label48.Location = new System.Drawing.Point(42, 904);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(68, 13);
             this.label48.TabIndex = 40;
@@ -2711,7 +2736,7 @@
             // pictureBox44
             // 
             this.pictureBox44.Image = global::CraftCostCalc.Properties.Resources.Leolins_Mold;
-            this.pictureBox44.Location = new System.Drawing.Point(4, 499);
+            this.pictureBox44.Location = new System.Drawing.Point(4, 886);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(32, 32);
             this.pictureBox44.TabIndex = 39;
@@ -2719,7 +2744,7 @@
             // 
             // TBLeather
             // 
-            this.TBLeather.Location = new System.Drawing.Point(172, 472);
+            this.TBLeather.Location = new System.Drawing.Point(172, 859);
             this.TBLeather.MaxLength = 9;
             this.TBLeather.Name = "TBLeather";
             this.TBLeather.Size = new System.Drawing.Size(60, 20);
@@ -2729,7 +2754,7 @@
             // 
             // TBHighGradeSuede
             // 
-            this.TBHighGradeSuede.Location = new System.Drawing.Point(172, 434);
+            this.TBHighGradeSuede.Location = new System.Drawing.Point(172, 821);
             this.TBHighGradeSuede.MaxLength = 9;
             this.TBHighGradeSuede.Name = "TBHighGradeSuede";
             this.TBHighGradeSuede.Size = new System.Drawing.Size(60, 20);
@@ -2740,7 +2765,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(42, 441);
+            this.label46.Location = new System.Drawing.Point(42, 828);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(95, 13);
             this.label46.TabIndex = 34;
@@ -2749,7 +2774,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(42, 479);
+            this.label47.Location = new System.Drawing.Point(42, 866);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(43, 13);
             this.label47.TabIndex = 37;
@@ -2758,7 +2783,7 @@
             // pictureBox42
             // 
             this.pictureBox42.Image = global::CraftCostCalc.Properties.Resources.High_Grade_Suede;
-            this.pictureBox42.Location = new System.Drawing.Point(4, 423);
+            this.pictureBox42.Location = new System.Drawing.Point(4, 810);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(32, 32);
             this.pictureBox42.TabIndex = 33;
@@ -2766,7 +2791,7 @@
             // 
             // TBDurableMetalPlate
             // 
-            this.TBDurableMetalPlate.Location = new System.Drawing.Point(172, 396);
+            this.TBDurableMetalPlate.Location = new System.Drawing.Point(172, 783);
             this.TBDurableMetalPlate.MaxLength = 9;
             this.TBDurableMetalPlate.Name = "TBDurableMetalPlate";
             this.TBDurableMetalPlate.Size = new System.Drawing.Size(60, 20);
@@ -2777,7 +2802,7 @@
             // pictureBox43
             // 
             this.pictureBox43.Image = global::CraftCostCalc.Properties.Resources.Leather;
-            this.pictureBox43.Location = new System.Drawing.Point(4, 461);
+            this.pictureBox43.Location = new System.Drawing.Point(4, 848);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(32, 32);
             this.pictureBox43.TabIndex = 36;
@@ -2786,7 +2811,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(42, 403);
+            this.label45.Location = new System.Drawing.Point(42, 790);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(100, 13);
             this.label45.TabIndex = 31;
@@ -2795,7 +2820,7 @@
             // pictureBox41
             // 
             this.pictureBox41.Image = global::CraftCostCalc.Properties.Resources.Durable_Metal_Plate;
-            this.pictureBox41.Location = new System.Drawing.Point(4, 385);
+            this.pictureBox41.Location = new System.Drawing.Point(4, 772);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(32, 32);
             this.pictureBox41.TabIndex = 30;
@@ -2803,7 +2828,7 @@
             // 
             // TBCraftsmanMold
             // 
-            this.TBCraftsmanMold.Location = new System.Drawing.Point(172, 358);
+            this.TBCraftsmanMold.Location = new System.Drawing.Point(172, 745);
             this.TBCraftsmanMold.MaxLength = 9;
             this.TBCraftsmanMold.Name = "TBCraftsmanMold";
             this.TBCraftsmanMold.Size = new System.Drawing.Size(60, 20);
@@ -2814,7 +2839,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(42, 365);
+            this.label44.Location = new System.Drawing.Point(42, 752);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(80, 13);
             this.label44.TabIndex = 28;
@@ -2823,7 +2848,7 @@
             // pictureBox40
             // 
             this.pictureBox40.Image = global::CraftCostCalc.Properties.Resources.Craftsman_Mold;
-            this.pictureBox40.Location = new System.Drawing.Point(4, 347);
+            this.pictureBox40.Location = new System.Drawing.Point(4, 734);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(32, 32);
             this.pictureBox40.TabIndex = 27;
@@ -2831,7 +2856,7 @@
             // 
             // TBCraftedLeather
             // 
-            this.TBCraftedLeather.Location = new System.Drawing.Point(172, 320);
+            this.TBCraftedLeather.Location = new System.Drawing.Point(172, 707);
             this.TBCraftedLeather.MaxLength = 9;
             this.TBCraftedLeather.Name = "TBCraftedLeather";
             this.TBCraftedLeather.Size = new System.Drawing.Size(60, 20);
@@ -2842,7 +2867,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(42, 327);
+            this.label43.Location = new System.Drawing.Point(42, 714);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(80, 13);
             this.label43.TabIndex = 25;
@@ -2851,7 +2876,7 @@
             // pictureBox39
             // 
             this.pictureBox39.Image = global::CraftCostCalc.Properties.Resources.Crafted_Leather;
-            this.pictureBox39.Location = new System.Drawing.Point(4, 309);
+            this.pictureBox39.Location = new System.Drawing.Point(4, 696);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(32, 32);
             this.pictureBox39.TabIndex = 24;
@@ -2859,7 +2884,7 @@
             // 
             // TBCord
             // 
-            this.TBCord.Location = new System.Drawing.Point(172, 282);
+            this.TBCord.Location = new System.Drawing.Point(172, 669);
             this.TBCord.MaxLength = 9;
             this.TBCord.Name = "TBCord";
             this.TBCord.Size = new System.Drawing.Size(60, 20);
@@ -2870,7 +2895,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(42, 289);
+            this.label42.Location = new System.Drawing.Point(42, 676);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(29, 13);
             this.label42.TabIndex = 22;
@@ -2879,7 +2904,7 @@
             // pictureBox38
             // 
             this.pictureBox38.Image = global::CraftCostCalc.Properties.Resources.Cord;
-            this.pictureBox38.Location = new System.Drawing.Point(4, 271);
+            this.pictureBox38.Location = new System.Drawing.Point(4, 658);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(32, 32);
             this.pictureBox38.TabIndex = 21;
@@ -2887,7 +2912,7 @@
             // 
             // TBCompoundBraid
             // 
-            this.TBCompoundBraid.Location = new System.Drawing.Point(172, 244);
+            this.TBCompoundBraid.Location = new System.Drawing.Point(172, 631);
             this.TBCompoundBraid.MaxLength = 9;
             this.TBCompoundBraid.Name = "TBCompoundBraid";
             this.TBCompoundBraid.Size = new System.Drawing.Size(60, 20);
@@ -2898,7 +2923,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(42, 251);
+            this.label41.Location = new System.Drawing.Point(42, 638);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(85, 13);
             this.label41.TabIndex = 19;
@@ -2907,7 +2932,7 @@
             // pictureBox37
             // 
             this.pictureBox37.Image = global::CraftCostCalc.Properties.Resources.Compound_Braid;
-            this.pictureBox37.Location = new System.Drawing.Point(4, 233);
+            this.pictureBox37.Location = new System.Drawing.Point(4, 620);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(32, 32);
             this.pictureBox37.TabIndex = 18;
@@ -2915,18 +2940,19 @@
             // 
             // TBCokes
             // 
-            this.TBCokes.Location = new System.Drawing.Point(172, 206);
+            this.TBCokes.Location = new System.Drawing.Point(129, 322);
             this.TBCokes.MaxLength = 9;
             this.TBCokes.Name = "TBCokes";
-            this.TBCokes.Size = new System.Drawing.Size(60, 20);
+            this.TBCokes.Size = new System.Drawing.Size(102, 20);
             this.TBCokes.TabIndex = 17;
-            this.TBCokes.Text = "2600";
+            this.TBCokes.Text = "0";
             this.TBCokes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(42, 213);
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label40.Location = new System.Drawing.Point(1, 329);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(37, 13);
             this.label40.TabIndex = 16;
@@ -2935,7 +2961,7 @@
             // pictureBox36
             // 
             this.pictureBox36.Image = global::CraftCostCalc.Properties.Resources.Cokes;
-            this.pictureBox36.Location = new System.Drawing.Point(4, 195);
+            this.pictureBox36.Location = new System.Drawing.Point(4, 294);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(32, 32);
             this.pictureBox36.TabIndex = 15;
@@ -2943,18 +2969,19 @@
             // 
             // TBBraidedHemp
             // 
-            this.TBBraidedHemp.Location = new System.Drawing.Point(172, 129);
+            this.TBBraidedHemp.Location = new System.Drawing.Point(129, 206);
             this.TBBraidedHemp.MaxLength = 9;
             this.TBBraidedHemp.Name = "TBBraidedHemp";
-            this.TBBraidedHemp.Size = new System.Drawing.Size(60, 20);
+            this.TBBraidedHemp.Size = new System.Drawing.Size(102, 20);
             this.TBBraidedHemp.TabIndex = 14;
-            this.TBBraidedHemp.Text = "500";
+            this.TBBraidedHemp.Text = "0";
             this.TBBraidedHemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(42, 136);
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label39.Location = new System.Drawing.Point(1, 213);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(74, 13);
             this.label39.TabIndex = 13;
@@ -2963,7 +2990,7 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::CraftCostCalc.Properties.Resources.Braided_Hemp;
-            this.pictureBox35.Location = new System.Drawing.Point(4, 118);
+            this.pictureBox35.Location = new System.Drawing.Point(4, 178);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(32, 32);
             this.pictureBox35.TabIndex = 12;
@@ -2971,18 +2998,19 @@
             // 
             // TBBlacksmithsFrame
             // 
-            this.TBBlacksmithsFrame.Location = new System.Drawing.Point(171, 91);
+            this.TBBlacksmithsFrame.Location = new System.Drawing.Point(129, 148);
             this.TBBlacksmithsFrame.MaxLength = 9;
             this.TBBlacksmithsFrame.Name = "TBBlacksmithsFrame";
-            this.TBBlacksmithsFrame.Size = new System.Drawing.Size(60, 20);
+            this.TBBlacksmithsFrame.Size = new System.Drawing.Size(102, 20);
             this.TBBlacksmithsFrame.TabIndex = 11;
-            this.TBBlacksmithsFrame.Text = "71000";
+            this.TBBlacksmithsFrame.Text = "0";
             this.TBBlacksmithsFrame.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(41, 98);
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label38.Location = new System.Drawing.Point(1, 155);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(97, 13);
             this.label38.TabIndex = 10;
@@ -2991,7 +3019,7 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::CraftCostCalc.Properties.Resources.Blacksmiths_Frame;
-            this.pictureBox34.Location = new System.Drawing.Point(3, 80);
+            this.pictureBox34.Location = new System.Drawing.Point(4, 120);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(32, 32);
             this.pictureBox34.TabIndex = 9;
@@ -2999,18 +3027,19 @@
             // 
             // TBArtisansFrame
             // 
-            this.TBArtisansFrame.Location = new System.Drawing.Point(172, 53);
+            this.TBArtisansFrame.Location = new System.Drawing.Point(129, 90);
             this.TBArtisansFrame.MaxLength = 9;
             this.TBArtisansFrame.Name = "TBArtisansFrame";
-            this.TBArtisansFrame.Size = new System.Drawing.Size(60, 20);
+            this.TBArtisansFrame.Size = new System.Drawing.Size(102, 20);
             this.TBArtisansFrame.TabIndex = 8;
-            this.TBArtisansFrame.Text = "95000";
+            this.TBArtisansFrame.Text = "0";
             this.TBArtisansFrame.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(42, 60);
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label37.Location = new System.Drawing.Point(1, 97);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(78, 13);
             this.label37.TabIndex = 7;
@@ -3019,7 +3048,7 @@
             // pictureBox33
             // 
             this.pictureBox33.Image = global::CraftCostCalc.Properties.Resources.Artisans_Frame;
-            this.pictureBox33.Location = new System.Drawing.Point(4, 42);
+            this.pictureBox33.Location = new System.Drawing.Point(4, 62);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(32, 32);
             this.pictureBox33.TabIndex = 6;
@@ -3027,18 +3056,19 @@
             // 
             // TBArcsmithsAnvil
             // 
-            this.TBArcsmithsAnvil.Location = new System.Drawing.Point(171, 15);
+            this.TBArcsmithsAnvil.Location = new System.Drawing.Point(129, 32);
             this.TBArcsmithsAnvil.MaxLength = 9;
             this.TBArcsmithsAnvil.Name = "TBArcsmithsAnvil";
-            this.TBArcsmithsAnvil.Size = new System.Drawing.Size(60, 20);
+            this.TBArcsmithsAnvil.Size = new System.Drawing.Size(102, 20);
             this.TBArcsmithsAnvil.TabIndex = 5;
-            this.TBArcsmithsAnvil.Text = "581600";
+            this.TBArcsmithsAnvil.Text = "0";
             this.TBArcsmithsAnvil.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 22);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(1, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 13);
             this.label3.TabIndex = 4;
@@ -3055,19 +3085,20 @@
             // 
             // TBCoarsedBonePowder
             // 
-            this.TBCoarsedBonePowder.Location = new System.Drawing.Point(172, 168);
+            this.TBCoarsedBonePowder.Location = new System.Drawing.Point(129, 264);
             this.TBCoarsedBonePowder.MaxLength = 9;
             this.TBCoarsedBonePowder.Name = "TBCoarsedBonePowder";
-            this.TBCoarsedBonePowder.Size = new System.Drawing.Size(60, 20);
+            this.TBCoarsedBonePowder.Size = new System.Drawing.Size(102, 20);
             this.TBCoarsedBonePowder.TabIndex = 2;
-            this.TBCoarsedBonePowder.Text = "1500";
+            this.TBCoarsedBonePowder.Text = "0";
             this.TBCoarsedBonePowder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TBCoarsedBonePowder.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 175);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(1, 271);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 13);
             this.label4.TabIndex = 1;
@@ -3077,7 +3108,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CraftCostCalc.Properties.Resources.Coarse_Bone_Powder;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 156);
+            this.pictureBox4.Location = new System.Drawing.Point(4, 236);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.TabIndex = 0;
@@ -3752,6 +3783,149 @@
             this.pictureBox79.TabIndex = 11;
             this.pictureBox79.TabStop = false;
             // 
+            // pictureBox86
+            // 
+            this.pictureBox86.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox86.Location = new System.Drawing.Point(4, 55);
+            this.pictureBox86.Name = "pictureBox86";
+            this.pictureBox86.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox86.TabIndex = 87;
+            this.pictureBox86.TabStop = false;
+            // 
+            // pictureBox87
+            // 
+            this.pictureBox87.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox87.Location = new System.Drawing.Point(6, 33);
+            this.pictureBox87.Name = "pictureBox87";
+            this.pictureBox87.Size = new System.Drawing.Size(233, 1);
+            this.pictureBox87.TabIndex = 88;
+            this.pictureBox87.TabStop = false;
+            // 
+            // LabArcsmithsAnvil
+            // 
+            this.LabArcsmithsAnvil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabArcsmithsAnvil.Location = new System.Drawing.Point(129, 9);
+            this.LabArcsmithsAnvil.Name = "LabArcsmithsAnvil";
+            this.LabArcsmithsAnvil.Size = new System.Drawing.Size(102, 20);
+            this.LabArcsmithsAnvil.TabIndex = 88;
+            this.LabArcsmithsAnvil.Text = "581600";
+            this.LabArcsmithsAnvil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(128, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 13);
+            this.label7.TabIndex = 89;
+            this.label7.Text = "Рыночная цена";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label90.Location = new System.Drawing.Point(128, 7);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(82, 13);
+            this.label90.TabIndex = 90;
+            this.label90.Text = "Себестоимость";
+            // 
+            // LabArtisansFrame
+            // 
+            this.LabArtisansFrame.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabArtisansFrame.Location = new System.Drawing.Point(129, 67);
+            this.LabArtisansFrame.Name = "LabArtisansFrame";
+            this.LabArtisansFrame.Size = new System.Drawing.Size(102, 20);
+            this.LabArtisansFrame.TabIndex = 93;
+            this.LabArtisansFrame.Text = "95000";
+            this.LabArtisansFrame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox88
+            // 
+            this.pictureBox88.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox88.Location = new System.Drawing.Point(4, 113);
+            this.pictureBox88.Name = "pictureBox88";
+            this.pictureBox88.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox88.TabIndex = 92;
+            this.pictureBox88.TabStop = false;
+            // 
+            // LabBlacksmithsFrame
+            // 
+            this.LabBlacksmithsFrame.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabBlacksmithsFrame.Location = new System.Drawing.Point(129, 125);
+            this.LabBlacksmithsFrame.Name = "LabBlacksmithsFrame";
+            this.LabBlacksmithsFrame.Size = new System.Drawing.Size(102, 20);
+            this.LabBlacksmithsFrame.TabIndex = 98;
+            this.LabBlacksmithsFrame.Text = "71000";
+            this.LabBlacksmithsFrame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox90
+            // 
+            this.pictureBox90.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox90.Location = new System.Drawing.Point(4, 171);
+            this.pictureBox90.Name = "pictureBox90";
+            this.pictureBox90.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox90.TabIndex = 97;
+            this.pictureBox90.TabStop = false;
+            // 
+            // LabBraidedHemp
+            // 
+            this.LabBraidedHemp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabBraidedHemp.Location = new System.Drawing.Point(129, 183);
+            this.LabBraidedHemp.Name = "LabBraidedHemp";
+            this.LabBraidedHemp.Size = new System.Drawing.Size(102, 20);
+            this.LabBraidedHemp.TabIndex = 103;
+            this.LabBraidedHemp.Text = "500";
+            this.LabBraidedHemp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox92
+            // 
+            this.pictureBox92.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox92.Location = new System.Drawing.Point(4, 229);
+            this.pictureBox92.Name = "pictureBox92";
+            this.pictureBox92.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox92.TabIndex = 102;
+            this.pictureBox92.TabStop = false;
+            // 
+            // LabCoarsedBonePowder
+            // 
+            this.LabCoarsedBonePowder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCoarsedBonePowder.Location = new System.Drawing.Point(129, 241);
+            this.LabCoarsedBonePowder.Name = "LabCoarsedBonePowder";
+            this.LabCoarsedBonePowder.Size = new System.Drawing.Size(102, 20);
+            this.LabCoarsedBonePowder.TabIndex = 108;
+            this.LabCoarsedBonePowder.Text = "1500";
+            this.LabCoarsedBonePowder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox94
+            // 
+            this.pictureBox94.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox94.Location = new System.Drawing.Point(4, 287);
+            this.pictureBox94.Name = "pictureBox94";
+            this.pictureBox94.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox94.TabIndex = 107;
+            this.pictureBox94.TabStop = false;
+            // 
+            // LabCokes
+            // 
+            this.LabCokes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCokes.Location = new System.Drawing.Point(129, 299);
+            this.LabCokes.Name = "LabCokes";
+            this.LabCokes.Size = new System.Drawing.Size(102, 20);
+            this.LabCokes.TabIndex = 113;
+            this.LabCokes.Text = "2600";
+            this.LabCokes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox96
+            // 
+            this.pictureBox96.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox96.Location = new System.Drawing.Point(4, 345);
+            this.pictureBox96.Name = "pictureBox96";
+            this.pictureBox96.Size = new System.Drawing.Size(225, 1);
+            this.pictureBox96.TabIndex = 112;
+            this.pictureBox96.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3893,6 +4067,13 @@
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3937,7 +4118,6 @@
         public System.Windows.Forms.TextBox TBCoarsedBonePowder;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox TBMithrilOre;
         private System.Windows.Forms.Label label15;
@@ -4213,6 +4393,21 @@
         private System.Windows.Forms.PictureBox pictureBox83;
         private System.Windows.Forms.PictureBox pictureBox85;
         private System.Windows.Forms.PictureBox pictureBox84;
+        private System.Windows.Forms.PictureBox pictureBox86;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox87;
+        private System.Windows.Forms.Label LabArcsmithsAnvil;
+        private System.Windows.Forms.Label LabCokes;
+        private System.Windows.Forms.PictureBox pictureBox96;
+        private System.Windows.Forms.Label LabCoarsedBonePowder;
+        private System.Windows.Forms.PictureBox pictureBox94;
+        private System.Windows.Forms.Label LabBraidedHemp;
+        private System.Windows.Forms.PictureBox pictureBox92;
+        private System.Windows.Forms.Label LabBlacksmithsFrame;
+        private System.Windows.Forms.PictureBox pictureBox90;
+        private System.Windows.Forms.Label LabArtisansFrame;
+        private System.Windows.Forms.PictureBox pictureBox88;
     }
 }
 
