@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0CDB16B-47E2-432D-B85E-C300DC9E4D72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CraftCostCalc</RootNamespace>
+    <AssemblyName>CraftCostCalc</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.1.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>calculator %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_4145_oboi_lepestki_sveta_1280x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adamantite_Nugget.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animal_Bone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animal_Skin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asofe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charcoal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iron_Ore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mithril_Ore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mold_Glue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mold_Hardener.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mold_Lubricant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oriharukon_Ore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silver_Nugget.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stone_of_Purity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suede.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Varnish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arcsmith%27s_Anvil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artisan%27s_Frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blacksmith%27s_Frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Braided_Hemp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coarse_Bone_Powder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cokes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compound_Braid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cord.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crafted_Leather.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Craftsman_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Durable_Metal_Plate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\High_Grade_Suede.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leather.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leolin%27s_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestro_Anvil_Lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestro_Holder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestro_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metal_Hardener.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metallic_Fiber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metallic_Thread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mithril_Alloy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oriharukon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silver_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steel_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Synthetic_Cokes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Varnish_of_Purity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warsmith%27s_Holder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warsmith%27s_Mold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adamantite_Nugget1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adamantite_Nugget2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adamantite_Nugget3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem_a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem_c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem_d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem_s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weapon_sword_of_revolution_i00_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Etc_ancient_adena_i00_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Etc_crystal_white_i00_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Etc_stone_gray_i00_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_blue_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_blue_i01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_gold_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_gold_i01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_green_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_green_i01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_red_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_red_i01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_silver_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spell_shot_silver_i01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spirit_bullet_blue_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spirit_bullet_gold_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spirit_bullet_green_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spirit_bullet_red_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etc_spirit_bullet_silver_i00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btgr2Q_AFI4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calculator %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
