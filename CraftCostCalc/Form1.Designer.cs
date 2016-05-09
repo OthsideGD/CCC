@@ -509,9 +509,9 @@
             this.label77.AutoSize = true;
             this.label77.Location = new System.Drawing.Point(3, 7);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(239, 26);
+            this.label77.Size = new System.Drawing.Size(239, 52);
             this.label77.TabIndex = 0;
-            this.label77.Text = "Скоро тут все будет :)\r\nНа данный момент доступна вкладка \"Шоты\"";
+            this.label77.Text = "Скоро тут все будет :)\r\nНа данный момент доступна вкладка \"Шоты\"\r\n\r\nТеста ради:)";
             // 
             // TabWeaponBluntD
             // 
