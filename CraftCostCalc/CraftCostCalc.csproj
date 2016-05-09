@@ -355,6 +355,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\WeaponSpliter.png" />
+    <None Include="Resources\Weapon_forgotten_blade_i00_0.jpg" />
+    <None Include="Resources\weapon_heavens_divider_i00_0.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
