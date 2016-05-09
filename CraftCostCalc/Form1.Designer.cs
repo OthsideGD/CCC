@@ -603,7 +603,7 @@
             this.TabSword.Location = new System.Drawing.Point(4, 22);
             this.TabSword.Name = "TabSword";
             this.TabSword.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSword.Size = new System.Drawing.Size(357, 477);
+            this.TabSword.Size = new System.Drawing.Size(353, 477);
             this.TabSword.TabIndex = 1;
             this.TabSword.Text = "Мечи";
             this.TabSword.UseVisualStyleBackColor = true;
