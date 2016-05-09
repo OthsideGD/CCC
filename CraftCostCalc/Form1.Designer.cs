@@ -325,12 +325,14 @@
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.label75 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
             this.TabMain.SuspendLayout();
             this.TabWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
             this.TabBlunt.SuspendLayout();
             this.TabWeaponGrade.SuspendLayout();
             this.TabWeaponBluntNG.SuspendLayout();
+            this.TabWeaponBluntD.SuspendLayout();
             this.TabSword.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.TabShots.SuspendLayout();
@@ -515,6 +517,7 @@
             // 
             // TabWeaponBluntD
             // 
+            this.TabWeaponBluntD.Controls.Add(this.label78);
             this.TabWeaponBluntD.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntD.Name = "TabWeaponBluntD";
             this.TabWeaponBluntD.Padding = new System.Windows.Forms.Padding(3);
@@ -3533,6 +3536,15 @@
             this.label75.TabIndex = 19;
             this.label75.Text = "Здесь будут отображаться полезные подсказки по работе программы.";
             // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(59, 40);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(52, 13);
+            this.label78.TabIndex = 0;
+            this.label78.Text = "Тста для";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3560,6 +3572,8 @@
             this.TabWeaponGrade.ResumeLayout(false);
             this.TabWeaponBluntNG.ResumeLayout(false);
             this.TabWeaponBluntNG.PerformLayout();
+            this.TabWeaponBluntD.ResumeLayout(false);
+            this.TabWeaponBluntD.PerformLayout();
             this.TabSword.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.TabShots.ResumeLayout(false);
@@ -3963,6 +3977,7 @@
         private System.Windows.Forms.Button ButPrint;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label78;
     }
 }
 
