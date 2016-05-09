@@ -23,13 +23,13 @@
   <SaveCry_d>605</SaveCry_d>
   <SaveCry_c>2777</SaveCry_c>
   <SaveCry_b>10899</SaveCry_b>
-  <SaveCry_a>75000</SaveCry_a>
-  <SaveCry_s>125000</SaveCry_s>
+  <SaveCry_a>15000</SaveCry_a>
+  <SaveCry_s>25000</SaveCry_s>
   <SaveGem_d>1100</SaveGem_d>
   <SaveGem_c>3300</SaveGem_c>
   <SaveGem_b>11000</SaveGem_b>
-  <SaveGem_a>150000</SaveGem_a>
-  <SaveGem_s>500000</SaveGem_s>
+  <SaveGem_a>30000</SaveGem_a>
+  <SaveGem_s>100000</SaveGem_s>
   <SaveBraidedHemp>500</SaveBraidedHemp>
   <SaveCoarsedBonePowder>1500</SaveCoarsedBonePowder>
   <SaveCokes>2600</SaveCokes>
@@ -60,7 +60,7 @@
   <SaveWarsmithsHolder>385000</SaveWarsmithsHolder>
   <SaveWarsmithsMold>884000</SaveWarsmithsMold>
   <SaveSwordOfRevolution>1540000</SaveSwordOfRevolution>
-  <SaveAncientAdena>5</SaveAncientAdena>
+  <SaveAncientAdena>1</SaveAncientAdena>
   <SaveSoulOre>275</SaveSoulOre>
   <SaveSpiritOre>440</SaveSpiritOre>
 </SaveSettings>
