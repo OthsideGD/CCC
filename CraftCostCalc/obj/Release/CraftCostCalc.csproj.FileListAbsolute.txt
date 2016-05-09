@@ -1,0 +1,9 @@
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Release\CraftCostCalc.exe.config
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Release\CraftCostCalc.exe
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Release\CraftCostCalc.pdb
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.MainForm.resources
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.Properties.Resources.resources
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.csproj.GenerateResource.Cache
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.exe
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.pdb
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Release\CraftCostCalc.csprojResolveAssemblyReference.cache

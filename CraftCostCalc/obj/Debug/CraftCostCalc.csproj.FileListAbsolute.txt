@@ -1,0 +1,21 @@
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Debug\CraftCostCalc.exe.config
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Debug\CraftCostCalc.exe
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\bin\Debug\CraftCostCalc.pdb
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.MainForm.resources
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.Properties.Resources.resources
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.csproj.GenerateResource.Cache
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.exe
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.pdb
+F:\Workspace\Visual Studio\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.csprojResolveAssemblyReference.cache
+F:\Workspace\Git\CraftCostCalc\CraftCostCalc\bin\Debug\CraftCostCalc.exe.config
+F:\Workspace\Git\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.exe
+F:\Workspace\Git\CraftCostCalc\CraftCostCalc\obj\Debug\CraftCostCalc.pdb
+F:\Workspace\Git\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.exe.config
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.exe
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.pdb
+F:\Workspace\Git\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.exe
+F:\Workspace\Git\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.pdb
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.csprojResolveAssemblyReference.cache
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.MainForm.resources
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.Properties.Resources.resources
+F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.csproj.GenerateResource.Cache
