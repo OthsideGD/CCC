@@ -282,7 +282,7 @@ namespace CraftCostCalc
             OriharukonOre, SilverNugget, Stem, StoneOfPurity, Suede, Thons, Thread,
             Varnish, Cry_d, Cry_c, Cry_b, Cry_a, Cry_s, SoulOre, SpiritOre, Gem_d, Gem_c, Gem_b, Gem_a, Gem_s;
             double SSD, SpSD, BSpSD, SSC, SpSC, BSpSC, SSB, SpSB, BSpSB, SSA, SpSA, BSpSA, SSS, SpSS, BSpSS;
-            double WeaponHeavensDivider, WeaponForgottenBlade;
+            double WeaponHeavensDivider, WeaponForgottenBlade, WeaponBasaltBattlehammer, WeaponDragonHunterAxe, WeaponArcanaMace, WeaponImperialStaff;
 
             //Парсим крисы и руду
             double.TryParse(TBCry_d.Text, out Cry_d);
@@ -409,6 +409,18 @@ namespace CraftCostCalc
 
             WeaponForgottenBlade = (Cry_s * 211) + (SyntheticCokes * 264) + (MithrilAlloy * 264) + (Gem_s * 43) + (Enria * 132) + (DurableMetalPlate * 132) + (WarsmithsHolder * 4);
             LabCostForgottenBlade.Text = WeaponForgottenBlade.ToString("F0");
+
+            WeaponBasaltBattlehammer = (Cry_s * 211) + (SyntheticCokes * 154) + (MithrilAlloy * 154) + (Gem_s * 43) + (Enria * 77) + (DurableMetalPlate * 308) + (WarsmithsHolder * 4);
+            LabCostBasaltBattlehammer.Text = WeaponBasaltBattlehammer.ToString("F0");
+
+            WeaponDragonHunterAxe = (Cry_s * 214) + (SyntheticCokes * 124) + (MithrilAlloy * 248) + (Gem_s * 43) + (Enria * 62) + (DurableMetalPlate * 248) + (WarsmithsHolder * 4);
+            LabCostDragonHunterAxe.Text = WeaponDragonHunterAxe.ToString("F0");
+
+            WeaponArcanaMace = (Cry_s * 211) + (SyntheticCokes * 154) + (MithrilAlloy * 154) + (Gem_s * 43) + (Enria * 77) + (DurableMetalPlate * 308) + (WarsmithsHolder * 4);
+            LabCostArcanaMace.Text = WeaponArcanaMace.ToString("F0");
+
+            WeaponImperialStaff = (Cry_s * 210) + (CoarsedBonePowder * 242) + (CompoundBraid * 121) + (Oriharukon * 121) + (Gem_s * 43) + (Enria * 121) + (DurableMetalPlate * 242) + (WarsmithsHolder * 4);
+            LabCostImperialStaff.Text = WeaponImperialStaff.ToString("F0");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -623,6 +635,26 @@ namespace CraftCostCalc
         private void ButPrint_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Функция не реализована. Пока что.", "Что-то пошло не так", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void groupBox7_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label84_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label83_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBCraftCostBasaltBattlehamer_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
