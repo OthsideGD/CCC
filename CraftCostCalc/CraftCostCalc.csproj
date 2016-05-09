@@ -356,6 +356,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\weapon_arcana_mace_i00_0.png" />
+    <None Include="Resources\weapon_dragon_hunter_axe_i00_0.png" />
+    <None Include="Resources\weapon_imperial_staff_i00_0.png" />
+    <None Include="Resources\weapon_basalt_battlehammer_i00_0.png" />
     <None Include="Resources\WeaponSpliter.png" />
     <None Include="Resources\Weapon_forgotten_blade_i00_0.jpg" />
     <None Include="Resources\weapon_heavens_divider_i00_0.png" />

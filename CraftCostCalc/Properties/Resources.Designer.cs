@@ -853,6 +853,36 @@ namespace CraftCostCalc.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap weapon_arcana_mace_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("weapon_arcana_mace_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weapon_basalt_battlehammer_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("weapon_basalt_battlehammer_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weapon_dragon_hunter_axe_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("weapon_dragon_hunter_axe_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Weapon_forgotten_blade_i00_0 {
             get {
                 object obj = ResourceManager.GetObject("Weapon_forgotten_blade_i00_0", resourceCulture);
@@ -866,6 +896,16 @@ namespace CraftCostCalc.Properties {
         internal static System.Drawing.Bitmap weapon_heavens_divider_i00_0 {
             get {
                 object obj = ResourceManager.GetObject("weapon_heavens_divider_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weapon_imperial_staff_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("weapon_imperial_staff_i00_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
