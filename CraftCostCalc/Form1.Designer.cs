@@ -50,6 +50,22 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox85 = new System.Windows.Forms.PictureBox();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
+            this.pictureBox83 = new System.Windows.Forms.PictureBox();
+            this.TBCraftCostForgottenBlade = new System.Windows.Forms.TextBox();
+            this.LabCostForgottenBlade = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.pictureBox82 = new System.Windows.Forms.PictureBox();
+            this.pictureBox81 = new System.Windows.Forms.PictureBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.TBCraftCostHeavensDivider = new System.Windows.Forms.TextBox();
+            this.LabCostHeavensDivider = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
             this.TabBow = new System.Windows.Forms.TabPage();
             this.TabDagger = new System.Windows.Forms.TabPage();
             this.TabFist = new System.Windows.Forms.TabPage();
@@ -60,7 +76,6 @@
             this.TabShots = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label72 = new System.Windows.Forms.Label();
-            this.ButShotsCost = new System.Windows.Forms.Button();
             this.label71 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.LabBSpSS = new System.Windows.Forms.Label();
@@ -108,6 +123,8 @@
             this.pictureBox65 = new System.Windows.Forms.PictureBox();
             this.pictureBox64 = new System.Windows.Forms.PictureBox();
             this.label70 = new System.Windows.Forms.Label();
+            this.TabOther = new System.Windows.Forms.TabPage();
+            this.ButItemsCost = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TBVarnish = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -188,7 +205,7 @@
             this.TBVarnishOfPurity = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
-            this.TBSynteticCokes = new System.Windows.Forms.TextBox();
+            this.TBSyntheticCokes = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.TBSteelMold = new System.Windows.Forms.TextBox();
@@ -329,6 +346,7 @@
             this.label75 = new System.Windows.Forms.Label();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.pictureBox82 = new System.Windows.Forms.PictureBox();
             this.LabArtisansFrame = new System.Windows.Forms.Label();
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
@@ -380,6 +398,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
             this.pictureBox106 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> refs/remotes/origin/master
             this.TabMain.SuspendLayout();
             this.TabWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -389,6 +409,14 @@
             this.TabWeaponBluntD.SuspendLayout();
             this.TabSword.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             this.TabShots.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -515,10 +543,11 @@
             this.TabMain.Controls.Add(this.TabArmor);
             this.TabMain.Controls.Add(this.TabAcessory);
             this.TabMain.Controls.Add(this.TabShots);
+            this.TabMain.Controls.Add(this.TabOther);
             this.TabMain.Location = new System.Drawing.Point(545, 87);
             this.TabMain.Name = "TabMain";
             this.TabMain.SelectedIndex = 0;
-            this.TabMain.Size = new System.Drawing.Size(365, 563);
+            this.TabMain.Size = new System.Drawing.Size(365, 525);
             this.TabMain.TabIndex = 2;
             // 
             // TabWeapon
@@ -527,7 +556,7 @@
             this.TabWeapon.Location = new System.Drawing.Point(4, 22);
             this.TabWeapon.Name = "TabWeapon";
             this.TabWeapon.Padding = new System.Windows.Forms.Padding(3);
-            this.TabWeapon.Size = new System.Drawing.Size(357, 537);
+            this.TabWeapon.Size = new System.Drawing.Size(357, 499);
             this.TabWeapon.TabIndex = 0;
             this.TabWeapon.Text = "Оружие";
             this.TabWeapon.UseVisualStyleBackColor = true;
@@ -547,7 +576,7 @@
             this.TabWeaponType.Name = "TabWeaponType";
             this.TabWeaponType.Padding = new System.Drawing.Point(5, 3);
             this.TabWeaponType.SelectedIndex = 0;
-            this.TabWeaponType.Size = new System.Drawing.Size(365, 541);
+            this.TabWeaponType.Size = new System.Drawing.Size(365, 503);
             this.TabWeaponType.TabIndex = 0;
             // 
             // TabBlunt
@@ -556,7 +585,7 @@
             this.TabBlunt.Location = new System.Drawing.Point(4, 22);
             this.TabBlunt.Name = "TabBlunt";
             this.TabBlunt.Padding = new System.Windows.Forms.Padding(3);
-            this.TabBlunt.Size = new System.Drawing.Size(357, 515);
+            this.TabBlunt.Size = new System.Drawing.Size(357, 477);
             this.TabBlunt.TabIndex = 0;
             this.TabBlunt.Text = "Бланты";
             this.TabBlunt.UseVisualStyleBackColor = true;
@@ -657,7 +686,7 @@
             this.TabSword.Location = new System.Drawing.Point(4, 22);
             this.TabSword.Name = "TabSword";
             this.TabSword.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSword.Size = new System.Drawing.Size(357, 515);
+            this.TabSword.Size = new System.Drawing.Size(357, 477);
             this.TabSword.TabIndex = 1;
             this.TabSword.Text = "Мечи";
             this.TabSword.UseVisualStyleBackColor = true;
@@ -670,10 +699,10 @@
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Location = new System.Drawing.Point(0, 0);
+            this.tabControl2.Location = new System.Drawing.Point(-4, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(365, 519);
+            this.tabControl2.Size = new System.Drawing.Size(369, 481);
             this.tabControl2.TabIndex = 1;
             // 
             // tabPage1
@@ -681,7 +710,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(357, 493);
+            this.tabPage1.Size = new System.Drawing.Size(361, 455);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "No-Grade";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -691,7 +720,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(357, 493);
+            this.tabPage2.Size = new System.Drawing.Size(361, 455);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "D-Grade";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -700,7 +729,7 @@
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(357, 493);
+            this.tabPage3.Size = new System.Drawing.Size(361, 455);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "C-Grade";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -709,7 +738,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(357, 493);
+            this.tabPage4.Size = new System.Drawing.Size(361, 455);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "B-Grade";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -718,25 +747,198 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(357, 493);
+            this.tabPage5.Size = new System.Drawing.Size(361, 455);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "A-Grade";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.groupBox6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(357, 493);
+            this.tabPage6.Size = new System.Drawing.Size(361, 455);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "S-Grade";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.panel4);
+            this.groupBox6.Controls.Add(this.label88);
+            this.groupBox6.Controls.Add(this.label87);
+            this.groupBox6.Controls.Add(this.label83);
+            this.groupBox6.Location = new System.Drawing.Point(2, 0);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(349, 389);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Мечи S-Grade";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox85);
+            this.panel4.Controls.Add(this.pictureBox84);
+            this.panel4.Controls.Add(this.pictureBox83);
+            this.panel4.Controls.Add(this.TBCraftCostForgottenBlade);
+            this.panel4.Controls.Add(this.LabCostForgottenBlade);
+            this.panel4.Controls.Add(this.label84);
+            this.panel4.Controls.Add(this.pictureBox82);
+            this.panel4.Controls.Add(this.pictureBox81);
+            this.panel4.Controls.Add(this.label81);
+            this.panel4.Controls.Add(this.TBCraftCostHeavensDivider);
+            this.panel4.Controls.Add(this.LabCostHeavensDivider);
+            this.panel4.Location = new System.Drawing.Point(0, 60);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(348, 316);
+            this.panel4.TabIndex = 8;
+            // 
+            // pictureBox85
+            // 
+            this.pictureBox85.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox85.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox85.Name = "pictureBox85";
+            this.pictureBox85.Size = new System.Drawing.Size(339, 1);
+            this.pictureBox85.TabIndex = 10;
+            this.pictureBox85.TabStop = false;
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox84.Location = new System.Drawing.Point(6, 159);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(339, 1);
+            this.pictureBox84.TabIndex = 9;
+            this.pictureBox84.TabStop = false;
+            // 
+            // pictureBox83
+            // 
+            this.pictureBox83.Image = global::CraftCostCalc.Properties.Resources.WeaponSpliter;
+            this.pictureBox83.Location = new System.Drawing.Point(6, 70);
+            this.pictureBox83.Name = "pictureBox83";
+            this.pictureBox83.Size = new System.Drawing.Size(339, 1);
+            this.pictureBox83.TabIndex = 8;
+            this.pictureBox83.TabStop = false;
+            // 
+            // TBCraftCostForgottenBlade
+            // 
+            this.TBCraftCostForgottenBlade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.TBCraftCostForgottenBlade.Location = new System.Drawing.Point(144, 132);
+            this.TBCraftCostForgottenBlade.Name = "TBCraftCostForgottenBlade";
+            this.TBCraftCostForgottenBlade.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCraftCostForgottenBlade.Size = new System.Drawing.Size(199, 21);
+            this.TBCraftCostForgottenBlade.TabIndex = 7;
+            this.TBCraftCostForgottenBlade.Text = "0";
+            // 
+            // LabCostForgottenBlade
+            // 
+            this.LabCostForgottenBlade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabCostForgottenBlade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCostForgottenBlade.Location = new System.Drawing.Point(144, 106);
+            this.LabCostForgottenBlade.Name = "LabCostForgottenBlade";
+            this.LabCostForgottenBlade.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCostForgottenBlade.Size = new System.Drawing.Size(199, 23);
+            this.LabCostForgottenBlade.TabIndex = 6;
+            this.LabCostForgottenBlade.Text = "48800000";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label84.Location = new System.Drawing.Point(4, 119);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(111, 17);
+            this.label84.TabIndex = 5;
+            this.label84.Text = "Forgotten Blade";
+            // 
+            // pictureBox82
+            // 
+            this.pictureBox82.Image = global::CraftCostCalc.Properties.Resources.Weapon_forgotten_blade_i00_0;
+            this.pictureBox82.InitialImage = global::CraftCostCalc.Properties.Resources.Weapon_forgotten_blade_i00_0;
+            this.pictureBox82.Location = new System.Drawing.Point(6, 81);
+            this.pictureBox82.Name = "pictureBox82";
+            this.pictureBox82.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox82.TabIndex = 4;
+            this.pictureBox82.TabStop = false;
+            // 
+            // pictureBox81
+            // 
+            this.pictureBox81.Image = global::CraftCostCalc.Properties.Resources.weapon_heavens_divider_i00_0;
+            this.pictureBox81.InitialImage = global::CraftCostCalc.Properties.Resources.weapon_heavens_divider_i00_0;
+            this.pictureBox81.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox81.Name = "pictureBox81";
+            this.pictureBox81.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox81.TabIndex = 0;
+            this.pictureBox81.TabStop = false;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.label81.Location = new System.Drawing.Point(6, 45);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(117, 17);
+            this.label81.TabIndex = 1;
+            this.label81.Text = "Heaven\'s Divider";
+            // 
+            // TBCraftCostHeavensDivider
+            // 
+            this.TBCraftCostHeavensDivider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.TBCraftCostHeavensDivider.Location = new System.Drawing.Point(144, 41);
+            this.TBCraftCostHeavensDivider.Name = "TBCraftCostHeavensDivider";
+            this.TBCraftCostHeavensDivider.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCraftCostHeavensDivider.Size = new System.Drawing.Size(199, 21);
+            this.TBCraftCostHeavensDivider.TabIndex = 3;
+            this.TBCraftCostHeavensDivider.Text = "0";
+            // 
+            // LabCostHeavensDivider
+            // 
+            this.LabCostHeavensDivider.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabCostHeavensDivider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.LabCostHeavensDivider.Location = new System.Drawing.Point(144, 16);
+            this.LabCostHeavensDivider.Name = "LabCostHeavensDivider";
+            this.LabCostHeavensDivider.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCostHeavensDivider.Size = new System.Drawing.Size(199, 22);
+            this.LabCostHeavensDivider.TabIndex = 2;
+            this.LabCostHeavensDivider.Text = "48800000";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label88.Location = new System.Drawing.Point(216, 40);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(111, 17);
+            this.label88.TabIndex = 7;
+            this.label88.Text = "Рыночная цена";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label87.Location = new System.Drawing.Point(216, 16);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(109, 17);
+            this.label87.TabIndex = 6;
+            this.label87.Text = "Себестоимость";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label83.Location = new System.Drawing.Point(4, 27);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(106, 17);
+            this.label83.TabIndex = 4;
+            this.label83.Text = "Наименование";
             // 
             // TabBow
             // 
             this.TabBow.Location = new System.Drawing.Point(4, 22);
             this.TabBow.Name = "TabBow";
-            this.TabBow.Size = new System.Drawing.Size(357, 515);
+            this.TabBow.Size = new System.Drawing.Size(357, 477);
             this.TabBow.TabIndex = 2;
             this.TabBow.Text = "Луки";
             this.TabBow.UseVisualStyleBackColor = true;
@@ -745,7 +947,7 @@
             // 
             this.TabDagger.Location = new System.Drawing.Point(4, 22);
             this.TabDagger.Name = "TabDagger";
-            this.TabDagger.Size = new System.Drawing.Size(357, 515);
+            this.TabDagger.Size = new System.Drawing.Size(357, 477);
             this.TabDagger.TabIndex = 3;
             this.TabDagger.Text = "Кинжалы";
             this.TabDagger.UseVisualStyleBackColor = true;
@@ -754,7 +956,7 @@
             // 
             this.TabFist.Location = new System.Drawing.Point(4, 22);
             this.TabFist.Name = "TabFist";
-            this.TabFist.Size = new System.Drawing.Size(357, 515);
+            this.TabFist.Size = new System.Drawing.Size(357, 477);
             this.TabFist.TabIndex = 4;
             this.TabFist.Text = "Кастеты";
             this.TabFist.UseVisualStyleBackColor = true;
@@ -763,7 +965,7 @@
             // 
             this.TabHalebard.Location = new System.Drawing.Point(4, 22);
             this.TabHalebard.Name = "TabHalebard";
-            this.TabHalebard.Size = new System.Drawing.Size(357, 515);
+            this.TabHalebard.Size = new System.Drawing.Size(357, 477);
             this.TabHalebard.TabIndex = 5;
             this.TabHalebard.Text = "Пики";
             this.TabHalebard.UseVisualStyleBackColor = true;
@@ -772,7 +974,7 @@
             // 
             this.TabWeaponOther.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponOther.Name = "TabWeaponOther";
-            this.TabWeaponOther.Size = new System.Drawing.Size(357, 515);
+            this.TabWeaponOther.Size = new System.Drawing.Size(357, 477);
             this.TabWeaponOther.TabIndex = 6;
             this.TabWeaponOther.Text = "Прочее";
             this.TabWeaponOther.UseVisualStyleBackColor = true;
@@ -782,7 +984,7 @@
             this.TabArmor.Location = new System.Drawing.Point(4, 22);
             this.TabArmor.Name = "TabArmor";
             this.TabArmor.Padding = new System.Windows.Forms.Padding(3);
-            this.TabArmor.Size = new System.Drawing.Size(357, 537);
+            this.TabArmor.Size = new System.Drawing.Size(357, 499);
             this.TabArmor.TabIndex = 1;
             this.TabArmor.Text = "Броня";
             this.TabArmor.UseVisualStyleBackColor = true;
@@ -791,7 +993,7 @@
             // 
             this.TabAcessory.Location = new System.Drawing.Point(4, 22);
             this.TabAcessory.Name = "TabAcessory";
-            this.TabAcessory.Size = new System.Drawing.Size(357, 537);
+            this.TabAcessory.Size = new System.Drawing.Size(357, 499);
             this.TabAcessory.TabIndex = 2;
             this.TabAcessory.Text = "Бижа";
             this.TabAcessory.UseVisualStyleBackColor = true;
@@ -801,7 +1003,7 @@
             this.TabShots.Controls.Add(this.groupBox4);
             this.TabShots.Location = new System.Drawing.Point(4, 22);
             this.TabShots.Name = "TabShots";
-            this.TabShots.Size = new System.Drawing.Size(357, 537);
+            this.TabShots.Size = new System.Drawing.Size(357, 499);
             this.TabShots.TabIndex = 3;
             this.TabShots.Text = "Шоты";
             this.TabShots.UseVisualStyleBackColor = true;
@@ -809,7 +1011,6 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label72);
-            this.groupBox4.Controls.Add(this.ButShotsCost);
             this.groupBox4.Controls.Add(this.label71);
             this.groupBox4.Controls.Add(this.panel3);
             this.groupBox4.Location = new System.Drawing.Point(0, 6);
@@ -828,16 +1029,6 @@
             this.label72.Size = new System.Drawing.Size(110, 17);
             this.label72.TabIndex = 8;
             this.label72.Text = "Наименование:";
-            // 
-            // ButShotsCost
-            // 
-            this.ButShotsCost.Location = new System.Drawing.Point(3, 500);
-            this.ButShotsCost.Name = "ButShotsCost";
-            this.ButShotsCost.Size = new System.Drawing.Size(351, 28);
-            this.ButShotsCost.TabIndex = 8;
-            this.ButShotsCost.Text = "Посчитать стоимость шотов";
-            this.ButShotsCost.UseVisualStyleBackColor = true;
-            this.ButShotsCost.Click += new System.EventHandler(this.ButShotsCost_Click);
             // 
             // label71
             // 
@@ -1351,6 +1542,25 @@
             this.label70.Size = new System.Drawing.Size(192, 19);
             this.label70.TabIndex = 1;
             this.label70.Text = "Soulshot: D Grade";
+            // 
+            // TabOther
+            // 
+            this.TabOther.Location = new System.Drawing.Point(4, 22);
+            this.TabOther.Name = "TabOther";
+            this.TabOther.Size = new System.Drawing.Size(357, 499);
+            this.TabOther.TabIndex = 4;
+            this.TabOther.Text = "Прочее";
+            this.TabOther.UseVisualStyleBackColor = true;
+            // 
+            // ButItemsCost
+            // 
+            this.ButItemsCost.Location = new System.Drawing.Point(545, 615);
+            this.ButItemsCost.Name = "ButItemsCost";
+            this.ButItemsCost.Size = new System.Drawing.Size(365, 28);
+            this.ButItemsCost.TabIndex = 8;
+            this.ButItemsCost.Text = "Посчитать себестоимость вещей";
+            this.ButItemsCost.UseVisualStyleBackColor = true;
+            this.ButItemsCost.Click += new System.EventHandler(this.ButItemCost_Click);
             // 
             // panel1
             // 
@@ -2123,7 +2333,7 @@
             this.panel2.Controls.Add(this.TBVarnishOfPurity);
             this.panel2.Controls.Add(this.label61);
             this.panel2.Controls.Add(this.pictureBox57);
-            this.panel2.Controls.Add(this.TBSynteticCokes);
+            this.panel2.Controls.Add(this.TBSyntheticCokes);
             this.panel2.Controls.Add(this.label60);
             this.panel2.Controls.Add(this.pictureBox56);
             this.panel2.Controls.Add(this.TBSteelMold);
@@ -2309,8 +2519,9 @@
             this.pictureBox57.TabIndex = 78;
             this.pictureBox57.TabStop = false;
             // 
-            // TBSynteticCokes
+            // TBSyntheticCokes
             // 
+<<<<<<< HEAD
             this.TBSynteticCokes.Location = new System.Drawing.Point(172, 1567);
             this.TBSynteticCokes.MaxLength = 9;
             this.TBSynteticCokes.Name = "TBSynteticCokes";
@@ -2318,6 +2529,15 @@
             this.TBSynteticCokes.TabIndex = 77;
             this.TBSynteticCokes.Text = "10800";
             this.TBSynteticCokes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+=======
+            this.TBSyntheticCokes.Location = new System.Drawing.Point(172, 966);
+            this.TBSyntheticCokes.MaxLength = 9;
+            this.TBSyntheticCokes.Name = "TBSyntheticCokes";
+            this.TBSyntheticCokes.Size = new System.Drawing.Size(60, 20);
+            this.TBSyntheticCokes.TabIndex = 77;
+            this.TBSyntheticCokes.Text = "10800";
+            this.TBSyntheticCokes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+>>>>>>> refs/remotes/origin/master
             // 
             // label60
             // 
@@ -3725,6 +3945,7 @@
             this.pictureBox79.TabIndex = 11;
             this.pictureBox79.TabStop = false;
             // 
+<<<<<<< HEAD
             // pictureBox82
             // 
             this.pictureBox82.Image = global::CraftCostCalc.Properties.Resources.line_craft_res;
@@ -4207,12 +4428,15 @@
             this.pictureBox106.TabIndex = 184;
             this.pictureBox106.TabStop = false;
             // 
+=======
+>>>>>>> refs/remotes/origin/master
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 672);
             this.Controls.Add(this.label75);
+            this.Controls.Add(this.ButItemsCost);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label73);
@@ -4238,6 +4462,16 @@
             this.TabWeaponBluntD.PerformLayout();
             this.TabSword.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
             this.TabShots.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -4471,7 +4705,7 @@
         private System.Windows.Forms.TextBox TBVarnishOfPurity;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.PictureBox pictureBox57;
-        private System.Windows.Forms.TextBox TBSynteticCokes;
+        private System.Windows.Forms.TextBox TBSyntheticCokes;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.PictureBox pictureBox56;
         private System.Windows.Forms.TextBox TBSteelMold;
@@ -4604,7 +4838,7 @@
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.TabPage TabShots;
         private System.Windows.Forms.PictureBox pictureBox64;
-        private System.Windows.Forms.Button ButShotsCost;
+        private System.Windows.Forms.Button ButItemsCost;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox66;
@@ -4666,6 +4900,7 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.PictureBox pictureBox81;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label LabArcsmithsAnvil;
         private System.Windows.Forms.Label label81;
@@ -4720,6 +4955,24 @@
         private System.Windows.Forms.PictureBox pictureBox96;
         private System.Windows.Forms.Label LabHighGradeSuede;
         private System.Windows.Forms.PictureBox pictureBox93;
+=======
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox TBCraftCostHeavensDivider;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label LabCostHeavensDivider;
+        private System.Windows.Forms.TabPage TabOther;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox82;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.TextBox TBCraftCostForgottenBlade;
+        private System.Windows.Forms.Label LabCostForgottenBlade;
+        private System.Windows.Forms.PictureBox pictureBox83;
+        private System.Windows.Forms.PictureBox pictureBox85;
+        private System.Windows.Forms.PictureBox pictureBox84;
+>>>>>>> refs/remotes/origin/master
     }
 }
 
