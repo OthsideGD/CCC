@@ -405,7 +405,10 @@ namespace CraftCostCalc
             // Weapons
             // S-Grade
             WeaponHeavensDivider = (Cry_s * 212) + (SyntheticCokes * 146) + (MithrilAlloy * 292) + (Gem_s * 43) + (Enria * 146) + (DurableMetalPlate * 146) + (WarsmithsHolder * 4);
-            LabCostHeavensDivider.Text = WeaponHeavensDivider.ToString("F2");
+            LabCostHeavensDivider.Text = WeaponHeavensDivider.ToString("F0");
+
+            WeaponForgottenBlade = (Cry_s * 211) + (SyntheticCokes * 264) + (MithrilAlloy * 264) + (Gem_s * 43) + (Enria * 132) + (DurableMetalPlate * 132) + (WarsmithsHolder * 4);
+            LabCostForgottenBlade.Text = WeaponForgottenBlade.ToString("F0");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
