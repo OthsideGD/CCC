@@ -853,9 +853,39 @@ namespace CraftCostCalc.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Weapon_forgotten_blade_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("Weapon_forgotten_blade_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weapon_heavens_divider_i00_0 {
+            get {
+                object obj = ResourceManager.GetObject("weapon_heavens_divider_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Weapon_sword_of_revolution_i00_0 {
             get {
                 object obj = ResourceManager.GetObject("Weapon_sword_of_revolution_i00_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponSpliter {
+            get {
+                object obj = ResourceManager.GetObject("WeaponSpliter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

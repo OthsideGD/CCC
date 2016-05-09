@@ -22,3 +22,9 @@ F:\Workspace\Git\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.csproj.GenerateResour
 D:\Workspace\GitHub\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.exe.config
 D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.exe
 D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.pdb
+D:\Workspace\GitHub\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.exe
+D:\Workspace\GitHub\CCC\CraftCostCalc\bin\Debug\CraftCostCalc.pdb
+D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.csprojResolveAssemblyReference.cache
+D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.MainForm.resources
+D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.Properties.Resources.resources
+D:\Workspace\GitHub\CCC\CraftCostCalc\obj\Debug\CraftCostCalc.csproj.GenerateResource.Cache
