@@ -72,20 +72,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SaveSettings.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,12 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11_4145_oboi_lepestki_sveta_1280x1024.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adamantite_Nugget.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Animal_Bone.jpg" />
@@ -250,15 +244,6 @@
     <None Include="Resources\Warsmith%27s_Mold.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Adamantite_Nugget1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adamantite_Nugget2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adamantite_Nugget3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cry_a.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -349,18 +334,15 @@
     <None Include="Resources\name.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btgr2Q_AFI4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\Adamantite_Nugget.jpg" />
     <None Include="Resources\weapon_arcana_mace_i00_0.png" />
     <None Include="Resources\weapon_dragon_hunter_axe_i00_0.png" />
     <None Include="Resources\weapon_imperial_staff_i00_0.png" />
     <None Include="Resources\weapon_basalt_battlehammer_i00_0.png" />
-    <None Include="Resources\WeaponSpliter.png" />
     <None Include="Resources\Weapon_forgotten_blade_i00_0.jpg" />
     <None Include="Resources\weapon_heavens_divider_i00_0.png" />
   </ItemGroup>
