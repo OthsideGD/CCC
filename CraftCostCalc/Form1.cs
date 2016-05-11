@@ -28,34 +28,37 @@ namespace CraftCostCalc
         private void ButResCraftCalc_Click(object sender, EventArgs e)
         {
             //--------------------------------------
+            //Вывод подсказки
+            LabHelp.Text = "В крафтовых ресурсах верхняя цена - СЕБЕСТОИМОСТЬ, нижняя - РЫНОЧНАЯ цена на Вашем сервер. Рыночная цена используется только для сравнения и запоминания.";
+            //--------------------------------------
             //Подсчет цены крафтовые ресурсы
 
-                //Перевод Стринг в Инт для базовых ресурсов
+            //Перевод Стринг в Инт для базовых ресурсов
             double AdamantiteNugget, AnimalBone, AnimalSkin, Asofe, Charcoal, Coal,
             Enria, IronOre, MithrilOre, MoldGlue, MoldHardener, MoldLubricant,
             OriharukonOre, SilverNugget, Stem, StoneOfPurity, Suede, Thons, Thread,
             Varnish, Cry_d, Cry_c, Cry_b, Cry_a, Cry_s, Gem_d, Gem_c, Gem_b, Gem_a, Gem_s;
 
-            double.TryParse(TBAdamantiteNugget.Text, out AdamantiteNugget);
-            double.TryParse(TBAnimalBone.Text, out AnimalBone);
-            double.TryParse(TBAnimalSkin.Text, out AnimalSkin);
-            double.TryParse(TBAsofe.Text, out Asofe);
-            double.TryParse(TBCharcoal.Text, out Charcoal);
-            double.TryParse(TBCoal.Text, out Coal);
-            double.TryParse(TBEnria.Text, out Enria);
-            double.TryParse(TBIronOre.Text, out IronOre);
-            double.TryParse(TBMithrilOre.Text, out MithrilOre);
-            double.TryParse(TBMoldGlue.Text, out MoldGlue);
-            double.TryParse(TBMoldHardener.Text, out MoldHardener);
-            double.TryParse(TBMoldLubricant.Text, out MoldLubricant);
-            double.TryParse(TBOriharukonOre.Text, out OriharukonOre);
-            double.TryParse(TBSilverNugget.Text, out SilverNugget);
-            double.TryParse(TBStem.Text, out Stem);
-            double.TryParse(TBStoneOfPurity.Text, out StoneOfPurity);
-            double.TryParse(TBSuede.Text, out Suede);
-            double.TryParse(TBThons.Text, out Thons);
-            double.TryParse(TBThread.Text, out Thread);
-            double.TryParse(TBVarnish.Text, out Varnish);
+            double.TryParse(TBCostAdamantiteNugget.Text, out AdamantiteNugget);
+            double.TryParse(TBCostAnimalBone.Text, out AnimalBone);
+            double.TryParse(TBCostAnimalSkin.Text, out AnimalSkin);
+            double.TryParse(TBCostAsofe.Text, out Asofe);
+            double.TryParse(TBCostCharcoal.Text, out Charcoal);
+            double.TryParse(TBCostCoal.Text, out Coal);
+            double.TryParse(TBCostEnria.Text, out Enria);
+            double.TryParse(TBCostIronOre.Text, out IronOre);
+            double.TryParse(TBCostMithrilOre.Text, out MithrilOre);
+            double.TryParse(TBCostMoldGlue.Text, out MoldGlue);
+            double.TryParse(TBCostMoldHardener.Text, out MoldHardener);
+            double.TryParse(TBCostMoldLubricant.Text, out MoldLubricant);
+            double.TryParse(TBCostOriharukonOre.Text, out OriharukonOre);
+            double.TryParse(TBCostSilverNugget.Text, out SilverNugget);
+            double.TryParse(TBCostStem.Text, out Stem);
+            double.TryParse(TBCostStoneOfPurity.Text, out StoneOfPurity);
+            double.TryParse(TBCostSuede.Text, out Suede);
+            double.TryParse(TBCostThons.Text, out Thons);
+            double.TryParse(TBCostThread.Text, out Thread);
+            double.TryParse(TBCostVarnish.Text, out Varnish);
             double.TryParse(TBCry_d.Text, out Cry_d);
             double.TryParse(TBCry_c.Text, out Cry_c);
             double.TryParse(TBCry_b.Text, out Cry_b);
@@ -75,119 +78,119 @@ namespace CraftCostCalc
 
             //Braided Hemp
             BraidedHemp = (Stem * 5);
-            TBCostBraidedHemp.Text = BraidedHemp.ToString("F0");
+            LabCraftCostBraidedHemp.Text = BraidedHemp.ToString("F0");
 
             //CoarseBonePowder
             CoarseBonePowder = (AnimalBone * 10);
-            TBCostCoarseBonePowder.Text = CoarseBonePowder.ToString("F0");
+            LabCraftCostCoarseBonePowder.Text = CoarseBonePowder.ToString("F0");
 
             //Cokes
             Cokes = (Charcoal * 10) + (Coal * 3);
-            TBCostCokes.Text = Cokes.ToString("F0");
+            LabCraftCostCokes.Text = Cokes.ToString("F0");
 
             //Compound Braid
             CompoundBraid = (BraidedHemp * 5) + (Thread * 5);
-            TBCostCompoundBraid.Text = CompoundBraid.ToString("F0");
+            LabCraftCostCompoundBraid.Text = CompoundBraid.ToString("F0");
 
             //High Grade Suede
             HighGradeSuede = (CoarseBonePowder * 1) + (Suede * 3);
-            TBHighGradeSuede.Text = HighGradeSuede.ToString("F0");
+            LabCraftCostHighGradeSuede.Text = HighGradeSuede.ToString("F0");
 
             //Leather
             Leather = (AnimalSkin * 6);
-            TBLeather.Text = Leather.ToString("F0");
+            LabCraftCostLeather.Text = Leather.ToString("F0");
 
             //Metal Hardener
             MetalHardener = (IronOre * 10) + (Stem * 10) + (Varnish * 10);
-            TBMetalHardener.Text = MetalHardener.ToString("F0");
+            LabCraftCostMetalHardener.Text = MetalHardener.ToString("F0");
 
             //Metallic Thread
             MetallicThread = (IronOre * 5) + (Thread * 10);
-            TBMetallicThread.Text = MetallicThread.ToString("F0");
+            LabCraftCostMetallicThread.Text = MetallicThread.ToString("F0");
 
             //Durable Metal Plate
             DurableMetalPlate = (MetallicThread * 5) + (MithrilOre * 5);
-            TBDurableMetalPlate.Text = DurableMetalPlate.ToString("F0");
+            LabCraftCostDurableMetalPlate.Text = DurableMetalPlate.ToString("F0");
 
             //Steel
             Steel = (IronOre * 5) + (Varnish * 5);
-            TBSteel.Text = Steel.ToString("F0");
+            LabCraftCostSteel.Text = Steel.ToString("F0");
 
             //Cord
             Cord = ((Steel * 2) + (Thread * 25)) / 20;
-            TBCostCord.Text = Cord.ToString("F0");
+            LabCraftCostCord.Text = Cord.ToString("F0");
 
             //Metallic Fiber
             MetallicFiber = ((SilverNugget * 15) + (Cord * 20)) / 20;
-            TBMetallicFiber.Text = MetallicFiber.ToString("F0");
+            LabCraftCostMetallicFiber.Text = MetallicFiber.ToString("F0");
 
             //Crafted Leather
             CraftedLeather = (Coal * 4) + (Cord * 4) + (Leather * 4);
-            TBCostCraftedLeather.Text = CraftedLeather.ToString("F0");
+            LabCraftCostCraftedLeather.Text = CraftedLeather.ToString("F0");
 
             //Steel Mold
             SteelMold = (BraidedHemp * 5) + (Coal * 5) + (IronOre * 5);
-            TBSteelMold.Text = SteelMold.ToString("F0");
+            LabCraftCostSteelMold.Text = SteelMold.ToString("F0");
 
             //Syntetic Cokes
             SyntheticCokes = (OriharukonOre * 1) + (Cokes * 3);
-            TBSyntheticCokes.Text = SyntheticCokes.ToString("F0");
+            LabCraftCostSyntheticCokes.Text = SyntheticCokes.ToString("F0");
 
             //Oriharukon
             Oriharukon = (SyntheticCokes * 1) + (OriharukonOre * 4) + (SilverNugget * 12);
-            TBOriharukon.Text = Oriharukon.ToString("F0");
+            LabCraftCostOriharukon.Text = Oriharukon.ToString("F0");
 
             //Varnish Of Purity
             VarnishOfPurity = (StoneOfPurity * 1) + (CoarseBonePowder * 3) + (Varnish * 3);
-            TBVarnishOfPurity.Text = VarnishOfPurity.ToString("F0");
+            LabCraftCostVarnishOfPurity.Text = VarnishOfPurity.ToString("F0");
 
             //Mithril Alloy
             MithrilAlloy = (MithrilOre * 1) + (VarnishOfPurity * 1) + (Steel * 2);
-            TBMithrilAlloy.Text = MithrilAlloy.ToString("F0");
+            LabCraftCostMithrilAlloy.Text = MithrilAlloy.ToString("F0");
 
             //Silver Mold
             SilverMold = (BraidedHemp * 5) + (Cokes * 5) + (SilverNugget * 10);
-            TBSilverMold.Text = SilverMold.ToString("F0");
+            LabCraftCostSilverMold.Text = SilverMold.ToString("F0");
 
             //Blacksmith's Frame
             BlacksmithsFrame = (SilverMold * 1) + (VarnishOfPurity * 5) + (MithrilOre * 10);
-            TBCostBlacksmithsFrame.Text = BlacksmithsFrame.ToString("F0");
+            LabCraftCostBlacksmithsFrame.Text = BlacksmithsFrame.ToString("F0");
 
             //Artisan's Frame
             ArtisansFrame = (SteelMold * 1) + (VarnishOfPurity * 5) + (AdamantiteNugget * 10);
-            TBCostArtisansFrame.Text = ArtisansFrame.ToString("F0");
+            LabCraftCostArtisansFrame.Text = ArtisansFrame.ToString("F0");
 
             //Craftsman Mold
             CraftsmanMold = (ArtisansFrame * 2) + (Enria * 5) + (MoldHardener * 20);
-            TBCraftsmanMold.Text = CraftsmanMold.ToString("F0");
+            LabCraftCostCraftsmanMold.Text = CraftsmanMold.ToString("F0");
 
             //Leolin's Mold
             LeolinsMold = (DurableMetalPlate * 10) + (AdamantiteNugget * 15) + (Cord * 40);
-            TBLeolinsMold.Text = LeolinsMold.ToString("F0");
+            LabCraftCostLeolinsMold.Text = LeolinsMold.ToString("F0");
 
             //Maestro Anvil Lock
             MaestroAnvilLock = (MoldGlue * 4) + (MoldLubricant * 4) + (SyntheticCokes * 4);
-            TBMaestroAnvilLock.Text = MaestroAnvilLock.ToString("F0");
+            LabCraftCostMaestroAnvilLock.Text = MaestroAnvilLock.ToString("F0");
 
             //Arcsmith's Anvil
             ArcsmithsAnvil = (MaestroAnvilLock * 3) + (Thons * 10) + (MoldLubricant * 20);
-            TBCostArcsmithsAnvil.Text = ArcsmithsAnvil.ToString("F0");
+            LabCraftCostArcsmithsAnvil.Text = ArcsmithsAnvil.ToString("F0");
 
             //Maestro Holder
             MaestroHolder = (MoldHardener * 10) + (MoldLubricant * 10) + (VarnishOfPurity * 10);
-            TBMaestroHolder.Text = MaestroHolder.ToString("F0");
+            LabCraftCostMaestroHolder.Text = MaestroHolder.ToString("F0");
 
             //Maestro Mold
             MaestroMold = (BlacksmithsFrame * 1) + (Asofe * 5) + (MoldGlue * 10);
-            TBMaestroMold.Text = MaestroMold.ToString("F0");
+            LabCraftCostMaestroMold.Text = MaestroMold.ToString("F0");
 
             //Warsmith's Holder
             WarsmithsHolder = (ArtisansFrame * 1) + (Enria * 5) + (MoldHardener * 10);
-            TBWarsmithsHolder.Text = WarsmithsHolder.ToString("F0");
+            LabCraftCostWarsmithsHolder.Text = WarsmithsHolder.ToString("F0");
 
             //TBWarsmithsMold
             WarsmithsMold = (MaestroHolder * 2) + (MoldGlue * 10) + (Thread * 20);
-            TBWarsmithsMold.Text = WarsmithsMold.ToString("F0");
+            LabCraftCostWarsmithsMold.Text = WarsmithsMold.ToString("F0");
         }
 
         private void ButCryCalc_Click(object sender, EventArgs e)
@@ -198,7 +201,7 @@ namespace CraftCostCalc
 
                 //Считаем цену крисов
             double Cry_d, Cry_c, Cry_b, StoneOfPurity;
-            double.TryParse(TBStoneOfPurity.Text, out StoneOfPurity);
+            double.TryParse(TBCostStoneOfPurity.Text, out StoneOfPurity);
 
             Cry_d = SwordOfRevolution / 2545;
             TBCry_d.Text = Cry_d.ToString("F0");
@@ -258,57 +261,57 @@ namespace CraftCostCalc
             double.TryParse(TBGem_s.Text, out Gem_s);
 
             //Парсим обычные ресурсы
-            double.TryParse(TBAdamantiteNugget.Text, out AdamantiteNugget);
-            double.TryParse(TBAnimalBone.Text, out AnimalBone);
-            double.TryParse(TBAnimalSkin.Text, out AnimalSkin);
-            double.TryParse(TBAsofe.Text, out Asofe);
-            double.TryParse(TBCharcoal.Text, out Charcoal);
-            double.TryParse(TBCoal.Text, out Coal);
-            double.TryParse(TBEnria.Text, out Enria);
-            double.TryParse(TBIronOre.Text, out IronOre);
-            double.TryParse(TBMithrilOre.Text, out MithrilOre);
-            double.TryParse(TBMoldGlue.Text, out MoldGlue);
-            double.TryParse(TBMoldHardener.Text, out MoldHardener);
-            double.TryParse(TBMoldLubricant.Text, out MoldLubricant);
-            double.TryParse(TBOriharukonOre.Text, out OriharukonOre);
-            double.TryParse(TBSilverNugget.Text, out SilverNugget);
-            double.TryParse(TBStem.Text, out Stem);
-            double.TryParse(TBStoneOfPurity.Text, out StoneOfPurity);
-            double.TryParse(TBSuede.Text, out Suede);
-            double.TryParse(TBThons.Text, out Thons);
-            double.TryParse(TBThread.Text, out Thread);
-            double.TryParse(TBVarnish.Text, out Varnish);
+            double.TryParse(TBCostAdamantiteNugget.Text, out AdamantiteNugget);
+            double.TryParse(TBCostAnimalBone.Text, out AnimalBone);
+            double.TryParse(TBCostAnimalSkin.Text, out AnimalSkin);
+            double.TryParse(TBCostAsofe.Text, out Asofe);
+            double.TryParse(TBCostCharcoal.Text, out Charcoal);
+            double.TryParse(TBCostCoal.Text, out Coal);
+            double.TryParse(TBCostEnria.Text, out Enria);
+            double.TryParse(TBCostIronOre.Text, out IronOre);
+            double.TryParse(TBCostMithrilOre.Text, out MithrilOre);
+            double.TryParse(TBCostMoldGlue.Text, out MoldGlue);
+            double.TryParse(TBCostMoldHardener.Text, out MoldHardener);
+            double.TryParse(TBCostMoldLubricant.Text, out MoldLubricant);
+            double.TryParse(TBCostOriharukonOre.Text, out OriharukonOre);
+            double.TryParse(TBCostSilverNugget.Text, out SilverNugget);
+            double.TryParse(TBCostStem.Text, out Stem);
+            double.TryParse(TBCostStoneOfPurity.Text, out StoneOfPurity);
+            double.TryParse(TBCostSuede.Text, out Suede);
+            double.TryParse(TBCostThons.Text, out Thons);
+            double.TryParse(TBCostThread.Text, out Thread);
+            double.TryParse(TBCostVarnish.Text, out Varnish);
 
             //Парсим крафтовые ресурсы
             double.TryParse(TBCostBraidedHemp.Text, out BraidedHemp);
             double.TryParse(TBCostCoarseBonePowder.Text, out CoarsedBonePowder);
             double.TryParse(TBCostCokes.Text, out Cokes);
             double.TryParse(TBCostCompoundBraid.Text, out CompoundBraid);
-            double.TryParse(TBHighGradeSuede.Text, out HighGradeSuede);
-            double.TryParse(TBLeather.Text, out Leather);
-            double.TryParse(TBMetalHardener.Text, out MetalHardener);
-            double.TryParse(TBMetallicThread.Text, out MetallicThread);
-            double.TryParse(TBDurableMetalPlate.Text, out DurableMetalPlate);
-            double.TryParse(TBSteel.Text, out Steel);
+            double.TryParse(TBCostHighGradeSuede.Text, out HighGradeSuede);
+            double.TryParse(TBCostLeather.Text, out Leather);
+            double.TryParse(TBCostMetalHardener.Text, out MetalHardener);
+            double.TryParse(TBCostMetallicThread.Text, out MetallicThread);
+            double.TryParse(TBCostDurableMetalPlate.Text, out DurableMetalPlate);
+            double.TryParse(TBCostSteel.Text, out Steel);
             double.TryParse(TBCostCord.Text, out Cord);
-            double.TryParse(TBMetallicFiber.Text, out MetallicFiber);
+            double.TryParse(TBCostMetallicFiber.Text, out MetallicFiber);
             double.TryParse(TBCostCraftedLeather.Text, out CraftedLeather);
-            double.TryParse(TBSteelMold.Text, out SteelMold);
-            double.TryParse(TBSyntheticCokes.Text, out SyntheticCokes);
-            double.TryParse(TBOriharukon.Text, out Oriharukon);
-            double.TryParse(TBVarnishOfPurity.Text, out VarnishOfPurity);
-            double.TryParse(TBMithrilAlloy.Text, out MithrilAlloy);
-            double.TryParse(TBSilverMold.Text, out SilverMold);
+            double.TryParse(TBCostSteelMold.Text, out SteelMold);
+            double.TryParse(TBCostSyntheticCokes.Text, out SyntheticCokes);
+            double.TryParse(TBCostOriharukon.Text, out Oriharukon);
+            double.TryParse(TBCostVarnishOfPurity.Text, out VarnishOfPurity);
+            double.TryParse(TBCostMithrilAlloy.Text, out MithrilAlloy);
+            double.TryParse(TBCostSilverMold.Text, out SilverMold);
             double.TryParse(TBCostBlacksmithsFrame.Text, out BlacksmithsFrame);
             double.TryParse(TBCostArtisansFrame.Text, out ArtisansFrame);
-            double.TryParse(TBCraftsmanMold.Text, out CraftsmanMold);
+            double.TryParse(TBCostCraftsmanMold.Text, out CraftsmanMold);
             double.TryParse(TBCostArcsmithsAnvil.Text, out ArcsmithsAnvil);
-            double.TryParse(TBMaestroAnvilLock.Text, out MaestroAnvilLock);
-            double.TryParse(TBLeolinsMold.Text, out LeolinsMold);
-            double.TryParse(TBMaestroHolder.Text, out MaestroHolder);
-            double.TryParse(TBMaestroMold.Text, out MaestroMold);
-            double.TryParse(TBWarsmithsHolder.Text, out WarsmithsHolder);
-            double.TryParse(TBWarsmithsMold.Text, out WarsmithsMold);
+            double.TryParse(TBCostMaestroAnvilLock.Text, out MaestroAnvilLock);
+            double.TryParse(TBCostLeolinsMold.Text, out LeolinsMold);
+            double.TryParse(TBCostMaestroHolder.Text, out MaestroHolder);
+            double.TryParse(TBCostMaestroMold.Text, out MaestroMold);
+            double.TryParse(TBCostWarsmithsHolder.Text, out WarsmithsHolder);
+            double.TryParse(TBCostWarsmithsMold.Text, out WarsmithsMold);
 
 
             // D
@@ -401,26 +404,26 @@ namespace CraftCostCalc
             //Парсим строки из ТБ в double для сохранения
 
             //Простые ресурсы
-            double.TryParse(TBAdamantiteNugget.Text, out SavSet.SaveAdamantiteNugget);
-            double.TryParse(TBAnimalBone.Text, out SavSet.SaveAnimalBone);
-            double.TryParse(TBAnimalSkin.Text, out SavSet.SaveAnimalSkin);
-            double.TryParse(TBAsofe.Text, out SavSet.SaveAsofe);
-            double.TryParse(TBCharcoal.Text, out SavSet.SaveCharcoal);
-            double.TryParse(TBCoal.Text, out SavSet.SaveCoal);
-            double.TryParse(TBEnria.Text, out SavSet.SaveEnria);
-            double.TryParse(TBIronOre.Text, out SavSet.SaveIronOre);
-            double.TryParse(TBMithrilOre.Text, out SavSet.SaveMithrilOre);
-            double.TryParse(TBMoldGlue.Text, out SavSet.SaveMoldGlue);
-            double.TryParse(TBMoldHardener.Text, out SavSet.SaveMoldHardener);
-            double.TryParse(TBMoldLubricant.Text, out SavSet.SaveMoldLubricant);
-            double.TryParse(TBOriharukonOre.Text, out SavSet.SaveOriharukonOre);
-            double.TryParse(TBSilverNugget.Text, out SavSet.SaveSilverNugget);
-            double.TryParse(TBStem.Text, out SavSet.SaveStem);
-            double.TryParse(TBStoneOfPurity.Text, out SavSet.SaveStoneOfPurity);
-            double.TryParse(TBSuede.Text, out SavSet.SaveSuede);
-            double.TryParse(TBThons.Text, out SavSet.SaveThons);
-            double.TryParse(TBThread.Text, out SavSet.SaveThread);
-            double.TryParse(TBVarnish.Text, out SavSet.SaveVarnish);
+            double.TryParse(TBCostAdamantiteNugget.Text, out SavSet.SaveAdamantiteNugget);
+            double.TryParse(TBCostAnimalBone.Text, out SavSet.SaveAnimalBone);
+            double.TryParse(TBCostAnimalSkin.Text, out SavSet.SaveAnimalSkin);
+            double.TryParse(TBCostAsofe.Text, out SavSet.SaveAsofe);
+            double.TryParse(TBCostCharcoal.Text, out SavSet.SaveCharcoal);
+            double.TryParse(TBCostCoal.Text, out SavSet.SaveCoal);
+            double.TryParse(TBCostEnria.Text, out SavSet.SaveEnria);
+            double.TryParse(TBCostIronOre.Text, out SavSet.SaveIronOre);
+            double.TryParse(TBCostMithrilOre.Text, out SavSet.SaveMithrilOre);
+            double.TryParse(TBCostMoldGlue.Text, out SavSet.SaveMoldGlue);
+            double.TryParse(TBCostMoldHardener.Text, out SavSet.SaveMoldHardener);
+            double.TryParse(TBCostMoldLubricant.Text, out SavSet.SaveMoldLubricant);
+            double.TryParse(TBCostOriharukonOre.Text, out SavSet.SaveOriharukonOre);
+            double.TryParse(TBCostSilverNugget.Text, out SavSet.SaveSilverNugget);
+            double.TryParse(TBCostStem.Text, out SavSet.SaveStem);
+            double.TryParse(TBCostStoneOfPurity.Text, out SavSet.SaveStoneOfPurity);
+            double.TryParse(TBCostSuede.Text, out SavSet.SaveSuede);
+            double.TryParse(TBCostThons.Text, out SavSet.SaveThons);
+            double.TryParse(TBCostThread.Text, out SavSet.SaveThread);
+            double.TryParse(TBCostVarnish.Text, out SavSet.SaveVarnish);
             double.TryParse(TBCry_d.Text, out SavSet.SaveCry_d);
             double.TryParse(TBCry_c.Text, out SavSet.SaveCry_c);
             double.TryParse(TBCry_b.Text, out SavSet.SaveCry_b);
@@ -437,31 +440,31 @@ namespace CraftCostCalc
             double.TryParse(TBCostCoarseBonePowder.Text, out SavSet.SaveCoarsedBonePowder);
             double.TryParse(TBCostCokes.Text, out SavSet.SaveCokes);
             double.TryParse(TBCostCompoundBraid.Text, out SavSet.SaveCompoundBraid);
-            double.TryParse(TBHighGradeSuede.Text, out SavSet.SaveHighGradeSuede);
-            double.TryParse(TBLeather.Text, out SavSet.SaveLeather);
-            double.TryParse(TBMetalHardener.Text, out SavSet.SaveMetalHardener);
-            double.TryParse(TBMetallicThread.Text, out SavSet.SaveMetallicThread);
-            double.TryParse(TBDurableMetalPlate.Text, out SavSet.SaveDurableMetalPlate);
-            double.TryParse(TBSteel.Text, out SavSet.SaveSteel);
+            double.TryParse(TBCostHighGradeSuede.Text, out SavSet.SaveHighGradeSuede);
+            double.TryParse(TBCostLeather.Text, out SavSet.SaveLeather);
+            double.TryParse(TBCostMetalHardener.Text, out SavSet.SaveMetalHardener);
+            double.TryParse(TBCostMetallicThread.Text, out SavSet.SaveMetallicThread);
+            double.TryParse(TBCostDurableMetalPlate.Text, out SavSet.SaveDurableMetalPlate);
+            double.TryParse(TBCostSteel.Text, out SavSet.SaveSteel);
             double.TryParse(TBCostCord.Text, out SavSet.SaveCord);
-            double.TryParse(TBMetallicFiber.Text, out SavSet.SaveMetallicFiber);
+            double.TryParse(TBCostMetallicFiber.Text, out SavSet.SaveMetallicFiber);
             double.TryParse(TBCostCraftedLeather.Text, out SavSet.SaveCraftedLeather);
-            double.TryParse(TBSteelMold.Text, out SavSet.SaveSteelMold);
-            double.TryParse(TBSyntheticCokes.Text, out SavSet.SaveSynteticCokes);
-            double.TryParse(TBOriharukon.Text, out SavSet.SaveOriharukon);
-            double.TryParse(TBVarnishOfPurity.Text, out SavSet.SaveVarnishOfPurity);
-            double.TryParse(TBMithrilAlloy.Text, out SavSet.SaveMithrilAlloy);
-            double.TryParse(TBSilverMold.Text, out SavSet.SaveSilverMold);
+            double.TryParse(TBCostSteelMold.Text, out SavSet.SaveSteelMold);
+            double.TryParse(TBCostSyntheticCokes.Text, out SavSet.SaveSynteticCokes);
+            double.TryParse(TBCostOriharukon.Text, out SavSet.SaveOriharukon);
+            double.TryParse(TBCostVarnishOfPurity.Text, out SavSet.SaveVarnishOfPurity);
+            double.TryParse(TBCostMithrilAlloy.Text, out SavSet.SaveMithrilAlloy);
+            double.TryParse(TBCostSilverMold.Text, out SavSet.SaveSilverMold);
             double.TryParse(TBCostBlacksmithsFrame.Text, out SavSet.SaveBlacksmithsFrame);
             double.TryParse(TBCostArtisansFrame.Text, out SavSet.SaveArtisansFrame);
-            double.TryParse(TBCraftsmanMold.Text, out SavSet.SaveCraftsmanMold);
+            double.TryParse(TBCostCraftsmanMold.Text, out SavSet.SaveCraftsmanMold);
             double.TryParse(TBCostArcsmithsAnvil.Text, out SavSet.SaveArcsmithsAnvil);
-            double.TryParse(TBMaestroAnvilLock.Text, out SavSet.SaveMaestroAnvilLock);
-            double.TryParse(TBLeolinsMold.Text, out SavSet.SaveLeolinsMold);
-            double.TryParse(TBMaestroHolder.Text, out SavSet.SaveMaestroHolder);
-            double.TryParse(TBMaestroMold.Text, out SavSet.SaveMaestroMold);
-            double.TryParse(TBWarsmithsHolder.Text, out SavSet.SaveWarsmithsHolder);
-            double.TryParse(TBWarsmithsMold.Text, out SavSet.SaveWarsmithsMold);
+            double.TryParse(TBCostMaestroAnvilLock.Text, out SavSet.SaveMaestroAnvilLock);
+            double.TryParse(TBCostLeolinsMold.Text, out SavSet.SaveLeolinsMold);
+            double.TryParse(TBCostMaestroHolder.Text, out SavSet.SaveMaestroHolder);
+            double.TryParse(TBCostMaestroMold.Text, out SavSet.SaveMaestroMold);
+            double.TryParse(TBCostWarsmithsHolder.Text, out SavSet.SaveWarsmithsHolder);
+            double.TryParse(TBCostWarsmithsMold.Text, out SavSet.SaveWarsmithsMold);
 
             //Револ
             double.TryParse(TBSwordOfRevolution.Text, out SavSet.SaveSwordOfRevolution);
@@ -504,26 +507,26 @@ namespace CraftCostCalc
                     //Загружаем прочитанные данные в ТБшки
 
                     //Простые ресурсы
-                    TBAdamantiteNugget.Text = SavSet.SaveAdamantiteNugget.ToString("F0");
-                    TBAnimalBone.Text = SavSet.SaveAnimalBone.ToString("F0");
-                    TBAnimalSkin.Text = SavSet.SaveAnimalSkin.ToString("F0");
-                    TBAsofe.Text = SavSet.SaveAsofe.ToString("F0");
-                    TBCharcoal.Text = SavSet.SaveCharcoal.ToString("F0");
-                    TBCoal.Text = SavSet.SaveCoal.ToString("F0");
-                    TBEnria.Text = SavSet.SaveEnria.ToString("F0");
-                    TBIronOre.Text = SavSet.SaveIronOre.ToString("F0");
-                    TBMithrilOre.Text = SavSet.SaveMithrilOre.ToString("F0");
-                    TBMoldGlue.Text = SavSet.SaveMoldGlue.ToString("F0");
-                    TBMoldHardener.Text = SavSet.SaveMoldHardener.ToString("F0");
-                    TBMoldLubricant.Text = SavSet.SaveMoldLubricant.ToString("F0");
-                    TBOriharukonOre.Text = SavSet.SaveOriharukonOre.ToString("F0");
-                    TBSilverNugget.Text = SavSet.SaveSilverNugget.ToString("F0");
-                    TBStem.Text = SavSet.SaveStem.ToString("F0");
-                    TBStoneOfPurity.Text = SavSet.SaveStoneOfPurity.ToString("F0");
-                    TBSuede.Text = SavSet.SaveSuede.ToString("F0");
-                    TBThons.Text = SavSet.SaveThons.ToString("F0");
-                    TBThread.Text = SavSet.SaveThread.ToString("F0");
-                    TBVarnish.Text = SavSet.SaveVarnish.ToString("F0");
+                    TBCostAdamantiteNugget.Text = SavSet.SaveAdamantiteNugget.ToString("F0");
+                    TBCostAnimalBone.Text = SavSet.SaveAnimalBone.ToString("F0");
+                    TBCostAnimalSkin.Text = SavSet.SaveAnimalSkin.ToString("F0");
+                    TBCostAsofe.Text = SavSet.SaveAsofe.ToString("F0");
+                    TBCostCharcoal.Text = SavSet.SaveCharcoal.ToString("F0");
+                    TBCostCoal.Text = SavSet.SaveCoal.ToString("F0");
+                    TBCostEnria.Text = SavSet.SaveEnria.ToString("F0");
+                    TBCostIronOre.Text = SavSet.SaveIronOre.ToString("F0");
+                    TBCostMithrilOre.Text = SavSet.SaveMithrilOre.ToString("F0");
+                    TBCostMoldGlue.Text = SavSet.SaveMoldGlue.ToString("F0");
+                    TBCostMoldHardener.Text = SavSet.SaveMoldHardener.ToString("F0");
+                    TBCostMoldLubricant.Text = SavSet.SaveMoldLubricant.ToString("F0");
+                    TBCostOriharukonOre.Text = SavSet.SaveOriharukonOre.ToString("F0");
+                    TBCostSilverNugget.Text = SavSet.SaveSilverNugget.ToString("F0");
+                    TBCostStem.Text = SavSet.SaveStem.ToString("F0");
+                    TBCostStoneOfPurity.Text = SavSet.SaveStoneOfPurity.ToString("F0");
+                    TBCostSuede.Text = SavSet.SaveSuede.ToString("F0");
+                    TBCostThons.Text = SavSet.SaveThons.ToString("F0");
+                    TBCostThread.Text = SavSet.SaveThread.ToString("F0");
+                    TBCostVarnish.Text = SavSet.SaveVarnish.ToString("F0");
                     TBCry_d.Text = SavSet.SaveCry_d.ToString("F0");
                     TBCry_c.Text = SavSet.SaveCry_c.ToString("F0");
                     TBCry_b.Text = SavSet.SaveCry_b.ToString("F0");
@@ -540,31 +543,31 @@ namespace CraftCostCalc
                     TBCostCoarseBonePowder.Text = SavSet.SaveCoarsedBonePowder.ToString("F0");
                     TBCostCokes.Text = SavSet.SaveCokes.ToString("F0");
                     TBCostCompoundBraid.Text = SavSet.SaveCompoundBraid.ToString("F0");
-                    TBHighGradeSuede.Text = SavSet.SaveHighGradeSuede.ToString("F0");
-                    TBLeather.Text = SavSet.SaveLeather.ToString("F0");
-                    TBMetalHardener.Text = SavSet.SaveMetalHardener.ToString("F0");
-                    TBMetallicThread.Text = SavSet.SaveMetallicThread.ToString("F0");
-                    TBDurableMetalPlate.Text = SavSet.SaveDurableMetalPlate.ToString("F0");
-                    TBSteel.Text = SavSet.SaveSteel.ToString("F0");
+                    TBCostHighGradeSuede.Text = SavSet.SaveHighGradeSuede.ToString("F0");
+                    TBCostLeather.Text = SavSet.SaveLeather.ToString("F0");
+                    TBCostMetalHardener.Text = SavSet.SaveMetalHardener.ToString("F0");
+                    TBCostMetallicThread.Text = SavSet.SaveMetallicThread.ToString("F0");
+                    TBCostDurableMetalPlate.Text = SavSet.SaveDurableMetalPlate.ToString("F0");
+                    TBCostSteel.Text = SavSet.SaveSteel.ToString("F0");
                     TBCostCord.Text = SavSet.SaveCord.ToString("F0");
-                    TBMetallicFiber.Text = SavSet.SaveMetallicFiber.ToString("F0");
+                    TBCostMetallicFiber.Text = SavSet.SaveMetallicFiber.ToString("F0");
                     TBCostCraftedLeather.Text = SavSet.SaveCraftedLeather.ToString("F0");
-                    TBSteelMold.Text = SavSet.SaveSteelMold.ToString("F0");
-                    TBSyntheticCokes.Text = SavSet.SaveSynteticCokes.ToString("F0");
-                    TBOriharukon.Text = SavSet.SaveOriharukon.ToString("F0");
-                    TBVarnishOfPurity.Text = SavSet.SaveVarnishOfPurity.ToString("F0");
-                    TBMithrilAlloy.Text = SavSet.SaveMithrilAlloy.ToString("F0");
-                    TBSilverMold.Text = SavSet.SaveSilverMold.ToString("F0");
+                    TBCostSteelMold.Text = SavSet.SaveSteelMold.ToString("F0");
+                    TBCostSyntheticCokes.Text = SavSet.SaveSynteticCokes.ToString("F0");
+                    TBCostOriharukon.Text = SavSet.SaveOriharukon.ToString("F0");
+                    TBCostVarnishOfPurity.Text = SavSet.SaveVarnishOfPurity.ToString("F0");
+                    TBCostMithrilAlloy.Text = SavSet.SaveMithrilAlloy.ToString("F0");
+                    TBCostSilverMold.Text = SavSet.SaveSilverMold.ToString("F0");
                     TBCostBlacksmithsFrame.Text = SavSet.SaveBlacksmithsFrame.ToString("F0");
                     TBCostArtisansFrame.Text = SavSet.SaveArtisansFrame.ToString("F0");
-                    TBCraftsmanMold.Text = SavSet.SaveCraftsmanMold.ToString("F0");
+                    TBCostCraftsmanMold.Text = SavSet.SaveCraftsmanMold.ToString("F0");
                     TBCostArcsmithsAnvil.Text = SavSet.SaveArcsmithsAnvil.ToString("F0");
-                    TBMaestroAnvilLock.Text = SavSet.SaveMaestroAnvilLock.ToString("F0");
-                    TBLeolinsMold.Text = SavSet.SaveLeolinsMold.ToString("F0");
-                    TBMaestroHolder.Text = SavSet.SaveMaestroHolder.ToString("F0");
-                    TBMaestroMold.Text = SavSet.SaveMaestroMold.ToString("F0");
-                    TBWarsmithsHolder.Text = SavSet.SaveWarsmithsHolder.ToString("F0");
-                    TBWarsmithsMold.Text = SavSet.SaveWarsmithsMold.ToString("F0");
+                    TBCostMaestroAnvilLock.Text = SavSet.SaveMaestroAnvilLock.ToString("F0");
+                    TBCostLeolinsMold.Text = SavSet.SaveLeolinsMold.ToString("F0");
+                    TBCostMaestroHolder.Text = SavSet.SaveMaestroHolder.ToString("F0");
+                    TBCostMaestroMold.Text = SavSet.SaveMaestroMold.ToString("F0");
+                    TBCostWarsmithsHolder.Text = SavSet.SaveWarsmithsHolder.ToString("F0");
+                    TBCostWarsmithsMold.Text = SavSet.SaveWarsmithsMold.ToString("F0");
 
                     //Револ
                     TBSwordOfRevolution.Text = SavSet.SaveSwordOfRevolution.ToString("F0");
@@ -594,6 +597,19 @@ namespace CraftCostCalc
         private void ButPrint_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Функция не реализована. Пока что.", "Что-то пошло не так", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+
+        private void TabComponents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (TabComponents.SelectedIndex == 0)
+            {
+                LabHelp.Text = "Не забывайте сохранять изменения. Вводить все цены заново - не очень приятно ;)";
+            }
+            if (TabComponents.SelectedIndex == 1)
+            {
+                LabHelp.Text = "При расчете стоимости Кристаллов B-Grade учитывается стоимость Stone Of Purity.";
+            }
         }
     }
 }
