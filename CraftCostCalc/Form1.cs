@@ -197,7 +197,7 @@ namespace CraftCostCalc
         {
             //Перевод Стринг в Инт для Револа
             double SwordOfRevolution;
-            double.TryParse(TBSwordOfRevolution.Text, out SwordOfRevolution);
+            double.TryParse(TBSwordOfRevolutionToCry.Text, out SwordOfRevolution);
 
                 //Считаем цену крисов
             double Cry_d, Cry_c, Cry_b, StoneOfPurity;
@@ -216,7 +216,7 @@ namespace CraftCostCalc
         private void ButCryCalcAA_Click(object sender, EventArgs e)
         {
             double AncientAdena, Cry_a, Cry_s, Gem_a, Gem_s;
-            double.TryParse(TBAncientAdena.Text, out AncientAdena);
+            double.TryParse(TBAncientAdenaToCry.Text, out AncientAdena);
 
             Cry_a = AncientAdena * 15000;
             TBCry_a.Text = Cry_a.ToString("F0");
@@ -316,53 +316,53 @@ namespace CraftCostCalc
 
             // D
             SSD = (Cry_d + (SoulOre * 3)) / 156;
-            LabSSD.Text = SSD.ToString("F2");
+            LabCraftCostSSD.Text = SSD.ToString("F2");
 
             SpSD = (Cry_d + (SpiritOre * 3)) / 100;
-            LabSpSD.Text = SpSD.ToString("F2");
+            LabCraftCostSpSD.Text = SpSD.ToString("F2");
 
             BSpSD = ((Cry_d * 2) + (SpiritOre * 8)) / 100;
-            LabBSpSD.Text = BSpSD.ToString("F2");
+            LabCraftCostBSpSD.Text = BSpSD.ToString("F2");
 
             // C
             SSC = (Cry_c + (SoulOre * 15)) / 476;
-            LabSSC.Text = SSC.ToString("F2");
+            LabCraftCostSSC.Text = SSC.ToString("F2");
 
             SpSC = (Cry_c + (SpiritOre * 10)) / 200;
-            LabSpSC.Text = SpSC.ToString("F2");
+            LabCraftCostSpSC.Text = SpSC.ToString("F2");
 
             BSpSC = ((Cry_c * 2) + (SpiritOre * 30)) / 200;
-            LabBSpSC.Text = BSpSC.ToString("F2");
+            LabCraftCostBSpSC.Text = BSpSC.ToString("F2");
 
             // B
             SSB = (Cry_b + (SoulOre * 54)) / 450;
-            LabSSB.Text = SSB.ToString("F2");
+            LabCraftCostSSB.Text = SSB.ToString("F2");
 
             SpSB = (Cry_b + (SpiritOre * 15)) / 150;
-            LabSpSB.Text = SpSB.ToString("F2");
+            LabCraftCostSpSB.Text = SpSB.ToString("F2");
 
             BSpSB = ((Cry_b * 2) + (SpiritOre * 16)) / 100;
-            LabBSpSB.Text = BSpSB.ToString("F2");
+            LabCraftCostBSpSB.Text = BSpSB.ToString("F2");
 
             // A
             SSA = (Cry_a + (SoulOre * 36)) / 300;
-            LabSSA.Text = SSA.ToString("F2");
+            LabCraftCostSSA.Text = SSA.ToString("F2");
 
             SpSA = (Cry_a + (SpiritOre * 22)) / 200;
-            LabSpSA.Text = SpSA.ToString("F2");
+            LabCraftCostSpSA.Text = SpSA.ToString("F2");
 
             BSpSA = ((Cry_a * 2) + (SpiritOre * 70)) / 200;
-            LabBSpSA.Text = BSpSA.ToString("F2");
+            LabCraftCostBSpSA.Text = BSpSA.ToString("F2");
 
             // S
             SSS = (Cry_s + (SoulOre * 40)) / 350;
-            LabSSS.Text = SSS.ToString("F2");
+            LabCraftCostSSS.Text = SSS.ToString("F2");
 
             SpSS = (Cry_s + (SpiritOre * 15)) / 200;
-            LabSpSS.Text = SpSS.ToString("F2");
+            LabCraftCostSpSS.Text = SpSS.ToString("F2");
 
             BSpSS = ((Cry_s * 2) + (SpiritOre * 50)) / 200;
-            LabBSpSS.Text = BSpSS.ToString("F2");
+            LabCraftCostBSpSS.Text = BSpSS.ToString("F2");
 
             // Weapons
             // S-Grade
@@ -467,10 +467,10 @@ namespace CraftCostCalc
             double.TryParse(TBCostWarsmithsMold.Text, out SavSet.SaveWarsmithsMold);
 
             //Револ
-            double.TryParse(TBSwordOfRevolution.Text, out SavSet.SaveSwordOfRevolution);
+            double.TryParse(TBSwordOfRevolutionToCry.Text, out SavSet.SaveSwordOfRevolution);
 
             //АА
-            double.TryParse(TBAncientAdena.Text, out SavSet.SaveAncientAdena);
+            double.TryParse(TBAncientAdenaToCry.Text, out SavSet.SaveAncientAdena);
 
             //Соул и спирит оре
             double.TryParse(TBSoulOre.Text, out SavSet.SaveSoulOre);
@@ -570,10 +570,10 @@ namespace CraftCostCalc
                     TBCostWarsmithsMold.Text = SavSet.SaveWarsmithsMold.ToString("F0");
 
                     //Револ
-                    TBSwordOfRevolution.Text = SavSet.SaveSwordOfRevolution.ToString("F0");
+                    TBSwordOfRevolutionToCry.Text = SavSet.SaveSwordOfRevolution.ToString("F0");
 
                     //АА
-                    TBAncientAdena.Text = SavSet.SaveAncientAdena.ToString("F0");
+                    TBAncientAdenaToCry.Text = SavSet.SaveAncientAdena.ToString("F0");
 
                     //Соул и спирит оре
                     TBSoulOre.Text = SavSet.SaveSoulOre.ToString("F0");
@@ -610,6 +610,16 @@ namespace CraftCostCalc
             {
                 LabHelp.Text = "При расчете стоимости Кристаллов B-Grade учитывается стоимость Stone Of Purity.";
             }
+        }
+
+        private void TBCostSSD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WBReklamaTabCry_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
         }
     }
 }
