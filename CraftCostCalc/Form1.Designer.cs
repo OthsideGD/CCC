@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.TabMain = new System.Windows.Forms.TabControl();
+            this.TabMainItems = new System.Windows.Forms.TabControl();
             this.TabWeapon = new System.Windows.Forms.TabPage();
             this.TabWeaponType = new System.Windows.Forms.TabControl();
             this.TabBlunt = new System.Windows.Forms.TabPage();
-            this.TabWeaponGrade = new System.Windows.Forms.TabControl();
+            this.TabWeaponBluntGrade = new System.Windows.Forms.TabControl();
             this.TabWeaponBluntNG = new System.Windows.Forms.TabPage();
             this.label77 = new System.Windows.Forms.Label();
             this.TabWeaponBluntD = new System.Windows.Forms.TabPage();
@@ -92,58 +92,128 @@
             this.TabArmor = new System.Windows.Forms.TabPage();
             this.TabAcessory = new System.Windows.Forms.TabPage();
             this.TabShots = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.LabBSpSS = new System.Windows.Forms.Label();
-            this.LabSpSS = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.LabSSS = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.LabBSpSA = new System.Windows.Forms.Label();
-            this.LabSpSA = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.LabSSA = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.LabBSpSB = new System.Windows.Forms.Label();
-            this.LabSpSB = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.LabSSB = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.LabBSpSC = new System.Windows.Forms.Label();
-            this.LabSpSC = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.LabSSC = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.LabBSpSD = new System.Windows.Forms.Label();
-            this.LabSpSD = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.LabSSD = new System.Windows.Forms.Label();
-            this.pictureBox76 = new System.Windows.Forms.PictureBox();
-            this.pictureBox73 = new System.Windows.Forms.PictureBox();
-            this.pictureBox77 = new System.Windows.Forms.PictureBox();
-            this.pictureBox74 = new System.Windows.Forms.PictureBox();
-            this.pictureBox78 = new System.Windows.Forms.PictureBox();
-            this.pictureBox75 = new System.Windows.Forms.PictureBox();
-            this.pictureBox70 = new System.Windows.Forms.PictureBox();
-            this.pictureBox71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.pictureBox68 = new System.Windows.Forms.PictureBox();
-            this.pictureBox69 = new System.Windows.Forms.PictureBox();
-            this.pictureBox66 = new System.Windows.Forms.PictureBox();
-            this.pictureBox65 = new System.Windows.Forms.PictureBox();
-            this.pictureBox64 = new System.Windows.Forms.PictureBox();
-            this.label70 = new System.Windows.Forms.Label();
+            this.GBShots = new System.Windows.Forms.GroupBox();
+            this.PanShots = new System.Windows.Forms.Panel();
+            this.LabCraftCostBSpSS = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSS = new System.Windows.Forms.Label();
+            this.LabNameBSpSS = new System.Windows.Forms.Label();
+            this.LabNameSpSS = new System.Windows.Forms.Label();
+            this.LabCraftCostSSS = new System.Windows.Forms.Label();
+            this.LabNameSSS = new System.Windows.Forms.Label();
+            this.LabCraftCostBSpSA = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSA = new System.Windows.Forms.Label();
+            this.LabNameBSpSA = new System.Windows.Forms.Label();
+            this.LabNameSpSA = new System.Windows.Forms.Label();
+            this.LabCraftCostSSA = new System.Windows.Forms.Label();
+            this.LabNameSSA = new System.Windows.Forms.Label();
+            this.LabCraftCostBSpSB = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSB = new System.Windows.Forms.Label();
+            this.LabNameBSpSB = new System.Windows.Forms.Label();
+            this.LabNameSpSB = new System.Windows.Forms.Label();
+            this.LabCraftCostSSB = new System.Windows.Forms.Label();
+            this.LabNameSSB = new System.Windows.Forms.Label();
+            this.LabCraftCostBSpSC = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSC = new System.Windows.Forms.Label();
+            this.LabNameBSpSC = new System.Windows.Forms.Label();
+            this.LabNameSpSC = new System.Windows.Forms.Label();
+            this.LabCraftCostSSC = new System.Windows.Forms.Label();
+            this.LabNameSSC = new System.Windows.Forms.Label();
+            this.LabCraftCostBSpSD = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSD = new System.Windows.Forms.Label();
+            this.LabNameBSpSD = new System.Windows.Forms.Label();
+            this.LabNameSpSD = new System.Windows.Forms.Label();
+            this.LabCraftCostSSD = new System.Windows.Forms.Label();
+            this.PicBSpSS = new System.Windows.Forms.PictureBox();
+            this.PicBSpSA = new System.Windows.Forms.PictureBox();
+            this.PicSpSS = new System.Windows.Forms.PictureBox();
+            this.PicSpSA = new System.Windows.Forms.PictureBox();
+            this.PicSSS = new System.Windows.Forms.PictureBox();
+            this.PicSSA = new System.Windows.Forms.PictureBox();
+            this.PicBSpSB = new System.Windows.Forms.PictureBox();
+            this.PicSpSB = new System.Windows.Forms.PictureBox();
+            this.PicSSB = new System.Windows.Forms.PictureBox();
+            this.PicBSpSC = new System.Windows.Forms.PictureBox();
+            this.PicSpSC = new System.Windows.Forms.PictureBox();
+            this.PicSSC = new System.Windows.Forms.PictureBox();
+            this.PicBSpSD = new System.Windows.Forms.PictureBox();
+            this.PicSpSD = new System.Windows.Forms.PictureBox();
+            this.PicSSD = new System.Windows.Forms.PictureBox();
+            this.LabNameSSD = new System.Windows.Forms.Label();
             this.TabOther = new System.Windows.Forms.TabPage();
             this.ButItemsCost = new System.Windows.Forms.Button();
             this.PanCommonResources = new System.Windows.Forms.Panel();
+            this.PanVarnish = new System.Windows.Forms.Panel();
+            this.PicVarnish = new System.Windows.Forms.PictureBox();
+            this.LabNameVarnish = new System.Windows.Forms.Label();
+            this.TBCostVarnish = new System.Windows.Forms.TextBox();
+            this.PanThread = new System.Windows.Forms.Panel();
+            this.PicThread = new System.Windows.Forms.PictureBox();
+            this.LabNameThread = new System.Windows.Forms.Label();
+            this.TBCostThread = new System.Windows.Forms.TextBox();
+            this.PanThons = new System.Windows.Forms.Panel();
+            this.PicThons = new System.Windows.Forms.PictureBox();
+            this.LabNameThons = new System.Windows.Forms.Label();
+            this.TBCostThons = new System.Windows.Forms.TextBox();
+            this.PanSuede = new System.Windows.Forms.Panel();
+            this.PicSuede = new System.Windows.Forms.PictureBox();
+            this.LabNameSuede = new System.Windows.Forms.Label();
+            this.TBCostSuede = new System.Windows.Forms.TextBox();
+            this.PanStoneOfPurity = new System.Windows.Forms.Panel();
+            this.PicStoneOfPurity = new System.Windows.Forms.PictureBox();
+            this.LabNameStoneOfPurity = new System.Windows.Forms.Label();
+            this.TBCostStoneOfPurity = new System.Windows.Forms.TextBox();
+            this.PanStem = new System.Windows.Forms.Panel();
+            this.PicStem = new System.Windows.Forms.PictureBox();
+            this.LabNameStem = new System.Windows.Forms.Label();
+            this.TBCostStem = new System.Windows.Forms.TextBox();
+            this.PanSilverNugget = new System.Windows.Forms.Panel();
+            this.PicSilverNugget = new System.Windows.Forms.PictureBox();
+            this.LabNameSilverNugget = new System.Windows.Forms.Label();
+            this.TBCostSilverNugget = new System.Windows.Forms.TextBox();
+            this.PanOriharukonOre = new System.Windows.Forms.Panel();
+            this.PicOriharukonOre = new System.Windows.Forms.PictureBox();
+            this.LabNameOriharukonOre = new System.Windows.Forms.Label();
+            this.TBCostOriharukonOre = new System.Windows.Forms.TextBox();
+            this.PanMoldLubricant = new System.Windows.Forms.Panel();
+            this.PicMoldLubricant = new System.Windows.Forms.PictureBox();
+            this.LabNameMoldLubricant = new System.Windows.Forms.Label();
+            this.TBCostMoldLubricant = new System.Windows.Forms.TextBox();
+            this.PanMoldHardener = new System.Windows.Forms.Panel();
+            this.PicMoldHardener = new System.Windows.Forms.PictureBox();
+            this.LabNameMoldHardener = new System.Windows.Forms.Label();
+            this.TBCostMoldHardener = new System.Windows.Forms.TextBox();
+            this.PanMoldGlue = new System.Windows.Forms.Panel();
+            this.PicMoldGlue = new System.Windows.Forms.PictureBox();
+            this.LabNameMoldGlue = new System.Windows.Forms.Label();
+            this.TBCostMoldGlue = new System.Windows.Forms.TextBox();
+            this.PanMithrilOre = new System.Windows.Forms.Panel();
+            this.PicMithrilOre = new System.Windows.Forms.PictureBox();
+            this.LabNameMithrilOre = new System.Windows.Forms.Label();
+            this.TBCostMithrilOre = new System.Windows.Forms.TextBox();
+            this.PanIronOre = new System.Windows.Forms.Panel();
+            this.PicIronOre = new System.Windows.Forms.PictureBox();
+            this.LabNameIronOre = new System.Windows.Forms.Label();
+            this.TBCostIronOre = new System.Windows.Forms.TextBox();
+            this.PanEnria = new System.Windows.Forms.Panel();
+            this.PicEnria = new System.Windows.Forms.PictureBox();
+            this.LabNameEnria = new System.Windows.Forms.Label();
+            this.TBCostEnria = new System.Windows.Forms.TextBox();
+            this.PanCoal = new System.Windows.Forms.Panel();
+            this.PicCoal = new System.Windows.Forms.PictureBox();
+            this.LabNameCoal = new System.Windows.Forms.Label();
+            this.TBCostCoal = new System.Windows.Forms.TextBox();
+            this.PanCharcoal = new System.Windows.Forms.Panel();
+            this.PicCharcoal = new System.Windows.Forms.PictureBox();
+            this.LabNameCharcoal = new System.Windows.Forms.Label();
+            this.TBCostCharcoal = new System.Windows.Forms.TextBox();
+            this.PanAsofe = new System.Windows.Forms.Panel();
+            this.PicAsofe = new System.Windows.Forms.PictureBox();
+            this.LabNameAsofe = new System.Windows.Forms.Label();
+            this.TBCostAsofe = new System.Windows.Forms.TextBox();
+            this.PanAnimalSkin = new System.Windows.Forms.Panel();
+            this.PicAnimalSkin = new System.Windows.Forms.PictureBox();
+            this.LabNameAnimalSkin = new System.Windows.Forms.Label();
+            this.TBCostAnimalSkin = new System.Windows.Forms.TextBox();
             this.PanAnimalBone = new System.Windows.Forms.Panel();
             this.PicAnimalBone = new System.Windows.Forms.PictureBox();
             this.LabNameAnimalBone = new System.Windows.Forms.Label();
@@ -152,60 +222,6 @@
             this.PicAdamantiteNugget = new System.Windows.Forms.PictureBox();
             this.LabNameAdamantiteNugget = new System.Windows.Forms.Label();
             this.TBCostAdamantiteNugget = new System.Windows.Forms.TextBox();
-            this.TBCostVarnish = new System.Windows.Forms.TextBox();
-            this.LabNameVarnish = new System.Windows.Forms.Label();
-            this.PicVarnish = new System.Windows.Forms.PictureBox();
-            this.TBCostThread = new System.Windows.Forms.TextBox();
-            this.LabNameThread = new System.Windows.Forms.Label();
-            this.PicThread = new System.Windows.Forms.PictureBox();
-            this.TBCostThons = new System.Windows.Forms.TextBox();
-            this.LabNameThons = new System.Windows.Forms.Label();
-            this.PicThons = new System.Windows.Forms.PictureBox();
-            this.TBCostSuede = new System.Windows.Forms.TextBox();
-            this.LabNameSuede = new System.Windows.Forms.Label();
-            this.PicSuede = new System.Windows.Forms.PictureBox();
-            this.TBCostStoneOfPurity = new System.Windows.Forms.TextBox();
-            this.LabNameStoneOfPurity = new System.Windows.Forms.Label();
-            this.PicStoneOfPurity = new System.Windows.Forms.PictureBox();
-            this.TBCostStem = new System.Windows.Forms.TextBox();
-            this.LabNameStem = new System.Windows.Forms.Label();
-            this.PicStem = new System.Windows.Forms.PictureBox();
-            this.TBCostSilverNugget = new System.Windows.Forms.TextBox();
-            this.LabNameSilverNugget = new System.Windows.Forms.Label();
-            this.PicSilverNugget = new System.Windows.Forms.PictureBox();
-            this.TBCostOriharukonOre = new System.Windows.Forms.TextBox();
-            this.TBCostMoldLubricant = new System.Windows.Forms.TextBox();
-            this.LabNameMoldLubricant = new System.Windows.Forms.Label();
-            this.LabNameOriharukonOre = new System.Windows.Forms.Label();
-            this.PicMoldLubricant = new System.Windows.Forms.PictureBox();
-            this.TBCostMoldHardener = new System.Windows.Forms.TextBox();
-            this.PicOriharukonOre = new System.Windows.Forms.PictureBox();
-            this.LabNameMoldHardener = new System.Windows.Forms.Label();
-            this.PicMoldHardener = new System.Windows.Forms.PictureBox();
-            this.TBCostMoldGlue = new System.Windows.Forms.TextBox();
-            this.LabNameMoldGlue = new System.Windows.Forms.Label();
-            this.PicMoldGlue = new System.Windows.Forms.PictureBox();
-            this.TBCostMithrilOre = new System.Windows.Forms.TextBox();
-            this.LabNameMithrilOre = new System.Windows.Forms.Label();
-            this.PicMithrilOre = new System.Windows.Forms.PictureBox();
-            this.TBCostIronOre = new System.Windows.Forms.TextBox();
-            this.LabNameIronOre = new System.Windows.Forms.Label();
-            this.PicIronOre = new System.Windows.Forms.PictureBox();
-            this.TBCostEnria = new System.Windows.Forms.TextBox();
-            this.LabNameEnria = new System.Windows.Forms.Label();
-            this.PicEnria = new System.Windows.Forms.PictureBox();
-            this.TBCostCoal = new System.Windows.Forms.TextBox();
-            this.LabNameCoal = new System.Windows.Forms.Label();
-            this.PicCoal = new System.Windows.Forms.PictureBox();
-            this.TBCostCharcoal = new System.Windows.Forms.TextBox();
-            this.LabNameCharcoal = new System.Windows.Forms.Label();
-            this.PicCharcoal = new System.Windows.Forms.PictureBox();
-            this.TBCostAsofe = new System.Windows.Forms.TextBox();
-            this.LabNameAsofe = new System.Windows.Forms.Label();
-            this.PicAsofe = new System.Windows.Forms.PictureBox();
-            this.TBCostAnimalSkin = new System.Windows.Forms.TextBox();
-            this.LabNameAnimalSkin = new System.Windows.Forms.Label();
-            this.PicAnimalSkin = new System.Windows.Forms.PictureBox();
             this.GBCommonResources = new System.Windows.Forms.GroupBox();
             this.PanNameCommonResources = new System.Windows.Forms.Panel();
             this.LabNameCostCommonResources = new System.Windows.Forms.Label();
@@ -364,18 +380,17 @@
             this.TabComponents = new System.Windows.Forms.TabControl();
             this.TabComponentsResources = new System.Windows.Forms.TabPage();
             this.TabComponentsCry = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label69 = new System.Windows.Forms.Label();
+            this.GBReklamaTabCry = new System.Windows.Forms.GroupBox();
             this.TBSpiritOre = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
+            this.LabNameSpiritOre = new System.Windows.Forms.Label();
             this.TBSoulOre = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
+            this.LabNameSoulOre = new System.Windows.Forms.Label();
             this.ButCryCalcAA = new System.Windows.Forms.Button();
-            this.label66 = new System.Windows.Forms.Label();
-            this.TBAncientAdena = new System.Windows.Forms.TextBox();
+            this.LabNameAncientAdenaToCry = new System.Windows.Forms.Label();
+            this.TBAncientAdenaToCry = new System.Windows.Forms.TextBox();
             this.ButCryCalc = new System.Windows.Forms.Button();
-            this.label64 = new System.Windows.Forms.Label();
-            this.TBSwordOfRevolution = new System.Windows.Forms.TextBox();
+            this.LabNameSwordOfRevolutionToCry = new System.Windows.Forms.Label();
+            this.TBSwordOfRevolutionToCry = new System.Windows.Forms.TextBox();
             this.TBGem_s = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.TBGem_a = new System.Windows.Forms.TextBox();
@@ -387,15 +402,15 @@
             this.TBGem_d = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.TBCry_s = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.LabNameCryS = new System.Windows.Forms.Label();
             this.TBCry_a = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.LabNameCryA = new System.Windows.Forms.Label();
             this.TBCry_b = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.LabNameCryB = new System.Windows.Forms.Label();
             this.TBCry_c = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
+            this.LabNameCryC = new System.Windows.Forms.Label();
             this.TBCry_d = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
+            this.LabNameCryD = new System.Windows.Forms.Label();
             this.pictureBox63 = new System.Windows.Forms.PictureBox();
             this.pictureBox62 = new System.Windows.Forms.PictureBox();
             this.pictureBox61 = new System.Windows.Forms.PictureBox();
@@ -416,35 +431,52 @@
             this.ButLoad = new System.Windows.Forms.Button();
             this.GBSaveLoad = new System.Windows.Forms.GroupBox();
             this.ButPrint = new System.Windows.Forms.Button();
-            this.label73 = new System.Windows.Forms.Label();
+            this.LabVersion = new System.Windows.Forms.Label();
             this.LLabShodVK = new System.Windows.Forms.LinkLabel();
             this.LLabShodSurfory = new System.Windows.Forms.LinkLabel();
             this.LabHelp = new System.Windows.Forms.Label();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
-            this.PanAnimalSkin = new System.Windows.Forms.Panel();
-            this.PanAsofe = new System.Windows.Forms.Panel();
-            this.PanCharcoal = new System.Windows.Forms.Panel();
-            this.PanCoal = new System.Windows.Forms.Panel();
-            this.PanEnria = new System.Windows.Forms.Panel();
-            this.PanIronOre = new System.Windows.Forms.Panel();
-            this.PanMithrilOre = new System.Windows.Forms.Panel();
-            this.PanMoldGlue = new System.Windows.Forms.Panel();
-            this.PanMoldHardener = new System.Windows.Forms.Panel();
-            this.PanMoldLubricant = new System.Windows.Forms.Panel();
-            this.PanOriharukonOre = new System.Windows.Forms.Panel();
-            this.PanSilverNugget = new System.Windows.Forms.Panel();
-            this.PanStem = new System.Windows.Forms.Panel();
-            this.PanStoneOfPurity = new System.Windows.Forms.Panel();
-            this.PanSuede = new System.Windows.Forms.Panel();
-            this.PanThons = new System.Windows.Forms.Panel();
-            this.PanThread = new System.Windows.Forms.Panel();
-            this.PanVarnish = new System.Windows.Forms.Panel();
-            this.TabMain.SuspendLayout();
+            this.PanSSD = new System.Windows.Forms.Panel();
+            this.TBCostSSD = new System.Windows.Forms.TextBox();
+            this.PanNameShots = new System.Windows.Forms.Panel();
+            this.LabNameCostShots = new System.Windows.Forms.Label();
+            this.LabNameShots = new System.Windows.Forms.Label();
+            this.PanSpSD = new System.Windows.Forms.Panel();
+            this.LabCostSpSD = new System.Windows.Forms.TextBox();
+            this.PanBSpSD = new System.Windows.Forms.Panel();
+            this.TBCostBSpSD = new System.Windows.Forms.TextBox();
+            this.PanSSC = new System.Windows.Forms.Panel();
+            this.TBCostSSC = new System.Windows.Forms.TextBox();
+            this.PanSpSC = new System.Windows.Forms.Panel();
+            this.TBCostSpSC = new System.Windows.Forms.TextBox();
+            this.PanBSpSC = new System.Windows.Forms.Panel();
+            this.TBCostBSpSC = new System.Windows.Forms.TextBox();
+            this.PanSSB = new System.Windows.Forms.Panel();
+            this.TBCostSSB = new System.Windows.Forms.TextBox();
+            this.PanSpSB = new System.Windows.Forms.Panel();
+            this.TBCostSpSB = new System.Windows.Forms.TextBox();
+            this.PanBSpSB = new System.Windows.Forms.Panel();
+            this.TBCostBSpSB = new System.Windows.Forms.TextBox();
+            this.PanReklamaTabCry = new System.Windows.Forms.Panel();
+            this.PanSSA = new System.Windows.Forms.Panel();
+            this.TBCostSSA = new System.Windows.Forms.TextBox();
+            this.PanSpSA = new System.Windows.Forms.Panel();
+            this.TBCostSpSA = new System.Windows.Forms.TextBox();
+            this.WBReklamaTabCry = new System.Windows.Forms.WebBrowser();
+            this.PanBSpSA = new System.Windows.Forms.Panel();
+            this.TBCostBSpSA = new System.Windows.Forms.TextBox();
+            this.PanSSS = new System.Windows.Forms.Panel();
+            this.TBCostSSS = new System.Windows.Forms.TextBox();
+            this.PanSpSS = new System.Windows.Forms.Panel();
+            this.TBCostSpSS = new System.Windows.Forms.TextBox();
+            this.PanBSpSS = new System.Windows.Forms.Panel();
+            this.TBCostBSpSS = new System.Windows.Forms.TextBox();
+            this.TabMainItems.SuspendLayout();
             this.TabWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
             this.TabBlunt.SuspendLayout();
-            this.TabWeaponGrade.SuspendLayout();
+            this.TabWeaponBluntGrade.SuspendLayout();
             this.TabWeaponBluntNG.SuspendLayout();
             this.TabWeaponBluntD.SuspendLayout();
             this.TabWeaponBluntS.SuspendLayout();
@@ -462,46 +494,64 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicForgottenBlade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeavensDivider)).BeginInit();
             this.TabShots.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
+            this.GBShots.SuspendLayout();
+            this.PanShots.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSD)).BeginInit();
             this.PanCommonResources.SuspendLayout();
+            this.PanVarnish.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicVarnish)).BeginInit();
+            this.PanThread.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicThread)).BeginInit();
+            this.PanThons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicThons)).BeginInit();
+            this.PanSuede.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSuede)).BeginInit();
+            this.PanStoneOfPurity.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStoneOfPurity)).BeginInit();
+            this.PanStem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStem)).BeginInit();
+            this.PanSilverNugget.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSilverNugget)).BeginInit();
+            this.PanOriharukonOre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOriharukonOre)).BeginInit();
+            this.PanMoldLubricant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldLubricant)).BeginInit();
+            this.PanMoldHardener.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldHardener)).BeginInit();
+            this.PanMoldGlue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldGlue)).BeginInit();
+            this.PanMithrilOre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMithrilOre)).BeginInit();
+            this.PanIronOre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicIronOre)).BeginInit();
+            this.PanEnria.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEnria)).BeginInit();
+            this.PanCoal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCoal)).BeginInit();
+            this.PanCharcoal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCharcoal)).BeginInit();
+            this.PanAsofe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicAsofe)).BeginInit();
+            this.PanAnimalSkin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicAnimalSkin)).BeginInit();
             this.PanAnimalBone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicAnimalBone)).BeginInit();
             this.PanAdamantiteNugget.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicAdamantiteNugget)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicVarnish)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicThread)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicThons)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSuede)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStoneOfPurity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSilverNugget)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldLubricant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicOriharukonOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldHardener)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldGlue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMithrilOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicIronOre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicEnria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCoal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCharcoal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAsofe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAnimalSkin)).BeginInit();
             this.GBCommonResources.SuspendLayout();
             this.PanNameCommonResources.SuspendLayout();
             this.GBCraftResources.SuspendLayout();
@@ -568,7 +618,7 @@
             this.TabComponents.SuspendLayout();
             this.TabComponentsResources.SuspendLayout();
             this.TabComponentsCry.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.GBReklamaTabCry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
@@ -586,38 +636,37 @@
             this.GBSaveLoad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoAuthor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoLA2)).BeginInit();
-            this.PanAnimalSkin.SuspendLayout();
-            this.PanAsofe.SuspendLayout();
-            this.PanCharcoal.SuspendLayout();
-            this.PanCoal.SuspendLayout();
-            this.PanEnria.SuspendLayout();
-            this.PanIronOre.SuspendLayout();
-            this.PanMithrilOre.SuspendLayout();
-            this.PanMoldGlue.SuspendLayout();
-            this.PanMoldHardener.SuspendLayout();
-            this.PanMoldLubricant.SuspendLayout();
-            this.PanOriharukonOre.SuspendLayout();
-            this.PanSilverNugget.SuspendLayout();
-            this.PanStem.SuspendLayout();
-            this.PanStoneOfPurity.SuspendLayout();
-            this.PanSuede.SuspendLayout();
-            this.PanThons.SuspendLayout();
-            this.PanThread.SuspendLayout();
-            this.PanVarnish.SuspendLayout();
+            this.PanSSD.SuspendLayout();
+            this.PanNameShots.SuspendLayout();
+            this.PanSpSD.SuspendLayout();
+            this.PanBSpSD.SuspendLayout();
+            this.PanSSC.SuspendLayout();
+            this.PanSpSC.SuspendLayout();
+            this.PanBSpSC.SuspendLayout();
+            this.PanSSB.SuspendLayout();
+            this.PanSpSB.SuspendLayout();
+            this.PanBSpSB.SuspendLayout();
+            this.PanReklamaTabCry.SuspendLayout();
+            this.PanSSA.SuspendLayout();
+            this.PanSpSA.SuspendLayout();
+            this.PanBSpSA.SuspendLayout();
+            this.PanSSS.SuspendLayout();
+            this.PanSpSS.SuspendLayout();
+            this.PanBSpSS.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TabMain
+            // TabMainItems
             // 
-            this.TabMain.Controls.Add(this.TabWeapon);
-            this.TabMain.Controls.Add(this.TabArmor);
-            this.TabMain.Controls.Add(this.TabAcessory);
-            this.TabMain.Controls.Add(this.TabShots);
-            this.TabMain.Controls.Add(this.TabOther);
-            this.TabMain.Location = new System.Drawing.Point(545, 87);
-            this.TabMain.Name = "TabMain";
-            this.TabMain.SelectedIndex = 0;
-            this.TabMain.Size = new System.Drawing.Size(365, 525);
-            this.TabMain.TabIndex = 2;
+            this.TabMainItems.Controls.Add(this.TabWeapon);
+            this.TabMainItems.Controls.Add(this.TabArmor);
+            this.TabMainItems.Controls.Add(this.TabAcessory);
+            this.TabMainItems.Controls.Add(this.TabShots);
+            this.TabMainItems.Controls.Add(this.TabOther);
+            this.TabMainItems.Location = new System.Drawing.Point(545, 87);
+            this.TabMainItems.Name = "TabMainItems";
+            this.TabMainItems.SelectedIndex = 0;
+            this.TabMainItems.Size = new System.Drawing.Size(365, 525);
+            this.TabMainItems.TabIndex = 2;
             // 
             // TabWeapon
             // 
@@ -650,7 +699,7 @@
             // 
             // TabBlunt
             // 
-            this.TabBlunt.Controls.Add(this.TabWeaponGrade);
+            this.TabBlunt.Controls.Add(this.TabWeaponBluntGrade);
             this.TabBlunt.Location = new System.Drawing.Point(4, 22);
             this.TabBlunt.Name = "TabBlunt";
             this.TabBlunt.Padding = new System.Windows.Forms.Padding(3);
@@ -659,19 +708,19 @@
             this.TabBlunt.Text = "Бланты";
             this.TabBlunt.UseVisualStyleBackColor = true;
             // 
-            // TabWeaponGrade
+            // TabWeaponBluntGrade
             // 
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntNG);
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntD);
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntC);
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntB);
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntA);
-            this.TabWeaponGrade.Controls.Add(this.TabWeaponBluntS);
-            this.TabWeaponGrade.Location = new System.Drawing.Point(0, 0);
-            this.TabWeaponGrade.Name = "TabWeaponGrade";
-            this.TabWeaponGrade.SelectedIndex = 0;
-            this.TabWeaponGrade.Size = new System.Drawing.Size(365, 519);
-            this.TabWeaponGrade.TabIndex = 0;
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntNG);
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntD);
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntC);
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntB);
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntA);
+            this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntS);
+            this.TabWeaponBluntGrade.Location = new System.Drawing.Point(0, 0);
+            this.TabWeaponBluntGrade.Name = "TabWeaponBluntGrade";
+            this.TabWeaponBluntGrade.SelectedIndex = 0;
+            this.TabWeaponBluntGrade.Size = new System.Drawing.Size(365, 519);
+            this.TabWeaponBluntGrade.TabIndex = 0;
             // 
             // TabWeaponBluntNG
             // 
@@ -1270,7 +1319,7 @@
             // 
             // TabShots
             // 
-            this.TabShots.Controls.Add(this.groupBox4);
+            this.TabShots.Controls.Add(this.GBShots);
             this.TabShots.Location = new System.Drawing.Point(4, 22);
             this.TabShots.Name = "TabShots";
             this.TabShots.Size = new System.Drawing.Size(357, 499);
@@ -1278,540 +1327,489 @@
             this.TabShots.Text = "Шоты";
             this.TabShots.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label72);
-            this.groupBox4.Controls.Add(this.label71);
-            this.groupBox4.Controls.Add(this.panel3);
-            this.groupBox4.Location = new System.Drawing.Point(0, 6);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(357, 531);
-            this.groupBox4.TabIndex = 10;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Соулшоты / Спиритшоты";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label72.Location = new System.Drawing.Point(80, 16);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(110, 17);
-            this.label72.TabIndex = 8;
-            this.label72.Text = "Наименование:";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label71.Location = new System.Drawing.Point(254, 16);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(47, 17);
-            this.label71.TabIndex = 9;
-            this.label71.Text = "Цена:";
-            // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.LabBSpSS);
-            this.panel3.Controls.Add(this.LabSpSS);
-            this.panel3.Controls.Add(this.label98);
-            this.panel3.Controls.Add(this.label99);
-            this.panel3.Controls.Add(this.LabSSS);
-            this.panel3.Controls.Add(this.label101);
-            this.panel3.Controls.Add(this.LabBSpSA);
-            this.panel3.Controls.Add(this.LabSpSA);
-            this.panel3.Controls.Add(this.label92);
-            this.panel3.Controls.Add(this.label93);
-            this.panel3.Controls.Add(this.LabSSA);
-            this.panel3.Controls.Add(this.label95);
-            this.panel3.Controls.Add(this.LabBSpSB);
-            this.panel3.Controls.Add(this.LabSpSB);
-            this.panel3.Controls.Add(this.label85);
-            this.panel3.Controls.Add(this.label86);
-            this.panel3.Controls.Add(this.LabSSB);
-            this.panel3.Controls.Add(this.label89);
-            this.panel3.Controls.Add(this.LabBSpSC);
-            this.panel3.Controls.Add(this.LabSpSC);
-            this.panel3.Controls.Add(this.label79);
-            this.panel3.Controls.Add(this.label80);
-            this.panel3.Controls.Add(this.LabSSC);
-            this.panel3.Controls.Add(this.label82);
-            this.panel3.Controls.Add(this.LabBSpSD);
-            this.panel3.Controls.Add(this.LabSpSD);
-            this.panel3.Controls.Add(this.label76);
-            this.panel3.Controls.Add(this.label74);
-            this.panel3.Controls.Add(this.LabSSD);
-            this.panel3.Controls.Add(this.pictureBox76);
-            this.panel3.Controls.Add(this.pictureBox73);
-            this.panel3.Controls.Add(this.pictureBox77);
-            this.panel3.Controls.Add(this.pictureBox74);
-            this.panel3.Controls.Add(this.pictureBox78);
-            this.panel3.Controls.Add(this.pictureBox75);
-            this.panel3.Controls.Add(this.pictureBox70);
-            this.panel3.Controls.Add(this.pictureBox71);
-            this.panel3.Controls.Add(this.pictureBox72);
-            this.panel3.Controls.Add(this.pictureBox67);
-            this.panel3.Controls.Add(this.pictureBox68);
-            this.panel3.Controls.Add(this.pictureBox69);
-            this.panel3.Controls.Add(this.pictureBox66);
-            this.panel3.Controls.Add(this.pictureBox65);
-            this.panel3.Controls.Add(this.pictureBox64);
-            this.panel3.Controls.Add(this.label70);
-            this.panel3.Location = new System.Drawing.Point(3, 40);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(348, 457);
-            this.panel3.TabIndex = 2;
-            // 
-            // LabBSpSS
-            // 
-            this.LabBSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabBSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBSpSS.Location = new System.Drawing.Point(232, 551);
-            this.LabBSpSS.Name = "LabBSpSS";
-            this.LabBSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabBSpSS.Size = new System.Drawing.Size(88, 19);
-            this.LabBSpSS.TabIndex = 122;
-            this.LabBSpSS.Text = "0";
-            // 
-            // LabSpSS
-            // 
-            this.LabSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSpSS.Location = new System.Drawing.Point(232, 513);
-            this.LabSpSS.Name = "LabSpSS";
-            this.LabSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSpSS.Size = new System.Drawing.Size(88, 19);
-            this.LabSpSS.TabIndex = 121;
-            this.LabSpSS.Text = "0";
-            // 
-            // label98
-            // 
-            this.label98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label98.Location = new System.Drawing.Point(41, 551);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(192, 19);
-            this.label98.TabIndex = 120;
-            this.label98.Text = "Blessed Spiritshot: S Grade";
-            // 
-            // label99
-            // 
-            this.label99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label99.Location = new System.Drawing.Point(41, 513);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(192, 19);
-            this.label99.TabIndex = 119;
-            this.label99.Text = "Spiritshot: S Grade";
-            // 
-            // LabSSS
-            // 
-            this.LabSSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSSS.Location = new System.Drawing.Point(232, 473);
-            this.LabSSS.Name = "LabSSS";
-            this.LabSSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSSS.Size = new System.Drawing.Size(88, 19);
-            this.LabSSS.TabIndex = 118;
-            this.LabSSS.Text = "0";
-            // 
-            // label101
-            // 
-            this.label101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label101.Location = new System.Drawing.Point(41, 473);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(192, 19);
-            this.label101.TabIndex = 117;
-            this.label101.Text = "Soulshot: S Grade";
-            // 
-            // LabBSpSA
-            // 
-            this.LabBSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabBSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBSpSA.Location = new System.Drawing.Point(232, 437);
-            this.LabBSpSA.Name = "LabBSpSA";
-            this.LabBSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabBSpSA.Size = new System.Drawing.Size(88, 19);
-            this.LabBSpSA.TabIndex = 116;
-            this.LabBSpSA.Text = "0";
-            // 
-            // LabSpSA
-            // 
-            this.LabSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSpSA.Location = new System.Drawing.Point(232, 399);
-            this.LabSpSA.Name = "LabSpSA";
-            this.LabSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSpSA.Size = new System.Drawing.Size(88, 19);
-            this.LabSpSA.TabIndex = 115;
-            this.LabSpSA.Text = "0";
-            // 
-            // label92
-            // 
-            this.label92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label92.Location = new System.Drawing.Point(41, 437);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(192, 19);
-            this.label92.TabIndex = 114;
-            this.label92.Text = "Blessed Spiritshot: A Grade";
-            // 
-            // label93
-            // 
-            this.label93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label93.Location = new System.Drawing.Point(41, 399);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(192, 19);
-            this.label93.TabIndex = 113;
-            this.label93.Text = "Spiritshot: A Grade";
-            // 
-            // LabSSA
-            // 
-            this.LabSSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSSA.Location = new System.Drawing.Point(232, 359);
-            this.LabSSA.Name = "LabSSA";
-            this.LabSSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSSA.Size = new System.Drawing.Size(88, 19);
-            this.LabSSA.TabIndex = 112;
-            this.LabSSA.Text = "0";
-            // 
-            // label95
-            // 
-            this.label95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label95.Location = new System.Drawing.Point(41, 359);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(192, 19);
-            this.label95.TabIndex = 111;
-            this.label95.Text = "Soulshot: A Grade";
-            // 
-            // LabBSpSB
-            // 
-            this.LabBSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabBSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBSpSB.Location = new System.Drawing.Point(232, 325);
-            this.LabBSpSB.Name = "LabBSpSB";
-            this.LabBSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabBSpSB.Size = new System.Drawing.Size(88, 19);
-            this.LabBSpSB.TabIndex = 110;
-            this.LabBSpSB.Text = "0";
-            // 
-            // LabSpSB
-            // 
-            this.LabSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSpSB.Location = new System.Drawing.Point(232, 287);
-            this.LabSpSB.Name = "LabSpSB";
-            this.LabSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSpSB.Size = new System.Drawing.Size(88, 19);
-            this.LabSpSB.TabIndex = 109;
-            this.LabSpSB.Text = "0";
-            // 
-            // label85
-            // 
-            this.label85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label85.Location = new System.Drawing.Point(41, 325);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(192, 19);
-            this.label85.TabIndex = 108;
-            this.label85.Text = "Blessed Spiritshot: B Grade";
-            // 
-            // label86
-            // 
-            this.label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label86.Location = new System.Drawing.Point(41, 287);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(192, 19);
-            this.label86.TabIndex = 107;
-            this.label86.Text = "Spiritshot: B Grade";
-            // 
-            // LabSSB
-            // 
-            this.LabSSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSSB.Location = new System.Drawing.Point(232, 247);
-            this.LabSSB.Name = "LabSSB";
-            this.LabSSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSSB.Size = new System.Drawing.Size(88, 19);
-            this.LabSSB.TabIndex = 106;
-            this.LabSSB.Text = "0";
-            // 
-            // label89
-            // 
-            this.label89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label89.Location = new System.Drawing.Point(41, 247);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(192, 19);
-            this.label89.TabIndex = 105;
-            this.label89.Text = "Soulshot: B Grade";
-            // 
-            // LabBSpSC
-            // 
-            this.LabBSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabBSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBSpSC.Location = new System.Drawing.Point(232, 211);
-            this.LabBSpSC.Name = "LabBSpSC";
-            this.LabBSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabBSpSC.Size = new System.Drawing.Size(88, 19);
-            this.LabBSpSC.TabIndex = 104;
-            this.LabBSpSC.Text = "0";
-            // 
-            // LabSpSC
-            // 
-            this.LabSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSpSC.Location = new System.Drawing.Point(232, 173);
-            this.LabSpSC.Name = "LabSpSC";
-            this.LabSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSpSC.Size = new System.Drawing.Size(88, 19);
-            this.LabSpSC.TabIndex = 103;
-            this.LabSpSC.Text = "0";
-            // 
-            // label79
-            // 
-            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label79.Location = new System.Drawing.Point(41, 211);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(192, 19);
-            this.label79.TabIndex = 102;
-            this.label79.Text = "Blessed Spiritshot: C Grade";
-            // 
-            // label80
-            // 
-            this.label80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label80.Location = new System.Drawing.Point(41, 173);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(192, 19);
-            this.label80.TabIndex = 101;
-            this.label80.Text = "Spiritshot: C Grade";
-            // 
-            // LabSSC
-            // 
-            this.LabSSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSSC.Location = new System.Drawing.Point(232, 133);
-            this.LabSSC.Name = "LabSSC";
-            this.LabSSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSSC.Size = new System.Drawing.Size(88, 19);
-            this.LabSSC.TabIndex = 100;
-            this.LabSSC.Text = "0";
-            // 
-            // label82
-            // 
-            this.label82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label82.Location = new System.Drawing.Point(41, 133);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(192, 19);
-            this.label82.TabIndex = 99;
-            this.label82.Text = "Soulshot: C Grade";
-            // 
-            // LabBSpSD
-            // 
-            this.LabBSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabBSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBSpSD.Location = new System.Drawing.Point(232, 95);
-            this.LabBSpSD.Name = "LabBSpSD";
-            this.LabBSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabBSpSD.Size = new System.Drawing.Size(88, 19);
-            this.LabBSpSD.TabIndex = 98;
-            this.LabBSpSD.Text = "0";
-            // 
-            // LabSpSD
-            // 
-            this.LabSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSpSD.Location = new System.Drawing.Point(232, 57);
-            this.LabSpSD.Name = "LabSpSD";
-            this.LabSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSpSD.Size = new System.Drawing.Size(88, 19);
-            this.LabSpSD.TabIndex = 97;
-            this.LabSpSD.Text = "0";
-            // 
-            // label76
-            // 
-            this.label76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label76.Location = new System.Drawing.Point(41, 95);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(192, 19);
-            this.label76.TabIndex = 96;
-            this.label76.Text = "Blessed Spiritshot: D Grade";
-            // 
-            // label74
-            // 
-            this.label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label74.Location = new System.Drawing.Point(41, 57);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(192, 19);
-            this.label74.TabIndex = 94;
-            this.label74.Text = "Spiritshot: D Grade";
-            // 
-            // LabSSD
-            // 
-            this.LabSSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabSSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabSSD.Location = new System.Drawing.Point(232, 17);
-            this.LabSSD.Name = "LabSSD";
-            this.LabSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabSSD.Size = new System.Drawing.Size(88, 19);
-            this.LabSSD.TabIndex = 93;
-            this.LabSSD.Text = "0";
-            // 
-            // pictureBox76
-            // 
-            this.pictureBox76.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i01;
-            this.pictureBox76.Location = new System.Drawing.Point(3, 536);
-            this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox76.TabIndex = 73;
-            this.pictureBox76.TabStop = false;
-            // 
-            // pictureBox73
-            // 
-            this.pictureBox73.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i01;
-            this.pictureBox73.Location = new System.Drawing.Point(3, 422);
-            this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox73.TabIndex = 91;
-            this.pictureBox73.TabStop = false;
-            // 
-            // pictureBox77
-            // 
-            this.pictureBox77.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i00;
-            this.pictureBox77.Location = new System.Drawing.Point(3, 498);
-            this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox77.TabIndex = 70;
-            this.pictureBox77.TabStop = false;
-            // 
-            // pictureBox74
-            // 
-            this.pictureBox74.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i00;
-            this.pictureBox74.Location = new System.Drawing.Point(3, 384);
-            this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox74.TabIndex = 88;
-            this.pictureBox74.TabStop = false;
-            // 
-            // pictureBox78
-            // 
-            this.pictureBox78.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_gold_i00;
-            this.pictureBox78.Location = new System.Drawing.Point(3, 460);
-            this.pictureBox78.Name = "pictureBox78";
-            this.pictureBox78.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox78.TabIndex = 67;
-            this.pictureBox78.TabStop = false;
-            // 
-            // pictureBox75
-            // 
-            this.pictureBox75.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_silver_i00;
-            this.pictureBox75.Location = new System.Drawing.Point(3, 346);
-            this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox75.TabIndex = 85;
-            this.pictureBox75.TabStop = false;
-            // 
-            // pictureBox70
-            // 
-            this.pictureBox70.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i01;
-            this.pictureBox70.Location = new System.Drawing.Point(3, 308);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox70.TabIndex = 82;
-            this.pictureBox70.TabStop = false;
-            // 
-            // pictureBox71
-            // 
-            this.pictureBox71.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i00;
-            this.pictureBox71.Location = new System.Drawing.Point(3, 270);
-            this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox71.TabIndex = 79;
-            this.pictureBox71.TabStop = false;
-            // 
-            // pictureBox72
-            // 
-            this.pictureBox72.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_red_i00;
-            this.pictureBox72.Location = new System.Drawing.Point(3, 232);
-            this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox72.TabIndex = 76;
-            this.pictureBox72.TabStop = false;
-            // 
-            // pictureBox67
-            // 
-            this.pictureBox67.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i01;
-            this.pictureBox67.Location = new System.Drawing.Point(3, 194);
-            this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox67.TabIndex = 73;
-            this.pictureBox67.TabStop = false;
-            // 
-            // pictureBox68
-            // 
-            this.pictureBox68.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i00;
-            this.pictureBox68.Location = new System.Drawing.Point(3, 156);
-            this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox68.TabIndex = 70;
-            this.pictureBox68.TabStop = false;
-            // 
-            // pictureBox69
-            // 
-            this.pictureBox69.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_green_i00;
-            this.pictureBox69.Location = new System.Drawing.Point(3, 118);
-            this.pictureBox69.Name = "pictureBox69";
-            this.pictureBox69.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox69.TabIndex = 67;
-            this.pictureBox69.TabStop = false;
-            // 
-            // pictureBox66
-            // 
-            this.pictureBox66.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i01;
-            this.pictureBox66.Location = new System.Drawing.Point(3, 80);
-            this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox66.TabIndex = 64;
-            this.pictureBox66.TabStop = false;
-            // 
-            // pictureBox65
-            // 
-            this.pictureBox65.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i00;
-            this.pictureBox65.Location = new System.Drawing.Point(3, 42);
-            this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox65.TabIndex = 61;
-            this.pictureBox65.TabStop = false;
-            // 
-            // pictureBox64
-            // 
-            this.pictureBox64.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_blue_i00;
-            this.pictureBox64.Location = new System.Drawing.Point(3, 4);
-            this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox64.TabIndex = 0;
-            this.pictureBox64.TabStop = false;
-            // 
-            // label70
-            // 
-            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label70.Location = new System.Drawing.Point(41, 17);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(192, 19);
-            this.label70.TabIndex = 1;
-            this.label70.Text = "Soulshot: D Grade";
+            // GBShots
+            // 
+            this.GBShots.Controls.Add(this.PanNameShots);
+            this.GBShots.Controls.Add(this.PanShots);
+            this.GBShots.Location = new System.Drawing.Point(0, 6);
+            this.GBShots.Name = "GBShots";
+            this.GBShots.Size = new System.Drawing.Size(357, 494);
+            this.GBShots.TabIndex = 10;
+            this.GBShots.TabStop = false;
+            this.GBShots.Text = "Соулшоты / Спиритшоты";
+            // 
+            // PanShots
+            // 
+            this.PanShots.AutoScroll = true;
+            this.PanShots.Controls.Add(this.PanBSpSS);
+            this.PanShots.Controls.Add(this.PanSpSS);
+            this.PanShots.Controls.Add(this.PanSSS);
+            this.PanShots.Controls.Add(this.PanBSpSA);
+            this.PanShots.Controls.Add(this.PanSpSA);
+            this.PanShots.Controls.Add(this.PanSSA);
+            this.PanShots.Controls.Add(this.PanBSpSB);
+            this.PanShots.Controls.Add(this.PanSpSB);
+            this.PanShots.Controls.Add(this.PanSSB);
+            this.PanShots.Controls.Add(this.PanBSpSC);
+            this.PanShots.Controls.Add(this.PanSpSC);
+            this.PanShots.Controls.Add(this.PanSSC);
+            this.PanShots.Controls.Add(this.PanBSpSD);
+            this.PanShots.Controls.Add(this.PanSpSD);
+            this.PanShots.Controls.Add(this.PanSSD);
+            this.PanShots.Location = new System.Drawing.Point(3, 36);
+            this.PanShots.Name = "PanShots";
+            this.PanShots.Size = new System.Drawing.Size(348, 454);
+            this.PanShots.TabIndex = 2;
+            // 
+            // LabCraftCostBSpSS
+            // 
+            this.LabCraftCostBSpSS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostBSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostBSpSS.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostBSpSS.Name = "LabCraftCostBSpSS";
+            this.LabCraftCostBSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostBSpSS.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostBSpSS.TabIndex = 122;
+            this.LabCraftCostBSpSS.Text = "0";
+            // 
+            // LabCraftCostSpSS
+            // 
+            this.LabCraftCostSpSS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSS.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSS.Name = "LabCraftCostSpSS";
+            this.LabCraftCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSS.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSS.TabIndex = 121;
+            this.LabCraftCostSpSS.Text = "0";
+            // 
+            // LabNameBSpSS
+            // 
+            this.LabNameBSpSS.AutoSize = true;
+            this.LabNameBSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameBSpSS.Location = new System.Drawing.Point(3, 38);
+            this.LabNameBSpSS.Name = "LabNameBSpSS";
+            this.LabNameBSpSS.Size = new System.Drawing.Size(135, 13);
+            this.LabNameBSpSS.TabIndex = 120;
+            this.LabNameBSpSS.Text = "Blessed Spiritshot: S Grade";
+            // 
+            // LabNameSpSS
+            // 
+            this.LabNameSpSS.AutoSize = true;
+            this.LabNameSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSpSS.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSpSS.Name = "LabNameSpSS";
+            this.LabNameSpSS.Size = new System.Drawing.Size(95, 13);
+            this.LabNameSpSS.TabIndex = 119;
+            this.LabNameSpSS.Text = "Spiritshot: S Grade";
+            // 
+            // LabCraftCostSSS
+            // 
+            this.LabCraftCostSSS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSS.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSS.Name = "LabCraftCostSSS";
+            this.LabCraftCostSSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSS.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSSS.TabIndex = 118;
+            this.LabCraftCostSSS.Text = "0";
+            // 
+            // LabNameSSS
+            // 
+            this.LabNameSSS.AutoSize = true;
+            this.LabNameSSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSSS.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSSS.Name = "LabNameSSS";
+            this.LabNameSSS.Size = new System.Drawing.Size(93, 13);
+            this.LabNameSSS.TabIndex = 117;
+            this.LabNameSSS.Text = "Soulshot: S Grade";
+            // 
+            // LabCraftCostBSpSA
+            // 
+            this.LabCraftCostBSpSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostBSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostBSpSA.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostBSpSA.Name = "LabCraftCostBSpSA";
+            this.LabCraftCostBSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostBSpSA.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostBSpSA.TabIndex = 116;
+            this.LabCraftCostBSpSA.Text = "0";
+            // 
+            // LabCraftCostSpSA
+            // 
+            this.LabCraftCostSpSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSA.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSA.Name = "LabCraftCostSpSA";
+            this.LabCraftCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSA.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSA.TabIndex = 115;
+            this.LabCraftCostSpSA.Text = "0";
+            // 
+            // LabNameBSpSA
+            // 
+            this.LabNameBSpSA.AutoSize = true;
+            this.LabNameBSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameBSpSA.Location = new System.Drawing.Point(3, 38);
+            this.LabNameBSpSA.Name = "LabNameBSpSA";
+            this.LabNameBSpSA.Size = new System.Drawing.Size(135, 13);
+            this.LabNameBSpSA.TabIndex = 114;
+            this.LabNameBSpSA.Text = "Blessed Spiritshot: A Grade";
+            // 
+            // LabNameSpSA
+            // 
+            this.LabNameSpSA.AutoSize = true;
+            this.LabNameSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSpSA.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSpSA.Name = "LabNameSpSA";
+            this.LabNameSpSA.Size = new System.Drawing.Size(95, 13);
+            this.LabNameSpSA.TabIndex = 113;
+            this.LabNameSpSA.Text = "Spiritshot: A Grade";
+            // 
+            // LabCraftCostSSA
+            // 
+            this.LabCraftCostSSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSA.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSA.Name = "LabCraftCostSSA";
+            this.LabCraftCostSSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSA.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSSA.TabIndex = 112;
+            this.LabCraftCostSSA.Text = "0";
+            // 
+            // LabNameSSA
+            // 
+            this.LabNameSSA.AutoSize = true;
+            this.LabNameSSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSSA.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSSA.Name = "LabNameSSA";
+            this.LabNameSSA.Size = new System.Drawing.Size(93, 13);
+            this.LabNameSSA.TabIndex = 111;
+            this.LabNameSSA.Text = "Soulshot: A Grade";
+            // 
+            // LabCraftCostBSpSB
+            // 
+            this.LabCraftCostBSpSB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostBSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostBSpSB.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostBSpSB.Name = "LabCraftCostBSpSB";
+            this.LabCraftCostBSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostBSpSB.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostBSpSB.TabIndex = 110;
+            this.LabCraftCostBSpSB.Text = "0";
+            // 
+            // LabCraftCostSpSB
+            // 
+            this.LabCraftCostSpSB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSB.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSB.Name = "LabCraftCostSpSB";
+            this.LabCraftCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSB.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSB.TabIndex = 109;
+            this.LabCraftCostSpSB.Text = "0";
+            // 
+            // LabNameBSpSB
+            // 
+            this.LabNameBSpSB.AutoSize = true;
+            this.LabNameBSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameBSpSB.Location = new System.Drawing.Point(3, 38);
+            this.LabNameBSpSB.Name = "LabNameBSpSB";
+            this.LabNameBSpSB.Size = new System.Drawing.Size(135, 13);
+            this.LabNameBSpSB.TabIndex = 108;
+            this.LabNameBSpSB.Text = "Blessed Spiritshot: B Grade";
+            // 
+            // LabNameSpSB
+            // 
+            this.LabNameSpSB.AutoSize = true;
+            this.LabNameSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSpSB.Location = new System.Drawing.Point(4, 38);
+            this.LabNameSpSB.Name = "LabNameSpSB";
+            this.LabNameSpSB.Size = new System.Drawing.Size(95, 13);
+            this.LabNameSpSB.TabIndex = 107;
+            this.LabNameSpSB.Text = "Spiritshot: B Grade";
+            // 
+            // LabCraftCostSSB
+            // 
+            this.LabCraftCostSSB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSB.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSB.Name = "LabCraftCostSSB";
+            this.LabCraftCostSSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSB.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSSB.TabIndex = 106;
+            this.LabCraftCostSSB.Text = "0";
+            // 
+            // LabNameSSB
+            // 
+            this.LabNameSSB.AutoSize = true;
+            this.LabNameSSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSSB.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSSB.Name = "LabNameSSB";
+            this.LabNameSSB.Size = new System.Drawing.Size(93, 13);
+            this.LabNameSSB.TabIndex = 105;
+            this.LabNameSSB.Text = "Soulshot: B Grade";
+            // 
+            // LabCraftCostBSpSC
+            // 
+            this.LabCraftCostBSpSC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostBSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostBSpSC.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostBSpSC.Name = "LabCraftCostBSpSC";
+            this.LabCraftCostBSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostBSpSC.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostBSpSC.TabIndex = 104;
+            this.LabCraftCostBSpSC.Text = "0";
+            // 
+            // LabCraftCostSpSC
+            // 
+            this.LabCraftCostSpSC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSC.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSC.Name = "LabCraftCostSpSC";
+            this.LabCraftCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSC.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSC.TabIndex = 103;
+            this.LabCraftCostSpSC.Text = "0";
+            // 
+            // LabNameBSpSC
+            // 
+            this.LabNameBSpSC.AutoSize = true;
+            this.LabNameBSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameBSpSC.Location = new System.Drawing.Point(3, 38);
+            this.LabNameBSpSC.Name = "LabNameBSpSC";
+            this.LabNameBSpSC.Size = new System.Drawing.Size(135, 13);
+            this.LabNameBSpSC.TabIndex = 102;
+            this.LabNameBSpSC.Text = "Blessed Spiritshot: C Grade";
+            // 
+            // LabNameSpSC
+            // 
+            this.LabNameSpSC.AutoSize = true;
+            this.LabNameSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSpSC.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSpSC.Name = "LabNameSpSC";
+            this.LabNameSpSC.Size = new System.Drawing.Size(95, 13);
+            this.LabNameSpSC.TabIndex = 101;
+            this.LabNameSpSC.Text = "Spiritshot: C Grade";
+            // 
+            // LabCraftCostSSC
+            // 
+            this.LabCraftCostSSC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSC.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSC.Name = "LabCraftCostSSC";
+            this.LabCraftCostSSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSC.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSSC.TabIndex = 100;
+            this.LabCraftCostSSC.Text = "0";
+            // 
+            // LabNameSSC
+            // 
+            this.LabNameSSC.AutoSize = true;
+            this.LabNameSSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSSC.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSSC.Name = "LabNameSSC";
+            this.LabNameSSC.Size = new System.Drawing.Size(93, 13);
+            this.LabNameSSC.TabIndex = 99;
+            this.LabNameSSC.Text = "Soulshot: C Grade";
+            // 
+            // LabCraftCostBSpSD
+            // 
+            this.LabCraftCostBSpSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostBSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostBSpSD.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostBSpSD.Name = "LabCraftCostBSpSD";
+            this.LabCraftCostBSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostBSpSD.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostBSpSD.TabIndex = 98;
+            this.LabCraftCostBSpSD.Text = "0";
+            // 
+            // LabCraftCostSpSD
+            // 
+            this.LabCraftCostSpSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSD.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSD.Name = "LabCraftCostSpSD";
+            this.LabCraftCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSD.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSD.TabIndex = 97;
+            this.LabCraftCostSpSD.Text = "0";
+            // 
+            // LabNameBSpSD
+            // 
+            this.LabNameBSpSD.AutoSize = true;
+            this.LabNameBSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameBSpSD.Location = new System.Drawing.Point(3, 38);
+            this.LabNameBSpSD.Name = "LabNameBSpSD";
+            this.LabNameBSpSD.Size = new System.Drawing.Size(136, 13);
+            this.LabNameBSpSD.TabIndex = 96;
+            this.LabNameBSpSD.Text = "Blessed Spiritshot: D Grade";
+            // 
+            // LabNameSpSD
+            // 
+            this.LabNameSpSD.AutoSize = true;
+            this.LabNameSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSpSD.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSpSD.Name = "LabNameSpSD";
+            this.LabNameSpSD.Size = new System.Drawing.Size(96, 13);
+            this.LabNameSpSD.TabIndex = 94;
+            this.LabNameSpSD.Text = "Spiritshot: D Grade";
+            // 
+            // LabCraftCostSSD
+            // 
+            this.LabCraftCostSSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSD.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSD.Name = "LabCraftCostSSD";
+            this.LabCraftCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSD.Size = new System.Drawing.Size(100, 20);
+            this.LabCraftCostSSD.TabIndex = 93;
+            this.LabCraftCostSSD.Text = "0";
+            // 
+            // PicBSpSS
+            // 
+            this.PicBSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i01;
+            this.PicBSpSS.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSS.Name = "PicBSpSS";
+            this.PicBSpSS.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSS.TabIndex = 73;
+            this.PicBSpSS.TabStop = false;
+            // 
+            // PicBSpSA
+            // 
+            this.PicBSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i01;
+            this.PicBSpSA.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSA.Name = "PicBSpSA";
+            this.PicBSpSA.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSA.TabIndex = 91;
+            this.PicBSpSA.TabStop = false;
+            // 
+            // PicSpSS
+            // 
+            this.PicSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i00;
+            this.PicSpSS.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSS.Name = "PicSpSS";
+            this.PicSpSS.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSS.TabIndex = 70;
+            this.PicSpSS.TabStop = false;
+            // 
+            // PicSpSA
+            // 
+            this.PicSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i00;
+            this.PicSpSA.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSA.Name = "PicSpSA";
+            this.PicSpSA.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSA.TabIndex = 88;
+            this.PicSpSA.TabStop = false;
+            // 
+            // PicSSS
+            // 
+            this.PicSSS.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_gold_i00;
+            this.PicSSS.Location = new System.Drawing.Point(3, 3);
+            this.PicSSS.Name = "PicSSS";
+            this.PicSSS.Size = new System.Drawing.Size(32, 32);
+            this.PicSSS.TabIndex = 67;
+            this.PicSSS.TabStop = false;
+            // 
+            // PicSSA
+            // 
+            this.PicSSA.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_silver_i00;
+            this.PicSSA.Location = new System.Drawing.Point(3, 3);
+            this.PicSSA.Name = "PicSSA";
+            this.PicSSA.Size = new System.Drawing.Size(32, 32);
+            this.PicSSA.TabIndex = 85;
+            this.PicSSA.TabStop = false;
+            // 
+            // PicBSpSB
+            // 
+            this.PicBSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i01;
+            this.PicBSpSB.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSB.Name = "PicBSpSB";
+            this.PicBSpSB.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSB.TabIndex = 82;
+            this.PicBSpSB.TabStop = false;
+            // 
+            // PicSpSB
+            // 
+            this.PicSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i00;
+            this.PicSpSB.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSB.Name = "PicSpSB";
+            this.PicSpSB.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSB.TabIndex = 79;
+            this.PicSpSB.TabStop = false;
+            // 
+            // PicSSB
+            // 
+            this.PicSSB.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_red_i00;
+            this.PicSSB.Location = new System.Drawing.Point(3, 3);
+            this.PicSSB.Name = "PicSSB";
+            this.PicSSB.Size = new System.Drawing.Size(32, 32);
+            this.PicSSB.TabIndex = 76;
+            this.PicSSB.TabStop = false;
+            // 
+            // PicBSpSC
+            // 
+            this.PicBSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i01;
+            this.PicBSpSC.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSC.Name = "PicBSpSC";
+            this.PicBSpSC.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSC.TabIndex = 73;
+            this.PicBSpSC.TabStop = false;
+            // 
+            // PicSpSC
+            // 
+            this.PicSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i00;
+            this.PicSpSC.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSC.Name = "PicSpSC";
+            this.PicSpSC.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSC.TabIndex = 70;
+            this.PicSpSC.TabStop = false;
+            // 
+            // PicSSC
+            // 
+            this.PicSSC.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_green_i00;
+            this.PicSSC.Location = new System.Drawing.Point(3, 3);
+            this.PicSSC.Name = "PicSSC";
+            this.PicSSC.Size = new System.Drawing.Size(32, 32);
+            this.PicSSC.TabIndex = 67;
+            this.PicSSC.TabStop = false;
+            // 
+            // PicBSpSD
+            // 
+            this.PicBSpSD.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i01;
+            this.PicBSpSD.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSD.Name = "PicBSpSD";
+            this.PicBSpSD.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSD.TabIndex = 64;
+            this.PicBSpSD.TabStop = false;
+            // 
+            // PicSpSD
+            // 
+            this.PicSpSD.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i00;
+            this.PicSpSD.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSD.Name = "PicSpSD";
+            this.PicSpSD.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSD.TabIndex = 61;
+            this.PicSpSD.TabStop = false;
+            // 
+            // PicSSD
+            // 
+            this.PicSSD.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_blue_i00;
+            this.PicSSD.Location = new System.Drawing.Point(3, 3);
+            this.PicSSD.Name = "PicSSD";
+            this.PicSSD.Size = new System.Drawing.Size(32, 32);
+            this.PicSSD.TabIndex = 0;
+            this.PicSSD.TabStop = false;
+            // 
+            // LabNameSSD
+            // 
+            this.LabNameSSD.AutoSize = true;
+            this.LabNameSSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameSSD.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSSD.Name = "LabNameSSD";
+            this.LabNameSSD.Size = new System.Drawing.Size(94, 13);
+            this.LabNameSSD.TabIndex = 1;
+            this.LabNameSSD.Text = "Soulshot: D Grade";
             // 
             // TabOther
             // 
@@ -1860,6 +1858,708 @@
             this.PanCommonResources.Name = "PanCommonResources";
             this.PanCommonResources.Size = new System.Drawing.Size(260, 492);
             this.PanCommonResources.TabIndex = 3;
+            // 
+            // PanVarnish
+            // 
+            this.PanVarnish.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanVarnish.Controls.Add(this.PicVarnish);
+            this.PanVarnish.Controls.Add(this.LabNameVarnish);
+            this.PanVarnish.Controls.Add(this.TBCostVarnish);
+            this.PanVarnish.Location = new System.Drawing.Point(3, 1048);
+            this.PanVarnish.Name = "PanVarnish";
+            this.PanVarnish.Size = new System.Drawing.Size(238, 56);
+            this.PanVarnish.TabIndex = 134;
+            // 
+            // PicVarnish
+            // 
+            this.PicVarnish.Image = global::CraftCostCalc.Properties.Resources.Varnish;
+            this.PicVarnish.Location = new System.Drawing.Point(3, 3);
+            this.PicVarnish.Name = "PicVarnish";
+            this.PicVarnish.Size = new System.Drawing.Size(32, 32);
+            this.PicVarnish.TabIndex = 57;
+            this.PicVarnish.TabStop = false;
+            // 
+            // LabNameVarnish
+            // 
+            this.LabNameVarnish.AutoSize = true;
+            this.LabNameVarnish.Location = new System.Drawing.Point(3, 38);
+            this.LabNameVarnish.Name = "LabNameVarnish";
+            this.LabNameVarnish.Size = new System.Drawing.Size(42, 13);
+            this.LabNameVarnish.TabIndex = 58;
+            this.LabNameVarnish.Text = "Varnish";
+            // 
+            // TBCostVarnish
+            // 
+            this.TBCostVarnish.Location = new System.Drawing.Point(131, 3);
+            this.TBCostVarnish.MaxLength = 9;
+            this.TBCostVarnish.Name = "TBCostVarnish";
+            this.TBCostVarnish.Size = new System.Drawing.Size(102, 20);
+            this.TBCostVarnish.TabIndex = 59;
+            this.TBCostVarnish.Text = "0";
+            this.TBCostVarnish.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanThread
+            // 
+            this.PanThread.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanThread.Controls.Add(this.PicThread);
+            this.PanThread.Controls.Add(this.LabNameThread);
+            this.PanThread.Controls.Add(this.TBCostThread);
+            this.PanThread.Location = new System.Drawing.Point(3, 993);
+            this.PanThread.Name = "PanThread";
+            this.PanThread.Size = new System.Drawing.Size(238, 56);
+            this.PanThread.TabIndex = 133;
+            // 
+            // PicThread
+            // 
+            this.PicThread.Image = global::CraftCostCalc.Properties.Resources.Thread;
+            this.PicThread.Location = new System.Drawing.Point(3, 3);
+            this.PicThread.Name = "PicThread";
+            this.PicThread.Size = new System.Drawing.Size(32, 32);
+            this.PicThread.TabIndex = 54;
+            this.PicThread.TabStop = false;
+            // 
+            // LabNameThread
+            // 
+            this.LabNameThread.AutoSize = true;
+            this.LabNameThread.Location = new System.Drawing.Point(3, 38);
+            this.LabNameThread.Name = "LabNameThread";
+            this.LabNameThread.Size = new System.Drawing.Size(41, 13);
+            this.LabNameThread.TabIndex = 55;
+            this.LabNameThread.Text = "Thread";
+            // 
+            // TBCostThread
+            // 
+            this.TBCostThread.Location = new System.Drawing.Point(131, 3);
+            this.TBCostThread.MaxLength = 9;
+            this.TBCostThread.Name = "TBCostThread";
+            this.TBCostThread.Size = new System.Drawing.Size(102, 20);
+            this.TBCostThread.TabIndex = 56;
+            this.TBCostThread.Text = "0";
+            this.TBCostThread.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanThons
+            // 
+            this.PanThons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanThons.Controls.Add(this.PicThons);
+            this.PanThons.Controls.Add(this.LabNameThons);
+            this.PanThons.Controls.Add(this.TBCostThons);
+            this.PanThons.Location = new System.Drawing.Point(3, 938);
+            this.PanThons.Name = "PanThons";
+            this.PanThons.Size = new System.Drawing.Size(238, 56);
+            this.PanThons.TabIndex = 132;
+            // 
+            // PicThons
+            // 
+            this.PicThons.Image = global::CraftCostCalc.Properties.Resources.Thons;
+            this.PicThons.Location = new System.Drawing.Point(3, 3);
+            this.PicThons.Name = "PicThons";
+            this.PicThons.Size = new System.Drawing.Size(32, 32);
+            this.PicThons.TabIndex = 51;
+            this.PicThons.TabStop = false;
+            // 
+            // LabNameThons
+            // 
+            this.LabNameThons.AutoSize = true;
+            this.LabNameThons.Location = new System.Drawing.Point(3, 38);
+            this.LabNameThons.Name = "LabNameThons";
+            this.LabNameThons.Size = new System.Drawing.Size(37, 13);
+            this.LabNameThons.TabIndex = 52;
+            this.LabNameThons.Text = "Thons";
+            // 
+            // TBCostThons
+            // 
+            this.TBCostThons.Location = new System.Drawing.Point(131, 3);
+            this.TBCostThons.MaxLength = 9;
+            this.TBCostThons.Name = "TBCostThons";
+            this.TBCostThons.Size = new System.Drawing.Size(102, 20);
+            this.TBCostThons.TabIndex = 53;
+            this.TBCostThons.Text = "0";
+            this.TBCostThons.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanSuede
+            // 
+            this.PanSuede.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSuede.Controls.Add(this.PicSuede);
+            this.PanSuede.Controls.Add(this.LabNameSuede);
+            this.PanSuede.Controls.Add(this.TBCostSuede);
+            this.PanSuede.Location = new System.Drawing.Point(3, 883);
+            this.PanSuede.Name = "PanSuede";
+            this.PanSuede.Size = new System.Drawing.Size(238, 56);
+            this.PanSuede.TabIndex = 131;
+            // 
+            // PicSuede
+            // 
+            this.PicSuede.Image = global::CraftCostCalc.Properties.Resources.Suede;
+            this.PicSuede.Location = new System.Drawing.Point(3, 3);
+            this.PicSuede.Name = "PicSuede";
+            this.PicSuede.Size = new System.Drawing.Size(32, 32);
+            this.PicSuede.TabIndex = 48;
+            this.PicSuede.TabStop = false;
+            // 
+            // LabNameSuede
+            // 
+            this.LabNameSuede.AutoSize = true;
+            this.LabNameSuede.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSuede.Name = "LabNameSuede";
+            this.LabNameSuede.Size = new System.Drawing.Size(38, 13);
+            this.LabNameSuede.TabIndex = 49;
+            this.LabNameSuede.Text = "Suede";
+            // 
+            // TBCostSuede
+            // 
+            this.TBCostSuede.Location = new System.Drawing.Point(131, 3);
+            this.TBCostSuede.MaxLength = 9;
+            this.TBCostSuede.Name = "TBCostSuede";
+            this.TBCostSuede.Size = new System.Drawing.Size(102, 20);
+            this.TBCostSuede.TabIndex = 50;
+            this.TBCostSuede.Text = "0";
+            this.TBCostSuede.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanStoneOfPurity
+            // 
+            this.PanStoneOfPurity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanStoneOfPurity.Controls.Add(this.PicStoneOfPurity);
+            this.PanStoneOfPurity.Controls.Add(this.LabNameStoneOfPurity);
+            this.PanStoneOfPurity.Controls.Add(this.TBCostStoneOfPurity);
+            this.PanStoneOfPurity.Location = new System.Drawing.Point(3, 828);
+            this.PanStoneOfPurity.Name = "PanStoneOfPurity";
+            this.PanStoneOfPurity.Size = new System.Drawing.Size(238, 56);
+            this.PanStoneOfPurity.TabIndex = 130;
+            // 
+            // PicStoneOfPurity
+            // 
+            this.PicStoneOfPurity.Image = global::CraftCostCalc.Properties.Resources.Stone_of_Purity;
+            this.PicStoneOfPurity.Location = new System.Drawing.Point(3, 3);
+            this.PicStoneOfPurity.Name = "PicStoneOfPurity";
+            this.PicStoneOfPurity.Size = new System.Drawing.Size(32, 32);
+            this.PicStoneOfPurity.TabIndex = 45;
+            this.PicStoneOfPurity.TabStop = false;
+            // 
+            // LabNameStoneOfPurity
+            // 
+            this.LabNameStoneOfPurity.AutoSize = true;
+            this.LabNameStoneOfPurity.Location = new System.Drawing.Point(3, 38);
+            this.LabNameStoneOfPurity.Name = "LabNameStoneOfPurity";
+            this.LabNameStoneOfPurity.Size = new System.Drawing.Size(78, 13);
+            this.LabNameStoneOfPurity.TabIndex = 46;
+            this.LabNameStoneOfPurity.Text = "Stone Of Purity";
+            // 
+            // TBCostStoneOfPurity
+            // 
+            this.TBCostStoneOfPurity.Location = new System.Drawing.Point(131, 3);
+            this.TBCostStoneOfPurity.MaxLength = 9;
+            this.TBCostStoneOfPurity.Name = "TBCostStoneOfPurity";
+            this.TBCostStoneOfPurity.Size = new System.Drawing.Size(102, 20);
+            this.TBCostStoneOfPurity.TabIndex = 47;
+            this.TBCostStoneOfPurity.Text = "0";
+            this.TBCostStoneOfPurity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanStem
+            // 
+            this.PanStem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanStem.Controls.Add(this.PicStem);
+            this.PanStem.Controls.Add(this.LabNameStem);
+            this.PanStem.Controls.Add(this.TBCostStem);
+            this.PanStem.Location = new System.Drawing.Point(3, 773);
+            this.PanStem.Name = "PanStem";
+            this.PanStem.Size = new System.Drawing.Size(238, 56);
+            this.PanStem.TabIndex = 129;
+            // 
+            // PicStem
+            // 
+            this.PicStem.Image = global::CraftCostCalc.Properties.Resources.Stem;
+            this.PicStem.Location = new System.Drawing.Point(3, 3);
+            this.PicStem.Name = "PicStem";
+            this.PicStem.Size = new System.Drawing.Size(32, 32);
+            this.PicStem.TabIndex = 42;
+            this.PicStem.TabStop = false;
+            // 
+            // LabNameStem
+            // 
+            this.LabNameStem.AutoSize = true;
+            this.LabNameStem.Location = new System.Drawing.Point(2, 38);
+            this.LabNameStem.Name = "LabNameStem";
+            this.LabNameStem.Size = new System.Drawing.Size(31, 13);
+            this.LabNameStem.TabIndex = 43;
+            this.LabNameStem.Text = "Stem";
+            // 
+            // TBCostStem
+            // 
+            this.TBCostStem.Location = new System.Drawing.Point(131, 3);
+            this.TBCostStem.MaxLength = 9;
+            this.TBCostStem.Name = "TBCostStem";
+            this.TBCostStem.Size = new System.Drawing.Size(102, 20);
+            this.TBCostStem.TabIndex = 44;
+            this.TBCostStem.Text = "0";
+            this.TBCostStem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanSilverNugget
+            // 
+            this.PanSilverNugget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSilverNugget.Controls.Add(this.PicSilverNugget);
+            this.PanSilverNugget.Controls.Add(this.LabNameSilverNugget);
+            this.PanSilverNugget.Controls.Add(this.TBCostSilverNugget);
+            this.PanSilverNugget.Location = new System.Drawing.Point(3, 718);
+            this.PanSilverNugget.Name = "PanSilverNugget";
+            this.PanSilverNugget.Size = new System.Drawing.Size(238, 56);
+            this.PanSilverNugget.TabIndex = 128;
+            // 
+            // PicSilverNugget
+            // 
+            this.PicSilverNugget.Image = global::CraftCostCalc.Properties.Resources.Silver_Nugget;
+            this.PicSilverNugget.Location = new System.Drawing.Point(3, 3);
+            this.PicSilverNugget.Name = "PicSilverNugget";
+            this.PicSilverNugget.Size = new System.Drawing.Size(32, 32);
+            this.PicSilverNugget.TabIndex = 39;
+            this.PicSilverNugget.TabStop = false;
+            // 
+            // LabNameSilverNugget
+            // 
+            this.LabNameSilverNugget.AutoSize = true;
+            this.LabNameSilverNugget.Location = new System.Drawing.Point(3, 38);
+            this.LabNameSilverNugget.Name = "LabNameSilverNugget";
+            this.LabNameSilverNugget.Size = new System.Drawing.Size(71, 13);
+            this.LabNameSilverNugget.TabIndex = 40;
+            this.LabNameSilverNugget.Text = "Silver Nugget";
+            // 
+            // TBCostSilverNugget
+            // 
+            this.TBCostSilverNugget.Location = new System.Drawing.Point(131, 3);
+            this.TBCostSilverNugget.MaxLength = 9;
+            this.TBCostSilverNugget.Name = "TBCostSilverNugget";
+            this.TBCostSilverNugget.Size = new System.Drawing.Size(102, 20);
+            this.TBCostSilverNugget.TabIndex = 41;
+            this.TBCostSilverNugget.Text = "0";
+            this.TBCostSilverNugget.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanOriharukonOre
+            // 
+            this.PanOriharukonOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanOriharukonOre.Controls.Add(this.PicOriharukonOre);
+            this.PanOriharukonOre.Controls.Add(this.LabNameOriharukonOre);
+            this.PanOriharukonOre.Controls.Add(this.TBCostOriharukonOre);
+            this.PanOriharukonOre.Location = new System.Drawing.Point(3, 663);
+            this.PanOriharukonOre.Name = "PanOriharukonOre";
+            this.PanOriharukonOre.Size = new System.Drawing.Size(238, 56);
+            this.PanOriharukonOre.TabIndex = 127;
+            // 
+            // PicOriharukonOre
+            // 
+            this.PicOriharukonOre.Image = global::CraftCostCalc.Properties.Resources.Oriharukon_Ore;
+            this.PicOriharukonOre.Location = new System.Drawing.Point(3, 3);
+            this.PicOriharukonOre.Name = "PicOriharukonOre";
+            this.PicOriharukonOre.Size = new System.Drawing.Size(32, 32);
+            this.PicOriharukonOre.TabIndex = 36;
+            this.PicOriharukonOre.TabStop = false;
+            // 
+            // LabNameOriharukonOre
+            // 
+            this.LabNameOriharukonOre.AutoSize = true;
+            this.LabNameOriharukonOre.Location = new System.Drawing.Point(3, 38);
+            this.LabNameOriharukonOre.Name = "LabNameOriharukonOre";
+            this.LabNameOriharukonOre.Size = new System.Drawing.Size(79, 13);
+            this.LabNameOriharukonOre.TabIndex = 37;
+            this.LabNameOriharukonOre.Text = "Oriharukon Ore";
+            // 
+            // TBCostOriharukonOre
+            // 
+            this.TBCostOriharukonOre.Location = new System.Drawing.Point(131, 3);
+            this.TBCostOriharukonOre.MaxLength = 9;
+            this.TBCostOriharukonOre.Name = "TBCostOriharukonOre";
+            this.TBCostOriharukonOre.Size = new System.Drawing.Size(102, 20);
+            this.TBCostOriharukonOre.TabIndex = 38;
+            this.TBCostOriharukonOre.Text = "0";
+            this.TBCostOriharukonOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanMoldLubricant
+            // 
+            this.PanMoldLubricant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanMoldLubricant.Controls.Add(this.PicMoldLubricant);
+            this.PanMoldLubricant.Controls.Add(this.LabNameMoldLubricant);
+            this.PanMoldLubricant.Controls.Add(this.TBCostMoldLubricant);
+            this.PanMoldLubricant.Location = new System.Drawing.Point(3, 608);
+            this.PanMoldLubricant.Name = "PanMoldLubricant";
+            this.PanMoldLubricant.Size = new System.Drawing.Size(238, 56);
+            this.PanMoldLubricant.TabIndex = 126;
+            // 
+            // PicMoldLubricant
+            // 
+            this.PicMoldLubricant.Image = global::CraftCostCalc.Properties.Resources.Mold_Lubricant;
+            this.PicMoldLubricant.Location = new System.Drawing.Point(3, 3);
+            this.PicMoldLubricant.Name = "PicMoldLubricant";
+            this.PicMoldLubricant.Size = new System.Drawing.Size(32, 32);
+            this.PicMoldLubricant.TabIndex = 33;
+            this.PicMoldLubricant.TabStop = false;
+            // 
+            // LabNameMoldLubricant
+            // 
+            this.LabNameMoldLubricant.AutoSize = true;
+            this.LabNameMoldLubricant.Location = new System.Drawing.Point(3, 38);
+            this.LabNameMoldLubricant.Name = "LabNameMoldLubricant";
+            this.LabNameMoldLubricant.Size = new System.Drawing.Size(77, 13);
+            this.LabNameMoldLubricant.TabIndex = 34;
+            this.LabNameMoldLubricant.Text = "Mold Lubricant";
+            // 
+            // TBCostMoldLubricant
+            // 
+            this.TBCostMoldLubricant.Location = new System.Drawing.Point(131, 3);
+            this.TBCostMoldLubricant.MaxLength = 9;
+            this.TBCostMoldLubricant.Name = "TBCostMoldLubricant";
+            this.TBCostMoldLubricant.Size = new System.Drawing.Size(102, 20);
+            this.TBCostMoldLubricant.TabIndex = 35;
+            this.TBCostMoldLubricant.Text = "0";
+            this.TBCostMoldLubricant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanMoldHardener
+            // 
+            this.PanMoldHardener.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanMoldHardener.Controls.Add(this.PicMoldHardener);
+            this.PanMoldHardener.Controls.Add(this.LabNameMoldHardener);
+            this.PanMoldHardener.Controls.Add(this.TBCostMoldHardener);
+            this.PanMoldHardener.Location = new System.Drawing.Point(3, 553);
+            this.PanMoldHardener.Name = "PanMoldHardener";
+            this.PanMoldHardener.Size = new System.Drawing.Size(238, 56);
+            this.PanMoldHardener.TabIndex = 125;
+            // 
+            // PicMoldHardener
+            // 
+            this.PicMoldHardener.Image = global::CraftCostCalc.Properties.Resources.Mold_Hardener;
+            this.PicMoldHardener.Location = new System.Drawing.Point(3, 3);
+            this.PicMoldHardener.Name = "PicMoldHardener";
+            this.PicMoldHardener.Size = new System.Drawing.Size(32, 32);
+            this.PicMoldHardener.TabIndex = 30;
+            this.PicMoldHardener.TabStop = false;
+            // 
+            // LabNameMoldHardener
+            // 
+            this.LabNameMoldHardener.AutoSize = true;
+            this.LabNameMoldHardener.Location = new System.Drawing.Point(3, 38);
+            this.LabNameMoldHardener.Name = "LabNameMoldHardener";
+            this.LabNameMoldHardener.Size = new System.Drawing.Size(77, 13);
+            this.LabNameMoldHardener.TabIndex = 31;
+            this.LabNameMoldHardener.Text = "Mold Hardener";
+            // 
+            // TBCostMoldHardener
+            // 
+            this.TBCostMoldHardener.Location = new System.Drawing.Point(131, 3);
+            this.TBCostMoldHardener.MaxLength = 9;
+            this.TBCostMoldHardener.Name = "TBCostMoldHardener";
+            this.TBCostMoldHardener.Size = new System.Drawing.Size(102, 20);
+            this.TBCostMoldHardener.TabIndex = 32;
+            this.TBCostMoldHardener.Text = "0";
+            this.TBCostMoldHardener.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanMoldGlue
+            // 
+            this.PanMoldGlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanMoldGlue.Controls.Add(this.PicMoldGlue);
+            this.PanMoldGlue.Controls.Add(this.LabNameMoldGlue);
+            this.PanMoldGlue.Controls.Add(this.TBCostMoldGlue);
+            this.PanMoldGlue.Location = new System.Drawing.Point(3, 498);
+            this.PanMoldGlue.Name = "PanMoldGlue";
+            this.PanMoldGlue.Size = new System.Drawing.Size(238, 56);
+            this.PanMoldGlue.TabIndex = 124;
+            // 
+            // PicMoldGlue
+            // 
+            this.PicMoldGlue.Image = global::CraftCostCalc.Properties.Resources.Mold_Glue;
+            this.PicMoldGlue.Location = new System.Drawing.Point(3, 3);
+            this.PicMoldGlue.Name = "PicMoldGlue";
+            this.PicMoldGlue.Size = new System.Drawing.Size(32, 32);
+            this.PicMoldGlue.TabIndex = 27;
+            this.PicMoldGlue.TabStop = false;
+            // 
+            // LabNameMoldGlue
+            // 
+            this.LabNameMoldGlue.AutoSize = true;
+            this.LabNameMoldGlue.Location = new System.Drawing.Point(3, 38);
+            this.LabNameMoldGlue.Name = "LabNameMoldGlue";
+            this.LabNameMoldGlue.Size = new System.Drawing.Size(55, 13);
+            this.LabNameMoldGlue.TabIndex = 28;
+            this.LabNameMoldGlue.Text = "Mold Glue";
+            // 
+            // TBCostMoldGlue
+            // 
+            this.TBCostMoldGlue.Location = new System.Drawing.Point(131, 3);
+            this.TBCostMoldGlue.MaxLength = 9;
+            this.TBCostMoldGlue.Name = "TBCostMoldGlue";
+            this.TBCostMoldGlue.Size = new System.Drawing.Size(102, 20);
+            this.TBCostMoldGlue.TabIndex = 29;
+            this.TBCostMoldGlue.Text = "0";
+            this.TBCostMoldGlue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanMithrilOre
+            // 
+            this.PanMithrilOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanMithrilOre.Controls.Add(this.PicMithrilOre);
+            this.PanMithrilOre.Controls.Add(this.LabNameMithrilOre);
+            this.PanMithrilOre.Controls.Add(this.TBCostMithrilOre);
+            this.PanMithrilOre.Location = new System.Drawing.Point(3, 443);
+            this.PanMithrilOre.Name = "PanMithrilOre";
+            this.PanMithrilOre.Size = new System.Drawing.Size(238, 56);
+            this.PanMithrilOre.TabIndex = 123;
+            // 
+            // PicMithrilOre
+            // 
+            this.PicMithrilOre.Image = global::CraftCostCalc.Properties.Resources.Mithril_Ore;
+            this.PicMithrilOre.Location = new System.Drawing.Point(3, 3);
+            this.PicMithrilOre.Name = "PicMithrilOre";
+            this.PicMithrilOre.Size = new System.Drawing.Size(32, 32);
+            this.PicMithrilOre.TabIndex = 24;
+            this.PicMithrilOre.TabStop = false;
+            // 
+            // LabNameMithrilOre
+            // 
+            this.LabNameMithrilOre.AutoSize = true;
+            this.LabNameMithrilOre.Location = new System.Drawing.Point(3, 38);
+            this.LabNameMithrilOre.Name = "LabNameMithrilOre";
+            this.LabNameMithrilOre.Size = new System.Drawing.Size(54, 13);
+            this.LabNameMithrilOre.TabIndex = 25;
+            this.LabNameMithrilOre.Text = "Mithril Ore";
+            // 
+            // TBCostMithrilOre
+            // 
+            this.TBCostMithrilOre.Location = new System.Drawing.Point(131, 3);
+            this.TBCostMithrilOre.MaxLength = 9;
+            this.TBCostMithrilOre.Name = "TBCostMithrilOre";
+            this.TBCostMithrilOre.Size = new System.Drawing.Size(102, 20);
+            this.TBCostMithrilOre.TabIndex = 26;
+            this.TBCostMithrilOre.Text = "0";
+            this.TBCostMithrilOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanIronOre
+            // 
+            this.PanIronOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanIronOre.Controls.Add(this.PicIronOre);
+            this.PanIronOre.Controls.Add(this.LabNameIronOre);
+            this.PanIronOre.Controls.Add(this.TBCostIronOre);
+            this.PanIronOre.Location = new System.Drawing.Point(3, 388);
+            this.PanIronOre.Name = "PanIronOre";
+            this.PanIronOre.Size = new System.Drawing.Size(238, 56);
+            this.PanIronOre.TabIndex = 122;
+            // 
+            // PicIronOre
+            // 
+            this.PicIronOre.Image = global::CraftCostCalc.Properties.Resources.Iron_Ore;
+            this.PicIronOre.Location = new System.Drawing.Point(3, 3);
+            this.PicIronOre.Name = "PicIronOre";
+            this.PicIronOre.Size = new System.Drawing.Size(32, 32);
+            this.PicIronOre.TabIndex = 21;
+            this.PicIronOre.TabStop = false;
+            // 
+            // LabNameIronOre
+            // 
+            this.LabNameIronOre.AutoSize = true;
+            this.LabNameIronOre.Location = new System.Drawing.Point(3, 38);
+            this.LabNameIronOre.Name = "LabNameIronOre";
+            this.LabNameIronOre.Size = new System.Drawing.Size(45, 13);
+            this.LabNameIronOre.TabIndex = 22;
+            this.LabNameIronOre.Text = "Iron Ore";
+            // 
+            // TBCostIronOre
+            // 
+            this.TBCostIronOre.Location = new System.Drawing.Point(131, 3);
+            this.TBCostIronOre.MaxLength = 9;
+            this.TBCostIronOre.Name = "TBCostIronOre";
+            this.TBCostIronOre.Size = new System.Drawing.Size(102, 20);
+            this.TBCostIronOre.TabIndex = 23;
+            this.TBCostIronOre.Text = "0";
+            this.TBCostIronOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanEnria
+            // 
+            this.PanEnria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanEnria.Controls.Add(this.PicEnria);
+            this.PanEnria.Controls.Add(this.LabNameEnria);
+            this.PanEnria.Controls.Add(this.TBCostEnria);
+            this.PanEnria.Location = new System.Drawing.Point(3, 333);
+            this.PanEnria.Name = "PanEnria";
+            this.PanEnria.Size = new System.Drawing.Size(238, 56);
+            this.PanEnria.TabIndex = 121;
+            // 
+            // PicEnria
+            // 
+            this.PicEnria.Image = global::CraftCostCalc.Properties.Resources.Enria;
+            this.PicEnria.Location = new System.Drawing.Point(3, 3);
+            this.PicEnria.Name = "PicEnria";
+            this.PicEnria.Size = new System.Drawing.Size(32, 32);
+            this.PicEnria.TabIndex = 18;
+            this.PicEnria.TabStop = false;
+            // 
+            // LabNameEnria
+            // 
+            this.LabNameEnria.AutoSize = true;
+            this.LabNameEnria.Location = new System.Drawing.Point(3, 38);
+            this.LabNameEnria.Name = "LabNameEnria";
+            this.LabNameEnria.Size = new System.Drawing.Size(31, 13);
+            this.LabNameEnria.TabIndex = 19;
+            this.LabNameEnria.Text = "Enria";
+            // 
+            // TBCostEnria
+            // 
+            this.TBCostEnria.Location = new System.Drawing.Point(131, 3);
+            this.TBCostEnria.MaxLength = 9;
+            this.TBCostEnria.Name = "TBCostEnria";
+            this.TBCostEnria.Size = new System.Drawing.Size(102, 20);
+            this.TBCostEnria.TabIndex = 20;
+            this.TBCostEnria.Text = "0";
+            this.TBCostEnria.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanCoal
+            // 
+            this.PanCoal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanCoal.Controls.Add(this.PicCoal);
+            this.PanCoal.Controls.Add(this.LabNameCoal);
+            this.PanCoal.Controls.Add(this.TBCostCoal);
+            this.PanCoal.Location = new System.Drawing.Point(3, 278);
+            this.PanCoal.Name = "PanCoal";
+            this.PanCoal.Size = new System.Drawing.Size(238, 56);
+            this.PanCoal.TabIndex = 120;
+            // 
+            // PicCoal
+            // 
+            this.PicCoal.Image = global::CraftCostCalc.Properties.Resources.Coal;
+            this.PicCoal.Location = new System.Drawing.Point(3, 3);
+            this.PicCoal.Name = "PicCoal";
+            this.PicCoal.Size = new System.Drawing.Size(32, 32);
+            this.PicCoal.TabIndex = 15;
+            this.PicCoal.TabStop = false;
+            // 
+            // LabNameCoal
+            // 
+            this.LabNameCoal.AutoSize = true;
+            this.LabNameCoal.Location = new System.Drawing.Point(3, 38);
+            this.LabNameCoal.Name = "LabNameCoal";
+            this.LabNameCoal.Size = new System.Drawing.Size(28, 13);
+            this.LabNameCoal.TabIndex = 16;
+            this.LabNameCoal.Text = "Coal";
+            // 
+            // TBCostCoal
+            // 
+            this.TBCostCoal.Location = new System.Drawing.Point(131, 3);
+            this.TBCostCoal.MaxLength = 9;
+            this.TBCostCoal.Name = "TBCostCoal";
+            this.TBCostCoal.Size = new System.Drawing.Size(102, 20);
+            this.TBCostCoal.TabIndex = 17;
+            this.TBCostCoal.Text = "0";
+            this.TBCostCoal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanCharcoal
+            // 
+            this.PanCharcoal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanCharcoal.Controls.Add(this.PicCharcoal);
+            this.PanCharcoal.Controls.Add(this.LabNameCharcoal);
+            this.PanCharcoal.Controls.Add(this.TBCostCharcoal);
+            this.PanCharcoal.Location = new System.Drawing.Point(3, 223);
+            this.PanCharcoal.Name = "PanCharcoal";
+            this.PanCharcoal.Size = new System.Drawing.Size(238, 56);
+            this.PanCharcoal.TabIndex = 119;
+            // 
+            // PicCharcoal
+            // 
+            this.PicCharcoal.Image = global::CraftCostCalc.Properties.Resources.Charcoal;
+            this.PicCharcoal.Location = new System.Drawing.Point(3, 3);
+            this.PicCharcoal.Name = "PicCharcoal";
+            this.PicCharcoal.Size = new System.Drawing.Size(32, 32);
+            this.PicCharcoal.TabIndex = 12;
+            this.PicCharcoal.TabStop = false;
+            // 
+            // LabNameCharcoal
+            // 
+            this.LabNameCharcoal.AutoSize = true;
+            this.LabNameCharcoal.Location = new System.Drawing.Point(3, 38);
+            this.LabNameCharcoal.Name = "LabNameCharcoal";
+            this.LabNameCharcoal.Size = new System.Drawing.Size(49, 13);
+            this.LabNameCharcoal.TabIndex = 13;
+            this.LabNameCharcoal.Text = "Charcoal";
+            // 
+            // TBCostCharcoal
+            // 
+            this.TBCostCharcoal.Location = new System.Drawing.Point(131, 3);
+            this.TBCostCharcoal.MaxLength = 9;
+            this.TBCostCharcoal.Name = "TBCostCharcoal";
+            this.TBCostCharcoal.Size = new System.Drawing.Size(102, 20);
+            this.TBCostCharcoal.TabIndex = 14;
+            this.TBCostCharcoal.Text = "0";
+            this.TBCostCharcoal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanAsofe
+            // 
+            this.PanAsofe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanAsofe.Controls.Add(this.PicAsofe);
+            this.PanAsofe.Controls.Add(this.LabNameAsofe);
+            this.PanAsofe.Controls.Add(this.TBCostAsofe);
+            this.PanAsofe.Location = new System.Drawing.Point(3, 168);
+            this.PanAsofe.Name = "PanAsofe";
+            this.PanAsofe.Size = new System.Drawing.Size(238, 56);
+            this.PanAsofe.TabIndex = 118;
+            // 
+            // PicAsofe
+            // 
+            this.PicAsofe.Image = global::CraftCostCalc.Properties.Resources.Asofe;
+            this.PicAsofe.Location = new System.Drawing.Point(3, 3);
+            this.PicAsofe.Name = "PicAsofe";
+            this.PicAsofe.Size = new System.Drawing.Size(32, 32);
+            this.PicAsofe.TabIndex = 9;
+            this.PicAsofe.TabStop = false;
+            // 
+            // LabNameAsofe
+            // 
+            this.LabNameAsofe.AutoSize = true;
+            this.LabNameAsofe.Location = new System.Drawing.Point(3, 38);
+            this.LabNameAsofe.Name = "LabNameAsofe";
+            this.LabNameAsofe.Size = new System.Drawing.Size(34, 13);
+            this.LabNameAsofe.TabIndex = 10;
+            this.LabNameAsofe.Text = "Asofe";
+            // 
+            // TBCostAsofe
+            // 
+            this.TBCostAsofe.Location = new System.Drawing.Point(131, 3);
+            this.TBCostAsofe.MaxLength = 9;
+            this.TBCostAsofe.Name = "TBCostAsofe";
+            this.TBCostAsofe.Size = new System.Drawing.Size(102, 20);
+            this.TBCostAsofe.TabIndex = 11;
+            this.TBCostAsofe.Text = "0";
+            this.TBCostAsofe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PanAnimalSkin
+            // 
+            this.PanAnimalSkin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanAnimalSkin.Controls.Add(this.PicAnimalSkin);
+            this.PanAnimalSkin.Controls.Add(this.LabNameAnimalSkin);
+            this.PanAnimalSkin.Controls.Add(this.TBCostAnimalSkin);
+            this.PanAnimalSkin.Location = new System.Drawing.Point(3, 113);
+            this.PanAnimalSkin.Name = "PanAnimalSkin";
+            this.PanAnimalSkin.Size = new System.Drawing.Size(238, 56);
+            this.PanAnimalSkin.TabIndex = 117;
+            // 
+            // PicAnimalSkin
+            // 
+            this.PicAnimalSkin.Image = global::CraftCostCalc.Properties.Resources.Animal_Skin;
+            this.PicAnimalSkin.Location = new System.Drawing.Point(3, 3);
+            this.PicAnimalSkin.Name = "PicAnimalSkin";
+            this.PicAnimalSkin.Size = new System.Drawing.Size(32, 32);
+            this.PicAnimalSkin.TabIndex = 6;
+            this.PicAnimalSkin.TabStop = false;
+            // 
+            // LabNameAnimalSkin
+            // 
+            this.LabNameAnimalSkin.AutoSize = true;
+            this.LabNameAnimalSkin.Location = new System.Drawing.Point(3, 38);
+            this.LabNameAnimalSkin.Name = "LabNameAnimalSkin";
+            this.LabNameAnimalSkin.Size = new System.Drawing.Size(62, 13);
+            this.LabNameAnimalSkin.TabIndex = 7;
+            this.LabNameAnimalSkin.Text = "Animal Skin";
+            // 
+            // TBCostAnimalSkin
+            // 
+            this.TBCostAnimalSkin.Location = new System.Drawing.Point(131, 3);
+            this.TBCostAnimalSkin.MaxLength = 9;
+            this.TBCostAnimalSkin.Name = "TBCostAnimalSkin";
+            this.TBCostAnimalSkin.Size = new System.Drawing.Size(102, 20);
+            this.TBCostAnimalSkin.TabIndex = 8;
+            this.TBCostAnimalSkin.Text = "0";
+            this.TBCostAnimalSkin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PanAnimalBone
             // 
@@ -1938,510 +2638,6 @@
             this.TBCostAdamantiteNugget.TabIndex = 2;
             this.TBCostAdamantiteNugget.Text = "0";
             this.TBCostAdamantiteNugget.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // TBCostVarnish
-            // 
-            this.TBCostVarnish.Location = new System.Drawing.Point(131, 3);
-            this.TBCostVarnish.MaxLength = 9;
-            this.TBCostVarnish.Name = "TBCostVarnish";
-            this.TBCostVarnish.Size = new System.Drawing.Size(102, 20);
-            this.TBCostVarnish.TabIndex = 59;
-            this.TBCostVarnish.Text = "0";
-            this.TBCostVarnish.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameVarnish
-            // 
-            this.LabNameVarnish.AutoSize = true;
-            this.LabNameVarnish.Location = new System.Drawing.Point(3, 38);
-            this.LabNameVarnish.Name = "LabNameVarnish";
-            this.LabNameVarnish.Size = new System.Drawing.Size(42, 13);
-            this.LabNameVarnish.TabIndex = 58;
-            this.LabNameVarnish.Text = "Varnish";
-            // 
-            // PicVarnish
-            // 
-            this.PicVarnish.Image = global::CraftCostCalc.Properties.Resources.Varnish;
-            this.PicVarnish.Location = new System.Drawing.Point(3, 3);
-            this.PicVarnish.Name = "PicVarnish";
-            this.PicVarnish.Size = new System.Drawing.Size(32, 32);
-            this.PicVarnish.TabIndex = 57;
-            this.PicVarnish.TabStop = false;
-            // 
-            // TBCostThread
-            // 
-            this.TBCostThread.Location = new System.Drawing.Point(131, 3);
-            this.TBCostThread.MaxLength = 9;
-            this.TBCostThread.Name = "TBCostThread";
-            this.TBCostThread.Size = new System.Drawing.Size(102, 20);
-            this.TBCostThread.TabIndex = 56;
-            this.TBCostThread.Text = "0";
-            this.TBCostThread.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameThread
-            // 
-            this.LabNameThread.AutoSize = true;
-            this.LabNameThread.Location = new System.Drawing.Point(3, 38);
-            this.LabNameThread.Name = "LabNameThread";
-            this.LabNameThread.Size = new System.Drawing.Size(41, 13);
-            this.LabNameThread.TabIndex = 55;
-            this.LabNameThread.Text = "Thread";
-            // 
-            // PicThread
-            // 
-            this.PicThread.Image = global::CraftCostCalc.Properties.Resources.Thread;
-            this.PicThread.Location = new System.Drawing.Point(3, 3);
-            this.PicThread.Name = "PicThread";
-            this.PicThread.Size = new System.Drawing.Size(32, 32);
-            this.PicThread.TabIndex = 54;
-            this.PicThread.TabStop = false;
-            // 
-            // TBCostThons
-            // 
-            this.TBCostThons.Location = new System.Drawing.Point(131, 3);
-            this.TBCostThons.MaxLength = 9;
-            this.TBCostThons.Name = "TBCostThons";
-            this.TBCostThons.Size = new System.Drawing.Size(102, 20);
-            this.TBCostThons.TabIndex = 53;
-            this.TBCostThons.Text = "0";
-            this.TBCostThons.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameThons
-            // 
-            this.LabNameThons.AutoSize = true;
-            this.LabNameThons.Location = new System.Drawing.Point(3, 38);
-            this.LabNameThons.Name = "LabNameThons";
-            this.LabNameThons.Size = new System.Drawing.Size(37, 13);
-            this.LabNameThons.TabIndex = 52;
-            this.LabNameThons.Text = "Thons";
-            // 
-            // PicThons
-            // 
-            this.PicThons.Image = global::CraftCostCalc.Properties.Resources.Thons;
-            this.PicThons.Location = new System.Drawing.Point(3, 3);
-            this.PicThons.Name = "PicThons";
-            this.PicThons.Size = new System.Drawing.Size(32, 32);
-            this.PicThons.TabIndex = 51;
-            this.PicThons.TabStop = false;
-            // 
-            // TBCostSuede
-            // 
-            this.TBCostSuede.Location = new System.Drawing.Point(131, 3);
-            this.TBCostSuede.MaxLength = 9;
-            this.TBCostSuede.Name = "TBCostSuede";
-            this.TBCostSuede.Size = new System.Drawing.Size(102, 20);
-            this.TBCostSuede.TabIndex = 50;
-            this.TBCostSuede.Text = "0";
-            this.TBCostSuede.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameSuede
-            // 
-            this.LabNameSuede.AutoSize = true;
-            this.LabNameSuede.Location = new System.Drawing.Point(3, 38);
-            this.LabNameSuede.Name = "LabNameSuede";
-            this.LabNameSuede.Size = new System.Drawing.Size(38, 13);
-            this.LabNameSuede.TabIndex = 49;
-            this.LabNameSuede.Text = "Suede";
-            // 
-            // PicSuede
-            // 
-            this.PicSuede.Image = global::CraftCostCalc.Properties.Resources.Suede;
-            this.PicSuede.Location = new System.Drawing.Point(3, 3);
-            this.PicSuede.Name = "PicSuede";
-            this.PicSuede.Size = new System.Drawing.Size(32, 32);
-            this.PicSuede.TabIndex = 48;
-            this.PicSuede.TabStop = false;
-            // 
-            // TBCostStoneOfPurity
-            // 
-            this.TBCostStoneOfPurity.Location = new System.Drawing.Point(131, 3);
-            this.TBCostStoneOfPurity.MaxLength = 9;
-            this.TBCostStoneOfPurity.Name = "TBCostStoneOfPurity";
-            this.TBCostStoneOfPurity.Size = new System.Drawing.Size(102, 20);
-            this.TBCostStoneOfPurity.TabIndex = 47;
-            this.TBCostStoneOfPurity.Text = "0";
-            this.TBCostStoneOfPurity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameStoneOfPurity
-            // 
-            this.LabNameStoneOfPurity.AutoSize = true;
-            this.LabNameStoneOfPurity.Location = new System.Drawing.Point(3, 38);
-            this.LabNameStoneOfPurity.Name = "LabNameStoneOfPurity";
-            this.LabNameStoneOfPurity.Size = new System.Drawing.Size(78, 13);
-            this.LabNameStoneOfPurity.TabIndex = 46;
-            this.LabNameStoneOfPurity.Text = "Stone Of Purity";
-            // 
-            // PicStoneOfPurity
-            // 
-            this.PicStoneOfPurity.Image = global::CraftCostCalc.Properties.Resources.Stone_of_Purity;
-            this.PicStoneOfPurity.Location = new System.Drawing.Point(3, 3);
-            this.PicStoneOfPurity.Name = "PicStoneOfPurity";
-            this.PicStoneOfPurity.Size = new System.Drawing.Size(32, 32);
-            this.PicStoneOfPurity.TabIndex = 45;
-            this.PicStoneOfPurity.TabStop = false;
-            // 
-            // TBCostStem
-            // 
-            this.TBCostStem.Location = new System.Drawing.Point(131, 3);
-            this.TBCostStem.MaxLength = 9;
-            this.TBCostStem.Name = "TBCostStem";
-            this.TBCostStem.Size = new System.Drawing.Size(102, 20);
-            this.TBCostStem.TabIndex = 44;
-            this.TBCostStem.Text = "0";
-            this.TBCostStem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameStem
-            // 
-            this.LabNameStem.AutoSize = true;
-            this.LabNameStem.Location = new System.Drawing.Point(2, 38);
-            this.LabNameStem.Name = "LabNameStem";
-            this.LabNameStem.Size = new System.Drawing.Size(31, 13);
-            this.LabNameStem.TabIndex = 43;
-            this.LabNameStem.Text = "Stem";
-            // 
-            // PicStem
-            // 
-            this.PicStem.Image = global::CraftCostCalc.Properties.Resources.Stem;
-            this.PicStem.Location = new System.Drawing.Point(3, 3);
-            this.PicStem.Name = "PicStem";
-            this.PicStem.Size = new System.Drawing.Size(32, 32);
-            this.PicStem.TabIndex = 42;
-            this.PicStem.TabStop = false;
-            // 
-            // TBCostSilverNugget
-            // 
-            this.TBCostSilverNugget.Location = new System.Drawing.Point(131, 3);
-            this.TBCostSilverNugget.MaxLength = 9;
-            this.TBCostSilverNugget.Name = "TBCostSilverNugget";
-            this.TBCostSilverNugget.Size = new System.Drawing.Size(102, 20);
-            this.TBCostSilverNugget.TabIndex = 41;
-            this.TBCostSilverNugget.Text = "0";
-            this.TBCostSilverNugget.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameSilverNugget
-            // 
-            this.LabNameSilverNugget.AutoSize = true;
-            this.LabNameSilverNugget.Location = new System.Drawing.Point(3, 38);
-            this.LabNameSilverNugget.Name = "LabNameSilverNugget";
-            this.LabNameSilverNugget.Size = new System.Drawing.Size(71, 13);
-            this.LabNameSilverNugget.TabIndex = 40;
-            this.LabNameSilverNugget.Text = "Silver Nugget";
-            // 
-            // PicSilverNugget
-            // 
-            this.PicSilverNugget.Image = global::CraftCostCalc.Properties.Resources.Silver_Nugget;
-            this.PicSilverNugget.Location = new System.Drawing.Point(3, 3);
-            this.PicSilverNugget.Name = "PicSilverNugget";
-            this.PicSilverNugget.Size = new System.Drawing.Size(32, 32);
-            this.PicSilverNugget.TabIndex = 39;
-            this.PicSilverNugget.TabStop = false;
-            // 
-            // TBCostOriharukonOre
-            // 
-            this.TBCostOriharukonOre.Location = new System.Drawing.Point(131, 3);
-            this.TBCostOriharukonOre.MaxLength = 9;
-            this.TBCostOriharukonOre.Name = "TBCostOriharukonOre";
-            this.TBCostOriharukonOre.Size = new System.Drawing.Size(102, 20);
-            this.TBCostOriharukonOre.TabIndex = 38;
-            this.TBCostOriharukonOre.Text = "0";
-            this.TBCostOriharukonOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // TBCostMoldLubricant
-            // 
-            this.TBCostMoldLubricant.Location = new System.Drawing.Point(131, 3);
-            this.TBCostMoldLubricant.MaxLength = 9;
-            this.TBCostMoldLubricant.Name = "TBCostMoldLubricant";
-            this.TBCostMoldLubricant.Size = new System.Drawing.Size(102, 20);
-            this.TBCostMoldLubricant.TabIndex = 35;
-            this.TBCostMoldLubricant.Text = "0";
-            this.TBCostMoldLubricant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameMoldLubricant
-            // 
-            this.LabNameMoldLubricant.AutoSize = true;
-            this.LabNameMoldLubricant.Location = new System.Drawing.Point(3, 38);
-            this.LabNameMoldLubricant.Name = "LabNameMoldLubricant";
-            this.LabNameMoldLubricant.Size = new System.Drawing.Size(77, 13);
-            this.LabNameMoldLubricant.TabIndex = 34;
-            this.LabNameMoldLubricant.Text = "Mold Lubricant";
-            // 
-            // LabNameOriharukonOre
-            // 
-            this.LabNameOriharukonOre.AutoSize = true;
-            this.LabNameOriharukonOre.Location = new System.Drawing.Point(3, 38);
-            this.LabNameOriharukonOre.Name = "LabNameOriharukonOre";
-            this.LabNameOriharukonOre.Size = new System.Drawing.Size(79, 13);
-            this.LabNameOriharukonOre.TabIndex = 37;
-            this.LabNameOriharukonOre.Text = "Oriharukon Ore";
-            // 
-            // PicMoldLubricant
-            // 
-            this.PicMoldLubricant.Image = global::CraftCostCalc.Properties.Resources.Mold_Lubricant;
-            this.PicMoldLubricant.Location = new System.Drawing.Point(3, 3);
-            this.PicMoldLubricant.Name = "PicMoldLubricant";
-            this.PicMoldLubricant.Size = new System.Drawing.Size(32, 32);
-            this.PicMoldLubricant.TabIndex = 33;
-            this.PicMoldLubricant.TabStop = false;
-            // 
-            // TBCostMoldHardener
-            // 
-            this.TBCostMoldHardener.Location = new System.Drawing.Point(131, 3);
-            this.TBCostMoldHardener.MaxLength = 9;
-            this.TBCostMoldHardener.Name = "TBCostMoldHardener";
-            this.TBCostMoldHardener.Size = new System.Drawing.Size(102, 20);
-            this.TBCostMoldHardener.TabIndex = 32;
-            this.TBCostMoldHardener.Text = "0";
-            this.TBCostMoldHardener.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // PicOriharukonOre
-            // 
-            this.PicOriharukonOre.Image = global::CraftCostCalc.Properties.Resources.Oriharukon_Ore;
-            this.PicOriharukonOre.Location = new System.Drawing.Point(3, 3);
-            this.PicOriharukonOre.Name = "PicOriharukonOre";
-            this.PicOriharukonOre.Size = new System.Drawing.Size(32, 32);
-            this.PicOriharukonOre.TabIndex = 36;
-            this.PicOriharukonOre.TabStop = false;
-            // 
-            // LabNameMoldHardener
-            // 
-            this.LabNameMoldHardener.AutoSize = true;
-            this.LabNameMoldHardener.Location = new System.Drawing.Point(3, 38);
-            this.LabNameMoldHardener.Name = "LabNameMoldHardener";
-            this.LabNameMoldHardener.Size = new System.Drawing.Size(77, 13);
-            this.LabNameMoldHardener.TabIndex = 31;
-            this.LabNameMoldHardener.Text = "Mold Hardener";
-            // 
-            // PicMoldHardener
-            // 
-            this.PicMoldHardener.Image = global::CraftCostCalc.Properties.Resources.Mold_Hardener;
-            this.PicMoldHardener.Location = new System.Drawing.Point(3, 3);
-            this.PicMoldHardener.Name = "PicMoldHardener";
-            this.PicMoldHardener.Size = new System.Drawing.Size(32, 32);
-            this.PicMoldHardener.TabIndex = 30;
-            this.PicMoldHardener.TabStop = false;
-            // 
-            // TBCostMoldGlue
-            // 
-            this.TBCostMoldGlue.Location = new System.Drawing.Point(131, 3);
-            this.TBCostMoldGlue.MaxLength = 9;
-            this.TBCostMoldGlue.Name = "TBCostMoldGlue";
-            this.TBCostMoldGlue.Size = new System.Drawing.Size(102, 20);
-            this.TBCostMoldGlue.TabIndex = 29;
-            this.TBCostMoldGlue.Text = "0";
-            this.TBCostMoldGlue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameMoldGlue
-            // 
-            this.LabNameMoldGlue.AutoSize = true;
-            this.LabNameMoldGlue.Location = new System.Drawing.Point(3, 38);
-            this.LabNameMoldGlue.Name = "LabNameMoldGlue";
-            this.LabNameMoldGlue.Size = new System.Drawing.Size(55, 13);
-            this.LabNameMoldGlue.TabIndex = 28;
-            this.LabNameMoldGlue.Text = "Mold Glue";
-            // 
-            // PicMoldGlue
-            // 
-            this.PicMoldGlue.Image = global::CraftCostCalc.Properties.Resources.Mold_Glue;
-            this.PicMoldGlue.Location = new System.Drawing.Point(3, 3);
-            this.PicMoldGlue.Name = "PicMoldGlue";
-            this.PicMoldGlue.Size = new System.Drawing.Size(32, 32);
-            this.PicMoldGlue.TabIndex = 27;
-            this.PicMoldGlue.TabStop = false;
-            // 
-            // TBCostMithrilOre
-            // 
-            this.TBCostMithrilOre.Location = new System.Drawing.Point(131, 3);
-            this.TBCostMithrilOre.MaxLength = 9;
-            this.TBCostMithrilOre.Name = "TBCostMithrilOre";
-            this.TBCostMithrilOre.Size = new System.Drawing.Size(102, 20);
-            this.TBCostMithrilOre.TabIndex = 26;
-            this.TBCostMithrilOre.Text = "0";
-            this.TBCostMithrilOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameMithrilOre
-            // 
-            this.LabNameMithrilOre.AutoSize = true;
-            this.LabNameMithrilOre.Location = new System.Drawing.Point(3, 38);
-            this.LabNameMithrilOre.Name = "LabNameMithrilOre";
-            this.LabNameMithrilOre.Size = new System.Drawing.Size(54, 13);
-            this.LabNameMithrilOre.TabIndex = 25;
-            this.LabNameMithrilOre.Text = "Mithril Ore";
-            // 
-            // PicMithrilOre
-            // 
-            this.PicMithrilOre.Image = global::CraftCostCalc.Properties.Resources.Mithril_Ore;
-            this.PicMithrilOre.Location = new System.Drawing.Point(3, 3);
-            this.PicMithrilOre.Name = "PicMithrilOre";
-            this.PicMithrilOre.Size = new System.Drawing.Size(32, 32);
-            this.PicMithrilOre.TabIndex = 24;
-            this.PicMithrilOre.TabStop = false;
-            // 
-            // TBCostIronOre
-            // 
-            this.TBCostIronOre.Location = new System.Drawing.Point(131, 3);
-            this.TBCostIronOre.MaxLength = 9;
-            this.TBCostIronOre.Name = "TBCostIronOre";
-            this.TBCostIronOre.Size = new System.Drawing.Size(102, 20);
-            this.TBCostIronOre.TabIndex = 23;
-            this.TBCostIronOre.Text = "0";
-            this.TBCostIronOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameIronOre
-            // 
-            this.LabNameIronOre.AutoSize = true;
-            this.LabNameIronOre.Location = new System.Drawing.Point(3, 38);
-            this.LabNameIronOre.Name = "LabNameIronOre";
-            this.LabNameIronOre.Size = new System.Drawing.Size(45, 13);
-            this.LabNameIronOre.TabIndex = 22;
-            this.LabNameIronOre.Text = "Iron Ore";
-            // 
-            // PicIronOre
-            // 
-            this.PicIronOre.Image = global::CraftCostCalc.Properties.Resources.Iron_Ore;
-            this.PicIronOre.Location = new System.Drawing.Point(3, 3);
-            this.PicIronOre.Name = "PicIronOre";
-            this.PicIronOre.Size = new System.Drawing.Size(32, 32);
-            this.PicIronOre.TabIndex = 21;
-            this.PicIronOre.TabStop = false;
-            // 
-            // TBCostEnria
-            // 
-            this.TBCostEnria.Location = new System.Drawing.Point(131, 3);
-            this.TBCostEnria.MaxLength = 9;
-            this.TBCostEnria.Name = "TBCostEnria";
-            this.TBCostEnria.Size = new System.Drawing.Size(102, 20);
-            this.TBCostEnria.TabIndex = 20;
-            this.TBCostEnria.Text = "0";
-            this.TBCostEnria.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameEnria
-            // 
-            this.LabNameEnria.AutoSize = true;
-            this.LabNameEnria.Location = new System.Drawing.Point(3, 38);
-            this.LabNameEnria.Name = "LabNameEnria";
-            this.LabNameEnria.Size = new System.Drawing.Size(31, 13);
-            this.LabNameEnria.TabIndex = 19;
-            this.LabNameEnria.Text = "Enria";
-            // 
-            // PicEnria
-            // 
-            this.PicEnria.Image = global::CraftCostCalc.Properties.Resources.Enria;
-            this.PicEnria.Location = new System.Drawing.Point(3, 3);
-            this.PicEnria.Name = "PicEnria";
-            this.PicEnria.Size = new System.Drawing.Size(32, 32);
-            this.PicEnria.TabIndex = 18;
-            this.PicEnria.TabStop = false;
-            // 
-            // TBCostCoal
-            // 
-            this.TBCostCoal.Location = new System.Drawing.Point(131, 3);
-            this.TBCostCoal.MaxLength = 9;
-            this.TBCostCoal.Name = "TBCostCoal";
-            this.TBCostCoal.Size = new System.Drawing.Size(102, 20);
-            this.TBCostCoal.TabIndex = 17;
-            this.TBCostCoal.Text = "0";
-            this.TBCostCoal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameCoal
-            // 
-            this.LabNameCoal.AutoSize = true;
-            this.LabNameCoal.Location = new System.Drawing.Point(3, 38);
-            this.LabNameCoal.Name = "LabNameCoal";
-            this.LabNameCoal.Size = new System.Drawing.Size(28, 13);
-            this.LabNameCoal.TabIndex = 16;
-            this.LabNameCoal.Text = "Coal";
-            // 
-            // PicCoal
-            // 
-            this.PicCoal.Image = global::CraftCostCalc.Properties.Resources.Coal;
-            this.PicCoal.Location = new System.Drawing.Point(3, 3);
-            this.PicCoal.Name = "PicCoal";
-            this.PicCoal.Size = new System.Drawing.Size(32, 32);
-            this.PicCoal.TabIndex = 15;
-            this.PicCoal.TabStop = false;
-            // 
-            // TBCostCharcoal
-            // 
-            this.TBCostCharcoal.Location = new System.Drawing.Point(131, 3);
-            this.TBCostCharcoal.MaxLength = 9;
-            this.TBCostCharcoal.Name = "TBCostCharcoal";
-            this.TBCostCharcoal.Size = new System.Drawing.Size(102, 20);
-            this.TBCostCharcoal.TabIndex = 14;
-            this.TBCostCharcoal.Text = "0";
-            this.TBCostCharcoal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameCharcoal
-            // 
-            this.LabNameCharcoal.AutoSize = true;
-            this.LabNameCharcoal.Location = new System.Drawing.Point(3, 38);
-            this.LabNameCharcoal.Name = "LabNameCharcoal";
-            this.LabNameCharcoal.Size = new System.Drawing.Size(49, 13);
-            this.LabNameCharcoal.TabIndex = 13;
-            this.LabNameCharcoal.Text = "Charcoal";
-            // 
-            // PicCharcoal
-            // 
-            this.PicCharcoal.Image = global::CraftCostCalc.Properties.Resources.Charcoal;
-            this.PicCharcoal.Location = new System.Drawing.Point(3, 3);
-            this.PicCharcoal.Name = "PicCharcoal";
-            this.PicCharcoal.Size = new System.Drawing.Size(32, 32);
-            this.PicCharcoal.TabIndex = 12;
-            this.PicCharcoal.TabStop = false;
-            // 
-            // TBCostAsofe
-            // 
-            this.TBCostAsofe.Location = new System.Drawing.Point(131, 3);
-            this.TBCostAsofe.MaxLength = 9;
-            this.TBCostAsofe.Name = "TBCostAsofe";
-            this.TBCostAsofe.Size = new System.Drawing.Size(102, 20);
-            this.TBCostAsofe.TabIndex = 11;
-            this.TBCostAsofe.Text = "0";
-            this.TBCostAsofe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameAsofe
-            // 
-            this.LabNameAsofe.AutoSize = true;
-            this.LabNameAsofe.Location = new System.Drawing.Point(3, 38);
-            this.LabNameAsofe.Name = "LabNameAsofe";
-            this.LabNameAsofe.Size = new System.Drawing.Size(34, 13);
-            this.LabNameAsofe.TabIndex = 10;
-            this.LabNameAsofe.Text = "Asofe";
-            // 
-            // PicAsofe
-            // 
-            this.PicAsofe.Image = global::CraftCostCalc.Properties.Resources.Asofe;
-            this.PicAsofe.Location = new System.Drawing.Point(3, 3);
-            this.PicAsofe.Name = "PicAsofe";
-            this.PicAsofe.Size = new System.Drawing.Size(32, 32);
-            this.PicAsofe.TabIndex = 9;
-            this.PicAsofe.TabStop = false;
-            // 
-            // TBCostAnimalSkin
-            // 
-            this.TBCostAnimalSkin.Location = new System.Drawing.Point(131, 3);
-            this.TBCostAnimalSkin.MaxLength = 9;
-            this.TBCostAnimalSkin.Name = "TBCostAnimalSkin";
-            this.TBCostAnimalSkin.Size = new System.Drawing.Size(102, 20);
-            this.TBCostAnimalSkin.TabIndex = 8;
-            this.TBCostAnimalSkin.Text = "0";
-            this.TBCostAnimalSkin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // LabNameAnimalSkin
-            // 
-            this.LabNameAnimalSkin.AutoSize = true;
-            this.LabNameAnimalSkin.Location = new System.Drawing.Point(3, 38);
-            this.LabNameAnimalSkin.Name = "LabNameAnimalSkin";
-            this.LabNameAnimalSkin.Size = new System.Drawing.Size(62, 13);
-            this.LabNameAnimalSkin.TabIndex = 7;
-            this.LabNameAnimalSkin.Text = "Animal Skin";
-            // 
-            // PicAnimalSkin
-            // 
-            this.PicAnimalSkin.Image = global::CraftCostCalc.Properties.Resources.Animal_Skin;
-            this.PicAnimalSkin.Location = new System.Drawing.Point(3, 3);
-            this.PicAnimalSkin.Name = "PicAnimalSkin";
-            this.PicAnimalSkin.Size = new System.Drawing.Size(32, 32);
-            this.PicAnimalSkin.TabIndex = 6;
-            this.PicAnimalSkin.TabStop = false;
             // 
             // GBCommonResources
             // 
@@ -4057,17 +4253,17 @@
             // 
             // TabComponentsCry
             // 
-            this.TabComponentsCry.Controls.Add(this.groupBox3);
+            this.TabComponentsCry.Controls.Add(this.GBReklamaTabCry);
             this.TabComponentsCry.Controls.Add(this.TBSpiritOre);
-            this.TabComponentsCry.Controls.Add(this.label68);
+            this.TabComponentsCry.Controls.Add(this.LabNameSpiritOre);
             this.TabComponentsCry.Controls.Add(this.TBSoulOre);
-            this.TabComponentsCry.Controls.Add(this.label67);
+            this.TabComponentsCry.Controls.Add(this.LabNameSoulOre);
             this.TabComponentsCry.Controls.Add(this.ButCryCalcAA);
-            this.TabComponentsCry.Controls.Add(this.label66);
-            this.TabComponentsCry.Controls.Add(this.TBAncientAdena);
+            this.TabComponentsCry.Controls.Add(this.LabNameAncientAdenaToCry);
+            this.TabComponentsCry.Controls.Add(this.TBAncientAdenaToCry);
             this.TabComponentsCry.Controls.Add(this.ButCryCalc);
-            this.TabComponentsCry.Controls.Add(this.label64);
-            this.TabComponentsCry.Controls.Add(this.TBSwordOfRevolution);
+            this.TabComponentsCry.Controls.Add(this.LabNameSwordOfRevolutionToCry);
+            this.TabComponentsCry.Controls.Add(this.TBSwordOfRevolutionToCry);
             this.TabComponentsCry.Controls.Add(this.TBGem_s);
             this.TabComponentsCry.Controls.Add(this.label32);
             this.TabComponentsCry.Controls.Add(this.TBGem_a);
@@ -4079,15 +4275,15 @@
             this.TabComponentsCry.Controls.Add(this.TBGem_d);
             this.TabComponentsCry.Controls.Add(this.label36);
             this.TabComponentsCry.Controls.Add(this.TBCry_s);
-            this.TabComponentsCry.Controls.Add(this.label27);
+            this.TabComponentsCry.Controls.Add(this.LabNameCryS);
             this.TabComponentsCry.Controls.Add(this.TBCry_a);
-            this.TabComponentsCry.Controls.Add(this.label28);
+            this.TabComponentsCry.Controls.Add(this.LabNameCryA);
             this.TabComponentsCry.Controls.Add(this.TBCry_b);
-            this.TabComponentsCry.Controls.Add(this.label29);
+            this.TabComponentsCry.Controls.Add(this.LabNameCryB);
             this.TabComponentsCry.Controls.Add(this.TBCry_c);
-            this.TabComponentsCry.Controls.Add(this.label30);
+            this.TabComponentsCry.Controls.Add(this.LabNameCryC);
             this.TabComponentsCry.Controls.Add(this.TBCry_d);
-            this.TabComponentsCry.Controls.Add(this.label31);
+            this.TabComponentsCry.Controls.Add(this.LabNameCryD);
             this.TabComponentsCry.Controls.Add(this.pictureBox63);
             this.TabComponentsCry.Controls.Add(this.pictureBox62);
             this.TabComponentsCry.Controls.Add(this.pictureBox61);
@@ -4110,29 +4306,19 @@
             this.TabComponentsCry.Text = "Крисы/Гемы";
             this.TabComponentsCry.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // GBReklamaTabCry
             // 
-            this.groupBox3.Controls.Add(this.label69);
-            this.groupBox3.Location = new System.Drawing.Point(0, 331);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(529, 206);
-            this.groupBox3.TabIndex = 135;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Реклама";
-            // 
-            // label69
-            // 
-            this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(170, 93);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(151, 13);
-            this.label69.TabIndex = 0;
-            this.label69.Text = "Рекламное место сдается :)";
+            this.GBReklamaTabCry.Controls.Add(this.PanReklamaTabCry);
+            this.GBReklamaTabCry.Location = new System.Drawing.Point(0, 291);
+            this.GBReklamaTabCry.Name = "GBReklamaTabCry";
+            this.GBReklamaTabCry.Size = new System.Drawing.Size(529, 246);
+            this.GBReklamaTabCry.TabIndex = 135;
+            this.GBReklamaTabCry.TabStop = false;
+            this.GBReklamaTabCry.Text = "Реклама";
             // 
             // TBSpiritOre
             // 
-            this.TBSpiritOre.Location = new System.Drawing.Point(215, 305);
+            this.TBSpiritOre.Location = new System.Drawing.Point(274, 264);
             this.TBSpiritOre.MaxLength = 9;
             this.TBSpiritOre.Name = "TBSpiritOre";
             this.TBSpiritOre.Size = new System.Drawing.Size(60, 20);
@@ -4140,18 +4326,18 @@
             this.TBSpiritOre.Text = "0";
             this.TBSpiritOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label68
+            // LabNameSpiritOre
             // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(161, 312);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(48, 13);
-            this.label68.TabIndex = 133;
-            this.label68.Text = "Spirit ore";
+            this.LabNameSpiritOre.AutoSize = true;
+            this.LabNameSpiritOre.Location = new System.Drawing.Point(220, 271);
+            this.LabNameSpiritOre.Name = "LabNameSpiritOre";
+            this.LabNameSpiritOre.Size = new System.Drawing.Size(48, 13);
+            this.LabNameSpiritOre.TabIndex = 133;
+            this.LabNameSpiritOre.Text = "Spirit ore";
             // 
             // TBSoulOre
             // 
-            this.TBSoulOre.Location = new System.Drawing.Point(215, 267);
+            this.TBSoulOre.Location = new System.Drawing.Point(274, 226);
             this.TBSoulOre.MaxLength = 9;
             this.TBSoulOre.Name = "TBSoulOre";
             this.TBSoulOre.Size = new System.Drawing.Size(60, 20);
@@ -4159,19 +4345,19 @@
             this.TBSoulOre.Text = "0";
             this.TBSoulOre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label67
+            // LabNameSoulOre
             // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(161, 274);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(46, 13);
-            this.label67.TabIndex = 130;
-            this.label67.Text = "Soul ore";
+            this.LabNameSoulOre.AutoSize = true;
+            this.LabNameSoulOre.Location = new System.Drawing.Point(220, 233);
+            this.LabNameSoulOre.Name = "LabNameSoulOre";
+            this.LabNameSoulOre.Size = new System.Drawing.Size(46, 13);
+            this.LabNameSoulOre.TabIndex = 130;
+            this.LabNameSoulOre.Text = "Soul ore";
             // 
             // ButCryCalcAA
             // 
             this.ButCryCalcAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButCryCalcAA.Location = new System.Drawing.Point(7, 225);
+            this.ButCryCalcAA.Location = new System.Drawing.Point(7, 190);
             this.ButCryCalcAA.Name = "ButCryCalcAA";
             this.ButCryCalcAA.Size = new System.Drawing.Size(109, 23);
             this.ButCryCalcAA.TabIndex = 128;
@@ -4179,24 +4365,24 @@
             this.ButCryCalcAA.UseVisualStyleBackColor = true;
             this.ButCryCalcAA.Click += new System.EventHandler(this.ButCryCalcAA_Click);
             // 
-            // label66
+            // LabNameAncientAdenaToCry
             // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(45, 167);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(43, 26);
-            this.label66.TabIndex = 127;
-            this.label66.Text = "Ancient\r\nAdena";
+            this.LabNameAncientAdenaToCry.AutoSize = true;
+            this.LabNameAncientAdenaToCry.Location = new System.Drawing.Point(45, 132);
+            this.LabNameAncientAdenaToCry.Name = "LabNameAncientAdenaToCry";
+            this.LabNameAncientAdenaToCry.Size = new System.Drawing.Size(43, 26);
+            this.LabNameAncientAdenaToCry.TabIndex = 127;
+            this.LabNameAncientAdenaToCry.Text = "Ancient\r\nAdena";
             // 
-            // TBAncientAdena
+            // TBAncientAdenaToCry
             // 
-            this.TBAncientAdena.Location = new System.Drawing.Point(7, 199);
-            this.TBAncientAdena.MaxLength = 9;
-            this.TBAncientAdena.Name = "TBAncientAdena";
-            this.TBAncientAdena.Size = new System.Drawing.Size(110, 20);
-            this.TBAncientAdena.TabIndex = 126;
-            this.TBAncientAdena.Text = "0";
-            this.TBAncientAdena.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TBAncientAdenaToCry.Location = new System.Drawing.Point(7, 164);
+            this.TBAncientAdenaToCry.MaxLength = 9;
+            this.TBAncientAdenaToCry.Name = "TBAncientAdenaToCry";
+            this.TBAncientAdenaToCry.Size = new System.Drawing.Size(110, 20);
+            this.TBAncientAdenaToCry.TabIndex = 126;
+            this.TBAncientAdenaToCry.Text = "0";
+            this.TBAncientAdenaToCry.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ButCryCalc
             // 
@@ -4209,28 +4395,28 @@
             this.ButCryCalc.UseVisualStyleBackColor = true;
             this.ButCryCalc.Click += new System.EventHandler(this.ButCryCalc_Click);
             // 
-            // label64
+            // LabNameSwordOfRevolutionToCry
             // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(45, 12);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(58, 26);
-            this.label64.TabIndex = 122;
-            this.label64.Text = "Sword Of\r\nRevolution";
+            this.LabNameSwordOfRevolutionToCry.AutoSize = true;
+            this.LabNameSwordOfRevolutionToCry.Location = new System.Drawing.Point(45, 12);
+            this.LabNameSwordOfRevolutionToCry.Name = "LabNameSwordOfRevolutionToCry";
+            this.LabNameSwordOfRevolutionToCry.Size = new System.Drawing.Size(58, 26);
+            this.LabNameSwordOfRevolutionToCry.TabIndex = 122;
+            this.LabNameSwordOfRevolutionToCry.Text = "Sword Of\r\nRevolution";
             // 
-            // TBSwordOfRevolution
+            // TBSwordOfRevolutionToCry
             // 
-            this.TBSwordOfRevolution.Location = new System.Drawing.Point(7, 44);
-            this.TBSwordOfRevolution.MaxLength = 9;
-            this.TBSwordOfRevolution.Name = "TBSwordOfRevolution";
-            this.TBSwordOfRevolution.Size = new System.Drawing.Size(110, 20);
-            this.TBSwordOfRevolution.TabIndex = 121;
-            this.TBSwordOfRevolution.Text = "0";
-            this.TBSwordOfRevolution.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TBSwordOfRevolutionToCry.Location = new System.Drawing.Point(7, 44);
+            this.TBSwordOfRevolutionToCry.MaxLength = 9;
+            this.TBSwordOfRevolutionToCry.Name = "TBSwordOfRevolutionToCry";
+            this.TBSwordOfRevolutionToCry.Size = new System.Drawing.Size(110, 20);
+            this.TBSwordOfRevolutionToCry.TabIndex = 121;
+            this.TBSwordOfRevolutionToCry.Text = "0";
+            this.TBSwordOfRevolutionToCry.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // TBGem_s
             // 
-            this.TBGem_s.Location = new System.Drawing.Point(463, 211);
+            this.TBGem_s.Location = new System.Drawing.Point(463, 176);
             this.TBGem_s.MaxLength = 9;
             this.TBGem_s.Name = "TBGem_s";
             this.TBGem_s.Size = new System.Drawing.Size(60, 20);
@@ -4241,7 +4427,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(357, 218);
+            this.label32.Location = new System.Drawing.Point(357, 183);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(100, 13);
             this.label32.TabIndex = 118;
@@ -4249,7 +4435,7 @@
             // 
             // TBGem_a
             // 
-            this.TBGem_a.Location = new System.Drawing.Point(463, 173);
+            this.TBGem_a.Location = new System.Drawing.Point(463, 138);
             this.TBGem_a.MaxLength = 9;
             this.TBGem_a.Name = "TBGem_a";
             this.TBGem_a.Size = new System.Drawing.Size(60, 20);
@@ -4260,7 +4446,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(357, 180);
+            this.label33.Location = new System.Drawing.Point(357, 145);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(100, 13);
             this.label33.TabIndex = 115;
@@ -4325,7 +4511,7 @@
             // 
             // TBCry_s
             // 
-            this.TBCry_s.Location = new System.Drawing.Point(250, 211);
+            this.TBCry_s.Location = new System.Drawing.Point(250, 176);
             this.TBCry_s.MaxLength = 9;
             this.TBCry_s.Name = "TBCry_s";
             this.TBCry_s.Size = new System.Drawing.Size(60, 20);
@@ -4333,18 +4519,18 @@
             this.TBCry_s.Text = "0";
             this.TBCry_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label27
+            // LabNameCryS
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(161, 218);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 13);
-            this.label27.TabIndex = 103;
-            this.label27.Text = "Crystal: S Grade";
+            this.LabNameCryS.AutoSize = true;
+            this.LabNameCryS.Location = new System.Drawing.Point(161, 183);
+            this.LabNameCryS.Name = "LabNameCryS";
+            this.LabNameCryS.Size = new System.Drawing.Size(83, 13);
+            this.LabNameCryS.TabIndex = 103;
+            this.LabNameCryS.Text = "Crystal: S Grade";
             // 
             // TBCry_a
             // 
-            this.TBCry_a.Location = new System.Drawing.Point(250, 173);
+            this.TBCry_a.Location = new System.Drawing.Point(250, 138);
             this.TBCry_a.MaxLength = 9;
             this.TBCry_a.Name = "TBCry_a";
             this.TBCry_a.Size = new System.Drawing.Size(60, 20);
@@ -4352,14 +4538,14 @@
             this.TBCry_a.Text = "0";
             this.TBCry_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label28
+            // LabNameCryA
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(161, 180);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(83, 13);
-            this.label28.TabIndex = 100;
-            this.label28.Text = "Crystal: A Grade";
+            this.LabNameCryA.AutoSize = true;
+            this.LabNameCryA.Location = new System.Drawing.Point(161, 145);
+            this.LabNameCryA.Name = "LabNameCryA";
+            this.LabNameCryA.Size = new System.Drawing.Size(83, 13);
+            this.LabNameCryA.TabIndex = 100;
+            this.LabNameCryA.Text = "Crystal: A Grade";
             // 
             // TBCry_b
             // 
@@ -4371,14 +4557,14 @@
             this.TBCry_b.Text = "0";
             this.TBCry_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label29
+            // LabNameCryB
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(161, 101);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(83, 13);
-            this.label29.TabIndex = 97;
-            this.label29.Text = "Crystal: B Grade";
+            this.LabNameCryB.AutoSize = true;
+            this.LabNameCryB.Location = new System.Drawing.Point(161, 101);
+            this.LabNameCryB.Name = "LabNameCryB";
+            this.LabNameCryB.Size = new System.Drawing.Size(83, 13);
+            this.LabNameCryB.TabIndex = 97;
+            this.LabNameCryB.Text = "Crystal: B Grade";
             // 
             // TBCry_c
             // 
@@ -4390,14 +4576,14 @@
             this.TBCry_c.Text = "0";
             this.TBCry_c.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label30
+            // LabNameCryC
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(161, 63);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 13);
-            this.label30.TabIndex = 94;
-            this.label30.Text = "Crystal: C Grade";
+            this.LabNameCryC.AutoSize = true;
+            this.LabNameCryC.Location = new System.Drawing.Point(161, 63);
+            this.LabNameCryC.Name = "LabNameCryC";
+            this.LabNameCryC.Size = new System.Drawing.Size(83, 13);
+            this.LabNameCryC.TabIndex = 94;
+            this.LabNameCryC.Text = "Crystal: C Grade";
             // 
             // TBCry_d
             // 
@@ -4409,19 +4595,19 @@
             this.TBCry_d.Text = "0";
             this.TBCry_d.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label31
+            // LabNameCryD
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(161, 25);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(84, 13);
-            this.label31.TabIndex = 91;
-            this.label31.Text = "Crystal: D Grade";
+            this.LabNameCryD.AutoSize = true;
+            this.LabNameCryD.Location = new System.Drawing.Point(161, 25);
+            this.LabNameCryD.Name = "LabNameCryD";
+            this.LabNameCryD.Size = new System.Drawing.Size(84, 13);
+            this.LabNameCryD.TabIndex = 91;
+            this.LabNameCryD.Text = "Crystal: D Grade";
             // 
             // pictureBox63
             // 
             this.pictureBox63.Image = global::CraftCostCalc.Properties.Resources.Etc_stone_gray_i00_0;
-            this.pictureBox63.Location = new System.Drawing.Point(123, 293);
+            this.pictureBox63.Location = new System.Drawing.Point(182, 252);
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.Size = new System.Drawing.Size(32, 32);
             this.pictureBox63.TabIndex = 132;
@@ -4430,7 +4616,7 @@
             // pictureBox62
             // 
             this.pictureBox62.Image = global::CraftCostCalc.Properties.Resources.Etc_crystal_white_i00_0;
-            this.pictureBox62.Location = new System.Drawing.Point(123, 255);
+            this.pictureBox62.Location = new System.Drawing.Point(182, 214);
             this.pictureBox62.Name = "pictureBox62";
             this.pictureBox62.Size = new System.Drawing.Size(32, 32);
             this.pictureBox62.TabIndex = 129;
@@ -4439,7 +4625,7 @@
             // pictureBox61
             // 
             this.pictureBox61.Image = global::CraftCostCalc.Properties.Resources.Etc_ancient_adena_i00_0;
-            this.pictureBox61.Location = new System.Drawing.Point(7, 161);
+            this.pictureBox61.Location = new System.Drawing.Point(7, 126);
             this.pictureBox61.Name = "pictureBox61";
             this.pictureBox61.Size = new System.Drawing.Size(32, 32);
             this.pictureBox61.TabIndex = 125;
@@ -4457,7 +4643,7 @@
             // pictureBox28
             // 
             this.pictureBox28.Image = global::CraftCostCalc.Properties.Resources.gem_s;
-            this.pictureBox28.Location = new System.Drawing.Point(319, 199);
+            this.pictureBox28.Location = new System.Drawing.Point(319, 164);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(32, 32);
             this.pictureBox28.TabIndex = 117;
@@ -4466,7 +4652,7 @@
             // pictureBox29
             // 
             this.pictureBox29.Image = global::CraftCostCalc.Properties.Resources.gem_a;
-            this.pictureBox29.Location = new System.Drawing.Point(319, 161);
+            this.pictureBox29.Location = new System.Drawing.Point(319, 126);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(32, 32);
             this.pictureBox29.TabIndex = 114;
@@ -4502,7 +4688,7 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::CraftCostCalc.Properties.Resources.cry_s;
-            this.pictureBox23.Location = new System.Drawing.Point(123, 199);
+            this.pictureBox23.Location = new System.Drawing.Point(123, 164);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(32, 32);
             this.pictureBox23.TabIndex = 102;
@@ -4511,7 +4697,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::CraftCostCalc.Properties.Resources.cry_a;
-            this.pictureBox24.Location = new System.Drawing.Point(123, 161);
+            this.pictureBox24.Location = new System.Drawing.Point(123, 126);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(32, 32);
             this.pictureBox24.TabIndex = 99;
@@ -4604,15 +4790,15 @@
             this.ButPrint.UseVisualStyleBackColor = true;
             this.ButPrint.Click += new System.EventHandler(this.ButPrint_Click);
             // 
-            // label73
+            // LabVersion
             // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label73.Location = new System.Drawing.Point(693, 26);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(33, 9);
-            this.label73.TabIndex = 13;
-            this.label73.Text = "v 0.1.0.0";
+            this.LabVersion.AutoSize = true;
+            this.LabVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabVersion.Location = new System.Drawing.Point(693, 26);
+            this.LabVersion.Name = "LabVersion";
+            this.LabVersion.Size = new System.Drawing.Size(33, 9);
+            this.LabVersion.TabIndex = 13;
+            this.LabVersion.Text = "v 0.2.0.0";
             // 
             // LLabShodVK
             // 
@@ -4671,203 +4857,372 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
-            // PanAnimalSkin
+            // PanSSD
             // 
-            this.PanAnimalSkin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanAnimalSkin.Controls.Add(this.PicAnimalSkin);
-            this.PanAnimalSkin.Controls.Add(this.LabNameAnimalSkin);
-            this.PanAnimalSkin.Controls.Add(this.TBCostAnimalSkin);
-            this.PanAnimalSkin.Location = new System.Drawing.Point(3, 113);
-            this.PanAnimalSkin.Name = "PanAnimalSkin";
-            this.PanAnimalSkin.Size = new System.Drawing.Size(238, 56);
-            this.PanAnimalSkin.TabIndex = 117;
+            this.PanSSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSD.Controls.Add(this.TBCostSSD);
+            this.PanSSD.Controls.Add(this.PicSSD);
+            this.PanSSD.Controls.Add(this.LabNameSSD);
+            this.PanSSD.Controls.Add(this.LabCraftCostSSD);
+            this.PanSSD.Location = new System.Drawing.Point(3, 3);
+            this.PanSSD.Name = "PanSSD";
+            this.PanSSD.Size = new System.Drawing.Size(326, 56);
+            this.PanSSD.TabIndex = 115;
             // 
-            // PanAsofe
+            // TBCostSSD
             // 
-            this.PanAsofe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanAsofe.Controls.Add(this.PicAsofe);
-            this.PanAsofe.Controls.Add(this.LabNameAsofe);
-            this.PanAsofe.Controls.Add(this.TBCostAsofe);
-            this.PanAsofe.Location = new System.Drawing.Point(3, 168);
-            this.PanAsofe.Name = "PanAsofe";
-            this.PanAsofe.Size = new System.Drawing.Size(238, 56);
-            this.PanAsofe.TabIndex = 118;
+            this.TBCostSSD.Location = new System.Drawing.Point(221, 26);
+            this.TBCostSSD.Name = "TBCostSSD";
+            this.TBCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSD.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSD.TabIndex = 94;
+            this.TBCostSSD.Text = "0";
+            this.TBCostSSD.TextChanged += new System.EventHandler(this.TBCostSSD_TextChanged);
             // 
-            // PanCharcoal
+            // PanNameShots
             // 
-            this.PanCharcoal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanCharcoal.Controls.Add(this.PicCharcoal);
-            this.PanCharcoal.Controls.Add(this.LabNameCharcoal);
-            this.PanCharcoal.Controls.Add(this.TBCostCharcoal);
-            this.PanCharcoal.Location = new System.Drawing.Point(3, 223);
-            this.PanCharcoal.Name = "PanCharcoal";
-            this.PanCharcoal.Size = new System.Drawing.Size(238, 56);
-            this.PanCharcoal.TabIndex = 119;
+            this.PanNameShots.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanNameShots.Controls.Add(this.LabNameCostShots);
+            this.PanNameShots.Controls.Add(this.LabNameShots);
+            this.PanNameShots.Location = new System.Drawing.Point(6, 15);
+            this.PanNameShots.Name = "PanNameShots";
+            this.PanNameShots.Size = new System.Drawing.Size(326, 22);
+            this.PanNameShots.TabIndex = 8;
             // 
-            // PanCoal
+            // LabNameCostShots
             // 
-            this.PanCoal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanCoal.Controls.Add(this.PicCoal);
-            this.PanCoal.Controls.Add(this.LabNameCoal);
-            this.PanCoal.Controls.Add(this.TBCostCoal);
-            this.PanCoal.Location = new System.Drawing.Point(3, 278);
-            this.PanCoal.Name = "PanCoal";
-            this.PanCoal.Size = new System.Drawing.Size(238, 56);
-            this.PanCoal.TabIndex = 120;
+            this.LabNameCostShots.AutoSize = true;
+            this.LabNameCostShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameCostShots.Location = new System.Drawing.Point(274, 0);
+            this.LabNameCostShots.Name = "LabNameCostShots";
+            this.LabNameCostShots.Size = new System.Drawing.Size(47, 17);
+            this.LabNameCostShots.TabIndex = 6;
+            this.LabNameCostShots.Text = "Цена:";
             // 
-            // PanEnria
+            // LabNameShots
             // 
-            this.PanEnria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanEnria.Controls.Add(this.PicEnria);
-            this.PanEnria.Controls.Add(this.LabNameEnria);
-            this.PanEnria.Controls.Add(this.TBCostEnria);
-            this.PanEnria.Location = new System.Drawing.Point(3, 333);
-            this.PanEnria.Name = "PanEnria";
-            this.PanEnria.Size = new System.Drawing.Size(238, 56);
-            this.PanEnria.TabIndex = 121;
+            this.LabNameShots.AutoSize = true;
+            this.LabNameShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameShots.Location = new System.Drawing.Point(3, 0);
+            this.LabNameShots.Name = "LabNameShots";
+            this.LabNameShots.Size = new System.Drawing.Size(110, 17);
+            this.LabNameShots.TabIndex = 6;
+            this.LabNameShots.Text = "Наименование:";
             // 
-            // PanIronOre
+            // PanSpSD
             // 
-            this.PanIronOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanIronOre.Controls.Add(this.PicIronOre);
-            this.PanIronOre.Controls.Add(this.LabNameIronOre);
-            this.PanIronOre.Controls.Add(this.TBCostIronOre);
-            this.PanIronOre.Location = new System.Drawing.Point(3, 388);
-            this.PanIronOre.Name = "PanIronOre";
-            this.PanIronOre.Size = new System.Drawing.Size(238, 56);
-            this.PanIronOre.TabIndex = 122;
+            this.PanSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSD.Controls.Add(this.LabCostSpSD);
+            this.PanSpSD.Controls.Add(this.LabNameSpSD);
+            this.PanSpSD.Controls.Add(this.LabCraftCostSpSD);
+            this.PanSpSD.Controls.Add(this.PicSpSD);
+            this.PanSpSD.Location = new System.Drawing.Point(3, 58);
+            this.PanSpSD.Name = "PanSpSD";
+            this.PanSpSD.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSD.TabIndex = 116;
             // 
-            // PanMithrilOre
+            // LabCostSpSD
             // 
-            this.PanMithrilOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanMithrilOre.Controls.Add(this.PicMithrilOre);
-            this.PanMithrilOre.Controls.Add(this.LabNameMithrilOre);
-            this.PanMithrilOre.Controls.Add(this.TBCostMithrilOre);
-            this.PanMithrilOre.Location = new System.Drawing.Point(3, 443);
-            this.PanMithrilOre.Name = "PanMithrilOre";
-            this.PanMithrilOre.Size = new System.Drawing.Size(238, 56);
-            this.PanMithrilOre.TabIndex = 123;
+            this.LabCostSpSD.Location = new System.Drawing.Point(221, 25);
+            this.LabCostSpSD.Name = "LabCostSpSD";
+            this.LabCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCostSpSD.Size = new System.Drawing.Size(100, 20);
+            this.LabCostSpSD.TabIndex = 94;
+            this.LabCostSpSD.Text = "0";
             // 
-            // PanMoldGlue
+            // PanBSpSD
             // 
-            this.PanMoldGlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanMoldGlue.Controls.Add(this.PicMoldGlue);
-            this.PanMoldGlue.Controls.Add(this.LabNameMoldGlue);
-            this.PanMoldGlue.Controls.Add(this.TBCostMoldGlue);
-            this.PanMoldGlue.Location = new System.Drawing.Point(3, 498);
-            this.PanMoldGlue.Name = "PanMoldGlue";
-            this.PanMoldGlue.Size = new System.Drawing.Size(238, 56);
-            this.PanMoldGlue.TabIndex = 124;
+            this.PanBSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSD.Controls.Add(this.TBCostBSpSD);
+            this.PanBSpSD.Controls.Add(this.LabCraftCostBSpSD);
+            this.PanBSpSD.Controls.Add(this.PicBSpSD);
+            this.PanBSpSD.Controls.Add(this.LabNameBSpSD);
+            this.PanBSpSD.Location = new System.Drawing.Point(3, 113);
+            this.PanBSpSD.Name = "PanBSpSD";
+            this.PanBSpSD.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSD.TabIndex = 117;
             // 
-            // PanMoldHardener
+            // TBCostBSpSD
             // 
-            this.PanMoldHardener.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanMoldHardener.Controls.Add(this.PicMoldHardener);
-            this.PanMoldHardener.Controls.Add(this.LabNameMoldHardener);
-            this.PanMoldHardener.Controls.Add(this.TBCostMoldHardener);
-            this.PanMoldHardener.Location = new System.Drawing.Point(3, 553);
-            this.PanMoldHardener.Name = "PanMoldHardener";
-            this.PanMoldHardener.Size = new System.Drawing.Size(238, 56);
-            this.PanMoldHardener.TabIndex = 125;
+            this.TBCostBSpSD.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSD.Name = "TBCostBSpSD";
+            this.TBCostBSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSD.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSD.TabIndex = 94;
+            this.TBCostBSpSD.Text = "0";
             // 
-            // PanMoldLubricant
+            // PanSSC
             // 
-            this.PanMoldLubricant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanMoldLubricant.Controls.Add(this.PicMoldLubricant);
-            this.PanMoldLubricant.Controls.Add(this.LabNameMoldLubricant);
-            this.PanMoldLubricant.Controls.Add(this.TBCostMoldLubricant);
-            this.PanMoldLubricant.Location = new System.Drawing.Point(3, 608);
-            this.PanMoldLubricant.Name = "PanMoldLubricant";
-            this.PanMoldLubricant.Size = new System.Drawing.Size(238, 56);
-            this.PanMoldLubricant.TabIndex = 126;
+            this.PanSSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSC.Controls.Add(this.TBCostSSC);
+            this.PanSSC.Controls.Add(this.LabCraftCostSSC);
+            this.PanSSC.Controls.Add(this.PicSSC);
+            this.PanSSC.Controls.Add(this.LabNameSSC);
+            this.PanSSC.Location = new System.Drawing.Point(3, 168);
+            this.PanSSC.Name = "PanSSC";
+            this.PanSSC.Size = new System.Drawing.Size(326, 56);
+            this.PanSSC.TabIndex = 118;
             // 
-            // PanOriharukonOre
+            // TBCostSSC
             // 
-            this.PanOriharukonOre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanOriharukonOre.Controls.Add(this.PicOriharukonOre);
-            this.PanOriharukonOre.Controls.Add(this.LabNameOriharukonOre);
-            this.PanOriharukonOre.Controls.Add(this.TBCostOriharukonOre);
-            this.PanOriharukonOre.Location = new System.Drawing.Point(3, 663);
-            this.PanOriharukonOre.Name = "PanOriharukonOre";
-            this.PanOriharukonOre.Size = new System.Drawing.Size(238, 56);
-            this.PanOriharukonOre.TabIndex = 127;
+            this.TBCostSSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSC.Name = "TBCostSSC";
+            this.TBCostSSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSC.TabIndex = 94;
+            this.TBCostSSC.Text = "0";
             // 
-            // PanSilverNugget
+            // PanSpSC
             // 
-            this.PanSilverNugget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSilverNugget.Controls.Add(this.PicSilverNugget);
-            this.PanSilverNugget.Controls.Add(this.LabNameSilverNugget);
-            this.PanSilverNugget.Controls.Add(this.TBCostSilverNugget);
-            this.PanSilverNugget.Location = new System.Drawing.Point(3, 718);
-            this.PanSilverNugget.Name = "PanSilverNugget";
-            this.PanSilverNugget.Size = new System.Drawing.Size(238, 56);
-            this.PanSilverNugget.TabIndex = 128;
+            this.PanSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSC.Controls.Add(this.TBCostSpSC);
+            this.PanSpSC.Controls.Add(this.LabCraftCostSpSC);
+            this.PanSpSC.Controls.Add(this.PicSpSC);
+            this.PanSpSC.Controls.Add(this.LabNameSpSC);
+            this.PanSpSC.Location = new System.Drawing.Point(3, 223);
+            this.PanSpSC.Name = "PanSpSC";
+            this.PanSpSC.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSC.TabIndex = 119;
             // 
-            // PanStem
+            // TBCostSpSC
             // 
-            this.PanStem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanStem.Controls.Add(this.PicStem);
-            this.PanStem.Controls.Add(this.LabNameStem);
-            this.PanStem.Controls.Add(this.TBCostStem);
-            this.PanStem.Location = new System.Drawing.Point(3, 773);
-            this.PanStem.Name = "PanStem";
-            this.PanStem.Size = new System.Drawing.Size(238, 56);
-            this.PanStem.TabIndex = 129;
+            this.TBCostSpSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSC.Name = "TBCostSpSC";
+            this.TBCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSC.TabIndex = 94;
+            this.TBCostSpSC.Text = "0";
             // 
-            // PanStoneOfPurity
+            // PanBSpSC
             // 
-            this.PanStoneOfPurity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanStoneOfPurity.Controls.Add(this.PicStoneOfPurity);
-            this.PanStoneOfPurity.Controls.Add(this.LabNameStoneOfPurity);
-            this.PanStoneOfPurity.Controls.Add(this.TBCostStoneOfPurity);
-            this.PanStoneOfPurity.Location = new System.Drawing.Point(3, 828);
-            this.PanStoneOfPurity.Name = "PanStoneOfPurity";
-            this.PanStoneOfPurity.Size = new System.Drawing.Size(238, 56);
-            this.PanStoneOfPurity.TabIndex = 130;
+            this.PanBSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSC.Controls.Add(this.TBCostBSpSC);
+            this.PanBSpSC.Controls.Add(this.LabCraftCostBSpSC);
+            this.PanBSpSC.Controls.Add(this.PicBSpSC);
+            this.PanBSpSC.Controls.Add(this.LabNameBSpSC);
+            this.PanBSpSC.Location = new System.Drawing.Point(3, 278);
+            this.PanBSpSC.Name = "PanBSpSC";
+            this.PanBSpSC.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSC.TabIndex = 120;
             // 
-            // PanSuede
+            // TBCostBSpSC
             // 
-            this.PanSuede.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSuede.Controls.Add(this.PicSuede);
-            this.PanSuede.Controls.Add(this.LabNameSuede);
-            this.PanSuede.Controls.Add(this.TBCostSuede);
-            this.PanSuede.Location = new System.Drawing.Point(3, 883);
-            this.PanSuede.Name = "PanSuede";
-            this.PanSuede.Size = new System.Drawing.Size(238, 56);
-            this.PanSuede.TabIndex = 131;
+            this.TBCostBSpSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSC.Name = "TBCostBSpSC";
+            this.TBCostBSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSC.TabIndex = 94;
+            this.TBCostBSpSC.Text = "0";
             // 
-            // PanThons
+            // PanSSB
             // 
-            this.PanThons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanThons.Controls.Add(this.PicThons);
-            this.PanThons.Controls.Add(this.LabNameThons);
-            this.PanThons.Controls.Add(this.TBCostThons);
-            this.PanThons.Location = new System.Drawing.Point(3, 938);
-            this.PanThons.Name = "PanThons";
-            this.PanThons.Size = new System.Drawing.Size(238, 56);
-            this.PanThons.TabIndex = 132;
+            this.PanSSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSB.Controls.Add(this.TBCostSSB);
+            this.PanSSB.Controls.Add(this.LabCraftCostSSB);
+            this.PanSSB.Controls.Add(this.PicSSB);
+            this.PanSSB.Controls.Add(this.LabNameSSB);
+            this.PanSSB.Location = new System.Drawing.Point(3, 333);
+            this.PanSSB.Name = "PanSSB";
+            this.PanSSB.Size = new System.Drawing.Size(326, 56);
+            this.PanSSB.TabIndex = 121;
             // 
-            // PanThread
+            // TBCostSSB
             // 
-            this.PanThread.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanThread.Controls.Add(this.PicThread);
-            this.PanThread.Controls.Add(this.LabNameThread);
-            this.PanThread.Controls.Add(this.TBCostThread);
-            this.PanThread.Location = new System.Drawing.Point(3, 993);
-            this.PanThread.Name = "PanThread";
-            this.PanThread.Size = new System.Drawing.Size(238, 56);
-            this.PanThread.TabIndex = 133;
+            this.TBCostSSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSB.Name = "TBCostSSB";
+            this.TBCostSSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSB.TabIndex = 94;
+            this.TBCostSSB.Text = "0";
             // 
-            // PanVarnish
+            // PanSpSB
             // 
-            this.PanVarnish.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanVarnish.Controls.Add(this.PicVarnish);
-            this.PanVarnish.Controls.Add(this.LabNameVarnish);
-            this.PanVarnish.Controls.Add(this.TBCostVarnish);
-            this.PanVarnish.Location = new System.Drawing.Point(3, 1048);
-            this.PanVarnish.Name = "PanVarnish";
-            this.PanVarnish.Size = new System.Drawing.Size(238, 56);
-            this.PanVarnish.TabIndex = 134;
+            this.PanSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSB.Controls.Add(this.TBCostSpSB);
+            this.PanSpSB.Controls.Add(this.LabCraftCostSpSB);
+            this.PanSpSB.Controls.Add(this.PicSpSB);
+            this.PanSpSB.Controls.Add(this.LabNameSpSB);
+            this.PanSpSB.Location = new System.Drawing.Point(3, 388);
+            this.PanSpSB.Name = "PanSpSB";
+            this.PanSpSB.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSB.TabIndex = 122;
+            // 
+            // TBCostSpSB
+            // 
+            this.TBCostSpSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSB.Name = "TBCostSpSB";
+            this.TBCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSB.TabIndex = 94;
+            this.TBCostSpSB.Text = "0";
+            // 
+            // PanBSpSB
+            // 
+            this.PanBSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSB.Controls.Add(this.TBCostBSpSB);
+            this.PanBSpSB.Controls.Add(this.LabCraftCostBSpSB);
+            this.PanBSpSB.Controls.Add(this.PicBSpSB);
+            this.PanBSpSB.Controls.Add(this.LabNameBSpSB);
+            this.PanBSpSB.Location = new System.Drawing.Point(3, 443);
+            this.PanBSpSB.Name = "PanBSpSB";
+            this.PanBSpSB.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSB.TabIndex = 123;
+            // 
+            // TBCostBSpSB
+            // 
+            this.TBCostBSpSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSB.Name = "TBCostBSpSB";
+            this.TBCostBSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSB.TabIndex = 94;
+            this.TBCostBSpSB.Text = "0";
+            // 
+            // PanReklamaTabCry
+            // 
+            this.PanReklamaTabCry.Controls.Add(this.WBReklamaTabCry);
+            this.PanReklamaTabCry.Location = new System.Drawing.Point(3, 13);
+            this.PanReklamaTabCry.Name = "PanReklamaTabCry";
+            this.PanReklamaTabCry.Size = new System.Drawing.Size(522, 230);
+            this.PanReklamaTabCry.TabIndex = 0;
+            // 
+            // PanSSA
+            // 
+            this.PanSSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSA.Controls.Add(this.TBCostSSA);
+            this.PanSSA.Controls.Add(this.LabCraftCostSSA);
+            this.PanSSA.Controls.Add(this.PicSSA);
+            this.PanSSA.Controls.Add(this.LabNameSSA);
+            this.PanSSA.Location = new System.Drawing.Point(3, 498);
+            this.PanSSA.Name = "PanSSA";
+            this.PanSSA.Size = new System.Drawing.Size(326, 56);
+            this.PanSSA.TabIndex = 124;
+            // 
+            // TBCostSSA
+            // 
+            this.TBCostSSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSA.Name = "TBCostSSA";
+            this.TBCostSSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSA.TabIndex = 94;
+            this.TBCostSSA.Text = "0";
+            // 
+            // PanSpSA
+            // 
+            this.PanSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSA.Controls.Add(this.TBCostSpSA);
+            this.PanSpSA.Controls.Add(this.LabCraftCostSpSA);
+            this.PanSpSA.Controls.Add(this.PicSpSA);
+            this.PanSpSA.Controls.Add(this.LabNameSpSA);
+            this.PanSpSA.Location = new System.Drawing.Point(3, 553);
+            this.PanSpSA.Name = "PanSpSA";
+            this.PanSpSA.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSA.TabIndex = 125;
+            // 
+            // TBCostSpSA
+            // 
+            this.TBCostSpSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSA.Name = "TBCostSpSA";
+            this.TBCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSA.TabIndex = 94;
+            this.TBCostSpSA.Text = "0";
+            // 
+            // WBReklamaTabCry
+            // 
+            this.WBReklamaTabCry.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WBReklamaTabCry.Location = new System.Drawing.Point(0, 0);
+            this.WBReklamaTabCry.MinimumSize = new System.Drawing.Size(20, 20);
+            this.WBReklamaTabCry.Name = "WBReklamaTabCry";
+            this.WBReklamaTabCry.ScrollBarsEnabled = false;
+            this.WBReklamaTabCry.Size = new System.Drawing.Size(522, 230);
+            this.WBReklamaTabCry.TabIndex = 0;
+            this.WBReklamaTabCry.TabStop = false;
+            this.WBReklamaTabCry.Url = new System.Uri("http://gamedev.othside.ru/Reklama/CCC/CCCReklamaTabCry.html", System.UriKind.Absolute);
+            this.WBReklamaTabCry.WebBrowserShortcutsEnabled = false;
+            // 
+            // PanBSpSA
+            // 
+            this.PanBSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSA.Controls.Add(this.TBCostBSpSA);
+            this.PanBSpSA.Controls.Add(this.LabCraftCostBSpSA);
+            this.PanBSpSA.Controls.Add(this.PicBSpSA);
+            this.PanBSpSA.Controls.Add(this.LabNameBSpSA);
+            this.PanBSpSA.Location = new System.Drawing.Point(3, 608);
+            this.PanBSpSA.Name = "PanBSpSA";
+            this.PanBSpSA.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSA.TabIndex = 126;
+            // 
+            // TBCostBSpSA
+            // 
+            this.TBCostBSpSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSA.Name = "TBCostBSpSA";
+            this.TBCostBSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSA.TabIndex = 94;
+            this.TBCostBSpSA.Text = "0";
+            // 
+            // PanSSS
+            // 
+            this.PanSSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSS.Controls.Add(this.TBCostSSS);
+            this.PanSSS.Controls.Add(this.LabCraftCostSSS);
+            this.PanSSS.Controls.Add(this.PicSSS);
+            this.PanSSS.Controls.Add(this.LabNameSSS);
+            this.PanSSS.Location = new System.Drawing.Point(3, 663);
+            this.PanSSS.Name = "PanSSS";
+            this.PanSSS.Size = new System.Drawing.Size(326, 56);
+            this.PanSSS.TabIndex = 127;
+            // 
+            // TBCostSSS
+            // 
+            this.TBCostSSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSS.Name = "TBCostSSS";
+            this.TBCostSSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSS.TabIndex = 94;
+            this.TBCostSSS.Text = "0";
+            // 
+            // PanSpSS
+            // 
+            this.PanSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSS.Controls.Add(this.TBCostSpSS);
+            this.PanSpSS.Controls.Add(this.LabCraftCostSpSS);
+            this.PanSpSS.Controls.Add(this.PicSpSS);
+            this.PanSpSS.Controls.Add(this.LabNameSpSS);
+            this.PanSpSS.Location = new System.Drawing.Point(3, 718);
+            this.PanSpSS.Name = "PanSpSS";
+            this.PanSpSS.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSS.TabIndex = 128;
+            // 
+            // TBCostSpSS
+            // 
+            this.TBCostSpSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSS.Name = "TBCostSpSS";
+            this.TBCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSS.TabIndex = 94;
+            this.TBCostSpSS.Text = "0";
+            // 
+            // PanBSpSS
+            // 
+            this.PanBSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSS.Controls.Add(this.TBCostBSpSS);
+            this.PanBSpSS.Controls.Add(this.LabCraftCostBSpSS);
+            this.PanBSpSS.Controls.Add(this.PicBSpSS);
+            this.PanBSpSS.Controls.Add(this.LabNameBSpSS);
+            this.PanBSpSS.Location = new System.Drawing.Point(3, 773);
+            this.PanBSpSS.Name = "PanBSpSS";
+            this.PanBSpSS.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSS.TabIndex = 129;
+            // 
+            // TBCostBSpSS
+            // 
+            this.TBCostBSpSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSS.Name = "TBCostBSpSS";
+            this.TBCostBSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSS.TabIndex = 94;
+            this.TBCostBSpSS.Text = "0";
             // 
             // MainForm
             // 
@@ -4878,23 +5233,23 @@
             this.Controls.Add(this.ButItemsCost);
             this.Controls.Add(this.LLabShodSurfory);
             this.Controls.Add(this.LLabShodVK);
-            this.Controls.Add(this.label73);
+            this.Controls.Add(this.LabVersion);
             this.Controls.Add(this.PicLogoAuthor);
             this.Controls.Add(this.PicLogoLA2);
             this.Controls.Add(this.GBSaveLoad);
             this.Controls.Add(this.TabComponents);
-            this.Controls.Add(this.TabMain);
+            this.Controls.Add(this.TabMainItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Craft Cost Calculator";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.TabMain.ResumeLayout(false);
+            this.TabMainItems.ResumeLayout(false);
             this.TabWeapon.ResumeLayout(false);
             this.TabWeaponType.ResumeLayout(false);
             this.TabBlunt.ResumeLayout(false);
-            this.TabWeaponGrade.ResumeLayout(false);
+            this.TabWeaponBluntGrade.ResumeLayout(false);
             this.TabWeaponBluntNG.ResumeLayout(false);
             this.TabWeaponBluntNG.PerformLayout();
             this.TabWeaponBluntD.ResumeLayout(false);
@@ -4918,49 +5273,84 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicForgottenBlade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeavensDivider)).EndInit();
             this.TabShots.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
+            this.GBShots.ResumeLayout(false);
+            this.PanShots.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSSD)).EndInit();
             this.PanCommonResources.ResumeLayout(false);
+            this.PanVarnish.ResumeLayout(false);
+            this.PanVarnish.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicVarnish)).EndInit();
+            this.PanThread.ResumeLayout(false);
+            this.PanThread.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicThread)).EndInit();
+            this.PanThons.ResumeLayout(false);
+            this.PanThons.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicThons)).EndInit();
+            this.PanSuede.ResumeLayout(false);
+            this.PanSuede.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSuede)).EndInit();
+            this.PanStoneOfPurity.ResumeLayout(false);
+            this.PanStoneOfPurity.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStoneOfPurity)).EndInit();
+            this.PanStem.ResumeLayout(false);
+            this.PanStem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStem)).EndInit();
+            this.PanSilverNugget.ResumeLayout(false);
+            this.PanSilverNugget.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSilverNugget)).EndInit();
+            this.PanOriharukonOre.ResumeLayout(false);
+            this.PanOriharukonOre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOriharukonOre)).EndInit();
+            this.PanMoldLubricant.ResumeLayout(false);
+            this.PanMoldLubricant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldLubricant)).EndInit();
+            this.PanMoldHardener.ResumeLayout(false);
+            this.PanMoldHardener.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldHardener)).EndInit();
+            this.PanMoldGlue.ResumeLayout(false);
+            this.PanMoldGlue.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMoldGlue)).EndInit();
+            this.PanMithrilOre.ResumeLayout(false);
+            this.PanMithrilOre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMithrilOre)).EndInit();
+            this.PanIronOre.ResumeLayout(false);
+            this.PanIronOre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicIronOre)).EndInit();
+            this.PanEnria.ResumeLayout(false);
+            this.PanEnria.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEnria)).EndInit();
+            this.PanCoal.ResumeLayout(false);
+            this.PanCoal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCoal)).EndInit();
+            this.PanCharcoal.ResumeLayout(false);
+            this.PanCharcoal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCharcoal)).EndInit();
+            this.PanAsofe.ResumeLayout(false);
+            this.PanAsofe.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicAsofe)).EndInit();
+            this.PanAnimalSkin.ResumeLayout(false);
+            this.PanAnimalSkin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicAnimalSkin)).EndInit();
             this.PanAnimalBone.ResumeLayout(false);
             this.PanAnimalBone.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicAnimalBone)).EndInit();
             this.PanAdamantiteNugget.ResumeLayout(false);
             this.PanAdamantiteNugget.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicAdamantiteNugget)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicVarnish)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicThread)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicThons)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSuede)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStoneOfPurity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSilverNugget)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldLubricant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicOriharukonOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldHardener)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMoldGlue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMithrilOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicIronOre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicEnria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCoal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCharcoal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAsofe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAnimalSkin)).EndInit();
             this.GBCommonResources.ResumeLayout(false);
             this.PanNameCommonResources.ResumeLayout(false);
             this.PanNameCommonResources.PerformLayout();
@@ -5059,8 +5449,7 @@
             this.TabComponentsResources.ResumeLayout(false);
             this.TabComponentsCry.ResumeLayout(false);
             this.TabComponentsCry.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.GBReklamaTabCry.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
@@ -5078,49 +5467,46 @@
             this.GBSaveLoad.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoAuthor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoLA2)).EndInit();
-            this.PanAnimalSkin.ResumeLayout(false);
-            this.PanAnimalSkin.PerformLayout();
-            this.PanAsofe.ResumeLayout(false);
-            this.PanAsofe.PerformLayout();
-            this.PanCharcoal.ResumeLayout(false);
-            this.PanCharcoal.PerformLayout();
-            this.PanCoal.ResumeLayout(false);
-            this.PanCoal.PerformLayout();
-            this.PanEnria.ResumeLayout(false);
-            this.PanEnria.PerformLayout();
-            this.PanIronOre.ResumeLayout(false);
-            this.PanIronOre.PerformLayout();
-            this.PanMithrilOre.ResumeLayout(false);
-            this.PanMithrilOre.PerformLayout();
-            this.PanMoldGlue.ResumeLayout(false);
-            this.PanMoldGlue.PerformLayout();
-            this.PanMoldHardener.ResumeLayout(false);
-            this.PanMoldHardener.PerformLayout();
-            this.PanMoldLubricant.ResumeLayout(false);
-            this.PanMoldLubricant.PerformLayout();
-            this.PanOriharukonOre.ResumeLayout(false);
-            this.PanOriharukonOre.PerformLayout();
-            this.PanSilverNugget.ResumeLayout(false);
-            this.PanSilverNugget.PerformLayout();
-            this.PanStem.ResumeLayout(false);
-            this.PanStem.PerformLayout();
-            this.PanStoneOfPurity.ResumeLayout(false);
-            this.PanStoneOfPurity.PerformLayout();
-            this.PanSuede.ResumeLayout(false);
-            this.PanSuede.PerformLayout();
-            this.PanThons.ResumeLayout(false);
-            this.PanThons.PerformLayout();
-            this.PanThread.ResumeLayout(false);
-            this.PanThread.PerformLayout();
-            this.PanVarnish.ResumeLayout(false);
-            this.PanVarnish.PerformLayout();
+            this.PanSSD.ResumeLayout(false);
+            this.PanSSD.PerformLayout();
+            this.PanNameShots.ResumeLayout(false);
+            this.PanNameShots.PerformLayout();
+            this.PanSpSD.ResumeLayout(false);
+            this.PanSpSD.PerformLayout();
+            this.PanBSpSD.ResumeLayout(false);
+            this.PanBSpSD.PerformLayout();
+            this.PanSSC.ResumeLayout(false);
+            this.PanSSC.PerformLayout();
+            this.PanSpSC.ResumeLayout(false);
+            this.PanSpSC.PerformLayout();
+            this.PanBSpSC.ResumeLayout(false);
+            this.PanBSpSC.PerformLayout();
+            this.PanSSB.ResumeLayout(false);
+            this.PanSSB.PerformLayout();
+            this.PanSpSB.ResumeLayout(false);
+            this.PanSpSB.PerformLayout();
+            this.PanBSpSB.ResumeLayout(false);
+            this.PanBSpSB.PerformLayout();
+            this.PanReklamaTabCry.ResumeLayout(false);
+            this.PanSSA.ResumeLayout(false);
+            this.PanSSA.PerformLayout();
+            this.PanSpSA.ResumeLayout(false);
+            this.PanSpSA.PerformLayout();
+            this.PanBSpSA.ResumeLayout(false);
+            this.PanBSpSA.PerformLayout();
+            this.PanSSS.ResumeLayout(false);
+            this.PanSSS.PerformLayout();
+            this.PanSpSS.ResumeLayout(false);
+            this.PanSpSS.PerformLayout();
+            this.PanBSpSS.ResumeLayout(false);
+            this.PanBSpSS.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TabControl TabMain;
+        private System.Windows.Forms.TabControl TabMainItems;
         private System.Windows.Forms.TabPage TabWeapon;
         private System.Windows.Forms.TabPage TabBlunt;
         private System.Windows.Forms.TabPage TabSword;
@@ -5132,7 +5518,7 @@
         private System.Windows.Forms.TabPage TabHalebard;
         private System.Windows.Forms.TabPage TabWeaponOther;
         public System.Windows.Forms.TabControl TabWeaponType;
-        private System.Windows.Forms.TabControl TabWeaponGrade;
+        private System.Windows.Forms.TabControl TabWeaponBluntGrade;
         private System.Windows.Forms.TabPage TabWeaponBluntNG;
         private System.Windows.Forms.TabPage TabWeaponBluntD;
         private System.Windows.Forms.TabPage TabWeaponBluntC;
@@ -5321,92 +5707,89 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PictureBox pictureBox32;
         public System.Windows.Forms.TextBox TBCry_s;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label LabNameCryS;
         private System.Windows.Forms.PictureBox pictureBox23;
         public System.Windows.Forms.TextBox TBCry_a;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label LabNameCryA;
         private System.Windows.Forms.PictureBox pictureBox24;
         public System.Windows.Forms.TextBox TBCry_b;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label LabNameCryB;
         private System.Windows.Forms.PictureBox pictureBox25;
         public System.Windows.Forms.TextBox TBCry_c;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label LabNameCryC;
         private System.Windows.Forms.PictureBox pictureBox26;
         public System.Windows.Forms.TextBox TBCry_d;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label LabNameCryD;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.Button ButCryCalcAA;
-        private System.Windows.Forms.Label label66;
-        public System.Windows.Forms.TextBox TBAncientAdena;
+        private System.Windows.Forms.Label LabNameAncientAdenaToCry;
+        public System.Windows.Forms.TextBox TBAncientAdenaToCry;
         private System.Windows.Forms.PictureBox pictureBox61;
         private System.Windows.Forms.Button ButCryCalc;
-        private System.Windows.Forms.Label label64;
-        public System.Windows.Forms.TextBox TBSwordOfRevolution;
+        private System.Windows.Forms.Label LabNameSwordOfRevolutionToCry;
+        public System.Windows.Forms.TextBox TBSwordOfRevolutionToCry;
         public System.Windows.Forms.TextBox TBSpiritOre;
-        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label LabNameSpiritOre;
         private System.Windows.Forms.PictureBox pictureBox63;
         public System.Windows.Forms.TextBox TBSoulOre;
-        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label LabNameSoulOre;
         private System.Windows.Forms.PictureBox pictureBox62;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.GroupBox GBReklamaTabCry;
         private System.Windows.Forms.TabPage TabShots;
-        private System.Windows.Forms.PictureBox pictureBox64;
+        private System.Windows.Forms.PictureBox PicSSD;
         private System.Windows.Forms.Button ButItemsCost;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox66;
-        private System.Windows.Forms.PictureBox pictureBox65;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.PictureBox pictureBox76;
-        private System.Windows.Forms.PictureBox pictureBox73;
-        private System.Windows.Forms.PictureBox pictureBox77;
-        private System.Windows.Forms.PictureBox pictureBox74;
-        private System.Windows.Forms.PictureBox pictureBox78;
-        private System.Windows.Forms.PictureBox pictureBox75;
-        private System.Windows.Forms.PictureBox pictureBox70;
-        private System.Windows.Forms.PictureBox pictureBox71;
-        private System.Windows.Forms.PictureBox pictureBox72;
-        private System.Windows.Forms.PictureBox pictureBox67;
-        private System.Windows.Forms.PictureBox pictureBox68;
-        private System.Windows.Forms.PictureBox pictureBox69;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label LabSSD;
-        private System.Windows.Forms.Label LabBSpSS;
-        private System.Windows.Forms.Label LabSpSS;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label LabSSS;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label LabBSpSA;
-        private System.Windows.Forms.Label LabSpSA;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label LabSSA;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label LabBSpSB;
-        private System.Windows.Forms.Label LabSpSB;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label LabSSB;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label LabBSpSC;
-        private System.Windows.Forms.Label LabSpSC;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label LabSSC;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label LabBSpSD;
-        private System.Windows.Forms.Label LabSpSD;
+        private System.Windows.Forms.Panel PanShots;
+        private System.Windows.Forms.PictureBox PicBSpSD;
+        private System.Windows.Forms.PictureBox PicSpSD;
+        private System.Windows.Forms.Label LabNameSSD;
+        private System.Windows.Forms.GroupBox GBShots;
+        private System.Windows.Forms.PictureBox PicBSpSS;
+        private System.Windows.Forms.PictureBox PicBSpSA;
+        private System.Windows.Forms.PictureBox PicSpSS;
+        private System.Windows.Forms.PictureBox PicSpSA;
+        private System.Windows.Forms.PictureBox PicSSS;
+        private System.Windows.Forms.PictureBox PicSSA;
+        private System.Windows.Forms.PictureBox PicBSpSB;
+        private System.Windows.Forms.PictureBox PicSpSB;
+        private System.Windows.Forms.PictureBox PicSSB;
+        private System.Windows.Forms.PictureBox PicBSpSC;
+        private System.Windows.Forms.PictureBox PicSpSC;
+        private System.Windows.Forms.PictureBox PicSSC;
+        private System.Windows.Forms.Label LabNameBSpSD;
+        private System.Windows.Forms.Label LabNameSpSD;
+        private System.Windows.Forms.Label LabCraftCostSSD;
+        private System.Windows.Forms.Label LabCraftCostBSpSS;
+        private System.Windows.Forms.Label LabCraftCostSpSS;
+        private System.Windows.Forms.Label LabNameBSpSS;
+        private System.Windows.Forms.Label LabNameSpSS;
+        private System.Windows.Forms.Label LabCraftCostSSS;
+        private System.Windows.Forms.Label LabNameSSS;
+        private System.Windows.Forms.Label LabCraftCostBSpSA;
+        private System.Windows.Forms.Label LabCraftCostSpSA;
+        private System.Windows.Forms.Label LabNameBSpSA;
+        private System.Windows.Forms.Label LabNameSpSA;
+        private System.Windows.Forms.Label LabCraftCostSSA;
+        private System.Windows.Forms.Label LabNameSSA;
+        private System.Windows.Forms.Label LabCraftCostBSpSB;
+        private System.Windows.Forms.Label LabCraftCostSpSB;
+        private System.Windows.Forms.Label LabNameBSpSB;
+        private System.Windows.Forms.Label LabNameSpSB;
+        private System.Windows.Forms.Label LabCraftCostSSB;
+        private System.Windows.Forms.Label LabNameSSB;
+        private System.Windows.Forms.Label LabCraftCostBSpSC;
+        private System.Windows.Forms.Label LabCraftCostSpSC;
+        private System.Windows.Forms.Label LabNameBSpSC;
+        private System.Windows.Forms.Label LabNameSpSC;
+        private System.Windows.Forms.Label LabCraftCostSSC;
+        private System.Windows.Forms.Label LabNameSSC;
+        private System.Windows.Forms.Label LabCraftCostBSpSD;
+        private System.Windows.Forms.Label LabCraftCostSpSD;
         private System.Windows.Forms.Button ButSave;
         private System.Windows.Forms.Button ButLoad;
         private System.Windows.Forms.GroupBox GBSaveLoad;
         private System.Windows.Forms.PictureBox PicLogoLA2;
         private System.Windows.Forms.PictureBox PicLogoAuthor;
-        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label LabVersion;
         private System.Windows.Forms.LinkLabel LLabShodVK;
         private System.Windows.Forms.LinkLabel LLabShodSurfory;
         private System.Windows.Forms.Button ButPrint;
@@ -5531,6 +5914,41 @@
         private System.Windows.Forms.Panel PanThons;
         private System.Windows.Forms.Panel PanThread;
         private System.Windows.Forms.Panel PanVarnish;
+        private System.Windows.Forms.Panel PanSSD;
+        private System.Windows.Forms.TextBox TBCostSSD;
+        private System.Windows.Forms.Panel PanNameShots;
+        private System.Windows.Forms.Label LabNameCostShots;
+        private System.Windows.Forms.Label LabNameShots;
+        private System.Windows.Forms.Panel PanSpSD;
+        private System.Windows.Forms.TextBox LabCostSpSD;
+        private System.Windows.Forms.Panel PanBSpSD;
+        private System.Windows.Forms.TextBox TBCostBSpSD;
+        private System.Windows.Forms.Panel PanSSC;
+        private System.Windows.Forms.TextBox TBCostSSC;
+        private System.Windows.Forms.Panel PanSpSC;
+        private System.Windows.Forms.TextBox TBCostSpSC;
+        private System.Windows.Forms.Panel PanBSpSC;
+        private System.Windows.Forms.TextBox TBCostBSpSC;
+        private System.Windows.Forms.Panel PanSSB;
+        private System.Windows.Forms.TextBox TBCostSSB;
+        private System.Windows.Forms.Panel PanSpSB;
+        private System.Windows.Forms.TextBox TBCostSpSB;
+        private System.Windows.Forms.Panel PanBSpSB;
+        private System.Windows.Forms.TextBox TBCostBSpSB;
+        private System.Windows.Forms.Panel PanReklamaTabCry;
+        private System.Windows.Forms.Panel PanSSA;
+        private System.Windows.Forms.TextBox TBCostSSA;
+        private System.Windows.Forms.Panel PanSpSA;
+        private System.Windows.Forms.TextBox TBCostSpSA;
+        private System.Windows.Forms.WebBrowser WBReklamaTabCry;
+        private System.Windows.Forms.Panel PanBSpSA;
+        private System.Windows.Forms.TextBox TBCostBSpSA;
+        private System.Windows.Forms.Panel PanSSS;
+        private System.Windows.Forms.TextBox TBCostSSS;
+        private System.Windows.Forms.Panel PanSpSS;
+        private System.Windows.Forms.TextBox TBCostSpSS;
+        private System.Windows.Forms.Panel PanBSpSS;
+        private System.Windows.Forms.TextBox TBCostBSpSS;
     }
 }
 
