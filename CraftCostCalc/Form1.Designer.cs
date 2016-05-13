@@ -64,13 +64,13 @@
             this.LabNameCostBluntS = new System.Windows.Forms.Label();
             this.LabNameBluntS = new System.Windows.Forms.Label();
             this.TabSword = new System.Windows.Forms.TabPage();
-            this.TabSGrade = new System.Windows.Forms.TabControl();
-            this.TabNoGrade = new System.Windows.Forms.TabPage();
-            this.TabDGrade = new System.Windows.Forms.TabPage();
-            this.TabCGrade = new System.Windows.Forms.TabPage();
-            this.TabBGrade = new System.Windows.Forms.TabPage();
-            this.TabAGrade = new System.Windows.Forms.TabPage();
-            this.TabSwordsS = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordGrade = new System.Windows.Forms.TabControl();
+            this.TabWeaponSwordNG = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordD = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordC = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordB = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordA = new System.Windows.Forms.TabPage();
+            this.TabWeaponSwordS = new System.Windows.Forms.TabPage();
             this.GBSwordsS = new System.Windows.Forms.GroupBox();
             this.PanSwordsS = new System.Windows.Forms.Panel();
             this.TBCraftCostForgottenBlade = new System.Windows.Forms.TextBox();
@@ -84,7 +84,6 @@
             this.LabNamaCraftCostSwordS = new System.Windows.Forms.Label();
             this.LabNameCostSwordS = new System.Windows.Forms.Label();
             this.LabNameSwordS = new System.Windows.Forms.Label();
-            this.TabBow = new System.Windows.Forms.TabPage();
             this.TabDagger = new System.Windows.Forms.TabPage();
             this.TabFist = new System.Windows.Forms.TabPage();
             this.TabHalebard = new System.Windows.Forms.TabPage();
@@ -93,52 +92,85 @@
             this.TabAcessory = new System.Windows.Forms.TabPage();
             this.TabShots = new System.Windows.Forms.TabPage();
             this.GBShots = new System.Windows.Forms.GroupBox();
+            this.PanNameShots = new System.Windows.Forms.Panel();
+            this.LabNameCostShots = new System.Windows.Forms.Label();
+            this.LabNameShots = new System.Windows.Forms.Label();
             this.PanShots = new System.Windows.Forms.Panel();
+            this.PanBSpSS = new System.Windows.Forms.Panel();
+            this.TBCostBSpSS = new System.Windows.Forms.TextBox();
             this.LabCraftCostBSpSS = new System.Windows.Forms.Label();
-            this.LabCraftCostSpSS = new System.Windows.Forms.Label();
-            this.LabNameBSpSS = new System.Windows.Forms.Label();
-            this.LabNameSpSS = new System.Windows.Forms.Label();
-            this.LabCraftCostSSS = new System.Windows.Forms.Label();
-            this.LabNameSSS = new System.Windows.Forms.Label();
-            this.LabCraftCostBSpSA = new System.Windows.Forms.Label();
-            this.LabCraftCostSpSA = new System.Windows.Forms.Label();
-            this.LabNameBSpSA = new System.Windows.Forms.Label();
-            this.LabNameSpSA = new System.Windows.Forms.Label();
-            this.LabCraftCostSSA = new System.Windows.Forms.Label();
-            this.LabNameSSA = new System.Windows.Forms.Label();
-            this.LabCraftCostBSpSB = new System.Windows.Forms.Label();
-            this.LabCraftCostSpSB = new System.Windows.Forms.Label();
-            this.LabNameBSpSB = new System.Windows.Forms.Label();
-            this.LabNameSpSB = new System.Windows.Forms.Label();
-            this.LabCraftCostSSB = new System.Windows.Forms.Label();
-            this.LabNameSSB = new System.Windows.Forms.Label();
-            this.LabCraftCostBSpSC = new System.Windows.Forms.Label();
-            this.LabCraftCostSpSC = new System.Windows.Forms.Label();
-            this.LabNameBSpSC = new System.Windows.Forms.Label();
-            this.LabNameSpSC = new System.Windows.Forms.Label();
-            this.LabCraftCostSSC = new System.Windows.Forms.Label();
-            this.LabNameSSC = new System.Windows.Forms.Label();
-            this.LabCraftCostBSpSD = new System.Windows.Forms.Label();
-            this.LabCraftCostSpSD = new System.Windows.Forms.Label();
-            this.LabNameBSpSD = new System.Windows.Forms.Label();
-            this.LabNameSpSD = new System.Windows.Forms.Label();
-            this.LabCraftCostSSD = new System.Windows.Forms.Label();
             this.PicBSpSS = new System.Windows.Forms.PictureBox();
-            this.PicBSpSA = new System.Windows.Forms.PictureBox();
+            this.LabNameBSpSS = new System.Windows.Forms.Label();
+            this.PanSpSS = new System.Windows.Forms.Panel();
+            this.TBCostSpSS = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSpSS = new System.Windows.Forms.Label();
             this.PicSpSS = new System.Windows.Forms.PictureBox();
-            this.PicSpSA = new System.Windows.Forms.PictureBox();
+            this.LabNameSpSS = new System.Windows.Forms.Label();
+            this.PanSSS = new System.Windows.Forms.Panel();
+            this.TBCostSSS = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSSS = new System.Windows.Forms.Label();
             this.PicSSS = new System.Windows.Forms.PictureBox();
+            this.LabNameSSS = new System.Windows.Forms.Label();
+            this.PanBSpSA = new System.Windows.Forms.Panel();
+            this.TBCostBSpSA = new System.Windows.Forms.TextBox();
+            this.LabCraftCostBSpSA = new System.Windows.Forms.Label();
+            this.PicBSpSA = new System.Windows.Forms.PictureBox();
+            this.LabNameBSpSA = new System.Windows.Forms.Label();
+            this.PanSpSA = new System.Windows.Forms.Panel();
+            this.TBCostSpSA = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSpSA = new System.Windows.Forms.Label();
+            this.PicSpSA = new System.Windows.Forms.PictureBox();
+            this.LabNameSpSA = new System.Windows.Forms.Label();
+            this.PanSSA = new System.Windows.Forms.Panel();
+            this.TBCostSSA = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSSA = new System.Windows.Forms.Label();
             this.PicSSA = new System.Windows.Forms.PictureBox();
+            this.LabNameSSA = new System.Windows.Forms.Label();
+            this.PanBSpSB = new System.Windows.Forms.Panel();
+            this.TBCostBSpSB = new System.Windows.Forms.TextBox();
+            this.LabCraftCostBSpSB = new System.Windows.Forms.Label();
             this.PicBSpSB = new System.Windows.Forms.PictureBox();
+            this.LabNameBSpSB = new System.Windows.Forms.Label();
+            this.PanSpSB = new System.Windows.Forms.Panel();
+            this.TBCostSpSB = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSpSB = new System.Windows.Forms.Label();
             this.PicSpSB = new System.Windows.Forms.PictureBox();
+            this.LabNameSpSB = new System.Windows.Forms.Label();
+            this.PanSSB = new System.Windows.Forms.Panel();
+            this.TBCostSSB = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSSB = new System.Windows.Forms.Label();
             this.PicSSB = new System.Windows.Forms.PictureBox();
+            this.LabNameSSB = new System.Windows.Forms.Label();
+            this.PanBSpSC = new System.Windows.Forms.Panel();
+            this.TBCostBSpSC = new System.Windows.Forms.TextBox();
+            this.LabCraftCostBSpSC = new System.Windows.Forms.Label();
             this.PicBSpSC = new System.Windows.Forms.PictureBox();
+            this.LabNameBSpSC = new System.Windows.Forms.Label();
+            this.PanSpSC = new System.Windows.Forms.Panel();
+            this.TBCostSpSC = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSpSC = new System.Windows.Forms.Label();
             this.PicSpSC = new System.Windows.Forms.PictureBox();
+            this.LabNameSpSC = new System.Windows.Forms.Label();
+            this.PanSSC = new System.Windows.Forms.Panel();
+            this.TBCostSSC = new System.Windows.Forms.TextBox();
+            this.LabCraftCostSSC = new System.Windows.Forms.Label();
             this.PicSSC = new System.Windows.Forms.PictureBox();
+            this.LabNameSSC = new System.Windows.Forms.Label();
+            this.PanBSpSD = new System.Windows.Forms.Panel();
+            this.TBCostBSpSD = new System.Windows.Forms.TextBox();
+            this.LabCraftCostBSpSD = new System.Windows.Forms.Label();
             this.PicBSpSD = new System.Windows.Forms.PictureBox();
+            this.LabNameBSpSD = new System.Windows.Forms.Label();
+            this.PanSpSD = new System.Windows.Forms.Panel();
+            this.LabCostSpSD = new System.Windows.Forms.TextBox();
+            this.LabNameSpSD = new System.Windows.Forms.Label();
+            this.LabCraftCostSpSD = new System.Windows.Forms.Label();
             this.PicSpSD = new System.Windows.Forms.PictureBox();
+            this.PanSSD = new System.Windows.Forms.Panel();
+            this.TBCostSSD = new System.Windows.Forms.TextBox();
             this.PicSSD = new System.Windows.Forms.PictureBox();
             this.LabNameSSD = new System.Windows.Forms.Label();
+            this.LabCraftCostSSD = new System.Windows.Forms.Label();
             this.TabOther = new System.Windows.Forms.TabPage();
             this.ButItemsCost = new System.Windows.Forms.Button();
             this.PanCommonResources = new System.Windows.Forms.Panel();
@@ -377,10 +409,12 @@
             this.LabNameArcsmithsAnvil = new System.Windows.Forms.Label();
             this.TBCostArcsmithsAnvil = new System.Windows.Forms.TextBox();
             this.LabCraftCostArcsmithsAnvil = new System.Windows.Forms.Label();
-            this.TabComponents = new System.Windows.Forms.TabControl();
-            this.TabComponentsResources = new System.Windows.Forms.TabPage();
-            this.TabComponentsCry = new System.Windows.Forms.TabPage();
+            this.TabComp = new System.Windows.Forms.TabControl();
+            this.TabCompRes = new System.Windows.Forms.TabPage();
+            this.TabCompCry = new System.Windows.Forms.TabPage();
             this.GBReklamaTabCry = new System.Windows.Forms.GroupBox();
+            this.PanReklamaTabCry = new System.Windows.Forms.Panel();
+            this.WBReklamaTabCry = new System.Windows.Forms.WebBrowser();
             this.TBSpiritOre = new System.Windows.Forms.TextBox();
             this.LabNameSpiritOre = new System.Windows.Forms.Label();
             this.TBSoulOre = new System.Windows.Forms.TextBox();
@@ -425,8 +459,8 @@
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.TabComponentsKey = new System.Windows.Forms.TabPage();
-            this.TabComponentsRec = new System.Windows.Forms.TabPage();
+            this.TabCompKey = new System.Windows.Forms.TabPage();
+            this.TabCompRec = new System.Windows.Forms.TabPage();
             this.ButSave = new System.Windows.Forms.Button();
             this.ButLoad = new System.Windows.Forms.Button();
             this.GBSaveLoad = new System.Windows.Forms.GroupBox();
@@ -437,41 +471,13 @@
             this.LabHelp = new System.Windows.Forms.Label();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
-            this.PanSSD = new System.Windows.Forms.Panel();
-            this.TBCostSSD = new System.Windows.Forms.TextBox();
-            this.PanNameShots = new System.Windows.Forms.Panel();
-            this.LabNameCostShots = new System.Windows.Forms.Label();
-            this.LabNameShots = new System.Windows.Forms.Label();
-            this.PanSpSD = new System.Windows.Forms.Panel();
-            this.LabCostSpSD = new System.Windows.Forms.TextBox();
-            this.PanBSpSD = new System.Windows.Forms.Panel();
-            this.TBCostBSpSD = new System.Windows.Forms.TextBox();
-            this.PanSSC = new System.Windows.Forms.Panel();
-            this.TBCostSSC = new System.Windows.Forms.TextBox();
-            this.PanSpSC = new System.Windows.Forms.Panel();
-            this.TBCostSpSC = new System.Windows.Forms.TextBox();
-            this.PanBSpSC = new System.Windows.Forms.Panel();
-            this.TBCostBSpSC = new System.Windows.Forms.TextBox();
-            this.PanSSB = new System.Windows.Forms.Panel();
-            this.TBCostSSB = new System.Windows.Forms.TextBox();
-            this.PanSpSB = new System.Windows.Forms.Panel();
-            this.TBCostSpSB = new System.Windows.Forms.TextBox();
-            this.PanBSpSB = new System.Windows.Forms.Panel();
-            this.TBCostBSpSB = new System.Windows.Forms.TextBox();
-            this.PanReklamaTabCry = new System.Windows.Forms.Panel();
-            this.PanSSA = new System.Windows.Forms.Panel();
-            this.TBCostSSA = new System.Windows.Forms.TextBox();
-            this.PanSpSA = new System.Windows.Forms.Panel();
-            this.TBCostSpSA = new System.Windows.Forms.TextBox();
-            this.WBReklamaTabCry = new System.Windows.Forms.WebBrowser();
-            this.PanBSpSA = new System.Windows.Forms.Panel();
-            this.TBCostBSpSA = new System.Windows.Forms.TextBox();
-            this.PanSSS = new System.Windows.Forms.Panel();
-            this.TBCostSSS = new System.Windows.Forms.TextBox();
-            this.PanSpSS = new System.Windows.Forms.Panel();
-            this.TBCostSpSS = new System.Windows.Forms.TextBox();
-            this.PanBSpSS = new System.Windows.Forms.Panel();
-            this.TBCostBSpSS = new System.Windows.Forms.TextBox();
+            this.TabCompRecGrade = new System.Windows.Forms.TabControl();
+            this.TabCompRecWeapon = new System.Windows.Forms.TabPage();
+            this.TabCompRecArmor = new System.Windows.Forms.TabPage();
+            this.TabCompRecAcessory = new System.Windows.Forms.TabPage();
+            this.TabCompRecRec = new System.Windows.Forms.TabPage();
+            this.TabCompRecShots = new System.Windows.Forms.TabPage();
+            this.TabBow = new System.Windows.Forms.TabPage();
             this.TabMainItems.SuspendLayout();
             this.TabWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -487,29 +493,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicImperialStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBasaltBattlehammer)).BeginInit();
             this.TabSword.SuspendLayout();
-            this.TabSGrade.SuspendLayout();
-            this.TabSwordsS.SuspendLayout();
+            this.TabWeaponSwordGrade.SuspendLayout();
+            this.TabWeaponSwordS.SuspendLayout();
             this.GBSwordsS.SuspendLayout();
             this.PanSwordsS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicForgottenBlade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeavensDivider)).BeginInit();
             this.TabShots.SuspendLayout();
             this.GBShots.SuspendLayout();
+            this.PanNameShots.SuspendLayout();
             this.PanShots.SuspendLayout();
+            this.PanBSpSS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).BeginInit();
+            this.PanSpSS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).BeginInit();
+            this.PanSSS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSS)).BeginInit();
+            this.PanBSpSA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).BeginInit();
+            this.PanSpSA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).BeginInit();
+            this.PanSSA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSA)).BeginInit();
+            this.PanBSpSB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSB)).BeginInit();
+            this.PanSpSB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSB)).BeginInit();
+            this.PanSSB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSB)).BeginInit();
+            this.PanBSpSC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSC)).BeginInit();
+            this.PanSpSC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSC)).BeginInit();
+            this.PanSSC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSC)).BeginInit();
+            this.PanBSpSD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSD)).BeginInit();
+            this.PanSpSD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSD)).BeginInit();
+            this.PanSSD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSD)).BeginInit();
             this.PanCommonResources.SuspendLayout();
             this.PanVarnish.SuspendLayout();
@@ -615,10 +637,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicArtisansFrame)).BeginInit();
             this.PanArcsmithsAnvil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicArcsmithsAnvil)).BeginInit();
-            this.TabComponents.SuspendLayout();
-            this.TabComponentsResources.SuspendLayout();
-            this.TabComponentsCry.SuspendLayout();
+            this.TabComp.SuspendLayout();
+            this.TabCompRes.SuspendLayout();
+            this.TabCompCry.SuspendLayout();
             this.GBReklamaTabCry.SuspendLayout();
+            this.PanReklamaTabCry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
@@ -633,26 +656,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            this.TabCompRec.SuspendLayout();
             this.GBSaveLoad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoAuthor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoLA2)).BeginInit();
-            this.PanSSD.SuspendLayout();
-            this.PanNameShots.SuspendLayout();
-            this.PanSpSD.SuspendLayout();
-            this.PanBSpSD.SuspendLayout();
-            this.PanSSC.SuspendLayout();
-            this.PanSpSC.SuspendLayout();
-            this.PanBSpSC.SuspendLayout();
-            this.PanSSB.SuspendLayout();
-            this.PanSpSB.SuspendLayout();
-            this.PanBSpSB.SuspendLayout();
-            this.PanReklamaTabCry.SuspendLayout();
-            this.PanSSA.SuspendLayout();
-            this.PanSpSA.SuspendLayout();
-            this.PanBSpSA.SuspendLayout();
-            this.PanSSS.SuspendLayout();
-            this.PanSpSS.SuspendLayout();
-            this.PanBSpSS.SuspendLayout();
+            this.TabCompRecGrade.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabMainItems
@@ -662,10 +670,10 @@
             this.TabMainItems.Controls.Add(this.TabAcessory);
             this.TabMainItems.Controls.Add(this.TabShots);
             this.TabMainItems.Controls.Add(this.TabOther);
-            this.TabMainItems.Location = new System.Drawing.Point(545, 87);
+            this.TabMainItems.Location = new System.Drawing.Point(541, 87);
             this.TabMainItems.Name = "TabMainItems";
             this.TabMainItems.SelectedIndex = 0;
-            this.TabMainItems.Size = new System.Drawing.Size(365, 525);
+            this.TabMainItems.Size = new System.Drawing.Size(369, 532);
             this.TabMainItems.TabIndex = 2;
             // 
             // TabWeapon
@@ -674,7 +682,7 @@
             this.TabWeapon.Location = new System.Drawing.Point(4, 22);
             this.TabWeapon.Name = "TabWeapon";
             this.TabWeapon.Padding = new System.Windows.Forms.Padding(3);
-            this.TabWeapon.Size = new System.Drawing.Size(357, 499);
+            this.TabWeapon.Size = new System.Drawing.Size(361, 506);
             this.TabWeapon.TabIndex = 0;
             this.TabWeapon.Text = "Оружие";
             this.TabWeapon.UseVisualStyleBackColor = true;
@@ -694,7 +702,7 @@
             this.TabWeaponType.Name = "TabWeaponType";
             this.TabWeaponType.Padding = new System.Drawing.Point(5, 3);
             this.TabWeaponType.SelectedIndex = 0;
-            this.TabWeaponType.Size = new System.Drawing.Size(365, 503);
+            this.TabWeaponType.Size = new System.Drawing.Size(369, 510);
             this.TabWeaponType.TabIndex = 0;
             // 
             // TabBlunt
@@ -703,7 +711,7 @@
             this.TabBlunt.Location = new System.Drawing.Point(4, 22);
             this.TabBlunt.Name = "TabBlunt";
             this.TabBlunt.Padding = new System.Windows.Forms.Padding(3);
-            this.TabBlunt.Size = new System.Drawing.Size(357, 477);
+            this.TabBlunt.Size = new System.Drawing.Size(361, 484);
             this.TabBlunt.TabIndex = 0;
             this.TabBlunt.Text = "Бланты";
             this.TabBlunt.UseVisualStyleBackColor = true;
@@ -716,10 +724,12 @@
             this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntB);
             this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntA);
             this.TabWeaponBluntGrade.Controls.Add(this.TabWeaponBluntS);
-            this.TabWeaponBluntGrade.Location = new System.Drawing.Point(0, 0);
+            this.TabWeaponBluntGrade.ItemSize = new System.Drawing.Size(51, 18);
+            this.TabWeaponBluntGrade.Location = new System.Drawing.Point(-4, 0);
+            this.TabWeaponBluntGrade.Multiline = true;
             this.TabWeaponBluntGrade.Name = "TabWeaponBluntGrade";
             this.TabWeaponBluntGrade.SelectedIndex = 0;
-            this.TabWeaponBluntGrade.Size = new System.Drawing.Size(365, 519);
+            this.TabWeaponBluntGrade.Size = new System.Drawing.Size(369, 488);
             this.TabWeaponBluntGrade.TabIndex = 0;
             // 
             // TabWeaponBluntNG
@@ -728,7 +738,7 @@
             this.TabWeaponBluntNG.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntNG.Name = "TabWeaponBluntNG";
             this.TabWeaponBluntNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TabWeaponBluntNG.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntNG.Size = new System.Drawing.Size(361, 462);
             this.TabWeaponBluntNG.TabIndex = 0;
             this.TabWeaponBluntNG.Text = "No-Grade";
             this.TabWeaponBluntNG.UseVisualStyleBackColor = true;
@@ -748,7 +758,7 @@
             this.TabWeaponBluntD.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntD.Name = "TabWeaponBluntD";
             this.TabWeaponBluntD.Padding = new System.Windows.Forms.Padding(3);
-            this.TabWeaponBluntD.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntD.Size = new System.Drawing.Size(357, 441);
             this.TabWeaponBluntD.TabIndex = 1;
             this.TabWeaponBluntD.Text = "D-Grade";
             this.TabWeaponBluntD.UseVisualStyleBackColor = true;
@@ -766,7 +776,7 @@
             // 
             this.TabWeaponBluntC.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntC.Name = "TabWeaponBluntC";
-            this.TabWeaponBluntC.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntC.Size = new System.Drawing.Size(357, 441);
             this.TabWeaponBluntC.TabIndex = 2;
             this.TabWeaponBluntC.Text = "C-Grade";
             this.TabWeaponBluntC.UseVisualStyleBackColor = true;
@@ -775,7 +785,7 @@
             // 
             this.TabWeaponBluntB.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntB.Name = "TabWeaponBluntB";
-            this.TabWeaponBluntB.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntB.Size = new System.Drawing.Size(357, 441);
             this.TabWeaponBluntB.TabIndex = 3;
             this.TabWeaponBluntB.Text = "B-Grade";
             this.TabWeaponBluntB.UseVisualStyleBackColor = true;
@@ -784,7 +794,7 @@
             // 
             this.TabWeaponBluntA.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntA.Name = "TabWeaponBluntA";
-            this.TabWeaponBluntA.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntA.Size = new System.Drawing.Size(357, 441);
             this.TabWeaponBluntA.TabIndex = 4;
             this.TabWeaponBluntA.Text = "A-Grade";
             this.TabWeaponBluntA.UseVisualStyleBackColor = true;
@@ -794,7 +804,7 @@
             this.TabWeaponBluntS.Controls.Add(this.GBBlantsS);
             this.TabWeaponBluntS.Location = new System.Drawing.Point(4, 22);
             this.TabWeaponBluntS.Name = "TabWeaponBluntS";
-            this.TabWeaponBluntS.Size = new System.Drawing.Size(357, 493);
+            this.TabWeaponBluntS.Size = new System.Drawing.Size(361, 462);
             this.TabWeaponBluntS.TabIndex = 5;
             this.TabWeaponBluntS.Text = "S-Grade";
             this.TabWeaponBluntS.UseVisualStyleBackColor = true;
@@ -805,9 +815,10 @@
             this.GBBlantsS.Controls.Add(this.LabNameCraftCostBluntS);
             this.GBBlantsS.Controls.Add(this.LabNameCostBluntS);
             this.GBBlantsS.Controls.Add(this.LabNameBluntS);
-            this.GBBlantsS.Location = new System.Drawing.Point(2, 0);
+            this.GBBlantsS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GBBlantsS.Location = new System.Drawing.Point(0, 0);
             this.GBBlantsS.Name = "GBBlantsS";
-            this.GBBlantsS.Size = new System.Drawing.Size(351, 459);
+            this.GBBlantsS.Size = new System.Drawing.Size(361, 462);
             this.GBBlantsS.TabIndex = 0;
             this.GBBlantsS.TabStop = false;
             this.GBBlantsS.Text = "Бланты S-Grade";
@@ -830,15 +841,15 @@
             this.PanBluntsS.Controls.Add(this.LabCostBasaltBattlehammer);
             this.PanBluntsS.Controls.Add(this.label81);
             this.PanBluntsS.Controls.Add(this.PicBasaltBattlehammer);
-            this.PanBluntsS.Location = new System.Drawing.Point(0, 61);
+            this.PanBluntsS.Location = new System.Drawing.Point(3, 58);
             this.PanBluntsS.Name = "PanBluntsS";
-            this.PanBluntsS.Size = new System.Drawing.Size(347, 395);
+            this.PanBluntsS.Size = new System.Drawing.Size(321, 374);
             this.PanBluntsS.TabIndex = 9;
             // 
             // TBCraftCostArcanaMace
             // 
             this.TBCraftCostArcanaMace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostArcanaMace.Location = new System.Drawing.Point(145, 177);
+            this.TBCraftCostArcanaMace.Location = new System.Drawing.Point(119, 177);
             this.TBCraftCostArcanaMace.Name = "TBCraftCostArcanaMace";
             this.TBCraftCostArcanaMace.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostArcanaMace.Size = new System.Drawing.Size(199, 21);
@@ -849,7 +860,7 @@
             // 
             this.LabCostArcanaMace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostArcanaMace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.LabCostArcanaMace.Location = new System.Drawing.Point(146, 153);
+            this.LabCostArcanaMace.Location = new System.Drawing.Point(119, 152);
             this.LabCostArcanaMace.Name = "LabCostArcanaMace";
             this.LabCostArcanaMace.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostArcanaMace.Size = new System.Drawing.Size(199, 22);
@@ -879,7 +890,7 @@
             // TBCraftCostDragonHunterAxe
             // 
             this.TBCraftCostDragonHunterAxe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostDragonHunterAxe.Location = new System.Drawing.Point(146, 107);
+            this.TBCraftCostDragonHunterAxe.Location = new System.Drawing.Point(119, 106);
             this.TBCraftCostDragonHunterAxe.Name = "TBCraftCostDragonHunterAxe";
             this.TBCraftCostDragonHunterAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostDragonHunterAxe.Size = new System.Drawing.Size(199, 21);
@@ -890,7 +901,7 @@
             // 
             this.LabCostDragonHunterAxe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostDragonHunterAxe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.LabCostDragonHunterAxe.Location = new System.Drawing.Point(146, 78);
+            this.LabCostDragonHunterAxe.Location = new System.Drawing.Point(119, 81);
             this.LabCostDragonHunterAxe.Name = "LabCostDragonHunterAxe";
             this.LabCostDragonHunterAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostDragonHunterAxe.Size = new System.Drawing.Size(199, 22);
@@ -920,7 +931,7 @@
             // TBCraftCostImperialStaff
             // 
             this.TBCraftCostImperialStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostImperialStaff.Location = new System.Drawing.Point(145, 251);
+            this.TBCraftCostImperialStaff.Location = new System.Drawing.Point(119, 251);
             this.TBCraftCostImperialStaff.Name = "TBCraftCostImperialStaff";
             this.TBCraftCostImperialStaff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostImperialStaff.Size = new System.Drawing.Size(199, 21);
@@ -931,7 +942,7 @@
             // 
             this.LabCostImperialStaff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostImperialStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.LabCostImperialStaff.Location = new System.Drawing.Point(145, 226);
+            this.LabCostImperialStaff.Location = new System.Drawing.Point(119, 226);
             this.LabCostImperialStaff.Name = "LabCostImperialStaff";
             this.LabCostImperialStaff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostImperialStaff.Size = new System.Drawing.Size(199, 22);
@@ -961,7 +972,7 @@
             // TBCraftCostBasaltBattlehamer
             // 
             this.TBCraftCostBasaltBattlehamer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostBasaltBattlehamer.Location = new System.Drawing.Point(145, 42);
+            this.TBCraftCostBasaltBattlehamer.Location = new System.Drawing.Point(119, 40);
             this.TBCraftCostBasaltBattlehamer.Name = "TBCraftCostBasaltBattlehamer";
             this.TBCraftCostBasaltBattlehamer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostBasaltBattlehamer.Size = new System.Drawing.Size(199, 21);
@@ -972,7 +983,7 @@
             // 
             this.LabCostBasaltBattlehammer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostBasaltBattlehammer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.LabCostBasaltBattlehammer.Location = new System.Drawing.Point(145, 17);
+            this.LabCostBasaltBattlehammer.Location = new System.Drawing.Point(119, 15);
             this.LabCostBasaltBattlehammer.Name = "LabCostBasaltBattlehammer";
             this.LabCostBasaltBattlehammer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostBasaltBattlehammer.Size = new System.Drawing.Size(199, 22);
@@ -982,11 +993,10 @@
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label81.Location = new System.Drawing.Point(1, 50);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(143, 17);
+            this.label81.Size = new System.Drawing.Size(122, 15);
             this.label81.TabIndex = 15;
             this.label81.Text = "Basalt Battlehammer";
             // 
@@ -1031,85 +1041,85 @@
             // 
             // TabSword
             // 
-            this.TabSword.Controls.Add(this.TabSGrade);
+            this.TabSword.Controls.Add(this.TabWeaponSwordGrade);
             this.TabSword.Location = new System.Drawing.Point(4, 22);
             this.TabSword.Name = "TabSword";
             this.TabSword.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSword.Size = new System.Drawing.Size(357, 477);
+            this.TabSword.Size = new System.Drawing.Size(361, 484);
             this.TabSword.TabIndex = 1;
             this.TabSword.Text = "Мечи";
             this.TabSword.UseVisualStyleBackColor = true;
             // 
-            // TabSGrade
+            // TabWeaponSwordGrade
             // 
-            this.TabSGrade.Controls.Add(this.TabNoGrade);
-            this.TabSGrade.Controls.Add(this.TabDGrade);
-            this.TabSGrade.Controls.Add(this.TabCGrade);
-            this.TabSGrade.Controls.Add(this.TabBGrade);
-            this.TabSGrade.Controls.Add(this.TabAGrade);
-            this.TabSGrade.Controls.Add(this.TabSwordsS);
-            this.TabSGrade.Location = new System.Drawing.Point(-4, 0);
-            this.TabSGrade.Name = "TabSGrade";
-            this.TabSGrade.SelectedIndex = 0;
-            this.TabSGrade.Size = new System.Drawing.Size(369, 481);
-            this.TabSGrade.TabIndex = 1;
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordNG);
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordD);
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordC);
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordB);
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordA);
+            this.TabWeaponSwordGrade.Controls.Add(this.TabWeaponSwordS);
+            this.TabWeaponSwordGrade.Location = new System.Drawing.Point(-4, 0);
+            this.TabWeaponSwordGrade.Name = "TabWeaponSwordGrade";
+            this.TabWeaponSwordGrade.SelectedIndex = 0;
+            this.TabWeaponSwordGrade.Size = new System.Drawing.Size(369, 488);
+            this.TabWeaponSwordGrade.TabIndex = 1;
             // 
-            // TabNoGrade
+            // TabWeaponSwordNG
             // 
-            this.TabNoGrade.Location = new System.Drawing.Point(4, 22);
-            this.TabNoGrade.Name = "TabNoGrade";
-            this.TabNoGrade.Padding = new System.Windows.Forms.Padding(3);
-            this.TabNoGrade.Size = new System.Drawing.Size(361, 455);
-            this.TabNoGrade.TabIndex = 0;
-            this.TabNoGrade.Text = "No-Grade";
-            this.TabNoGrade.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordNG.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordNG.Name = "TabWeaponSwordNG";
+            this.TabWeaponSwordNG.Padding = new System.Windows.Forms.Padding(3);
+            this.TabWeaponSwordNG.Size = new System.Drawing.Size(329, 435);
+            this.TabWeaponSwordNG.TabIndex = 0;
+            this.TabWeaponSwordNG.Text = "No-Grade";
+            this.TabWeaponSwordNG.UseVisualStyleBackColor = true;
             // 
-            // TabDGrade
+            // TabWeaponSwordD
             // 
-            this.TabDGrade.Location = new System.Drawing.Point(4, 22);
-            this.TabDGrade.Name = "TabDGrade";
-            this.TabDGrade.Padding = new System.Windows.Forms.Padding(3);
-            this.TabDGrade.Size = new System.Drawing.Size(361, 455);
-            this.TabDGrade.TabIndex = 1;
-            this.TabDGrade.Text = "D-Grade";
-            this.TabDGrade.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordD.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordD.Name = "TabWeaponSwordD";
+            this.TabWeaponSwordD.Padding = new System.Windows.Forms.Padding(3);
+            this.TabWeaponSwordD.Size = new System.Drawing.Size(329, 435);
+            this.TabWeaponSwordD.TabIndex = 1;
+            this.TabWeaponSwordD.Text = "D-Grade";
+            this.TabWeaponSwordD.UseVisualStyleBackColor = true;
             // 
-            // TabCGrade
+            // TabWeaponSwordC
             // 
-            this.TabCGrade.Location = new System.Drawing.Point(4, 22);
-            this.TabCGrade.Name = "TabCGrade";
-            this.TabCGrade.Size = new System.Drawing.Size(361, 455);
-            this.TabCGrade.TabIndex = 2;
-            this.TabCGrade.Text = "C-Grade";
-            this.TabCGrade.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordC.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordC.Name = "TabWeaponSwordC";
+            this.TabWeaponSwordC.Size = new System.Drawing.Size(329, 435);
+            this.TabWeaponSwordC.TabIndex = 2;
+            this.TabWeaponSwordC.Text = "C-Grade";
+            this.TabWeaponSwordC.UseVisualStyleBackColor = true;
             // 
-            // TabBGrade
+            // TabWeaponSwordB
             // 
-            this.TabBGrade.Location = new System.Drawing.Point(4, 22);
-            this.TabBGrade.Name = "TabBGrade";
-            this.TabBGrade.Size = new System.Drawing.Size(361, 455);
-            this.TabBGrade.TabIndex = 3;
-            this.TabBGrade.Text = "B-Grade";
-            this.TabBGrade.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordB.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordB.Name = "TabWeaponSwordB";
+            this.TabWeaponSwordB.Size = new System.Drawing.Size(329, 435);
+            this.TabWeaponSwordB.TabIndex = 3;
+            this.TabWeaponSwordB.Text = "B-Grade";
+            this.TabWeaponSwordB.UseVisualStyleBackColor = true;
             // 
-            // TabAGrade
+            // TabWeaponSwordA
             // 
-            this.TabAGrade.Location = new System.Drawing.Point(4, 22);
-            this.TabAGrade.Name = "TabAGrade";
-            this.TabAGrade.Size = new System.Drawing.Size(361, 455);
-            this.TabAGrade.TabIndex = 4;
-            this.TabAGrade.Text = "A-Grade";
-            this.TabAGrade.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordA.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordA.Name = "TabWeaponSwordA";
+            this.TabWeaponSwordA.Size = new System.Drawing.Size(329, 435);
+            this.TabWeaponSwordA.TabIndex = 4;
+            this.TabWeaponSwordA.Text = "A-Grade";
+            this.TabWeaponSwordA.UseVisualStyleBackColor = true;
             // 
-            // TabSwordsS
+            // TabWeaponSwordS
             // 
-            this.TabSwordsS.Controls.Add(this.GBSwordsS);
-            this.TabSwordsS.Location = new System.Drawing.Point(4, 22);
-            this.TabSwordsS.Name = "TabSwordsS";
-            this.TabSwordsS.Size = new System.Drawing.Size(361, 455);
-            this.TabSwordsS.TabIndex = 5;
-            this.TabSwordsS.Text = "S-Grade";
-            this.TabSwordsS.UseVisualStyleBackColor = true;
+            this.TabWeaponSwordS.Controls.Add(this.GBSwordsS);
+            this.TabWeaponSwordS.Location = new System.Drawing.Point(4, 22);
+            this.TabWeaponSwordS.Name = "TabWeaponSwordS";
+            this.TabWeaponSwordS.Size = new System.Drawing.Size(361, 462);
+            this.TabWeaponSwordS.TabIndex = 5;
+            this.TabWeaponSwordS.Text = "S-Grade";
+            this.TabWeaponSwordS.UseVisualStyleBackColor = true;
             // 
             // GBSwordsS
             // 
@@ -1117,9 +1127,10 @@
             this.GBSwordsS.Controls.Add(this.LabNamaCraftCostSwordS);
             this.GBSwordsS.Controls.Add(this.LabNameCostSwordS);
             this.GBSwordsS.Controls.Add(this.LabNameSwordS);
-            this.GBSwordsS.Location = new System.Drawing.Point(2, 0);
+            this.GBSwordsS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GBSwordsS.Location = new System.Drawing.Point(0, 0);
             this.GBSwordsS.Name = "GBSwordsS";
-            this.GBSwordsS.Size = new System.Drawing.Size(349, 453);
+            this.GBSwordsS.Size = new System.Drawing.Size(361, 462);
             this.GBSwordsS.TabIndex = 4;
             this.GBSwordsS.TabStop = false;
             this.GBSwordsS.Text = "Мечи S-Grade";
@@ -1134,15 +1145,15 @@
             this.PanSwordsS.Controls.Add(this.LabNameHeavensDivider);
             this.PanSwordsS.Controls.Add(this.TBCraftCostHeavensDivider);
             this.PanSwordsS.Controls.Add(this.LabCostHeavensDivider);
-            this.PanSwordsS.Location = new System.Drawing.Point(0, 60);
+            this.PanSwordsS.Location = new System.Drawing.Point(3, 60);
             this.PanSwordsS.Name = "PanSwordsS";
-            this.PanSwordsS.Size = new System.Drawing.Size(348, 392);
+            this.PanSwordsS.Size = new System.Drawing.Size(355, 399);
             this.PanSwordsS.TabIndex = 8;
             // 
             // TBCraftCostForgottenBlade
             // 
             this.TBCraftCostForgottenBlade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostForgottenBlade.Location = new System.Drawing.Point(144, 132);
+            this.TBCraftCostForgottenBlade.Location = new System.Drawing.Point(121, 132);
             this.TBCraftCostForgottenBlade.Name = "TBCraftCostForgottenBlade";
             this.TBCraftCostForgottenBlade.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostForgottenBlade.Size = new System.Drawing.Size(199, 21);
@@ -1153,7 +1164,7 @@
             // 
             this.LabCostForgottenBlade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostForgottenBlade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCostForgottenBlade.Location = new System.Drawing.Point(144, 106);
+            this.LabCostForgottenBlade.Location = new System.Drawing.Point(121, 106);
             this.LabCostForgottenBlade.Name = "LabCostForgottenBlade";
             this.LabCostForgottenBlade.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostForgottenBlade.Size = new System.Drawing.Size(199, 23);
@@ -1205,7 +1216,7 @@
             // TBCraftCostHeavensDivider
             // 
             this.TBCraftCostHeavensDivider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.TBCraftCostHeavensDivider.Location = new System.Drawing.Point(144, 41);
+            this.TBCraftCostHeavensDivider.Location = new System.Drawing.Point(121, 41);
             this.TBCraftCostHeavensDivider.Name = "TBCraftCostHeavensDivider";
             this.TBCraftCostHeavensDivider.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TBCraftCostHeavensDivider.Size = new System.Drawing.Size(199, 21);
@@ -1216,7 +1227,7 @@
             // 
             this.LabCostHeavensDivider.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabCostHeavensDivider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.LabCostHeavensDivider.Location = new System.Drawing.Point(144, 16);
+            this.LabCostHeavensDivider.Location = new System.Drawing.Point(121, 16);
             this.LabCostHeavensDivider.Name = "LabCostHeavensDivider";
             this.LabCostHeavensDivider.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LabCostHeavensDivider.Size = new System.Drawing.Size(199, 22);
@@ -1252,15 +1263,6 @@
             this.LabNameSwordS.Size = new System.Drawing.Size(106, 17);
             this.LabNameSwordS.TabIndex = 4;
             this.LabNameSwordS.Text = "Наименование";
-            // 
-            // TabBow
-            // 
-            this.TabBow.Location = new System.Drawing.Point(4, 22);
-            this.TabBow.Name = "TabBow";
-            this.TabBow.Size = new System.Drawing.Size(357, 477);
-            this.TabBow.TabIndex = 2;
-            this.TabBow.Text = "Луки";
-            this.TabBow.UseVisualStyleBackColor = true;
             // 
             // TabDagger
             // 
@@ -1303,7 +1305,7 @@
             this.TabArmor.Location = new System.Drawing.Point(4, 22);
             this.TabArmor.Name = "TabArmor";
             this.TabArmor.Padding = new System.Windows.Forms.Padding(3);
-            this.TabArmor.Size = new System.Drawing.Size(357, 499);
+            this.TabArmor.Size = new System.Drawing.Size(357, 505);
             this.TabArmor.TabIndex = 1;
             this.TabArmor.Text = "Броня";
             this.TabArmor.UseVisualStyleBackColor = true;
@@ -1312,7 +1314,7 @@
             // 
             this.TabAcessory.Location = new System.Drawing.Point(4, 22);
             this.TabAcessory.Name = "TabAcessory";
-            this.TabAcessory.Size = new System.Drawing.Size(357, 499);
+            this.TabAcessory.Size = new System.Drawing.Size(357, 505);
             this.TabAcessory.TabIndex = 2;
             this.TabAcessory.Text = "Бижа";
             this.TabAcessory.UseVisualStyleBackColor = true;
@@ -1322,7 +1324,7 @@
             this.TabShots.Controls.Add(this.GBShots);
             this.TabShots.Location = new System.Drawing.Point(4, 22);
             this.TabShots.Name = "TabShots";
-            this.TabShots.Size = new System.Drawing.Size(357, 499);
+            this.TabShots.Size = new System.Drawing.Size(357, 505);
             this.TabShots.TabIndex = 3;
             this.TabShots.Text = "Шоты";
             this.TabShots.UseVisualStyleBackColor = true;
@@ -1331,12 +1333,43 @@
             // 
             this.GBShots.Controls.Add(this.PanNameShots);
             this.GBShots.Controls.Add(this.PanShots);
-            this.GBShots.Location = new System.Drawing.Point(0, 6);
+            this.GBShots.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GBShots.Location = new System.Drawing.Point(0, 0);
             this.GBShots.Name = "GBShots";
-            this.GBShots.Size = new System.Drawing.Size(357, 494);
+            this.GBShots.Size = new System.Drawing.Size(357, 505);
             this.GBShots.TabIndex = 10;
             this.GBShots.TabStop = false;
             this.GBShots.Text = "Соулшоты / Спиритшоты";
+            // 
+            // PanNameShots
+            // 
+            this.PanNameShots.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanNameShots.Controls.Add(this.LabNameCostShots);
+            this.PanNameShots.Controls.Add(this.LabNameShots);
+            this.PanNameShots.Location = new System.Drawing.Point(6, 15);
+            this.PanNameShots.Name = "PanNameShots";
+            this.PanNameShots.Size = new System.Drawing.Size(326, 22);
+            this.PanNameShots.TabIndex = 8;
+            // 
+            // LabNameCostShots
+            // 
+            this.LabNameCostShots.AutoSize = true;
+            this.LabNameCostShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameCostShots.Location = new System.Drawing.Point(274, 0);
+            this.LabNameCostShots.Name = "LabNameCostShots";
+            this.LabNameCostShots.Size = new System.Drawing.Size(47, 17);
+            this.LabNameCostShots.TabIndex = 6;
+            this.LabNameCostShots.Text = "Цена:";
+            // 
+            // LabNameShots
+            // 
+            this.LabNameShots.AutoSize = true;
+            this.LabNameShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabNameShots.Location = new System.Drawing.Point(3, 0);
+            this.LabNameShots.Name = "LabNameShots";
+            this.LabNameShots.Size = new System.Drawing.Size(110, 17);
+            this.LabNameShots.TabIndex = 6;
+            this.LabNameShots.Text = "Наименование:";
             // 
             // PanShots
             // 
@@ -1358,8 +1391,29 @@
             this.PanShots.Controls.Add(this.PanSSD);
             this.PanShots.Location = new System.Drawing.Point(3, 36);
             this.PanShots.Name = "PanShots";
-            this.PanShots.Size = new System.Drawing.Size(348, 454);
+            this.PanShots.Size = new System.Drawing.Size(352, 466);
             this.PanShots.TabIndex = 2;
+            // 
+            // PanBSpSS
+            // 
+            this.PanBSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSS.Controls.Add(this.TBCostBSpSS);
+            this.PanBSpSS.Controls.Add(this.LabCraftCostBSpSS);
+            this.PanBSpSS.Controls.Add(this.PicBSpSS);
+            this.PanBSpSS.Controls.Add(this.LabNameBSpSS);
+            this.PanBSpSS.Location = new System.Drawing.Point(3, 773);
+            this.PanBSpSS.Name = "PanBSpSS";
+            this.PanBSpSS.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSS.TabIndex = 129;
+            // 
+            // TBCostBSpSS
+            // 
+            this.TBCostBSpSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSS.Name = "TBCostBSpSS";
+            this.TBCostBSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSS.TabIndex = 94;
+            this.TBCostBSpSS.Text = "0";
             // 
             // LabCraftCostBSpSS
             // 
@@ -1372,16 +1426,14 @@
             this.LabCraftCostBSpSS.TabIndex = 122;
             this.LabCraftCostBSpSS.Text = "0";
             // 
-            // LabCraftCostSpSS
+            // PicBSpSS
             // 
-            this.LabCraftCostSpSS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSpSS.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSpSS.Name = "LabCraftCostSpSS";
-            this.LabCraftCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSpSS.Size = new System.Drawing.Size(100, 19);
-            this.LabCraftCostSpSS.TabIndex = 121;
-            this.LabCraftCostSpSS.Text = "0";
+            this.PicBSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i01;
+            this.PicBSpSS.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSS.Name = "PicBSpSS";
+            this.PicBSpSS.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSS.TabIndex = 73;
+            this.PicBSpSS.TabStop = false;
             // 
             // LabNameBSpSS
             // 
@@ -1393,6 +1445,47 @@
             this.LabNameBSpSS.TabIndex = 120;
             this.LabNameBSpSS.Text = "Blessed Spiritshot: S Grade";
             // 
+            // PanSpSS
+            // 
+            this.PanSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSS.Controls.Add(this.TBCostSpSS);
+            this.PanSpSS.Controls.Add(this.LabCraftCostSpSS);
+            this.PanSpSS.Controls.Add(this.PicSpSS);
+            this.PanSpSS.Controls.Add(this.LabNameSpSS);
+            this.PanSpSS.Location = new System.Drawing.Point(3, 718);
+            this.PanSpSS.Name = "PanSpSS";
+            this.PanSpSS.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSS.TabIndex = 128;
+            // 
+            // TBCostSpSS
+            // 
+            this.TBCostSpSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSS.Name = "TBCostSpSS";
+            this.TBCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSS.TabIndex = 94;
+            this.TBCostSpSS.Text = "0";
+            // 
+            // LabCraftCostSpSS
+            // 
+            this.LabCraftCostSpSS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSS.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSS.Name = "LabCraftCostSpSS";
+            this.LabCraftCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSS.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSS.TabIndex = 121;
+            this.LabCraftCostSpSS.Text = "0";
+            // 
+            // PicSpSS
+            // 
+            this.PicSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i00;
+            this.PicSpSS.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSS.Name = "PicSpSS";
+            this.PicSpSS.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSS.TabIndex = 70;
+            this.PicSpSS.TabStop = false;
+            // 
             // LabNameSpSS
             // 
             this.LabNameSpSS.AutoSize = true;
@@ -1402,6 +1495,27 @@
             this.LabNameSpSS.Size = new System.Drawing.Size(95, 13);
             this.LabNameSpSS.TabIndex = 119;
             this.LabNameSpSS.Text = "Spiritshot: S Grade";
+            // 
+            // PanSSS
+            // 
+            this.PanSSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSS.Controls.Add(this.TBCostSSS);
+            this.PanSSS.Controls.Add(this.LabCraftCostSSS);
+            this.PanSSS.Controls.Add(this.PicSSS);
+            this.PanSSS.Controls.Add(this.LabNameSSS);
+            this.PanSSS.Location = new System.Drawing.Point(3, 663);
+            this.PanSSS.Name = "PanSSS";
+            this.PanSSS.Size = new System.Drawing.Size(326, 56);
+            this.PanSSS.TabIndex = 127;
+            // 
+            // TBCostSSS
+            // 
+            this.TBCostSSS.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSS.Name = "TBCostSSS";
+            this.TBCostSSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSS.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSS.TabIndex = 94;
+            this.TBCostSSS.Text = "0";
             // 
             // LabCraftCostSSS
             // 
@@ -1414,6 +1528,15 @@
             this.LabCraftCostSSS.TabIndex = 118;
             this.LabCraftCostSSS.Text = "0";
             // 
+            // PicSSS
+            // 
+            this.PicSSS.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_gold_i00;
+            this.PicSSS.Location = new System.Drawing.Point(3, 3);
+            this.PicSSS.Name = "PicSSS";
+            this.PicSSS.Size = new System.Drawing.Size(32, 32);
+            this.PicSSS.TabIndex = 67;
+            this.PicSSS.TabStop = false;
+            // 
             // LabNameSSS
             // 
             this.LabNameSSS.AutoSize = true;
@@ -1423,6 +1546,27 @@
             this.LabNameSSS.Size = new System.Drawing.Size(93, 13);
             this.LabNameSSS.TabIndex = 117;
             this.LabNameSSS.Text = "Soulshot: S Grade";
+            // 
+            // PanBSpSA
+            // 
+            this.PanBSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSA.Controls.Add(this.TBCostBSpSA);
+            this.PanBSpSA.Controls.Add(this.LabCraftCostBSpSA);
+            this.PanBSpSA.Controls.Add(this.PicBSpSA);
+            this.PanBSpSA.Controls.Add(this.LabNameBSpSA);
+            this.PanBSpSA.Location = new System.Drawing.Point(3, 608);
+            this.PanBSpSA.Name = "PanBSpSA";
+            this.PanBSpSA.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSA.TabIndex = 126;
+            // 
+            // TBCostBSpSA
+            // 
+            this.TBCostBSpSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSA.Name = "TBCostBSpSA";
+            this.TBCostBSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSA.TabIndex = 94;
+            this.TBCostBSpSA.Text = "0";
             // 
             // LabCraftCostBSpSA
             // 
@@ -1435,16 +1579,14 @@
             this.LabCraftCostBSpSA.TabIndex = 116;
             this.LabCraftCostBSpSA.Text = "0";
             // 
-            // LabCraftCostSpSA
+            // PicBSpSA
             // 
-            this.LabCraftCostSpSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSpSA.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSpSA.Name = "LabCraftCostSpSA";
-            this.LabCraftCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSpSA.Size = new System.Drawing.Size(100, 19);
-            this.LabCraftCostSpSA.TabIndex = 115;
-            this.LabCraftCostSpSA.Text = "0";
+            this.PicBSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i01;
+            this.PicBSpSA.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSA.Name = "PicBSpSA";
+            this.PicBSpSA.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSA.TabIndex = 91;
+            this.PicBSpSA.TabStop = false;
             // 
             // LabNameBSpSA
             // 
@@ -1456,6 +1598,47 @@
             this.LabNameBSpSA.TabIndex = 114;
             this.LabNameBSpSA.Text = "Blessed Spiritshot: A Grade";
             // 
+            // PanSpSA
+            // 
+            this.PanSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSA.Controls.Add(this.TBCostSpSA);
+            this.PanSpSA.Controls.Add(this.LabCraftCostSpSA);
+            this.PanSpSA.Controls.Add(this.PicSpSA);
+            this.PanSpSA.Controls.Add(this.LabNameSpSA);
+            this.PanSpSA.Location = new System.Drawing.Point(3, 553);
+            this.PanSpSA.Name = "PanSpSA";
+            this.PanSpSA.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSA.TabIndex = 125;
+            // 
+            // TBCostSpSA
+            // 
+            this.TBCostSpSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSA.Name = "TBCostSpSA";
+            this.TBCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSA.TabIndex = 94;
+            this.TBCostSpSA.Text = "0";
+            // 
+            // LabCraftCostSpSA
+            // 
+            this.LabCraftCostSpSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSA.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSA.Name = "LabCraftCostSpSA";
+            this.LabCraftCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSA.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSA.TabIndex = 115;
+            this.LabCraftCostSpSA.Text = "0";
+            // 
+            // PicSpSA
+            // 
+            this.PicSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i00;
+            this.PicSpSA.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSA.Name = "PicSpSA";
+            this.PicSpSA.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSA.TabIndex = 88;
+            this.PicSpSA.TabStop = false;
+            // 
             // LabNameSpSA
             // 
             this.LabNameSpSA.AutoSize = true;
@@ -1465,6 +1648,27 @@
             this.LabNameSpSA.Size = new System.Drawing.Size(95, 13);
             this.LabNameSpSA.TabIndex = 113;
             this.LabNameSpSA.Text = "Spiritshot: A Grade";
+            // 
+            // PanSSA
+            // 
+            this.PanSSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSA.Controls.Add(this.TBCostSSA);
+            this.PanSSA.Controls.Add(this.LabCraftCostSSA);
+            this.PanSSA.Controls.Add(this.PicSSA);
+            this.PanSSA.Controls.Add(this.LabNameSSA);
+            this.PanSSA.Location = new System.Drawing.Point(3, 498);
+            this.PanSSA.Name = "PanSSA";
+            this.PanSSA.Size = new System.Drawing.Size(326, 56);
+            this.PanSSA.TabIndex = 124;
+            // 
+            // TBCostSSA
+            // 
+            this.TBCostSSA.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSA.Name = "TBCostSSA";
+            this.TBCostSSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSA.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSA.TabIndex = 94;
+            this.TBCostSSA.Text = "0";
             // 
             // LabCraftCostSSA
             // 
@@ -1477,6 +1681,15 @@
             this.LabCraftCostSSA.TabIndex = 112;
             this.LabCraftCostSSA.Text = "0";
             // 
+            // PicSSA
+            // 
+            this.PicSSA.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_silver_i00;
+            this.PicSSA.Location = new System.Drawing.Point(3, 3);
+            this.PicSSA.Name = "PicSSA";
+            this.PicSSA.Size = new System.Drawing.Size(32, 32);
+            this.PicSSA.TabIndex = 85;
+            this.PicSSA.TabStop = false;
+            // 
             // LabNameSSA
             // 
             this.LabNameSSA.AutoSize = true;
@@ -1486,6 +1699,27 @@
             this.LabNameSSA.Size = new System.Drawing.Size(93, 13);
             this.LabNameSSA.TabIndex = 111;
             this.LabNameSSA.Text = "Soulshot: A Grade";
+            // 
+            // PanBSpSB
+            // 
+            this.PanBSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSB.Controls.Add(this.TBCostBSpSB);
+            this.PanBSpSB.Controls.Add(this.LabCraftCostBSpSB);
+            this.PanBSpSB.Controls.Add(this.PicBSpSB);
+            this.PanBSpSB.Controls.Add(this.LabNameBSpSB);
+            this.PanBSpSB.Location = new System.Drawing.Point(3, 443);
+            this.PanBSpSB.Name = "PanBSpSB";
+            this.PanBSpSB.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSB.TabIndex = 123;
+            // 
+            // TBCostBSpSB
+            // 
+            this.TBCostBSpSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSB.Name = "TBCostBSpSB";
+            this.TBCostBSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSB.TabIndex = 94;
+            this.TBCostBSpSB.Text = "0";
             // 
             // LabCraftCostBSpSB
             // 
@@ -1498,16 +1732,14 @@
             this.LabCraftCostBSpSB.TabIndex = 110;
             this.LabCraftCostBSpSB.Text = "0";
             // 
-            // LabCraftCostSpSB
+            // PicBSpSB
             // 
-            this.LabCraftCostSpSB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSpSB.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSpSB.Name = "LabCraftCostSpSB";
-            this.LabCraftCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSpSB.Size = new System.Drawing.Size(100, 19);
-            this.LabCraftCostSpSB.TabIndex = 109;
-            this.LabCraftCostSpSB.Text = "0";
+            this.PicBSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i01;
+            this.PicBSpSB.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSB.Name = "PicBSpSB";
+            this.PicBSpSB.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSB.TabIndex = 82;
+            this.PicBSpSB.TabStop = false;
             // 
             // LabNameBSpSB
             // 
@@ -1519,6 +1751,47 @@
             this.LabNameBSpSB.TabIndex = 108;
             this.LabNameBSpSB.Text = "Blessed Spiritshot: B Grade";
             // 
+            // PanSpSB
+            // 
+            this.PanSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSB.Controls.Add(this.TBCostSpSB);
+            this.PanSpSB.Controls.Add(this.LabCraftCostSpSB);
+            this.PanSpSB.Controls.Add(this.PicSpSB);
+            this.PanSpSB.Controls.Add(this.LabNameSpSB);
+            this.PanSpSB.Location = new System.Drawing.Point(3, 388);
+            this.PanSpSB.Name = "PanSpSB";
+            this.PanSpSB.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSB.TabIndex = 122;
+            // 
+            // TBCostSpSB
+            // 
+            this.TBCostSpSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSB.Name = "TBCostSpSB";
+            this.TBCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSB.TabIndex = 94;
+            this.TBCostSpSB.Text = "0";
+            // 
+            // LabCraftCostSpSB
+            // 
+            this.LabCraftCostSpSB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSB.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSB.Name = "LabCraftCostSpSB";
+            this.LabCraftCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSB.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSB.TabIndex = 109;
+            this.LabCraftCostSpSB.Text = "0";
+            // 
+            // PicSpSB
+            // 
+            this.PicSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i00;
+            this.PicSpSB.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSB.Name = "PicSpSB";
+            this.PicSpSB.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSB.TabIndex = 79;
+            this.PicSpSB.TabStop = false;
+            // 
             // LabNameSpSB
             // 
             this.LabNameSpSB.AutoSize = true;
@@ -1528,6 +1801,27 @@
             this.LabNameSpSB.Size = new System.Drawing.Size(95, 13);
             this.LabNameSpSB.TabIndex = 107;
             this.LabNameSpSB.Text = "Spiritshot: B Grade";
+            // 
+            // PanSSB
+            // 
+            this.PanSSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSB.Controls.Add(this.TBCostSSB);
+            this.PanSSB.Controls.Add(this.LabCraftCostSSB);
+            this.PanSSB.Controls.Add(this.PicSSB);
+            this.PanSSB.Controls.Add(this.LabNameSSB);
+            this.PanSSB.Location = new System.Drawing.Point(3, 333);
+            this.PanSSB.Name = "PanSSB";
+            this.PanSSB.Size = new System.Drawing.Size(326, 56);
+            this.PanSSB.TabIndex = 121;
+            // 
+            // TBCostSSB
+            // 
+            this.TBCostSSB.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSB.Name = "TBCostSSB";
+            this.TBCostSSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSB.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSB.TabIndex = 94;
+            this.TBCostSSB.Text = "0";
             // 
             // LabCraftCostSSB
             // 
@@ -1540,6 +1834,15 @@
             this.LabCraftCostSSB.TabIndex = 106;
             this.LabCraftCostSSB.Text = "0";
             // 
+            // PicSSB
+            // 
+            this.PicSSB.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_red_i00;
+            this.PicSSB.Location = new System.Drawing.Point(3, 3);
+            this.PicSSB.Name = "PicSSB";
+            this.PicSSB.Size = new System.Drawing.Size(32, 32);
+            this.PicSSB.TabIndex = 76;
+            this.PicSSB.TabStop = false;
+            // 
             // LabNameSSB
             // 
             this.LabNameSSB.AutoSize = true;
@@ -1549,6 +1852,27 @@
             this.LabNameSSB.Size = new System.Drawing.Size(93, 13);
             this.LabNameSSB.TabIndex = 105;
             this.LabNameSSB.Text = "Soulshot: B Grade";
+            // 
+            // PanBSpSC
+            // 
+            this.PanBSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSC.Controls.Add(this.TBCostBSpSC);
+            this.PanBSpSC.Controls.Add(this.LabCraftCostBSpSC);
+            this.PanBSpSC.Controls.Add(this.PicBSpSC);
+            this.PanBSpSC.Controls.Add(this.LabNameBSpSC);
+            this.PanBSpSC.Location = new System.Drawing.Point(3, 278);
+            this.PanBSpSC.Name = "PanBSpSC";
+            this.PanBSpSC.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSC.TabIndex = 120;
+            // 
+            // TBCostBSpSC
+            // 
+            this.TBCostBSpSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSC.Name = "TBCostBSpSC";
+            this.TBCostBSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSC.TabIndex = 94;
+            this.TBCostBSpSC.Text = "0";
             // 
             // LabCraftCostBSpSC
             // 
@@ -1561,16 +1885,14 @@
             this.LabCraftCostBSpSC.TabIndex = 104;
             this.LabCraftCostBSpSC.Text = "0";
             // 
-            // LabCraftCostSpSC
+            // PicBSpSC
             // 
-            this.LabCraftCostSpSC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSpSC.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSpSC.Name = "LabCraftCostSpSC";
-            this.LabCraftCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSpSC.Size = new System.Drawing.Size(100, 19);
-            this.LabCraftCostSpSC.TabIndex = 103;
-            this.LabCraftCostSpSC.Text = "0";
+            this.PicBSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i01;
+            this.PicBSpSC.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSC.Name = "PicBSpSC";
+            this.PicBSpSC.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSC.TabIndex = 73;
+            this.PicBSpSC.TabStop = false;
             // 
             // LabNameBSpSC
             // 
@@ -1582,6 +1904,47 @@
             this.LabNameBSpSC.TabIndex = 102;
             this.LabNameBSpSC.Text = "Blessed Spiritshot: C Grade";
             // 
+            // PanSpSC
+            // 
+            this.PanSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSC.Controls.Add(this.TBCostSpSC);
+            this.PanSpSC.Controls.Add(this.LabCraftCostSpSC);
+            this.PanSpSC.Controls.Add(this.PicSpSC);
+            this.PanSpSC.Controls.Add(this.LabNameSpSC);
+            this.PanSpSC.Location = new System.Drawing.Point(3, 223);
+            this.PanSpSC.Name = "PanSpSC";
+            this.PanSpSC.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSC.TabIndex = 119;
+            // 
+            // TBCostSpSC
+            // 
+            this.TBCostSpSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSpSC.Name = "TBCostSpSC";
+            this.TBCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSpSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSpSC.TabIndex = 94;
+            this.TBCostSpSC.Text = "0";
+            // 
+            // LabCraftCostSpSC
+            // 
+            this.LabCraftCostSpSC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSC.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSC.Name = "LabCraftCostSpSC";
+            this.LabCraftCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSC.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSC.TabIndex = 103;
+            this.LabCraftCostSpSC.Text = "0";
+            // 
+            // PicSpSC
+            // 
+            this.PicSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i00;
+            this.PicSpSC.Location = new System.Drawing.Point(3, 3);
+            this.PicSpSC.Name = "PicSpSC";
+            this.PicSpSC.Size = new System.Drawing.Size(32, 32);
+            this.PicSpSC.TabIndex = 70;
+            this.PicSpSC.TabStop = false;
+            // 
             // LabNameSpSC
             // 
             this.LabNameSpSC.AutoSize = true;
@@ -1591,6 +1954,27 @@
             this.LabNameSpSC.Size = new System.Drawing.Size(95, 13);
             this.LabNameSpSC.TabIndex = 101;
             this.LabNameSpSC.Text = "Spiritshot: C Grade";
+            // 
+            // PanSSC
+            // 
+            this.PanSSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSC.Controls.Add(this.TBCostSSC);
+            this.PanSSC.Controls.Add(this.LabCraftCostSSC);
+            this.PanSSC.Controls.Add(this.PicSSC);
+            this.PanSSC.Controls.Add(this.LabNameSSC);
+            this.PanSSC.Location = new System.Drawing.Point(3, 168);
+            this.PanSSC.Name = "PanSSC";
+            this.PanSSC.Size = new System.Drawing.Size(326, 56);
+            this.PanSSC.TabIndex = 118;
+            // 
+            // TBCostSSC
+            // 
+            this.TBCostSSC.Location = new System.Drawing.Point(221, 25);
+            this.TBCostSSC.Name = "TBCostSSC";
+            this.TBCostSSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSC.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSC.TabIndex = 94;
+            this.TBCostSSC.Text = "0";
             // 
             // LabCraftCostSSC
             // 
@@ -1603,6 +1987,15 @@
             this.LabCraftCostSSC.TabIndex = 100;
             this.LabCraftCostSSC.Text = "0";
             // 
+            // PicSSC
+            // 
+            this.PicSSC.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_green_i00;
+            this.PicSSC.Location = new System.Drawing.Point(3, 3);
+            this.PicSSC.Name = "PicSSC";
+            this.PicSSC.Size = new System.Drawing.Size(32, 32);
+            this.PicSSC.TabIndex = 67;
+            this.PicSSC.TabStop = false;
+            // 
             // LabNameSSC
             // 
             this.LabNameSSC.AutoSize = true;
@@ -1612,6 +2005,27 @@
             this.LabNameSSC.Size = new System.Drawing.Size(93, 13);
             this.LabNameSSC.TabIndex = 99;
             this.LabNameSSC.Text = "Soulshot: C Grade";
+            // 
+            // PanBSpSD
+            // 
+            this.PanBSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanBSpSD.Controls.Add(this.TBCostBSpSD);
+            this.PanBSpSD.Controls.Add(this.LabCraftCostBSpSD);
+            this.PanBSpSD.Controls.Add(this.PicBSpSD);
+            this.PanBSpSD.Controls.Add(this.LabNameBSpSD);
+            this.PanBSpSD.Location = new System.Drawing.Point(3, 113);
+            this.PanBSpSD.Name = "PanBSpSD";
+            this.PanBSpSD.Size = new System.Drawing.Size(326, 56);
+            this.PanBSpSD.TabIndex = 117;
+            // 
+            // TBCostBSpSD
+            // 
+            this.TBCostBSpSD.Location = new System.Drawing.Point(221, 25);
+            this.TBCostBSpSD.Name = "TBCostBSpSD";
+            this.TBCostBSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostBSpSD.Size = new System.Drawing.Size(100, 20);
+            this.TBCostBSpSD.TabIndex = 94;
+            this.TBCostBSpSD.Text = "0";
             // 
             // LabCraftCostBSpSD
             // 
@@ -1624,16 +2038,14 @@
             this.LabCraftCostBSpSD.TabIndex = 98;
             this.LabCraftCostBSpSD.Text = "0";
             // 
-            // LabCraftCostSpSD
+            // PicBSpSD
             // 
-            this.LabCraftCostSpSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSpSD.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSpSD.Name = "LabCraftCostSpSD";
-            this.LabCraftCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSpSD.Size = new System.Drawing.Size(100, 19);
-            this.LabCraftCostSpSD.TabIndex = 97;
-            this.LabCraftCostSpSD.Text = "0";
+            this.PicBSpSD.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i01;
+            this.PicBSpSD.Location = new System.Drawing.Point(3, 3);
+            this.PicBSpSD.Name = "PicBSpSD";
+            this.PicBSpSD.Size = new System.Drawing.Size(32, 32);
+            this.PicBSpSD.TabIndex = 64;
+            this.PicBSpSD.TabStop = false;
             // 
             // LabNameBSpSD
             // 
@@ -1645,6 +2057,27 @@
             this.LabNameBSpSD.TabIndex = 96;
             this.LabNameBSpSD.Text = "Blessed Spiritshot: D Grade";
             // 
+            // PanSpSD
+            // 
+            this.PanSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSpSD.Controls.Add(this.LabCostSpSD);
+            this.PanSpSD.Controls.Add(this.LabNameSpSD);
+            this.PanSpSD.Controls.Add(this.LabCraftCostSpSD);
+            this.PanSpSD.Controls.Add(this.PicSpSD);
+            this.PanSpSD.Location = new System.Drawing.Point(3, 58);
+            this.PanSpSD.Name = "PanSpSD";
+            this.PanSpSD.Size = new System.Drawing.Size(326, 56);
+            this.PanSpSD.TabIndex = 116;
+            // 
+            // LabCostSpSD
+            // 
+            this.LabCostSpSD.Location = new System.Drawing.Point(221, 25);
+            this.LabCostSpSD.Name = "LabCostSpSD";
+            this.LabCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCostSpSD.Size = new System.Drawing.Size(100, 20);
+            this.LabCostSpSD.TabIndex = 94;
+            this.LabCostSpSD.Text = "0";
+            // 
             // LabNameSpSD
             // 
             this.LabNameSpSD.AutoSize = true;
@@ -1655,133 +2088,16 @@
             this.LabNameSpSD.TabIndex = 94;
             this.LabNameSpSD.Text = "Spiritshot: D Grade";
             // 
-            // LabCraftCostSSD
+            // LabCraftCostSpSD
             // 
-            this.LabCraftCostSSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabCraftCostSSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabCraftCostSSD.Location = new System.Drawing.Point(221, 3);
-            this.LabCraftCostSSD.Name = "LabCraftCostSSD";
-            this.LabCraftCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCraftCostSSD.Size = new System.Drawing.Size(100, 20);
-            this.LabCraftCostSSD.TabIndex = 93;
-            this.LabCraftCostSSD.Text = "0";
-            // 
-            // PicBSpSS
-            // 
-            this.PicBSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i01;
-            this.PicBSpSS.Location = new System.Drawing.Point(3, 3);
-            this.PicBSpSS.Name = "PicBSpSS";
-            this.PicBSpSS.Size = new System.Drawing.Size(32, 32);
-            this.PicBSpSS.TabIndex = 73;
-            this.PicBSpSS.TabStop = false;
-            // 
-            // PicBSpSA
-            // 
-            this.PicBSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i01;
-            this.PicBSpSA.Location = new System.Drawing.Point(3, 3);
-            this.PicBSpSA.Name = "PicBSpSA";
-            this.PicBSpSA.Size = new System.Drawing.Size(32, 32);
-            this.PicBSpSA.TabIndex = 91;
-            this.PicBSpSA.TabStop = false;
-            // 
-            // PicSpSS
-            // 
-            this.PicSpSS.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_gold_i00;
-            this.PicSpSS.Location = new System.Drawing.Point(3, 3);
-            this.PicSpSS.Name = "PicSpSS";
-            this.PicSpSS.Size = new System.Drawing.Size(32, 32);
-            this.PicSpSS.TabIndex = 70;
-            this.PicSpSS.TabStop = false;
-            // 
-            // PicSpSA
-            // 
-            this.PicSpSA.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_silver_i00;
-            this.PicSpSA.Location = new System.Drawing.Point(3, 3);
-            this.PicSpSA.Name = "PicSpSA";
-            this.PicSpSA.Size = new System.Drawing.Size(32, 32);
-            this.PicSpSA.TabIndex = 88;
-            this.PicSpSA.TabStop = false;
-            // 
-            // PicSSS
-            // 
-            this.PicSSS.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_gold_i00;
-            this.PicSSS.Location = new System.Drawing.Point(3, 3);
-            this.PicSSS.Name = "PicSSS";
-            this.PicSSS.Size = new System.Drawing.Size(32, 32);
-            this.PicSSS.TabIndex = 67;
-            this.PicSSS.TabStop = false;
-            // 
-            // PicSSA
-            // 
-            this.PicSSA.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_silver_i00;
-            this.PicSSA.Location = new System.Drawing.Point(3, 3);
-            this.PicSSA.Name = "PicSSA";
-            this.PicSSA.Size = new System.Drawing.Size(32, 32);
-            this.PicSSA.TabIndex = 85;
-            this.PicSSA.TabStop = false;
-            // 
-            // PicBSpSB
-            // 
-            this.PicBSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i01;
-            this.PicBSpSB.Location = new System.Drawing.Point(3, 3);
-            this.PicBSpSB.Name = "PicBSpSB";
-            this.PicBSpSB.Size = new System.Drawing.Size(32, 32);
-            this.PicBSpSB.TabIndex = 82;
-            this.PicBSpSB.TabStop = false;
-            // 
-            // PicSpSB
-            // 
-            this.PicSpSB.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_red_i00;
-            this.PicSpSB.Location = new System.Drawing.Point(3, 3);
-            this.PicSpSB.Name = "PicSpSB";
-            this.PicSpSB.Size = new System.Drawing.Size(32, 32);
-            this.PicSpSB.TabIndex = 79;
-            this.PicSpSB.TabStop = false;
-            // 
-            // PicSSB
-            // 
-            this.PicSSB.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_red_i00;
-            this.PicSSB.Location = new System.Drawing.Point(3, 3);
-            this.PicSSB.Name = "PicSSB";
-            this.PicSSB.Size = new System.Drawing.Size(32, 32);
-            this.PicSSB.TabIndex = 76;
-            this.PicSSB.TabStop = false;
-            // 
-            // PicBSpSC
-            // 
-            this.PicBSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i01;
-            this.PicBSpSC.Location = new System.Drawing.Point(3, 3);
-            this.PicBSpSC.Name = "PicBSpSC";
-            this.PicBSpSC.Size = new System.Drawing.Size(32, 32);
-            this.PicBSpSC.TabIndex = 73;
-            this.PicBSpSC.TabStop = false;
-            // 
-            // PicSpSC
-            // 
-            this.PicSpSC.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_green_i00;
-            this.PicSpSC.Location = new System.Drawing.Point(3, 3);
-            this.PicSpSC.Name = "PicSpSC";
-            this.PicSpSC.Size = new System.Drawing.Size(32, 32);
-            this.PicSpSC.TabIndex = 70;
-            this.PicSpSC.TabStop = false;
-            // 
-            // PicSSC
-            // 
-            this.PicSSC.Image = global::CraftCostCalc.Properties.Resources.etc_spirit_bullet_green_i00;
-            this.PicSSC.Location = new System.Drawing.Point(3, 3);
-            this.PicSSC.Name = "PicSSC";
-            this.PicSSC.Size = new System.Drawing.Size(32, 32);
-            this.PicSSC.TabIndex = 67;
-            this.PicSSC.TabStop = false;
-            // 
-            // PicBSpSD
-            // 
-            this.PicBSpSD.Image = global::CraftCostCalc.Properties.Resources.etc_spell_shot_blue_i01;
-            this.PicBSpSD.Location = new System.Drawing.Point(3, 3);
-            this.PicBSpSD.Name = "PicBSpSD";
-            this.PicBSpSD.Size = new System.Drawing.Size(32, 32);
-            this.PicBSpSD.TabIndex = 64;
-            this.PicBSpSD.TabStop = false;
+            this.LabCraftCostSpSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSpSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSpSD.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSpSD.Name = "LabCraftCostSpSD";
+            this.LabCraftCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSpSD.Size = new System.Drawing.Size(100, 19);
+            this.LabCraftCostSpSD.TabIndex = 97;
+            this.LabCraftCostSpSD.Text = "0";
             // 
             // PicSpSD
             // 
@@ -1791,6 +2107,28 @@
             this.PicSpSD.Size = new System.Drawing.Size(32, 32);
             this.PicSpSD.TabIndex = 61;
             this.PicSpSD.TabStop = false;
+            // 
+            // PanSSD
+            // 
+            this.PanSSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanSSD.Controls.Add(this.TBCostSSD);
+            this.PanSSD.Controls.Add(this.PicSSD);
+            this.PanSSD.Controls.Add(this.LabNameSSD);
+            this.PanSSD.Controls.Add(this.LabCraftCostSSD);
+            this.PanSSD.Location = new System.Drawing.Point(3, 3);
+            this.PanSSD.Name = "PanSSD";
+            this.PanSSD.Size = new System.Drawing.Size(326, 56);
+            this.PanSSD.TabIndex = 115;
+            // 
+            // TBCostSSD
+            // 
+            this.TBCostSSD.Location = new System.Drawing.Point(221, 26);
+            this.TBCostSSD.Name = "TBCostSSD";
+            this.TBCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TBCostSSD.Size = new System.Drawing.Size(100, 20);
+            this.TBCostSSD.TabIndex = 94;
+            this.TBCostSSD.Text = "0";
+            this.TBCostSSD.TextChanged += new System.EventHandler(this.TBCostSSD_TextChanged);
             // 
             // PicSSD
             // 
@@ -1811,20 +2149,31 @@
             this.LabNameSSD.TabIndex = 1;
             this.LabNameSSD.Text = "Soulshot: D Grade";
             // 
+            // LabCraftCostSSD
+            // 
+            this.LabCraftCostSSD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabCraftCostSSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabCraftCostSSD.Location = new System.Drawing.Point(221, 3);
+            this.LabCraftCostSSD.Name = "LabCraftCostSSD";
+            this.LabCraftCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabCraftCostSSD.Size = new System.Drawing.Size(100, 20);
+            this.LabCraftCostSSD.TabIndex = 93;
+            this.LabCraftCostSSD.Text = "0";
+            // 
             // TabOther
             // 
             this.TabOther.Location = new System.Drawing.Point(4, 22);
             this.TabOther.Name = "TabOther";
-            this.TabOther.Size = new System.Drawing.Size(357, 499);
+            this.TabOther.Size = new System.Drawing.Size(357, 505);
             this.TabOther.TabIndex = 4;
             this.TabOther.Text = "Прочее";
             this.TabOther.UseVisualStyleBackColor = true;
             // 
             // ButItemsCost
             // 
-            this.ButItemsCost.Location = new System.Drawing.Point(545, 615);
+            this.ButItemsCost.Location = new System.Drawing.Point(541, 622);
             this.ButItemsCost.Name = "ButItemsCost";
-            this.ButItemsCost.Size = new System.Drawing.Size(365, 28);
+            this.ButItemsCost.Size = new System.Drawing.Size(369, 28);
             this.ButItemsCost.TabIndex = 8;
             this.ButItemsCost.Text = "Посчитать себестоимость вещей";
             this.ButItemsCost.UseVisualStyleBackColor = true;
@@ -4226,85 +4575,85 @@
             this.LabCraftCostArcsmithsAnvil.Text = "0";
             this.LabCraftCostArcsmithsAnvil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // TabComponents
+            // TabComp
             // 
-            this.TabComponents.Controls.Add(this.TabComponentsResources);
-            this.TabComponents.Controls.Add(this.TabComponentsCry);
-            this.TabComponents.Controls.Add(this.TabComponentsKey);
-            this.TabComponents.Controls.Add(this.TabComponentsRec);
-            this.TabComponents.Location = new System.Drawing.Point(2, 87);
-            this.TabComponents.Name = "TabComponents";
-            this.TabComponents.SelectedIndex = 0;
-            this.TabComponents.Size = new System.Drawing.Size(537, 563);
-            this.TabComponents.TabIndex = 7;
-            this.TabComponents.SelectedIndexChanged += new System.EventHandler(this.TabComponents_SelectedIndexChanged);
+            this.TabComp.Controls.Add(this.TabCompRes);
+            this.TabComp.Controls.Add(this.TabCompCry);
+            this.TabComp.Controls.Add(this.TabCompKey);
+            this.TabComp.Controls.Add(this.TabCompRec);
+            this.TabComp.Location = new System.Drawing.Point(2, 87);
+            this.TabComp.Name = "TabComp";
+            this.TabComp.SelectedIndex = 0;
+            this.TabComp.Size = new System.Drawing.Size(537, 563);
+            this.TabComp.TabIndex = 7;
+            this.TabComp.SelectedIndexChanged += new System.EventHandler(this.TabComponents_SelectedIndexChanged);
             // 
-            // TabComponentsResources
+            // TabCompRes
             // 
-            this.TabComponentsResources.Controls.Add(this.GBCommonResources);
-            this.TabComponentsResources.Controls.Add(this.GBCraftResources);
-            this.TabComponentsResources.Location = new System.Drawing.Point(4, 22);
-            this.TabComponentsResources.Name = "TabComponentsResources";
-            this.TabComponentsResources.Padding = new System.Windows.Forms.Padding(3);
-            this.TabComponentsResources.Size = new System.Drawing.Size(529, 537);
-            this.TabComponentsResources.TabIndex = 0;
-            this.TabComponentsResources.Text = "Ресурсы";
-            this.TabComponentsResources.UseVisualStyleBackColor = true;
+            this.TabCompRes.Controls.Add(this.GBCommonResources);
+            this.TabCompRes.Controls.Add(this.GBCraftResources);
+            this.TabCompRes.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRes.Name = "TabCompRes";
+            this.TabCompRes.Padding = new System.Windows.Forms.Padding(3);
+            this.TabCompRes.Size = new System.Drawing.Size(529, 537);
+            this.TabCompRes.TabIndex = 0;
+            this.TabCompRes.Text = "Ресурсы";
+            this.TabCompRes.UseVisualStyleBackColor = true;
             // 
-            // TabComponentsCry
+            // TabCompCry
             // 
-            this.TabComponentsCry.Controls.Add(this.GBReklamaTabCry);
-            this.TabComponentsCry.Controls.Add(this.TBSpiritOre);
-            this.TabComponentsCry.Controls.Add(this.LabNameSpiritOre);
-            this.TabComponentsCry.Controls.Add(this.TBSoulOre);
-            this.TabComponentsCry.Controls.Add(this.LabNameSoulOre);
-            this.TabComponentsCry.Controls.Add(this.ButCryCalcAA);
-            this.TabComponentsCry.Controls.Add(this.LabNameAncientAdenaToCry);
-            this.TabComponentsCry.Controls.Add(this.TBAncientAdenaToCry);
-            this.TabComponentsCry.Controls.Add(this.ButCryCalc);
-            this.TabComponentsCry.Controls.Add(this.LabNameSwordOfRevolutionToCry);
-            this.TabComponentsCry.Controls.Add(this.TBSwordOfRevolutionToCry);
-            this.TabComponentsCry.Controls.Add(this.TBGem_s);
-            this.TabComponentsCry.Controls.Add(this.label32);
-            this.TabComponentsCry.Controls.Add(this.TBGem_a);
-            this.TabComponentsCry.Controls.Add(this.label33);
-            this.TabComponentsCry.Controls.Add(this.TBGem_b);
-            this.TabComponentsCry.Controls.Add(this.label34);
-            this.TabComponentsCry.Controls.Add(this.TBGem_c);
-            this.TabComponentsCry.Controls.Add(this.label35);
-            this.TabComponentsCry.Controls.Add(this.TBGem_d);
-            this.TabComponentsCry.Controls.Add(this.label36);
-            this.TabComponentsCry.Controls.Add(this.TBCry_s);
-            this.TabComponentsCry.Controls.Add(this.LabNameCryS);
-            this.TabComponentsCry.Controls.Add(this.TBCry_a);
-            this.TabComponentsCry.Controls.Add(this.LabNameCryA);
-            this.TabComponentsCry.Controls.Add(this.TBCry_b);
-            this.TabComponentsCry.Controls.Add(this.LabNameCryB);
-            this.TabComponentsCry.Controls.Add(this.TBCry_c);
-            this.TabComponentsCry.Controls.Add(this.LabNameCryC);
-            this.TabComponentsCry.Controls.Add(this.TBCry_d);
-            this.TabComponentsCry.Controls.Add(this.LabNameCryD);
-            this.TabComponentsCry.Controls.Add(this.pictureBox63);
-            this.TabComponentsCry.Controls.Add(this.pictureBox62);
-            this.TabComponentsCry.Controls.Add(this.pictureBox61);
-            this.TabComponentsCry.Controls.Add(this.pictureBox60);
-            this.TabComponentsCry.Controls.Add(this.pictureBox28);
-            this.TabComponentsCry.Controls.Add(this.pictureBox29);
-            this.TabComponentsCry.Controls.Add(this.pictureBox30);
-            this.TabComponentsCry.Controls.Add(this.pictureBox31);
-            this.TabComponentsCry.Controls.Add(this.pictureBox32);
-            this.TabComponentsCry.Controls.Add(this.pictureBox23);
-            this.TabComponentsCry.Controls.Add(this.pictureBox24);
-            this.TabComponentsCry.Controls.Add(this.pictureBox25);
-            this.TabComponentsCry.Controls.Add(this.pictureBox26);
-            this.TabComponentsCry.Controls.Add(this.pictureBox27);
-            this.TabComponentsCry.Location = new System.Drawing.Point(4, 22);
-            this.TabComponentsCry.Name = "TabComponentsCry";
-            this.TabComponentsCry.Padding = new System.Windows.Forms.Padding(3);
-            this.TabComponentsCry.Size = new System.Drawing.Size(529, 537);
-            this.TabComponentsCry.TabIndex = 1;
-            this.TabComponentsCry.Text = "Крисы/Гемы";
-            this.TabComponentsCry.UseVisualStyleBackColor = true;
+            this.TabCompCry.Controls.Add(this.GBReklamaTabCry);
+            this.TabCompCry.Controls.Add(this.TBSpiritOre);
+            this.TabCompCry.Controls.Add(this.LabNameSpiritOre);
+            this.TabCompCry.Controls.Add(this.TBSoulOre);
+            this.TabCompCry.Controls.Add(this.LabNameSoulOre);
+            this.TabCompCry.Controls.Add(this.ButCryCalcAA);
+            this.TabCompCry.Controls.Add(this.LabNameAncientAdenaToCry);
+            this.TabCompCry.Controls.Add(this.TBAncientAdenaToCry);
+            this.TabCompCry.Controls.Add(this.ButCryCalc);
+            this.TabCompCry.Controls.Add(this.LabNameSwordOfRevolutionToCry);
+            this.TabCompCry.Controls.Add(this.TBSwordOfRevolutionToCry);
+            this.TabCompCry.Controls.Add(this.TBGem_s);
+            this.TabCompCry.Controls.Add(this.label32);
+            this.TabCompCry.Controls.Add(this.TBGem_a);
+            this.TabCompCry.Controls.Add(this.label33);
+            this.TabCompCry.Controls.Add(this.TBGem_b);
+            this.TabCompCry.Controls.Add(this.label34);
+            this.TabCompCry.Controls.Add(this.TBGem_c);
+            this.TabCompCry.Controls.Add(this.label35);
+            this.TabCompCry.Controls.Add(this.TBGem_d);
+            this.TabCompCry.Controls.Add(this.label36);
+            this.TabCompCry.Controls.Add(this.TBCry_s);
+            this.TabCompCry.Controls.Add(this.LabNameCryS);
+            this.TabCompCry.Controls.Add(this.TBCry_a);
+            this.TabCompCry.Controls.Add(this.LabNameCryA);
+            this.TabCompCry.Controls.Add(this.TBCry_b);
+            this.TabCompCry.Controls.Add(this.LabNameCryB);
+            this.TabCompCry.Controls.Add(this.TBCry_c);
+            this.TabCompCry.Controls.Add(this.LabNameCryC);
+            this.TabCompCry.Controls.Add(this.TBCry_d);
+            this.TabCompCry.Controls.Add(this.LabNameCryD);
+            this.TabCompCry.Controls.Add(this.pictureBox63);
+            this.TabCompCry.Controls.Add(this.pictureBox62);
+            this.TabCompCry.Controls.Add(this.pictureBox61);
+            this.TabCompCry.Controls.Add(this.pictureBox60);
+            this.TabCompCry.Controls.Add(this.pictureBox28);
+            this.TabCompCry.Controls.Add(this.pictureBox29);
+            this.TabCompCry.Controls.Add(this.pictureBox30);
+            this.TabCompCry.Controls.Add(this.pictureBox31);
+            this.TabCompCry.Controls.Add(this.pictureBox32);
+            this.TabCompCry.Controls.Add(this.pictureBox23);
+            this.TabCompCry.Controls.Add(this.pictureBox24);
+            this.TabCompCry.Controls.Add(this.pictureBox25);
+            this.TabCompCry.Controls.Add(this.pictureBox26);
+            this.TabCompCry.Controls.Add(this.pictureBox27);
+            this.TabCompCry.Location = new System.Drawing.Point(4, 22);
+            this.TabCompCry.Name = "TabCompCry";
+            this.TabCompCry.Padding = new System.Windows.Forms.Padding(3);
+            this.TabCompCry.Size = new System.Drawing.Size(529, 537);
+            this.TabCompCry.TabIndex = 1;
+            this.TabCompCry.Text = "Крисы/Гемы";
+            this.TabCompCry.UseVisualStyleBackColor = true;
             // 
             // GBReklamaTabCry
             // 
@@ -4315,6 +4664,27 @@
             this.GBReklamaTabCry.TabIndex = 135;
             this.GBReklamaTabCry.TabStop = false;
             this.GBReklamaTabCry.Text = "Реклама";
+            // 
+            // PanReklamaTabCry
+            // 
+            this.PanReklamaTabCry.Controls.Add(this.WBReklamaTabCry);
+            this.PanReklamaTabCry.Location = new System.Drawing.Point(3, 13);
+            this.PanReklamaTabCry.Name = "PanReklamaTabCry";
+            this.PanReklamaTabCry.Size = new System.Drawing.Size(522, 230);
+            this.PanReklamaTabCry.TabIndex = 0;
+            // 
+            // WBReklamaTabCry
+            // 
+            this.WBReklamaTabCry.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WBReklamaTabCry.Location = new System.Drawing.Point(0, 0);
+            this.WBReklamaTabCry.MinimumSize = new System.Drawing.Size(20, 20);
+            this.WBReklamaTabCry.Name = "WBReklamaTabCry";
+            this.WBReklamaTabCry.ScrollBarsEnabled = false;
+            this.WBReklamaTabCry.Size = new System.Drawing.Size(522, 230);
+            this.WBReklamaTabCry.TabIndex = 0;
+            this.WBReklamaTabCry.TabStop = false;
+            this.WBReklamaTabCry.Url = new System.Uri("http://gamedev.othside.ru/Reklama/CCC/CCCReklamaTabCry.html", System.UriKind.Absolute);
+            this.WBReklamaTabCry.WebBrowserShortcutsEnabled = false;
             // 
             // TBSpiritOre
             // 
@@ -4730,23 +5100,24 @@
             this.pictureBox27.TabIndex = 90;
             this.pictureBox27.TabStop = false;
             // 
-            // TabComponentsKey
+            // TabCompKey
             // 
-            this.TabComponentsKey.Location = new System.Drawing.Point(4, 22);
-            this.TabComponentsKey.Name = "TabComponentsKey";
-            this.TabComponentsKey.Size = new System.Drawing.Size(529, 537);
-            this.TabComponentsKey.TabIndex = 2;
-            this.TabComponentsKey.Text = "Куски";
-            this.TabComponentsKey.UseVisualStyleBackColor = true;
+            this.TabCompKey.Location = new System.Drawing.Point(4, 22);
+            this.TabCompKey.Name = "TabCompKey";
+            this.TabCompKey.Size = new System.Drawing.Size(529, 537);
+            this.TabCompKey.TabIndex = 2;
+            this.TabCompKey.Text = "Куски";
+            this.TabCompKey.UseVisualStyleBackColor = true;
             // 
-            // TabComponentsRec
+            // TabCompRec
             // 
-            this.TabComponentsRec.Location = new System.Drawing.Point(4, 22);
-            this.TabComponentsRec.Name = "TabComponentsRec";
-            this.TabComponentsRec.Size = new System.Drawing.Size(529, 537);
-            this.TabComponentsRec.TabIndex = 3;
-            this.TabComponentsRec.Text = "Рецепты";
-            this.TabComponentsRec.UseVisualStyleBackColor = true;
+            this.TabCompRec.Controls.Add(this.TabCompRecGrade);
+            this.TabCompRec.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRec.Name = "TabCompRec";
+            this.TabCompRec.Size = new System.Drawing.Size(529, 537);
+            this.TabCompRec.TabIndex = 3;
+            this.TabCompRec.Text = "Рецепты";
+            this.TabCompRec.UseVisualStyleBackColor = true;
             // 
             // ButSave
             // 
@@ -4857,372 +5228,74 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
-            // PanSSD
-            // 
-            this.PanSSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSSD.Controls.Add(this.TBCostSSD);
-            this.PanSSD.Controls.Add(this.PicSSD);
-            this.PanSSD.Controls.Add(this.LabNameSSD);
-            this.PanSSD.Controls.Add(this.LabCraftCostSSD);
-            this.PanSSD.Location = new System.Drawing.Point(3, 3);
-            this.PanSSD.Name = "PanSSD";
-            this.PanSSD.Size = new System.Drawing.Size(326, 56);
-            this.PanSSD.TabIndex = 115;
-            // 
-            // TBCostSSD
-            // 
-            this.TBCostSSD.Location = new System.Drawing.Point(221, 26);
-            this.TBCostSSD.Name = "TBCostSSD";
-            this.TBCostSSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSSD.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSSD.TabIndex = 94;
-            this.TBCostSSD.Text = "0";
-            this.TBCostSSD.TextChanged += new System.EventHandler(this.TBCostSSD_TextChanged);
-            // 
-            // PanNameShots
-            // 
-            this.PanNameShots.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanNameShots.Controls.Add(this.LabNameCostShots);
-            this.PanNameShots.Controls.Add(this.LabNameShots);
-            this.PanNameShots.Location = new System.Drawing.Point(6, 15);
-            this.PanNameShots.Name = "PanNameShots";
-            this.PanNameShots.Size = new System.Drawing.Size(326, 22);
-            this.PanNameShots.TabIndex = 8;
-            // 
-            // LabNameCostShots
-            // 
-            this.LabNameCostShots.AutoSize = true;
-            this.LabNameCostShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabNameCostShots.Location = new System.Drawing.Point(274, 0);
-            this.LabNameCostShots.Name = "LabNameCostShots";
-            this.LabNameCostShots.Size = new System.Drawing.Size(47, 17);
-            this.LabNameCostShots.TabIndex = 6;
-            this.LabNameCostShots.Text = "Цена:";
-            // 
-            // LabNameShots
-            // 
-            this.LabNameShots.AutoSize = true;
-            this.LabNameShots.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabNameShots.Location = new System.Drawing.Point(3, 0);
-            this.LabNameShots.Name = "LabNameShots";
-            this.LabNameShots.Size = new System.Drawing.Size(110, 17);
-            this.LabNameShots.TabIndex = 6;
-            this.LabNameShots.Text = "Наименование:";
-            // 
-            // PanSpSD
-            // 
-            this.PanSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSpSD.Controls.Add(this.LabCostSpSD);
-            this.PanSpSD.Controls.Add(this.LabNameSpSD);
-            this.PanSpSD.Controls.Add(this.LabCraftCostSpSD);
-            this.PanSpSD.Controls.Add(this.PicSpSD);
-            this.PanSpSD.Location = new System.Drawing.Point(3, 58);
-            this.PanSpSD.Name = "PanSpSD";
-            this.PanSpSD.Size = new System.Drawing.Size(326, 56);
-            this.PanSpSD.TabIndex = 116;
-            // 
-            // LabCostSpSD
-            // 
-            this.LabCostSpSD.Location = new System.Drawing.Point(221, 25);
-            this.LabCostSpSD.Name = "LabCostSpSD";
-            this.LabCostSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabCostSpSD.Size = new System.Drawing.Size(100, 20);
-            this.LabCostSpSD.TabIndex = 94;
-            this.LabCostSpSD.Text = "0";
-            // 
-            // PanBSpSD
-            // 
-            this.PanBSpSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanBSpSD.Controls.Add(this.TBCostBSpSD);
-            this.PanBSpSD.Controls.Add(this.LabCraftCostBSpSD);
-            this.PanBSpSD.Controls.Add(this.PicBSpSD);
-            this.PanBSpSD.Controls.Add(this.LabNameBSpSD);
-            this.PanBSpSD.Location = new System.Drawing.Point(3, 113);
-            this.PanBSpSD.Name = "PanBSpSD";
-            this.PanBSpSD.Size = new System.Drawing.Size(326, 56);
-            this.PanBSpSD.TabIndex = 117;
-            // 
-            // TBCostBSpSD
-            // 
-            this.TBCostBSpSD.Location = new System.Drawing.Point(221, 25);
-            this.TBCostBSpSD.Name = "TBCostBSpSD";
-            this.TBCostBSpSD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostBSpSD.Size = new System.Drawing.Size(100, 20);
-            this.TBCostBSpSD.TabIndex = 94;
-            this.TBCostBSpSD.Text = "0";
-            // 
-            // PanSSC
-            // 
-            this.PanSSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSSC.Controls.Add(this.TBCostSSC);
-            this.PanSSC.Controls.Add(this.LabCraftCostSSC);
-            this.PanSSC.Controls.Add(this.PicSSC);
-            this.PanSSC.Controls.Add(this.LabNameSSC);
-            this.PanSSC.Location = new System.Drawing.Point(3, 168);
-            this.PanSSC.Name = "PanSSC";
-            this.PanSSC.Size = new System.Drawing.Size(326, 56);
-            this.PanSSC.TabIndex = 118;
-            // 
-            // TBCostSSC
-            // 
-            this.TBCostSSC.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSSC.Name = "TBCostSSC";
-            this.TBCostSSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSSC.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSSC.TabIndex = 94;
-            this.TBCostSSC.Text = "0";
-            // 
-            // PanSpSC
-            // 
-            this.PanSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSpSC.Controls.Add(this.TBCostSpSC);
-            this.PanSpSC.Controls.Add(this.LabCraftCostSpSC);
-            this.PanSpSC.Controls.Add(this.PicSpSC);
-            this.PanSpSC.Controls.Add(this.LabNameSpSC);
-            this.PanSpSC.Location = new System.Drawing.Point(3, 223);
-            this.PanSpSC.Name = "PanSpSC";
-            this.PanSpSC.Size = new System.Drawing.Size(326, 56);
-            this.PanSpSC.TabIndex = 119;
-            // 
-            // TBCostSpSC
-            // 
-            this.TBCostSpSC.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSpSC.Name = "TBCostSpSC";
-            this.TBCostSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSpSC.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSpSC.TabIndex = 94;
-            this.TBCostSpSC.Text = "0";
-            // 
-            // PanBSpSC
-            // 
-            this.PanBSpSC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanBSpSC.Controls.Add(this.TBCostBSpSC);
-            this.PanBSpSC.Controls.Add(this.LabCraftCostBSpSC);
-            this.PanBSpSC.Controls.Add(this.PicBSpSC);
-            this.PanBSpSC.Controls.Add(this.LabNameBSpSC);
-            this.PanBSpSC.Location = new System.Drawing.Point(3, 278);
-            this.PanBSpSC.Name = "PanBSpSC";
-            this.PanBSpSC.Size = new System.Drawing.Size(326, 56);
-            this.PanBSpSC.TabIndex = 120;
-            // 
-            // TBCostBSpSC
-            // 
-            this.TBCostBSpSC.Location = new System.Drawing.Point(221, 25);
-            this.TBCostBSpSC.Name = "TBCostBSpSC";
-            this.TBCostBSpSC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostBSpSC.Size = new System.Drawing.Size(100, 20);
-            this.TBCostBSpSC.TabIndex = 94;
-            this.TBCostBSpSC.Text = "0";
-            // 
-            // PanSSB
-            // 
-            this.PanSSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSSB.Controls.Add(this.TBCostSSB);
-            this.PanSSB.Controls.Add(this.LabCraftCostSSB);
-            this.PanSSB.Controls.Add(this.PicSSB);
-            this.PanSSB.Controls.Add(this.LabNameSSB);
-            this.PanSSB.Location = new System.Drawing.Point(3, 333);
-            this.PanSSB.Name = "PanSSB";
-            this.PanSSB.Size = new System.Drawing.Size(326, 56);
-            this.PanSSB.TabIndex = 121;
-            // 
-            // TBCostSSB
-            // 
-            this.TBCostSSB.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSSB.Name = "TBCostSSB";
-            this.TBCostSSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSSB.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSSB.TabIndex = 94;
-            this.TBCostSSB.Text = "0";
-            // 
-            // PanSpSB
-            // 
-            this.PanSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSpSB.Controls.Add(this.TBCostSpSB);
-            this.PanSpSB.Controls.Add(this.LabCraftCostSpSB);
-            this.PanSpSB.Controls.Add(this.PicSpSB);
-            this.PanSpSB.Controls.Add(this.LabNameSpSB);
-            this.PanSpSB.Location = new System.Drawing.Point(3, 388);
-            this.PanSpSB.Name = "PanSpSB";
-            this.PanSpSB.Size = new System.Drawing.Size(326, 56);
-            this.PanSpSB.TabIndex = 122;
-            // 
-            // TBCostSpSB
-            // 
-            this.TBCostSpSB.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSpSB.Name = "TBCostSpSB";
-            this.TBCostSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSpSB.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSpSB.TabIndex = 94;
-            this.TBCostSpSB.Text = "0";
-            // 
-            // PanBSpSB
-            // 
-            this.PanBSpSB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanBSpSB.Controls.Add(this.TBCostBSpSB);
-            this.PanBSpSB.Controls.Add(this.LabCraftCostBSpSB);
-            this.PanBSpSB.Controls.Add(this.PicBSpSB);
-            this.PanBSpSB.Controls.Add(this.LabNameBSpSB);
-            this.PanBSpSB.Location = new System.Drawing.Point(3, 443);
-            this.PanBSpSB.Name = "PanBSpSB";
-            this.PanBSpSB.Size = new System.Drawing.Size(326, 56);
-            this.PanBSpSB.TabIndex = 123;
-            // 
-            // TBCostBSpSB
-            // 
-            this.TBCostBSpSB.Location = new System.Drawing.Point(221, 25);
-            this.TBCostBSpSB.Name = "TBCostBSpSB";
-            this.TBCostBSpSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostBSpSB.Size = new System.Drawing.Size(100, 20);
-            this.TBCostBSpSB.TabIndex = 94;
-            this.TBCostBSpSB.Text = "0";
-            // 
-            // PanReklamaTabCry
-            // 
-            this.PanReklamaTabCry.Controls.Add(this.WBReklamaTabCry);
-            this.PanReklamaTabCry.Location = new System.Drawing.Point(3, 13);
-            this.PanReklamaTabCry.Name = "PanReklamaTabCry";
-            this.PanReklamaTabCry.Size = new System.Drawing.Size(522, 230);
-            this.PanReklamaTabCry.TabIndex = 0;
-            // 
-            // PanSSA
-            // 
-            this.PanSSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSSA.Controls.Add(this.TBCostSSA);
-            this.PanSSA.Controls.Add(this.LabCraftCostSSA);
-            this.PanSSA.Controls.Add(this.PicSSA);
-            this.PanSSA.Controls.Add(this.LabNameSSA);
-            this.PanSSA.Location = new System.Drawing.Point(3, 498);
-            this.PanSSA.Name = "PanSSA";
-            this.PanSSA.Size = new System.Drawing.Size(326, 56);
-            this.PanSSA.TabIndex = 124;
-            // 
-            // TBCostSSA
-            // 
-            this.TBCostSSA.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSSA.Name = "TBCostSSA";
-            this.TBCostSSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSSA.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSSA.TabIndex = 94;
-            this.TBCostSSA.Text = "0";
-            // 
-            // PanSpSA
-            // 
-            this.PanSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSpSA.Controls.Add(this.TBCostSpSA);
-            this.PanSpSA.Controls.Add(this.LabCraftCostSpSA);
-            this.PanSpSA.Controls.Add(this.PicSpSA);
-            this.PanSpSA.Controls.Add(this.LabNameSpSA);
-            this.PanSpSA.Location = new System.Drawing.Point(3, 553);
-            this.PanSpSA.Name = "PanSpSA";
-            this.PanSpSA.Size = new System.Drawing.Size(326, 56);
-            this.PanSpSA.TabIndex = 125;
-            // 
-            // TBCostSpSA
-            // 
-            this.TBCostSpSA.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSpSA.Name = "TBCostSpSA";
-            this.TBCostSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSpSA.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSpSA.TabIndex = 94;
-            this.TBCostSpSA.Text = "0";
-            // 
-            // WBReklamaTabCry
-            // 
-            this.WBReklamaTabCry.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WBReklamaTabCry.Location = new System.Drawing.Point(0, 0);
-            this.WBReklamaTabCry.MinimumSize = new System.Drawing.Size(20, 20);
-            this.WBReklamaTabCry.Name = "WBReklamaTabCry";
-            this.WBReklamaTabCry.ScrollBarsEnabled = false;
-            this.WBReklamaTabCry.Size = new System.Drawing.Size(522, 230);
-            this.WBReklamaTabCry.TabIndex = 0;
-            this.WBReklamaTabCry.TabStop = false;
-            this.WBReklamaTabCry.Url = new System.Uri("http://gamedev.othside.ru/Reklama/CCC/CCCReklamaTabCry.html", System.UriKind.Absolute);
-            this.WBReklamaTabCry.WebBrowserShortcutsEnabled = false;
-            // 
-            // PanBSpSA
-            // 
-            this.PanBSpSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanBSpSA.Controls.Add(this.TBCostBSpSA);
-            this.PanBSpSA.Controls.Add(this.LabCraftCostBSpSA);
-            this.PanBSpSA.Controls.Add(this.PicBSpSA);
-            this.PanBSpSA.Controls.Add(this.LabNameBSpSA);
-            this.PanBSpSA.Location = new System.Drawing.Point(3, 608);
-            this.PanBSpSA.Name = "PanBSpSA";
-            this.PanBSpSA.Size = new System.Drawing.Size(326, 56);
-            this.PanBSpSA.TabIndex = 126;
-            // 
-            // TBCostBSpSA
-            // 
-            this.TBCostBSpSA.Location = new System.Drawing.Point(221, 25);
-            this.TBCostBSpSA.Name = "TBCostBSpSA";
-            this.TBCostBSpSA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostBSpSA.Size = new System.Drawing.Size(100, 20);
-            this.TBCostBSpSA.TabIndex = 94;
-            this.TBCostBSpSA.Text = "0";
-            // 
-            // PanSSS
-            // 
-            this.PanSSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSSS.Controls.Add(this.TBCostSSS);
-            this.PanSSS.Controls.Add(this.LabCraftCostSSS);
-            this.PanSSS.Controls.Add(this.PicSSS);
-            this.PanSSS.Controls.Add(this.LabNameSSS);
-            this.PanSSS.Location = new System.Drawing.Point(3, 663);
-            this.PanSSS.Name = "PanSSS";
-            this.PanSSS.Size = new System.Drawing.Size(326, 56);
-            this.PanSSS.TabIndex = 127;
-            // 
-            // TBCostSSS
-            // 
-            this.TBCostSSS.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSSS.Name = "TBCostSSS";
-            this.TBCostSSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSSS.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSSS.TabIndex = 94;
-            this.TBCostSSS.Text = "0";
-            // 
-            // PanSpSS
-            // 
-            this.PanSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanSpSS.Controls.Add(this.TBCostSpSS);
-            this.PanSpSS.Controls.Add(this.LabCraftCostSpSS);
-            this.PanSpSS.Controls.Add(this.PicSpSS);
-            this.PanSpSS.Controls.Add(this.LabNameSpSS);
-            this.PanSpSS.Location = new System.Drawing.Point(3, 718);
-            this.PanSpSS.Name = "PanSpSS";
-            this.PanSpSS.Size = new System.Drawing.Size(326, 56);
-            this.PanSpSS.TabIndex = 128;
-            // 
-            // TBCostSpSS
-            // 
-            this.TBCostSpSS.Location = new System.Drawing.Point(221, 25);
-            this.TBCostSpSS.Name = "TBCostSpSS";
-            this.TBCostSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostSpSS.Size = new System.Drawing.Size(100, 20);
-            this.TBCostSpSS.TabIndex = 94;
-            this.TBCostSpSS.Text = "0";
-            // 
-            // PanBSpSS
-            // 
-            this.PanBSpSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanBSpSS.Controls.Add(this.TBCostBSpSS);
-            this.PanBSpSS.Controls.Add(this.LabCraftCostBSpSS);
-            this.PanBSpSS.Controls.Add(this.PicBSpSS);
-            this.PanBSpSS.Controls.Add(this.LabNameBSpSS);
-            this.PanBSpSS.Location = new System.Drawing.Point(3, 773);
-            this.PanBSpSS.Name = "PanBSpSS";
-            this.PanBSpSS.Size = new System.Drawing.Size(326, 56);
-            this.PanBSpSS.TabIndex = 129;
-            // 
-            // TBCostBSpSS
-            // 
-            this.TBCostBSpSS.Location = new System.Drawing.Point(221, 25);
-            this.TBCostBSpSS.Name = "TBCostBSpSS";
-            this.TBCostBSpSS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TBCostBSpSS.Size = new System.Drawing.Size(100, 20);
-            this.TBCostBSpSS.TabIndex = 94;
-            this.TBCostBSpSS.Text = "0";
+            // TabCompRecGrade
+            // 
+            this.TabCompRecGrade.Controls.Add(this.TabCompRecWeapon);
+            this.TabCompRecGrade.Controls.Add(this.TabCompRecArmor);
+            this.TabCompRecGrade.Controls.Add(this.TabCompRecAcessory);
+            this.TabCompRecGrade.Controls.Add(this.TabCompRecShots);
+            this.TabCompRecGrade.Controls.Add(this.TabCompRecRec);
+            this.TabCompRecGrade.Location = new System.Drawing.Point(-4, 0);
+            this.TabCompRecGrade.Name = "TabCompRecGrade";
+            this.TabCompRecGrade.SelectedIndex = 0;
+            this.TabCompRecGrade.Size = new System.Drawing.Size(537, 541);
+            this.TabCompRecGrade.TabIndex = 0;
+            // 
+            // TabCompRecWeapon
+            // 
+            this.TabCompRecWeapon.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRecWeapon.Name = "TabCompRecWeapon";
+            this.TabCompRecWeapon.Padding = new System.Windows.Forms.Padding(3);
+            this.TabCompRecWeapon.Size = new System.Drawing.Size(529, 515);
+            this.TabCompRecWeapon.TabIndex = 0;
+            this.TabCompRecWeapon.Text = "Оружие";
+            this.TabCompRecWeapon.UseVisualStyleBackColor = true;
+            // 
+            // TabCompRecArmor
+            // 
+            this.TabCompRecArmor.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRecArmor.Name = "TabCompRecArmor";
+            this.TabCompRecArmor.Padding = new System.Windows.Forms.Padding(3);
+            this.TabCompRecArmor.Size = new System.Drawing.Size(521, 511);
+            this.TabCompRecArmor.TabIndex = 1;
+            this.TabCompRecArmor.Text = "Броня";
+            this.TabCompRecArmor.UseVisualStyleBackColor = true;
+            // 
+            // TabCompRecAcessory
+            // 
+            this.TabCompRecAcessory.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRecAcessory.Name = "TabCompRecAcessory";
+            this.TabCompRecAcessory.Size = new System.Drawing.Size(521, 511);
+            this.TabCompRecAcessory.TabIndex = 2;
+            this.TabCompRecAcessory.Text = "Бижа";
+            this.TabCompRecAcessory.UseVisualStyleBackColor = true;
+            // 
+            // TabCompRecRec
+            // 
+            this.TabCompRecRec.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRecRec.Name = "TabCompRecRec";
+            this.TabCompRecRec.Size = new System.Drawing.Size(521, 511);
+            this.TabCompRecRec.TabIndex = 6;
+            this.TabCompRecRec.Text = "Ресурсы";
+            this.TabCompRecRec.UseVisualStyleBackColor = true;
+            // 
+            // TabCompRecShots
+            // 
+            this.TabCompRecShots.Location = new System.Drawing.Point(4, 22);
+            this.TabCompRecShots.Name = "TabCompRecShots";
+            this.TabCompRecShots.Size = new System.Drawing.Size(521, 511);
+            this.TabCompRecShots.TabIndex = 7;
+            this.TabCompRecShots.Text = "Шоты";
+            this.TabCompRecShots.UseVisualStyleBackColor = true;
+            // 
+            // TabBow
+            // 
+            this.TabBow.Location = new System.Drawing.Point(4, 22);
+            this.TabBow.Name = "TabBow";
+            this.TabBow.Size = new System.Drawing.Size(357, 477);
+            this.TabBow.TabIndex = 2;
+            this.TabBow.Text = "Луки";
+            this.TabBow.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -5237,7 +5310,7 @@
             this.Controls.Add(this.PicLogoAuthor);
             this.Controls.Add(this.PicLogoLA2);
             this.Controls.Add(this.GBSaveLoad);
-            this.Controls.Add(this.TabComponents);
+            this.Controls.Add(this.TabComp);
             this.Controls.Add(this.TabMainItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -5264,8 +5337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicImperialStaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBasaltBattlehammer)).EndInit();
             this.TabSword.ResumeLayout(false);
-            this.TabSGrade.ResumeLayout(false);
-            this.TabSwordsS.ResumeLayout(false);
+            this.TabWeaponSwordGrade.ResumeLayout(false);
+            this.TabWeaponSwordS.ResumeLayout(false);
             this.GBSwordsS.ResumeLayout(false);
             this.GBSwordsS.PerformLayout();
             this.PanSwordsS.ResumeLayout(false);
@@ -5274,21 +5347,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicHeavensDivider)).EndInit();
             this.TabShots.ResumeLayout(false);
             this.GBShots.ResumeLayout(false);
+            this.PanNameShots.ResumeLayout(false);
+            this.PanNameShots.PerformLayout();
             this.PanShots.ResumeLayout(false);
+            this.PanBSpSS.ResumeLayout(false);
+            this.PanBSpSS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).EndInit();
+            this.PanSpSS.ResumeLayout(false);
+            this.PanSpSS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).EndInit();
+            this.PanSSS.ResumeLayout(false);
+            this.PanSSS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSS)).EndInit();
+            this.PanBSpSA.ResumeLayout(false);
+            this.PanBSpSA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBSpSA)).EndInit();
+            this.PanSpSA.ResumeLayout(false);
+            this.PanSpSA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSpSA)).EndInit();
+            this.PanSSA.ResumeLayout(false);
+            this.PanSSA.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSA)).EndInit();
+            this.PanBSpSB.ResumeLayout(false);
+            this.PanBSpSB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSB)).EndInit();
+            this.PanSpSB.ResumeLayout(false);
+            this.PanSpSB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSB)).EndInit();
+            this.PanSSB.ResumeLayout(false);
+            this.PanSSB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSB)).EndInit();
+            this.PanBSpSC.ResumeLayout(false);
+            this.PanBSpSC.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSC)).EndInit();
+            this.PanSpSC.ResumeLayout(false);
+            this.PanSpSC.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSC)).EndInit();
+            this.PanSSC.ResumeLayout(false);
+            this.PanSSC.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSC)).EndInit();
+            this.PanBSpSD.ResumeLayout(false);
+            this.PanBSpSD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBSpSD)).EndInit();
+            this.PanSpSD.ResumeLayout(false);
+            this.PanSpSD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpSD)).EndInit();
+            this.PanSSD.ResumeLayout(false);
+            this.PanSSD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSSD)).EndInit();
             this.PanCommonResources.ResumeLayout(false);
             this.PanVarnish.ResumeLayout(false);
@@ -5445,11 +5550,12 @@
             this.PanArcsmithsAnvil.ResumeLayout(false);
             this.PanArcsmithsAnvil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicArcsmithsAnvil)).EndInit();
-            this.TabComponents.ResumeLayout(false);
-            this.TabComponentsResources.ResumeLayout(false);
-            this.TabComponentsCry.ResumeLayout(false);
-            this.TabComponentsCry.PerformLayout();
+            this.TabComp.ResumeLayout(false);
+            this.TabCompRes.ResumeLayout(false);
+            this.TabCompCry.ResumeLayout(false);
+            this.TabCompCry.PerformLayout();
             this.GBReklamaTabCry.ResumeLayout(false);
+            this.PanReklamaTabCry.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
@@ -5464,42 +5570,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            this.TabCompRec.ResumeLayout(false);
             this.GBSaveLoad.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoAuthor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoLA2)).EndInit();
-            this.PanSSD.ResumeLayout(false);
-            this.PanSSD.PerformLayout();
-            this.PanNameShots.ResumeLayout(false);
-            this.PanNameShots.PerformLayout();
-            this.PanSpSD.ResumeLayout(false);
-            this.PanSpSD.PerformLayout();
-            this.PanBSpSD.ResumeLayout(false);
-            this.PanBSpSD.PerformLayout();
-            this.PanSSC.ResumeLayout(false);
-            this.PanSSC.PerformLayout();
-            this.PanSpSC.ResumeLayout(false);
-            this.PanSpSC.PerformLayout();
-            this.PanBSpSC.ResumeLayout(false);
-            this.PanBSpSC.PerformLayout();
-            this.PanSSB.ResumeLayout(false);
-            this.PanSSB.PerformLayout();
-            this.PanSpSB.ResumeLayout(false);
-            this.PanSpSB.PerformLayout();
-            this.PanBSpSB.ResumeLayout(false);
-            this.PanBSpSB.PerformLayout();
-            this.PanReklamaTabCry.ResumeLayout(false);
-            this.PanSSA.ResumeLayout(false);
-            this.PanSSA.PerformLayout();
-            this.PanSpSA.ResumeLayout(false);
-            this.PanSpSA.PerformLayout();
-            this.PanBSpSA.ResumeLayout(false);
-            this.PanBSpSA.PerformLayout();
-            this.PanSSS.ResumeLayout(false);
-            this.PanSSS.PerformLayout();
-            this.PanSpSS.ResumeLayout(false);
-            this.PanSpSS.PerformLayout();
-            this.PanBSpSS.ResumeLayout(false);
-            this.PanBSpSS.PerformLayout();
+            this.TabCompRecGrade.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5512,7 +5587,6 @@
         private System.Windows.Forms.TabPage TabSword;
         private System.Windows.Forms.TabPage TabArmor;
         private System.Windows.Forms.TabPage TabAcessory;
-        private System.Windows.Forms.TabPage TabBow;
         private System.Windows.Forms.TabPage TabDagger;
         private System.Windows.Forms.TabPage TabFist;
         private System.Windows.Forms.TabPage TabHalebard;
@@ -5678,18 +5752,18 @@
         private System.Windows.Forms.TextBox TBCostArtisansFrame;
         private System.Windows.Forms.Label LabNameArtisansFrame;
         private System.Windows.Forms.PictureBox PicArtisansFrame;
-        private System.Windows.Forms.TabControl TabComponents;
-        private System.Windows.Forms.TabPage TabComponentsResources;
-        private System.Windows.Forms.TabPage TabComponentsCry;
-        private System.Windows.Forms.TabControl TabSGrade;
-        private System.Windows.Forms.TabPage TabNoGrade;
-        private System.Windows.Forms.TabPage TabDGrade;
-        private System.Windows.Forms.TabPage TabCGrade;
-        private System.Windows.Forms.TabPage TabBGrade;
-        private System.Windows.Forms.TabPage TabAGrade;
-        private System.Windows.Forms.TabPage TabSwordsS;
-        private System.Windows.Forms.TabPage TabComponentsKey;
-        private System.Windows.Forms.TabPage TabComponentsRec;
+        private System.Windows.Forms.TabControl TabComp;
+        private System.Windows.Forms.TabPage TabCompRes;
+        private System.Windows.Forms.TabPage TabCompCry;
+        private System.Windows.Forms.TabControl TabWeaponSwordGrade;
+        private System.Windows.Forms.TabPage TabWeaponSwordNG;
+        private System.Windows.Forms.TabPage TabWeaponSwordD;
+        private System.Windows.Forms.TabPage TabWeaponSwordC;
+        private System.Windows.Forms.TabPage TabWeaponSwordB;
+        private System.Windows.Forms.TabPage TabWeaponSwordA;
+        private System.Windows.Forms.TabPage TabWeaponSwordS;
+        private System.Windows.Forms.TabPage TabCompKey;
+        private System.Windows.Forms.TabPage TabCompRec;
         private System.Windows.Forms.PictureBox pictureBox60;
         public System.Windows.Forms.TextBox TBGem_s;
         private System.Windows.Forms.Label label32;
@@ -5949,6 +6023,13 @@
         private System.Windows.Forms.TextBox TBCostSpSS;
         private System.Windows.Forms.Panel PanBSpSS;
         private System.Windows.Forms.TextBox TBCostBSpSS;
+        private System.Windows.Forms.TabControl TabCompRecGrade;
+        private System.Windows.Forms.TabPage TabCompRecWeapon;
+        private System.Windows.Forms.TabPage TabCompRecArmor;
+        private System.Windows.Forms.TabPage TabCompRecAcessory;
+        private System.Windows.Forms.TabPage TabCompRecRec;
+        private System.Windows.Forms.TabPage TabCompRecShots;
+        private System.Windows.Forms.TabPage TabBow;
     }
 }
 
