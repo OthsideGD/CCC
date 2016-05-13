@@ -602,11 +602,11 @@ namespace CraftCostCalc
 
         private void TabComponents_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TabComponents.SelectedIndex == 0)
+            if (TabComp.SelectedIndex == 0)
             {
                 LabHelp.Text = "Не забывайте сохранять изменения. Вводить все цены заново - не очень приятно ;)";
             }
-            if (TabComponents.SelectedIndex == 1)
+            if (TabComp.SelectedIndex == 1)
             {
                 LabHelp.Text = "При расчете стоимости Кристаллов B-Grade учитывается стоимость Stone Of Purity.";
             }
