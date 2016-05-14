@@ -1048,7 +1048,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.LabTest2 = new System.Windows.Forms.Label();
+=======
+            this.LabTest1 = new System.Windows.Forms.Label();
+>>>>>>> origin/Cathy2
             this.TabItems.SuspendLayout();
             this.TabItemsWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -1057,6 +1061,7 @@
             this.TabWeaponBluntNG.SuspendLayout();
             this.GBWeaponBluntNG.SuspendLayout();
             this.TabWeaponBluntD.SuspendLayout();
+            this.GBWeaponBluntD.SuspendLayout();
             this.TabWeaponBluntC.SuspendLayout();
             this.TabWeaponBluntB.SuspendLayout();
             this.TabWeaponBluntA.SuspendLayout();
@@ -1678,6 +1683,7 @@
             // 
             // GBWeaponBluntD
             // 
+            this.GBWeaponBluntD.Controls.Add(this.LabTest1);
             this.GBWeaponBluntD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GBWeaponBluntD.Location = new System.Drawing.Point(0, 0);
             this.GBWeaponBluntD.Name = "GBWeaponBluntD";
@@ -12128,6 +12134,7 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
+<<<<<<< HEAD
             // LabTest2
             // 
             this.LabTest2.AutoSize = true;
@@ -12136,6 +12143,16 @@
             this.LabTest2.Size = new System.Drawing.Size(34, 13);
             this.LabTest2.TabIndex = 0;
             this.LabTest2.Text = "Test2";
+=======
+            // LabTest1
+            // 
+            this.LabTest1.AutoSize = true;
+            this.LabTest1.Location = new System.Drawing.Point(66, 94);
+            this.LabTest1.Name = "LabTest1";
+            this.LabTest1.Size = new System.Drawing.Size(35, 13);
+            this.LabTest1.TabIndex = 0;
+            this.LabTest1.Text = "label1";
+>>>>>>> origin/Cathy2
             // 
             // MainForm
             // 
@@ -12168,6 +12185,8 @@
             this.GBWeaponBluntNG.ResumeLayout(false);
             this.GBWeaponBluntNG.PerformLayout();
             this.TabWeaponBluntD.ResumeLayout(false);
+            this.GBWeaponBluntD.ResumeLayout(false);
+            this.GBWeaponBluntD.PerformLayout();
             this.TabWeaponBluntC.ResumeLayout(false);
             this.TabWeaponBluntB.ResumeLayout(false);
             this.TabWeaponBluntA.ResumeLayout(false);
@@ -13800,7 +13819,11 @@
         private System.Windows.Forms.Label LabNameRecSpSC;
         private System.Windows.Forms.PictureBox PicRecSpSC;
         private System.Windows.Forms.GroupBox GBRecShotsD;
+<<<<<<< HEAD
         private System.Windows.Forms.Label LabTest2;
+=======
+        private System.Windows.Forms.Label LabTest1;
+>>>>>>> origin/Cathy2
     }
 }
 
