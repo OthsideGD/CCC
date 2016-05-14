@@ -1051,7 +1051,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.Test3 = new System.Windows.Forms.Label();
+=======
+            this.Test5 = new System.Windows.Forms.Label();
+>>>>>>> origin/Cathy2
             this.TabItems.SuspendLayout();
             this.TabItemsWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -1661,7 +1665,11 @@
             // 
             // GBWeaponBluntNG
             // 
+<<<<<<< HEAD
             this.GBWeaponBluntNG.Controls.Add(this.Test3);
+=======
+            this.GBWeaponBluntNG.Controls.Add(this.Test5);
+>>>>>>> origin/Cathy2
             this.GBWeaponBluntNG.Controls.Add(this.Test4);
             this.GBWeaponBluntNG.Controls.Add(this.LabTest2);
             this.GBWeaponBluntNG.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -12162,6 +12170,7 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
+<<<<<<< HEAD
             // Test3
             // 
             this.Test3.AutoSize = true;
@@ -12170,6 +12179,16 @@
             this.Test3.Size = new System.Drawing.Size(55, 13);
             this.Test3.TabIndex = 2;
             this.Test3.Text = "33333333";
+=======
+            // Test5
+            // 
+            this.Test5.AutoSize = true;
+            this.Test5.Location = new System.Drawing.Point(122, 28);
+            this.Test5.Name = "Test5";
+            this.Test5.Size = new System.Drawing.Size(34, 13);
+            this.Test5.TabIndex = 2;
+            this.Test5.Text = "Test5";
+>>>>>>> origin/Cathy2
             // 
             // MainForm
             // 
@@ -13841,7 +13860,11 @@
 
         private System.Windows.Forms.Label LabTest1;
         private System.Windows.Forms.Label Test4;
+<<<<<<< HEAD
         private System.Windows.Forms.Label Test3;
+=======
+        private System.Windows.Forms.Label Test5;
+>>>>>>> origin/Cathy2
     }
 }
 
