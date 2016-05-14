@@ -338,6 +338,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\RecS.png" />
+    <None Include="Resources\RecNG.png" />
+    <None Include="Resources\RecD.png" />
+    <None Include="Resources\RecC.png" />
+    <None Include="Resources\RecB.png" />
+    <None Include="Resources\RecA.png" />
     <None Include="Resources\Adamantite_Nugget.jpg" />
     <None Include="Resources\weapon_arcana_mace_i00_0.png" />
     <None Include="Resources\weapon_dragon_hunter_axe_i00_0.png" />
