@@ -29,7 +29,7 @@ namespace CraftCostCalc
         {
             //--------------------------------------
             //Вывод подсказки
-            LabHelp.Text = "В крафтовых ресурсах верхняя цена - СЕБЕСТОИМОСТЬ, нижняя - РЫНОЧНАЯ цена на Вашем сервер. Рыночная цена используется только для сравнения и запоминания.";
+            LabHelp.Text = "В крафтовых ресурсах верхняя цена - СЕБЕСТОИМОСТЬ, нижняя - РЫНОЧНАЯ цена на Вашем сервер.";
             //--------------------------------------
             //Подсчет цены крафтовые ресурсы
 
@@ -59,16 +59,16 @@ namespace CraftCostCalc
             double.TryParse(TBCostThons.Text, out Thons);
             double.TryParse(TBCostThread.Text, out Thread);
             double.TryParse(TBCostVarnish.Text, out Varnish);
-            double.TryParse(TBCry_d.Text, out Cry_d);
-            double.TryParse(TBCry_c.Text, out Cry_c);
-            double.TryParse(TBCry_b.Text, out Cry_b);
-            double.TryParse(TBCry_a.Text, out Cry_a);
-            double.TryParse(TBCry_s.Text, out Cry_s);
-            double.TryParse(TBGem_d.Text, out Gem_d);
-            double.TryParse(TBGem_c.Text, out Gem_c);
-            double.TryParse(TBGem_b.Text, out Gem_b);
-            double.TryParse(TBGem_a.Text, out Gem_a);
-            double.TryParse(TBGem_s.Text, out Gem_s);
+            double.TryParse(TBCostCryD.Text, out Cry_d);
+            double.TryParse(TBCostCryC.Text, out Cry_c);
+            double.TryParse(TBCostCryB.Text, out Cry_b);
+            double.TryParse(TBCostCryA.Text, out Cry_a);
+            double.TryParse(TBCostCryS.Text, out Cry_s);
+            double.TryParse(TBCostGemD.Text, out Gem_d);
+            double.TryParse(TBCostGemC.Text, out Gem_c);
+            double.TryParse(TBCostGemB.Text, out Gem_b);
+            double.TryParse(TBCostGemA.Text, out Gem_a);
+            double.TryParse(TBCostGemS.Text, out Gem_s);
 
                 //Крафтовые ресурсы
             double BraidedHemp, CoarseBonePowder, Cokes, CompoundBraid, HighGradeSuede, Leather, MetalHardener, MetallicThread, DurableMetalPlate, Steel, Cord, MetallicFiber,
@@ -197,38 +197,41 @@ namespace CraftCostCalc
         {
             //Перевод Стринг в Инт для Револа
             double SwordOfRevolution;
-            double.TryParse(TBSwordOfRevolutionToCry.Text, out SwordOfRevolution);
+            double.TryParse(TBSoRCry.Text, out SwordOfRevolution);
 
                 //Считаем цену крисов
             double Cry_d, Cry_c, Cry_b, StoneOfPurity;
             double.TryParse(TBCostStoneOfPurity.Text, out StoneOfPurity);
 
             Cry_d = SwordOfRevolution / 2545;
-            TBCry_d.Text = Cry_d.ToString("F0");
+            TBCostCryD.Text = Cry_d.ToString("F0");
 
             Cry_c = ((SwordOfRevolution * 2) + (Cry_d * 178)) / 1148;
-            TBCry_c.Text = Cry_c.ToString("F0");
+            TBCostCryC.Text = Cry_c.ToString("F0");
 
             Cry_b = ((((Cry_d * 5375) + (Cry_c * 1075)) * 2) + (StoneOfPurity * 45)) / 1157;
-            TBCry_b.Text = Cry_b.ToString("F0");
+            TBCostCryB.Text = Cry_b.ToString("F0");
+
+            //пишем в подсказку
+            LabHelp.Text = "Цену Гемов D, C и B введите вручную.";
         }
 
         private void ButCryCalcAA_Click(object sender, EventArgs e)
         {
             double AncientAdena, Cry_a, Cry_s, Gem_a, Gem_s;
-            double.TryParse(TBAncientAdenaToCry.Text, out AncientAdena);
+            double.TryParse(TBAAToCry.Text, out AncientAdena);
 
             Cry_a = AncientAdena * 15000;
-            TBCry_a.Text = Cry_a.ToString("F0");
+            TBCostCryA.Text = Cry_a.ToString("F0");
 
             Cry_s = AncientAdena * 25000;
-            TBCry_s.Text = Cry_s.ToString("F0");
+            TBCostCryS.Text = Cry_s.ToString("F0");
 
             Gem_a = AncientAdena * 30000;
-            TBGem_a.Text = Gem_a.ToString("F0");
+            TBCostGemA.Text = Gem_a.ToString("F0");
 
             Gem_s = AncientAdena * 100000;
-            TBGem_s.Text = Gem_s.ToString("F0");
+            TBCostGemS.Text = Gem_s.ToString("F0");
         }
 
         private void ButItemCost_Click(object sender, EventArgs e)
@@ -247,18 +250,18 @@ namespace CraftCostCalc
             double WeaponHeavensDivider, WeaponForgottenBlade, WeaponBasaltBattlehammer, WeaponDragonHunterAxe, WeaponArcanaMace, WeaponImperialStaff;
 
             //Парсим крисы и руду
-            double.TryParse(TBCry_d.Text, out Cry_d);
-            double.TryParse(TBCry_c.Text, out Cry_c);
-            double.TryParse(TBCry_b.Text, out Cry_b);
-            double.TryParse(TBCry_a.Text, out Cry_a);
-            double.TryParse(TBCry_s.Text, out Cry_s);
-            double.TryParse(TBSoulOre.Text, out SoulOre);
-            double.TryParse(TBSpiritOre.Text, out SpiritOre);
-            double.TryParse(TBGem_d.Text, out Gem_d);
-            double.TryParse(TBGem_c.Text, out Gem_c);
-            double.TryParse(TBGem_b.Text, out Gem_b);
-            double.TryParse(TBGem_a.Text, out Gem_a);
-            double.TryParse(TBGem_s.Text, out Gem_s);
+            double.TryParse(TBCostCryD.Text, out Cry_d);
+            double.TryParse(TBCostCryC.Text, out Cry_c);
+            double.TryParse(TBCostCryB.Text, out Cry_b);
+            double.TryParse(TBCostCryA.Text, out Cry_a);
+            double.TryParse(TBCostCryS.Text, out Cry_s);
+            double.TryParse(TBCostSoulOre.Text, out SoulOre);
+            double.TryParse(TBCostSpiritOre.Text, out SpiritOre);
+            double.TryParse(TBCostGemD.Text, out Gem_d);
+            double.TryParse(TBCostGemC.Text, out Gem_c);
+            double.TryParse(TBCostGemB.Text, out Gem_b);
+            double.TryParse(TBCostGemA.Text, out Gem_a);
+            double.TryParse(TBCostGemS.Text, out Gem_s);
 
             //Парсим обычные ресурсы
             double.TryParse(TBCostAdamantiteNugget.Text, out AdamantiteNugget);
@@ -424,16 +427,16 @@ namespace CraftCostCalc
             double.TryParse(TBCostThons.Text, out SavSet.SaveThons);
             double.TryParse(TBCostThread.Text, out SavSet.SaveThread);
             double.TryParse(TBCostVarnish.Text, out SavSet.SaveVarnish);
-            double.TryParse(TBCry_d.Text, out SavSet.SaveCry_d);
-            double.TryParse(TBCry_c.Text, out SavSet.SaveCry_c);
-            double.TryParse(TBCry_b.Text, out SavSet.SaveCry_b);
-            double.TryParse(TBCry_a.Text, out SavSet.SaveCry_a);
-            double.TryParse(TBCry_s.Text, out SavSet.SaveCry_s);
-            double.TryParse(TBGem_d.Text, out SavSet.SaveGem_d);
-            double.TryParse(TBGem_c.Text, out SavSet.SaveGem_c);
-            double.TryParse(TBGem_b.Text, out SavSet.SaveGem_b);
-            double.TryParse(TBGem_a.Text, out SavSet.SaveGem_a);
-            double.TryParse(TBGem_s.Text, out SavSet.SaveGem_s);
+            double.TryParse(TBCostCryD.Text, out SavSet.SaveCry_d);
+            double.TryParse(TBCostCryC.Text, out SavSet.SaveCry_c);
+            double.TryParse(TBCostCryB.Text, out SavSet.SaveCry_b);
+            double.TryParse(TBCostCryA.Text, out SavSet.SaveCry_a);
+            double.TryParse(TBCostCryS.Text, out SavSet.SaveCry_s);
+            double.TryParse(TBCostGemD.Text, out SavSet.SaveGem_d);
+            double.TryParse(TBCostGemC.Text, out SavSet.SaveGem_c);
+            double.TryParse(TBCostGemB.Text, out SavSet.SaveGem_b);
+            double.TryParse(TBCostGemA.Text, out SavSet.SaveGem_a);
+            double.TryParse(TBCostGemS.Text, out SavSet.SaveGem_s);
 
             //Крафтовые ресурсы
             double.TryParse(TBCostBraidedHemp.Text, out SavSet.SaveBraidedHemp);
@@ -467,14 +470,14 @@ namespace CraftCostCalc
             double.TryParse(TBCostWarsmithsMold.Text, out SavSet.SaveWarsmithsMold);
 
             //Револ
-            double.TryParse(TBSwordOfRevolutionToCry.Text, out SavSet.SaveSwordOfRevolution);
+            double.TryParse(TBSoRCry.Text, out SavSet.SaveSwordOfRevolution);
 
             //АА
-            double.TryParse(TBAncientAdenaToCry.Text, out SavSet.SaveAncientAdena);
+            double.TryParse(TBAAToCry.Text, out SavSet.SaveAncientAdena);
 
             //Соул и спирит оре
-            double.TryParse(TBSoulOre.Text, out SavSet.SaveSoulOre);
-            double.TryParse(TBSpiritOre.Text, out SavSet.SaveSpiritOre);
+            double.TryParse(TBCostSoulOre.Text, out SavSet.SaveSoulOre);
+            double.TryParse(TBCostSpiritOre.Text, out SavSet.SaveSpiritOre);
 
             //---------------------------------------------------------------------//
 
@@ -527,16 +530,16 @@ namespace CraftCostCalc
                     TBCostThons.Text = SavSet.SaveThons.ToString("F0");
                     TBCostThread.Text = SavSet.SaveThread.ToString("F0");
                     TBCostVarnish.Text = SavSet.SaveVarnish.ToString("F0");
-                    TBCry_d.Text = SavSet.SaveCry_d.ToString("F0");
-                    TBCry_c.Text = SavSet.SaveCry_c.ToString("F0");
-                    TBCry_b.Text = SavSet.SaveCry_b.ToString("F0");
-                    TBCry_a.Text = SavSet.SaveCry_a.ToString("F0");
-                    TBCry_s.Text = SavSet.SaveCry_s.ToString("F0");
-                    TBGem_d.Text = SavSet.SaveGem_d.ToString("F0");
-                    TBGem_c.Text = SavSet.SaveGem_c.ToString("F0");
-                    TBGem_b.Text = SavSet.SaveGem_b.ToString("F0");
-                    TBGem_a.Text = SavSet.SaveGem_a.ToString("F0");
-                    TBGem_s.Text = SavSet.SaveGem_s.ToString("F0");
+                    TBCostCryD.Text = SavSet.SaveCry_d.ToString("F0");
+                    TBCostCryC.Text = SavSet.SaveCry_c.ToString("F0");
+                    TBCostCryB.Text = SavSet.SaveCry_b.ToString("F0");
+                    TBCostCryA.Text = SavSet.SaveCry_a.ToString("F0");
+                    TBCostCryS.Text = SavSet.SaveCry_s.ToString("F0");
+                    TBCostGemD.Text = SavSet.SaveGem_d.ToString("F0");
+                    TBCostGemC.Text = SavSet.SaveGem_c.ToString("F0");
+                    TBCostGemB.Text = SavSet.SaveGem_b.ToString("F0");
+                    TBCostGemA.Text = SavSet.SaveGem_a.ToString("F0");
+                    TBCostGemS.Text = SavSet.SaveGem_s.ToString("F0");
 
                     //Крафтовые ресурсы
                     TBCostBraidedHemp.Text = SavSet.SaveBraidedHemp.ToString("F0");
@@ -570,14 +573,14 @@ namespace CraftCostCalc
                     TBCostWarsmithsMold.Text = SavSet.SaveWarsmithsMold.ToString("F0");
 
                     //Револ
-                    TBSwordOfRevolutionToCry.Text = SavSet.SaveSwordOfRevolution.ToString("F0");
+                    TBSoRCry.Text = SavSet.SaveSwordOfRevolution.ToString("F0");
 
                     //АА
-                    TBAncientAdenaToCry.Text = SavSet.SaveAncientAdena.ToString("F0");
+                    TBAAToCry.Text = SavSet.SaveAncientAdena.ToString("F0");
 
                     //Соул и спирит оре
-                    TBSoulOre.Text = SavSet.SaveSoulOre.ToString("F0");
-                    TBSpiritOre.Text = SavSet.SaveSpiritOre.ToString("F0");
+                    TBCostSoulOre.Text = SavSet.SaveSoulOre.ToString("F0");
+                    TBCostSpiritOre.Text = SavSet.SaveSpiritOre.ToString("F0");
                 }
             }
             catch (FileNotFoundException)
@@ -609,12 +612,8 @@ namespace CraftCostCalc
             if (TabComp.SelectedIndex == 1)
             {
                 LabHelp.Text = "При расчете стоимости Кристаллов B-Grade учитывается стоимость Stone Of Purity.";
+                WBReklamaTabCry.Refresh();
             }
-        }
-
-        private void TBCostSSD_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void WBReklamaTabCry_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
