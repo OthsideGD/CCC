@@ -36,8 +36,10 @@
             this.TabWeaponBluntGrade = new System.Windows.Forms.TabControl();
             this.TabWeaponBluntNG = new System.Windows.Forms.TabPage();
             this.GBWeaponBluntNG = new System.Windows.Forms.GroupBox();
+            this.LabTest2 = new System.Windows.Forms.Label();
             this.TabWeaponBluntD = new System.Windows.Forms.TabPage();
             this.GBWeaponBluntD = new System.Windows.Forms.GroupBox();
+            this.LabTest1 = new System.Windows.Forms.Label();
             this.TabWeaponBluntC = new System.Windows.Forms.TabPage();
             this.GBWeaponBluntC = new System.Windows.Forms.GroupBox();
             this.TabWeaponBluntB = new System.Windows.Forms.TabPage();
@@ -1048,11 +1050,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
-            this.LabTest2 = new System.Windows.Forms.Label();
-=======
-            this.LabTest1 = new System.Windows.Forms.Label();
->>>>>>> origin/Cathy2
+            this.Test4 = new System.Windows.Forms.Label();
             this.TabItems.SuspendLayout();
             this.TabItemsWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -1662,6 +1660,7 @@
             // 
             // GBWeaponBluntNG
             // 
+            this.GBWeaponBluntNG.Controls.Add(this.Test4);
             this.GBWeaponBluntNG.Controls.Add(this.LabTest2);
             this.GBWeaponBluntNG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GBWeaponBluntNG.Location = new System.Drawing.Point(0, 0);
@@ -1670,6 +1669,15 @@
             this.GBWeaponBluntNG.TabIndex = 0;
             this.GBWeaponBluntNG.TabStop = false;
             this.GBWeaponBluntNG.Text = "Бланты No-Grade";
+            // 
+            // LabTest2
+            // 
+            this.LabTest2.AutoSize = true;
+            this.LabTest2.Location = new System.Drawing.Point(7, 28);
+            this.LabTest2.Name = "LabTest2";
+            this.LabTest2.Size = new System.Drawing.Size(34, 13);
+            this.LabTest2.TabIndex = 0;
+            this.LabTest2.Text = "Test2";
             // 
             // TabWeaponBluntD
             // 
@@ -1691,6 +1699,15 @@
             this.GBWeaponBluntD.TabIndex = 0;
             this.GBWeaponBluntD.TabStop = false;
             this.GBWeaponBluntD.Text = "Бланты D-Grade";
+            // 
+            // LabTest1
+            // 
+            this.LabTest1.AutoSize = true;
+            this.LabTest1.Location = new System.Drawing.Point(66, 94);
+            this.LabTest1.Name = "LabTest1";
+            this.LabTest1.Size = new System.Drawing.Size(35, 13);
+            this.LabTest1.TabIndex = 0;
+            this.LabTest1.Text = "label1";
             // 
             // TabWeaponBluntC
             // 
@@ -12134,25 +12151,14 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
-<<<<<<< HEAD
-            // LabTest2
+            // Test4
             // 
-            this.LabTest2.AutoSize = true;
-            this.LabTest2.Location = new System.Drawing.Point(7, 28);
-            this.LabTest2.Name = "LabTest2";
-            this.LabTest2.Size = new System.Drawing.Size(34, 13);
-            this.LabTest2.TabIndex = 0;
-            this.LabTest2.Text = "Test2";
-=======
-            // LabTest1
-            // 
-            this.LabTest1.AutoSize = true;
-            this.LabTest1.Location = new System.Drawing.Point(66, 94);
-            this.LabTest1.Name = "LabTest1";
-            this.LabTest1.Size = new System.Drawing.Size(35, 13);
-            this.LabTest1.TabIndex = 0;
-            this.LabTest1.Text = "label1";
->>>>>>> origin/Cathy2
+            this.Test4.AutoSize = true;
+            this.Test4.Location = new System.Drawing.Point(59, 28);
+            this.Test4.Name = "Test4";
+            this.Test4.Size = new System.Drawing.Size(34, 13);
+            this.Test4.TabIndex = 1;
+            this.Test4.Text = "Test4";
             // 
             // MainForm
             // 
@@ -13819,11 +13825,11 @@
         private System.Windows.Forms.Label LabNameRecSpSC;
         private System.Windows.Forms.PictureBox PicRecSpSC;
         private System.Windows.Forms.GroupBox GBRecShotsD;
-<<<<<<< HEAD
+
         private System.Windows.Forms.Label LabTest2;
-=======
+
         private System.Windows.Forms.Label LabTest1;
->>>>>>> origin/Cathy2
+        private System.Windows.Forms.Label Test4;
     }
 }
 
