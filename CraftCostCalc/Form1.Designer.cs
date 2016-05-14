@@ -36,6 +36,7 @@
             this.TabWeaponBluntGrade = new System.Windows.Forms.TabControl();
             this.TabWeaponBluntNG = new System.Windows.Forms.TabPage();
             this.GBWeaponBluntNG = new System.Windows.Forms.GroupBox();
+            this.Test4 = new System.Windows.Forms.Label();
             this.LabTest2 = new System.Windows.Forms.Label();
             this.TabWeaponBluntD = new System.Windows.Forms.TabPage();
             this.GBWeaponBluntD = new System.Windows.Forms.GroupBox();
@@ -1050,7 +1051,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PicLogoAuthor = new System.Windows.Forms.PictureBox();
             this.PicLogoLA2 = new System.Windows.Forms.PictureBox();
-            this.Test4 = new System.Windows.Forms.Label();
+            this.Test3 = new System.Windows.Forms.Label();
             this.TabItems.SuspendLayout();
             this.TabItemsWeapon.SuspendLayout();
             this.TabWeaponType.SuspendLayout();
@@ -1660,6 +1661,7 @@
             // 
             // GBWeaponBluntNG
             // 
+            this.GBWeaponBluntNG.Controls.Add(this.Test3);
             this.GBWeaponBluntNG.Controls.Add(this.Test4);
             this.GBWeaponBluntNG.Controls.Add(this.LabTest2);
             this.GBWeaponBluntNG.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1669,6 +1671,15 @@
             this.GBWeaponBluntNG.TabIndex = 0;
             this.GBWeaponBluntNG.TabStop = false;
             this.GBWeaponBluntNG.Text = "Бланты No-Grade";
+            // 
+            // Test4
+            // 
+            this.Test4.AutoSize = true;
+            this.Test4.Location = new System.Drawing.Point(59, 28);
+            this.Test4.Name = "Test4";
+            this.Test4.Size = new System.Drawing.Size(34, 13);
+            this.Test4.TabIndex = 1;
+            this.Test4.Text = "Test4";
             // 
             // LabTest2
             // 
@@ -12151,14 +12162,14 @@
             this.PicLogoLA2.TabIndex = 11;
             this.PicLogoLA2.TabStop = false;
             // 
-            // Test4
+            // Test3
             // 
-            this.Test4.AutoSize = true;
-            this.Test4.Location = new System.Drawing.Point(59, 28);
-            this.Test4.Name = "Test4";
-            this.Test4.Size = new System.Drawing.Size(34, 13);
-            this.Test4.TabIndex = 1;
-            this.Test4.Text = "Test4";
+            this.Test3.AutoSize = true;
+            this.Test3.Location = new System.Drawing.Point(57, 144);
+            this.Test3.Name = "Test3";
+            this.Test3.Size = new System.Drawing.Size(55, 13);
+            this.Test3.TabIndex = 2;
+            this.Test3.Text = "33333333";
             // 
             // MainForm
             // 
@@ -13830,6 +13841,7 @@
 
         private System.Windows.Forms.Label LabTest1;
         private System.Windows.Forms.Label Test4;
+        private System.Windows.Forms.Label Test3;
     }
 }
 
