@@ -543,6 +543,26 @@ namespace CraftCostCalc.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap key_jewel_box {
+            get {
+                object obj = ResourceManager.GetObject("key_jewel_box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key_jewel_gold {
+            get {
+                object obj = ResourceManager.GetObject("key_jewel_gold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Leather {
             get {
                 object obj = ResourceManager.GetObject("Leather", resourceCulture);
@@ -846,6 +866,16 @@ namespace CraftCostCalc.Properties {
         internal static System.Drawing.Bitmap Synthetic_Cokes {
             get {
                 object obj = ResourceManager.GetObject("Synthetic_Cokes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TableSA {
+            get {
+                object obj = ResourceManager.GetObject("TableSA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

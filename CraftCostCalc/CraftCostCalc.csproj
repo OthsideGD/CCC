@@ -338,6 +338,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator %281%29.ico" />
+    <None Include="Resources\TableSA.png" />
+    <None Include="Resources\key_jewel_gold.jpg" />
+    <None Include="Resources\key_jewel_box.jpg" />
     <None Include="Resources\RecS.png" />
     <None Include="Resources\RecNG.png" />
     <None Include="Resources\RecD.png" />

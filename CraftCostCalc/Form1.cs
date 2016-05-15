@@ -18,6 +18,7 @@ namespace CraftCostCalc
         public MainForm()
         {
             InitializeComponent();
+            WBReklamaMain.Refresh();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -613,6 +614,10 @@ namespace CraftCostCalc
             {
                 LabHelp.Text = "При расчете стоимости Кристаллов B-Grade учитывается стоимость Stone Of Purity.";
                 WBReklamaTabCry.Refresh();
+            }
+            if (TabComp.SelectedIndex == 4)
+            {
+                WBReklamaTabSA.Refresh();
             }
         }
 
